@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>如何帮助 — [Nombre del santuario]</title>
+  <meta name="description" content="加入保护区志愿者行列：告诉我们您希望如何帮助，我们会与您联系。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="如何帮助 — [Nombre del santuario]">
+  <meta property="og:description" content="加入保护区志愿者行列：告诉我们您希望如何帮助，我们会与您联系。">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/zh/volunteer/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">跳转到正文</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/zh/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">菜单</button>
+
+      <nav aria-label="主导航">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/zh/">首页</a></li>
+          <li><a class="maiusculas" href="/zh/volunteer/" aria-current="page">如何帮助</a></li>
+          <li><a class="maiusculas" href="/zh/sponsors/">赞助方</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">语言: </span>中文
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="选择语言">
+              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/volunteer/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/volunteer/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/volunteer/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">中文 <span class="oculto-visual">(当前语言)</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">如何帮助</h1>
+        <p class="entra atraso-1">您可以加入志愿者行列，贡献时间、知识或双手来照料保护区。告诉我们您希望如何帮助，我们会与您联系。</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="form-titulo">
+      <h2 id="form-titulo" class="entra atraso-2">志愿者表单</h2>
+
+      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+      <form
+        id="form-voluntario"
+        class="formulario entra atraso-3"
+        action="https://formspree.io/f/FORMSPREE_ID"
+        method="POST"
+        data-msg-required="此字段为必填项。"
+        data-msg-email="请输入有效的电子邮箱地址，例如 name@example.com。"
+        data-msg-network="留言发送失败。请检查网络连接后重试。"
+        data-msg-summary="表单无法发送。请检查标记为错误的字段。"
+        data-msg-sending="正在发送…"
+        data-msg-success="谢谢您。我们已收到您的留言，会尽快与您联系。"
+      >
+        <p class="nota-obrigatorio">所有字段均为必填。</p>
+        <input type="hidden" name="_language" value="zh-Hans">
+
+        <div class="campo">
+          <label for="f-nome">姓名 <span class="req">(必填)</span></label>
+          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+          <p id="f-nome-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-email">电子邮箱 <span class="req">(必填)</span></label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+          <p id="f-email-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-ajuda">您希望如何帮助 <span class="req">(必填)</span></label>
+          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
+            <option value="">请选择</option>
+            <option value="tiempo">贡献时间</option>
+            <option value="conocimientos">分享知识</option>
+            <option value="manos">参与劳动</option>
+          </select>
+          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-mensagem">留言 <span class="req">(必填)</span></label>
+          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Deja este campo vacío</label>
+          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="botao maiusculas" type="submit">发送留言</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · 动物与植物保护区 · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

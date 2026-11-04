@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>支援する方法 — [Nombre del santuario]</title>
+  <meta name="description" content="ボランティアとしてサンクチュアリに参加しませんか。どのように支援したいかをお聞かせください。こちらからご連絡します。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="支援する方法 — [Nombre del santuario]">
+  <meta property="og:description" content="ボランティアとしてサンクチュアリに参加しませんか。どのように支援したいかをお聞かせください。こちらからご連絡します。">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/ja/volunteer/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">本文へスキップ</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/ja/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">メニュー</button>
+
+      <nav aria-label="メインナビゲーション">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/ja/">ホーム</a></li>
+          <li><a class="maiusculas" href="/ja/volunteer/" aria-current="page">支援する</a></li>
+          <li><a class="maiusculas" href="/ja/sponsors/">スポンサー</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">言語: </span>日本語
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="言語を選択">
+              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/volunteer/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/volunteer/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/volunteer/" lang="ja" hreflang="ja" aria-current="true">日本語 <span class="oculto-visual">(現在の言語)</span></a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">支援する方法</h1>
+        <p class="entra atraso-1">ボランティアとして参加し、時間や知識、手仕事をサンクチュアリの世話に役立てることができます。どのように支援したいかをお聞かせください。こちらからご連絡します。</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="form-titulo">
+      <h2 id="form-titulo" class="entra atraso-2">ボランティア申し込みフォーム</h2>
+
+      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+      <form
+        id="form-voluntario"
+        class="formulario entra atraso-3"
+        action="https://formspree.io/f/FORMSPREE_ID"
+        method="POST"
+        data-msg-required="この項目は必須です。"
+        data-msg-email="有効なメールアドレスを入力してください。例: name@example.com"
+        data-msg-network="メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
+        data-msg-summary="フォームを送信できませんでした。エラーの付いた項目を確認してください。"
+        data-msg-sending="送信中…"
+        data-msg-success="ありがとうございます。メッセージを受け取りました。近日中にご連絡します。"
+      >
+        <p class="nota-obrigatorio">すべての項目は必須です。</p>
+        <input type="hidden" name="_language" value="ja">
+
+        <div class="campo">
+          <label for="f-nome">お名前 <span class="req">(必須)</span></label>
+          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+          <p id="f-nome-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-email">メールアドレス <span class="req">(必須)</span></label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+          <p id="f-email-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-ajuda">どのように支援したいですか <span class="req">(必須)</span></label>
+          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
+            <option value="">選択してください</option>
+            <option value="tiempo">時間を提供する</option>
+            <option value="conocimientos">知識を提供する</option>
+            <option value="manos">作業を手伝う</option>
+          </select>
+          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-mensagem">メッセージ <span class="req">(必須)</span></label>
+          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Deja este campo vacío</label>
+          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="botao maiusculas" type="submit">メッセージを送信</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · 動物と植物のサンクチュアリ · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

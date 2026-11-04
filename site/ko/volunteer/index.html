@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>도움 주는 방법 — [Nombre del santuario]</title>
+  <meta name="description" content="자원봉사자로 보호구역에 참여하세요. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="도움 주는 방법 — [Nombre del santuario]">
+  <meta property="og:description" content="자원봉사자로 보호구역에 참여하세요. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/ko/volunteer/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">본문으로 건너뛰기</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/ko/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">메뉴</button>
+
+      <nav aria-label="주요 탐색">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/ko/">홈</a></li>
+          <li><a class="maiusculas" href="/ko/volunteer/" aria-current="page">도움 주기</a></li>
+          <li><a class="maiusculas" href="/ko/sponsors/">후원사</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">언어: </span>한국어
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="언어 선택">
+              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/volunteer/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/volunteer/" lang="ko" hreflang="ko" aria-current="true">한국어 <span class="oculto-visual">(현재 언어)</span></a></li>
+              <li><a href="/ja/volunteer/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">도움 주는 방법</h1>
+        <p class="entra atraso-1">자원봉사자로 참여하여 시간, 지식 또는 손길을 보호구역 돌봄에 보탤 수 있습니다. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="form-titulo">
+      <h2 id="form-titulo" class="entra atraso-2">자원봉사 신청</h2>
+
+      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+      <form
+        id="form-voluntario"
+        class="formulario entra atraso-3"
+        action="https://formspree.io/f/FORMSPREE_ID"
+        method="POST"
+        data-msg-required="필수 항목입니다."
+        data-msg-email="올바른 이메일 주소를 입력해 주세요. 예: name@example.com"
+        data-msg-network="메시지를 보내지 못했습니다. 연결을 확인하고 다시 시도해 주세요."
+        data-msg-summary="양식을 보낼 수 없습니다. 오류가 표시된 항목을 확인해 주세요."
+        data-msg-sending="보내는 중…"
+        data-msg-success="감사합니다. 메시지를 받았으며 곧 연락드리겠습니다."
+      >
+        <p class="nota-obrigatorio">모든 항목은 필수입니다.</p>
+        <input type="hidden" name="_language" value="ko">
+
+        <div class="campo">
+          <label for="f-nome">이름 <span class="req">(필수)</span></label>
+          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+          <p id="f-nome-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-email">이메일 <span class="req">(필수)</span></label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+          <p id="f-email-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-ajuda">어떻게 돕고 싶으신가요 <span class="req">(필수)</span></label>
+          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
+            <option value="">선택하세요</option>
+            <option value="tiempo">시간을 내어</option>
+            <option value="conocimientos">지식을 나누어</option>
+            <option value="manos">직접 손으로</option>
+          </select>
+          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-mensagem">메시지 <span class="req">(필수)</span></label>
+          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Deja este campo vacío</label>
+          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="botao maiusculas" type="submit">메시지 보내기</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · 동물과 식물의 보호구역 · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

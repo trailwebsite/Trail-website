@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Nombre del santuario] — Santuário de animais e plantas</title>
+  <meta name="description" content="Um santuário onde animais e plantas convivem e completam seu ciclo de vida. Pensado para ser percorrido por todas as pessoas.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/pt/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="[Nombre del santuario] — Santuário de animais e plantas">
+  <meta property="og:description" content="Um santuário onde animais e plantas convivem e completam seu ciclo de vida. Pensado para ser percorrido por todas as pessoas.">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/pt/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/pt/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/pt/" aria-current="page">Início</a></li>
+          <li><a class="maiusculas" href="/pt/volunteer/">Como ajudar</a></li>
+          <li><a class="maiusculas" href="/pt/sponsors/">Patrocinadores</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">Idioma: </span>Português
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="Escolher idioma">
+              <li><a href="/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/" lang="pt" hreflang="pt" aria-current="true">Português <span class="oculto-visual">(idioma atual)</span></a></li>
+              <li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- home.html — página inicial: hero com nome, introdução e dois links descritivos -->
+    <!--
+      Hero: hoje usa cor sólida. Quando houver foto, definir --hero-image no CSS
+      e adicionar a classe "com-foto" a esta div para ligar a camada escura.
+      Se a foto informar algo, usar <img> com alt descritivo; se for só fundo, deixar como background.
+    -->
+    <div class="hero">
+      <div class="hero-interno">
+        <h1 class="hero-titulo maiusculas entra">[Nombre del santuario]</h1>
+        <p class="hero-frase entra atraso-1">Um santuário onde animais e plantas convivem e completam seu ciclo de vida.</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="intro-titulo">
+      <h2 id="intro-titulo" class="entra atraso-2">Quem somos</h2>
+      <p class="entra atraso-3">Aqui cuidamos, protegemos e compartilhamos esse caminho com todas as pessoas que nos visitam.</p>
+    </section>
+
+    <section class="conteudo conteudo-suave" aria-labelledby="participar-titulo">
+      <h2 id="participar-titulo" class="entra atraso-4">Como participar</h2>
+      <ul class="blocos entra atraso-5">
+        <li>
+          <a class="bloco" href="/pt/volunteer/">
+            <span class="bloco-titulo">Como você pode ajudar como voluntário</span>
+            <span class="bloco-desc">Tempo, conhecimento ou mãos para o cuidado do santuário.</span>
+          </a>
+        </li>
+        <li>
+          <a class="bloco" href="/pt/sponsors/">
+            <span class="bloco-titulo">Quem apoia o projeto</span>
+            <span class="bloco-desc">Pessoas e organizações que tornam este lugar possível.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · Santuário de animais e plantas · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrocinadores y apoyadores — [Nombre del santuario]</title>
+  <meta name="description" content="Personas y organizaciones que apoyan al santuario y hacen posible el proyecto.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/sponsors/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="Patrocinadores y apoyadores — [Nombre del santuario]">
+  <meta property="og:description" content="Personas y organizaciones que apoyan al santuario y hacen posible el proyecto.">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/sponsors/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="es_ES">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/">Inicio</a></li>
+          <li><a class="maiusculas" href="/volunteer/">Cómo ayudar</a></li>
+          <li><a class="maiusculas" href="/sponsors/" aria-current="page">Patrocinadores</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">Idioma: </span>Español
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="Elegir idioma">
+              <li><a href="/sponsors/" lang="es" hreflang="es" aria-current="true">Español <span class="oculto-visual">(idioma actual)</span></a></li>
+              <li><a href="/en/sponsors/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/sponsors/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/sponsors/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/sponsors/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/sponsors/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- sponsors.html — página de patrocinadores: texto e lista provisória -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">Patrocinadores y apoyadores</h1>
+        <p class="entra atraso-1">Este proyecto es posible gracias a personas y organizaciones que creen en él. Aquí reconoceremos a quienes nos apoyan.</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="apoio-titulo">
+      <h2 id="apoio-titulo" class="entra atraso-2">Quienes nos apoyan</h2>
+      <!--
+        Lista provisória. Para cada patrocinador real, trocar o texto pelo nome
+        ou por <img src="/img/patrocinador-x.svg" alt="Nome do patrocinador">.
+        alt descritivo obrigatório se a imagem informa; alt="" se for decorativa.
+      -->
+      <ul class="patrocinadores entra atraso-3">
+        <li>Patrocinador 1</li>
+        <li>Patrocinador 2</li>
+        <li>Patrocinador 3</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · Santuario de animales y plantas · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How you can help — [Nombre del santuario]</title>
+  <meta name="description" content="Join the sanctuary as a volunteer: tell us how you would like to help and we will contact you.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/en/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="How you can help — [Nombre del santuario]">
+  <meta property="og:description" content="Join the sanctuary as a volunteer: tell us how you would like to help and we will contact you.">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/en/volunteer/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">Skip to content</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/en/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/en/">Home</a></li>
+          <li><a class="maiusculas" href="/en/volunteer/" aria-current="page">How to help</a></li>
+          <li><a class="maiusculas" href="/en/sponsors/">Sponsors</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">Language: </span>English
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="Choose a language">
+              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/volunteer/" lang="en" hreflang="en" aria-current="true">English <span class="oculto-visual">(current language)</span></a></li>
+              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/volunteer/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/volunteer/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">How you can help</h1>
+        <p class="entra atraso-1">You can join us as a volunteer and dedicate time, knowledge, or hands to the care of the sanctuary. Tell us how you would like to help and we will contact you.</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="form-titulo">
+      <h2 id="form-titulo" class="entra atraso-2">Volunteer form</h2>
+
+      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+      <form
+        id="form-voluntario"
+        class="formulario entra atraso-3"
+        action="https://formspree.io/f/FORMSPREE_ID"
+        method="POST"
+        data-msg-required="This field is required."
+        data-msg-email="Enter a valid email address, for example name@example.com."
+        data-msg-network="The message could not be sent. Check your connection and try again."
+        data-msg-summary="The form could not be sent. Please check the fields marked with an error."
+        data-msg-sending="Sending…"
+        data-msg-success="Thank you. We received your message and will contact you soon."
+      >
+        <p class="nota-obrigatorio">All fields are required.</p>
+        <input type="hidden" name="_language" value="en">
+
+        <div class="campo">
+          <label for="f-nome">Name <span class="req">(required)</span></label>
+          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+          <p id="f-nome-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-email">Email address <span class="req">(required)</span></label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+          <p id="f-email-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-ajuda">How would you like to help <span class="req">(required)</span></label>
+          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
+            <option value="">Choose an option</option>
+            <option value="tiempo">By giving time</option>
+            <option value="conocimientos">By sharing knowledge</option>
+            <option value="manos">With hands-on work</option>
+          </select>
+          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-mensagem">Message <span class="req">(required)</span></label>
+          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Deja este campo vacío</label>
+          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="botao maiusculas" type="submit">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · A sanctuary for animals and plants · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

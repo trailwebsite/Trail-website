@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>赞助方与支持者 — [Nombre del santuario]</title>
+  <meta name="description" content="支持保护区并让本项目成为可能的个人与机构。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/zh/sponsors/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="赞助方与支持者 — [Nombre del santuario]">
+  <meta property="og:description" content="支持保护区并让本项目成为可能的个人与机构。">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/zh/sponsors/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">跳转到正文</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/zh/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">菜单</button>
+
+      <nav aria-label="主导航">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/zh/">首页</a></li>
+          <li><a class="maiusculas" href="/zh/volunteer/">如何帮助</a></li>
+          <li><a class="maiusculas" href="/zh/sponsors/" aria-current="page">赞助方</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">语言: </span>中文
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="选择语言">
+              <li><a href="/sponsors/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/sponsors/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/sponsors/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/sponsors/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/sponsors/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/sponsors/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">中文 <span class="oculto-visual">(当前语言)</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- sponsors.html — página de patrocinadores: texto e lista provisória -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">赞助方与支持者</h1>
+        <p class="entra atraso-1">这个项目得以实现，离不开相信它的个人与机构。我们将在此致谢所有支持者。</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="apoio-titulo">
+      <h2 id="apoio-titulo" class="entra atraso-2">支持我们的人</h2>
+      <!--
+        Lista provisória. Para cada patrocinador real, trocar o texto pelo nome
+        ou por <img src="/img/patrocinador-x.svg" alt="Nome do patrocinador">.
+        alt descritivo obrigatório se a imagem informa; alt="" se for decorativa.
+      -->
+      <ul class="patrocinadores entra atraso-3">
+        <li>赞助方 1</li>
+        <li>赞助方 2</li>
+        <li>赞助方 3</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · 动物与植物保护区 · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

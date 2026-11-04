@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Nombre del santuario] — 동물과 식물의 보호구역</title>
+  <meta name="description" content="동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다. 모든 사람이 둘러볼 수 있도록 설계되었습니다.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://PROYECTO.pages.dev/ko/">
+  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/">
+  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/">
+  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/">
+  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/">
+  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="[Nombre del santuario]">
+  <meta property="og:title" content="[Nombre del santuario] — 동물과 식물의 보호구역">
+  <meta property="og:description" content="동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다. 모든 사람이 둘러볼 수 있도록 설계되었습니다.">
+  <meta property="og:url" content="https://PROYECTO.pages.dev/ko/">
+  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">본문으로 건너뛰기</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/ko/">[Nombre del santuario]</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">메뉴</button>
+
+      <nav aria-label="주요 탐색">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/ko/" aria-current="page">홈</a></li>
+          <li><a class="maiusculas" href="/ko/volunteer/">도움 주기</a></li>
+          <li><a class="maiusculas" href="/ko/sponsors/">후원사</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">언어: </span>한국어
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="언어 선택">
+              <li><a href="/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/en/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/pt/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어 <span class="oculto-visual">(현재 언어)</span></a></li>
+              <li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- home.html — página inicial: hero com nome, introdução e dois links descritivos -->
+    <!--
+      Hero: hoje usa cor sólida. Quando houver foto, definir --hero-image no CSS
+      e adicionar a classe "com-foto" a esta div para ligar a camada escura.
+      Se a foto informar algo, usar <img> com alt descritivo; se for só fundo, deixar como background.
+    -->
+    <div class="hero">
+      <div class="hero-interno">
+        <h1 class="hero-titulo maiusculas entra">[Nombre del santuario]</h1>
+        <p class="hero-frase entra atraso-1">동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다.</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="intro-titulo">
+      <h2 id="intro-titulo" class="entra atraso-2">우리는 누구인가요</h2>
+      <p class="entra atraso-3">이곳에서 우리는 돌보고 보호하며, 찾아오시는 모든 분과 그 여정을 나눕니다.</p>
+    </section>
+
+    <section class="conteudo conteudo-suave" aria-labelledby="participar-titulo">
+      <h2 id="participar-titulo" class="entra atraso-4">참여 방법</h2>
+      <ul class="blocos entra atraso-5">
+        <li>
+          <a class="bloco" href="/ko/volunteer/">
+            <span class="bloco-titulo">자원봉사로 돕는 방법</span>
+            <span class="bloco-desc">시간, 지식, 손길로 보호구역을 돌봅니다.</span>
+          </a>
+        </li>
+        <li>
+          <a class="bloco" href="/ko/sponsors/">
+            <span class="bloco-titulo">프로젝트를 지원하는 분들</span>
+            <span class="bloco-desc">이곳을 가능하게 하는 사람들과 단체입니다.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p><strong>[Nombre del santuario]</strong> · 동물과 식물의 보호구역 · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>
