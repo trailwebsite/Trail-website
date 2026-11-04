@@ -1,0 +1,15 @@
+{
+  "name": "trail-sanctuary-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sitio estático accesible del santuario: 3 páginas en 6 idiomas, sin dependencias.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node scripts/serve.mjs",
+    "check": "node build.mjs && node scripts/check.mjs"
+  }
+}

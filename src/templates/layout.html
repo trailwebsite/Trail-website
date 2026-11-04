@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<html lang="{{htmlLang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  {{{robots}}}
+  <link rel="canonical" href="{{canonical}}">
+  {{{alternates}}}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{siteName}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{ogImage}}">
+  <meta property="og:locale" content="{{ogLocale}}">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body>
+  <a class="pular" href="#contenido">{{t.skip}}</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="{{url.home}}">{{siteName}}</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">{{t.nav.menu}}</button>
+
+      <nav aria-label="{{t.nav.label}}">
+        <ul class="nav-lista" id="menu-principal">
+          {{{navItems}}}
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">{{t.lang.button}}: </span>{{t.name}}
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="{{t.lang.list}}">
+              {{{langItems}}}
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+{{{content}}}
+  </main>
+
+  <footer class="rodape">
+    <p><strong>{{siteName}}</strong> · {{t.footer.text}} · © {{year}}</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

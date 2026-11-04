@@ -1,0 +1,16 @@
+# Dependências e ambiente
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Diagnóstico local
+testes/

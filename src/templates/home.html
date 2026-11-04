@@ -1,0 +1,35 @@
+<!-- home.html — página inicial: hero com nome, introdução e dois links descritivos -->
+    <!--
+      Hero: hoje usa cor sólida. Quando houver foto, definir --hero-image no CSS
+      e adicionar a classe "com-foto" a esta div para ligar a camada escura.
+      Se a foto informar algo, usar <img> com alt descritivo; se for só fundo, deixar como background.
+    -->
+    <div class="hero">
+      <div class="hero-interno">
+        <h1 class="hero-titulo maiusculas entra">{{siteName}}</h1>
+        <p class="hero-frase entra atraso-1">{{t.home.tagline}}</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="intro-titulo">
+      <h2 id="intro-titulo" class="entra atraso-2">{{t.home.introHeading}}</h2>
+      <p class="entra atraso-3">{{t.home.intro}}</p>
+    </section>
+
+    <section class="conteudo conteudo-suave" aria-labelledby="participar-titulo">
+      <h2 id="participar-titulo" class="entra atraso-4">{{t.home.linksHeading}}</h2>
+      <ul class="blocos entra atraso-5">
+        <li>
+          <a class="bloco" href="{{url.volunteer}}">
+            <span class="bloco-titulo">{{t.home.linkVolunteer}}</span>
+            <span class="bloco-desc">{{t.home.linkVolunteerDesc}}</span>
+          </a>
+        </li>
+        <li>
+          <a class="bloco" href="{{url.sponsors}}">
+            <span class="bloco-titulo">{{t.home.linkSponsors}}</span>
+            <span class="bloco-desc">{{t.home.linkSponsorsDesc}}</span>
+          </a>
+        </li>
+      </ul>
+    </section>

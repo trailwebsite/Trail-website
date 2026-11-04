@@ -1,0 +1,67 @@
+<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">{{t.volunteer.h1}}</h1>
+        <p class="entra atraso-1">{{t.volunteer.intro}}</p>
+      </div>
+    </div>
+
+    <section class="conteudo" aria-labelledby="form-titulo">
+      <h2 id="form-titulo" class="entra atraso-2">{{t.volunteer.form.heading}}</h2>
+
+      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+      <form
+        id="form-voluntario"
+        class="formulario entra atraso-3"
+        action="https://formspree.io/f/{{formspreeId}}"
+        method="POST"
+        data-msg-required="{{t.volunteer.form.errRequired}}"
+        data-msg-email="{{t.volunteer.form.errEmail}}"
+        data-msg-network="{{t.volunteer.form.errNetwork}}"
+        data-msg-summary="{{t.volunteer.form.summary}}"
+        data-msg-sending="{{t.volunteer.form.sending}}"
+        data-msg-success="{{t.volunteer.form.success}}"
+      >
+        <p class="nota-obrigatorio">{{t.volunteer.form.requiredNote}}</p>
+        <input type="hidden" name="_language" value="{{htmlLang}}">
+
+        <div class="campo">
+          <label for="f-nome">{{t.volunteer.form.name}} <span class="req">({{t.required}})</span></label>
+          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+          <p id="f-nome-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-email">{{t.volunteer.form.email}} <span class="req">({{t.required}})</span></label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+          <p id="f-email-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-ajuda">{{t.volunteer.form.help}} <span class="req">({{t.required}})</span></label>
+          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
+            <option value="">{{t.volunteer.form.helpChoose}}</option>
+            <option value="tiempo">{{t.volunteer.form.helpTime}}</option>
+            <option value="conocimientos">{{t.volunteer.form.helpKnowledge}}</option>
+            <option value="manos">{{t.volunteer.form.helpHands}}</option>
+          </select>
+          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <div class="campo">
+          <label for="f-mensagem">{{t.volunteer.form.message}} <span class="req">({{t.required}})</span></label>
+          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+        </div>
+
+        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Deja este campo vacío</label>
+          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="botao maiusculas" type="submit">{{t.volunteer.form.submit}}</button>
+      </form>
+    </section>
