@@ -1,0 +1,68 @@
+{
+  "htmlLang": "es",
+  "hreflang": "es",
+  "name": "Español",
+  "skip": "Saltar al contenido",
+  "external": "(se abre en otra pestaña)",
+  "required": "obligatorio",
+  "nav": {
+    "label": "Navegación principal",
+    "menu": "Menú",
+    "home": "Inicio",
+    "volunteer": "Cómo ayudar",
+    "sponsors": "Patrocinadores"
+  },
+  "lang": {
+    "button": "Idioma",
+    "list": "Elegir idioma",
+    "current": "(idioma actual)"
+  },
+  "home": {
+    "title": "{siteName} — Santuario de animales y plantas",
+    "description": "Un santuario donde animales y plantas conviven y completan su ciclo de vida. Pensado para ser recorrido por todas las personas.",
+    "tagline": "Un santuario donde animales y plantas conviven y completan su ciclo de vida.",
+    "introHeading": "Quiénes somos",
+    "intro": "Aquí cuidamos, protegemos y compartimos ese camino con todas las personas que nos visitan.",
+    "linksHeading": "Cómo participar",
+    "linkVolunteer": "Cómo puedes ayudar como voluntario",
+    "linkVolunteerDesc": "Tiempo, conocimientos o manos para el cuidado del santuario.",
+    "linkSponsors": "Quiénes apoyan el proyecto",
+    "linkSponsorsDesc": "Personas y organizaciones que hacen posible este lugar."
+  },
+  "volunteer": {
+    "title": "Cómo puedes ayudar — {siteName}",
+    "description": "Súmate como voluntario al santuario: cuéntanos cómo te gustaría ayudar y te contactaremos.",
+    "h1": "Cómo puedes ayudar",
+    "intro": "Puedes sumarte como voluntario y dedicar tiempo, conocimientos o manos al cuidado del santuario. Cuéntanos cómo te gustaría ayudar y te contactaremos.",
+    "form": {
+      "heading": "Formulario de voluntariado",
+      "requiredNote": "Todos los campos son obligatorios.",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "help": "Cómo te gustaría ayudar",
+      "helpChoose": "Elige una opción",
+      "helpTime": "Dedicando tiempo",
+      "helpKnowledge": "Aportando conocimientos",
+      "helpHands": "Con trabajo manual",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando…",
+      "success": "Gracias. Recibimos tu mensaje y te contactaremos pronto.",
+      "summary": "No se pudo enviar el formulario. Revisa los campos marcados con error.",
+      "errRequired": "Este campo es obligatorio.",
+      "errEmail": "Escribe un correo electrónico válido, por ejemplo nombre@ejemplo.com.",
+      "errNetwork": "No se pudo enviar el mensaje. Comprueba tu conexión e inténtalo de nuevo."
+    }
+  },
+  "sponsors": {
+    "title": "Patrocinadores y apoyadores — {siteName}",
+    "description": "Personas y organizaciones que apoyan al santuario y hacen posible el proyecto.",
+    "h1": "Patrocinadores y apoyadores",
+    "intro": "Este proyecto es posible gracias a personas y organizaciones que creen en él. Aquí reconoceremos a quienes nos apoyan.",
+    "listHeading": "Quienes nos apoyan",
+    "items": ["Patrocinador 1", "Patrocinador 2", "Patrocinador 3"]
+  },
+  "footer": {
+    "text": "Santuario de animales y plantas"
+  }
+}

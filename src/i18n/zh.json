@@ -1,0 +1,68 @@
+{
+  "htmlLang": "zh-Hans",
+  "hreflang": "zh-Hans",
+  "name": "中文",
+  "skip": "跳转到正文",
+  "external": "(在新标签页中打开)",
+  "required": "必填",
+  "nav": {
+    "label": "主导航",
+    "menu": "菜单",
+    "home": "首页",
+    "volunteer": "如何帮助",
+    "sponsors": "赞助方"
+  },
+  "lang": {
+    "button": "语言",
+    "list": "选择语言",
+    "current": "(当前语言)"
+  },
+  "home": {
+    "title": "{siteName} — 动物与植物保护区",
+    "description": "一个动物与植物共同生活、完成生命周期的保护区。为每一位来访者而设计。",
+    "tagline": "一个动物与植物共同生活、完成生命周期的保护区。",
+    "introHeading": "关于我们",
+    "intro": "在这里，我们照料、保护，并与每一位来访者分享这段旅程。",
+    "linksHeading": "如何参与",
+    "linkVolunteer": "如何以志愿者身份提供帮助",
+    "linkVolunteerDesc": "以时间、知识或双手照料保护区。",
+    "linkSponsors": "支持本项目的人",
+    "linkSponsorsDesc": "让这个地方成为可能的个人与机构。"
+  },
+  "volunteer": {
+    "title": "如何帮助 — {siteName}",
+    "description": "加入保护区志愿者行列：告诉我们您希望如何帮助，我们会与您联系。",
+    "h1": "如何帮助",
+    "intro": "您可以加入志愿者行列，贡献时间、知识或双手来照料保护区。告诉我们您希望如何帮助，我们会与您联系。",
+    "form": {
+      "heading": "志愿者表单",
+      "requiredNote": "所有字段均为必填。",
+      "name": "姓名",
+      "email": "电子邮箱",
+      "help": "您希望如何帮助",
+      "helpChoose": "请选择",
+      "helpTime": "贡献时间",
+      "helpKnowledge": "分享知识",
+      "helpHands": "参与劳动",
+      "message": "留言",
+      "submit": "发送留言",
+      "sending": "正在发送…",
+      "success": "谢谢您。我们已收到您的留言，会尽快与您联系。",
+      "summary": "表单无法发送。请检查标记为错误的字段。",
+      "errRequired": "此字段为必填项。",
+      "errEmail": "请输入有效的电子邮箱地址，例如 name@example.com。",
+      "errNetwork": "留言发送失败。请检查网络连接后重试。"
+    }
+  },
+  "sponsors": {
+    "title": "赞助方与支持者 — {siteName}",
+    "description": "支持保护区并让本项目成为可能的个人与机构。",
+    "h1": "赞助方与支持者",
+    "intro": "这个项目得以实现，离不开相信它的个人与机构。我们将在此致谢所有支持者。",
+    "listHeading": "支持我们的人",
+    "items": ["赞助方 1", "赞助方 2", "赞助方 3"]
+  },
+  "footer": {
+    "text": "动物与植物保护区"
+  }
+}

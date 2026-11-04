@@ -1,0 +1,68 @@
+{
+  "htmlLang": "ko",
+  "hreflang": "ko",
+  "name": "한국어",
+  "skip": "본문으로 건너뛰기",
+  "external": "(새 탭에서 열림)",
+  "required": "필수",
+  "nav": {
+    "label": "주요 탐색",
+    "menu": "메뉴",
+    "home": "홈",
+    "volunteer": "도움 주기",
+    "sponsors": "후원사"
+  },
+  "lang": {
+    "button": "언어",
+    "list": "언어 선택",
+    "current": "(현재 언어)"
+  },
+  "home": {
+    "title": "{siteName} — 동물과 식물의 보호구역",
+    "description": "동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다. 모든 사람이 둘러볼 수 있도록 설계되었습니다.",
+    "tagline": "동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다.",
+    "introHeading": "우리는 누구인가요",
+    "intro": "이곳에서 우리는 돌보고 보호하며, 찾아오시는 모든 분과 그 여정을 나눕니다.",
+    "linksHeading": "참여 방법",
+    "linkVolunteer": "자원봉사로 돕는 방법",
+    "linkVolunteerDesc": "시간, 지식, 손길로 보호구역을 돌봅니다.",
+    "linkSponsors": "프로젝트를 지원하는 분들",
+    "linkSponsorsDesc": "이곳을 가능하게 하는 사람들과 단체입니다."
+  },
+  "volunteer": {
+    "title": "도움 주는 방법 — {siteName}",
+    "description": "자원봉사자로 보호구역에 참여하세요. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.",
+    "h1": "도움 주는 방법",
+    "intro": "자원봉사자로 참여하여 시간, 지식 또는 손길을 보호구역 돌봄에 보탤 수 있습니다. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.",
+    "form": {
+      "heading": "자원봉사 신청",
+      "requiredNote": "모든 항목은 필수입니다.",
+      "name": "이름",
+      "email": "이메일",
+      "help": "어떻게 돕고 싶으신가요",
+      "helpChoose": "선택하세요",
+      "helpTime": "시간을 내어",
+      "helpKnowledge": "지식을 나누어",
+      "helpHands": "직접 손으로",
+      "message": "메시지",
+      "submit": "메시지 보내기",
+      "sending": "보내는 중…",
+      "success": "감사합니다. 메시지를 받았으며 곧 연락드리겠습니다.",
+      "summary": "양식을 보낼 수 없습니다. 오류가 표시된 항목을 확인해 주세요.",
+      "errRequired": "필수 항목입니다.",
+      "errEmail": "올바른 이메일 주소를 입력해 주세요. 예: name@example.com",
+      "errNetwork": "메시지를 보내지 못했습니다. 연결을 확인하고 다시 시도해 주세요."
+    }
+  },
+  "sponsors": {
+    "title": "후원사 및 지원자 — {siteName}",
+    "description": "보호구역을 지원하고 프로젝트를 가능하게 하는 사람들과 단체입니다.",
+    "h1": "후원사 및 지원자",
+    "intro": "이 프로젝트는 이를 믿는 사람들과 단체 덕분에 가능합니다. 이곳에서 우리를 지원하는 분들을 소개합니다.",
+    "listHeading": "우리를 지원하는 분들",
+    "items": ["후원사 1", "후원사 2", "후원사 3"]
+  },
+  "footer": {
+    "text": "동물과 식물의 보호구역"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "htmlLang": "en",
+  "hreflang": "en",
+  "name": "English",
+  "skip": "Skip to content",
+  "external": "(opens in a new tab)",
+  "required": "required",
+  "nav": {
+    "label": "Main navigation",
+    "menu": "Menu",
+    "home": "Home",
+    "volunteer": "How to help",
+    "sponsors": "Sponsors"
+  },
+  "lang": {
+    "button": "Language",
+    "list": "Choose a language",
+    "current": "(current language)"
+  },
+  "home": {
+    "title": "{siteName} — A sanctuary for animals and plants",
+    "description": "A sanctuary where animals and plants live together and complete their life cycle. Designed to be visited by everyone.",
+    "tagline": "A sanctuary where animals and plants live together and complete their life cycle.",
+    "introHeading": "Who we are",
+    "intro": "Here we care, protect, and share that journey with everyone who visits us.",
+    "linksHeading": "How to take part",
+    "linkVolunteer": "How you can help as a volunteer",
+    "linkVolunteerDesc": "Time, knowledge, or hands for the care of the sanctuary.",
+    "linkSponsors": "Who supports the project",
+    "linkSponsorsDesc": "People and organizations that make this place possible."
+  },
+  "volunteer": {
+    "title": "How you can help — {siteName}",
+    "description": "Join the sanctuary as a volunteer: tell us how you would like to help and we will contact you.",
+    "h1": "How you can help",
+    "intro": "You can join us as a volunteer and dedicate time, knowledge, or hands to the care of the sanctuary. Tell us how you would like to help and we will contact you.",
+    "form": {
+      "heading": "Volunteer form",
+      "requiredNote": "All fields are required.",
+      "name": "Name",
+      "email": "Email address",
+      "help": "How would you like to help",
+      "helpChoose": "Choose an option",
+      "helpTime": "By giving time",
+      "helpKnowledge": "By sharing knowledge",
+      "helpHands": "With hands-on work",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thank you. We received your message and will contact you soon.",
+      "summary": "The form could not be sent. Please check the fields marked with an error.",
+      "errRequired": "This field is required.",
+      "errEmail": "Enter a valid email address, for example name@example.com.",
+      "errNetwork": "The message could not be sent. Check your connection and try again."
+    }
+  },
+  "sponsors": {
+    "title": "Sponsors and supporters — {siteName}",
+    "description": "People and organizations that support the sanctuary and make the project possible.",
+    "h1": "Sponsors and supporters",
+    "intro": "This project is possible thanks to people and organizations that believe in it. Here we will acknowledge those who support us.",
+    "listHeading": "Those who support us",
+    "items": ["Sponsor 1", "Sponsor 2", "Sponsor 3"]
+  },
+  "footer": {
+    "text": "A sanctuary for animals and plants"
+  }
+}
