@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>捐赠 — Inca Braille Trail</title>
+  <meta name="description" content="捐赠和赞助让 Inca Braille Trail 对访客免费开放。付款通过 PayPal 完成。捐赠者可选择公开姓名、金额、两者都公开,或都不公开。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/zh/donations/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="捐赠 — Inca Braille Trail">
+  <meta property="og:description" content="捐赠和赞助让 Inca Braille Trail 对访客免费开放。付款通过 PayPal 完成。捐赠者可选择公开姓名、金额、两者都公开,或都不公开。">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/zh/donations/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body class="pagina-donations">
+  <a class="pular" href="#contenido">跳到正文</a>
+
+  <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/zh/">Inca Braille Trail</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">菜单</button>
+
+      <nav aria-label="主导航">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/zh/">首页</a></li>
+          <li><a class="maiusculas" href="/zh/volunteer/">志愿者</a></li>
+          <li><a class="maiusculas" href="/zh/donations/" aria-current="page">捐赠</a></li>
+          <li><a class="maiusculas" href="/zh/audio-video/">媒体</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">语言: </span>简体中文
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="选择语言">
+              <li><a href="/donations/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/donations/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/donations/" lang="pt-BR" hreflang="pt">Português</a></li>
+              <li><a href="/ko/donations/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/donations/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/donations/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">简体中文 <span class="oculto-visual">(当前语言)</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- donations.html — doações: regra de publicação e formulário da escolha; o pagamento acontece no PayPal, fora do site -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">捐赠</h1>
+        <p class="entra atraso-1">捐赠和赞助让步道对访客免费开放。付款通过 PayPal 完成,而非在本网站上。</p>
+      </div>
+    </div>
+
+    <div class="conteudo form-direto entra atraso-2">
+      <h2 class="secao-titulo">捐赠表单</h2>
+      <p>前往 PayPal 之前,请选择可以公开的内容。选择完成后会出现 PayPal 按钮。</p>
+
+      <!-- O formulário não tem botão próprio: quando fica válido, o controle do PayPal aparece. A escolha vai ao Formspree ao clicar nele. -->
+      <form
+            id="form-doacao"
+            class="formulario"
+            method="POST"
+            data-formspree=""
+            data-paypal=""
+            data-msg-required="此字段为必填。"
+            data-msg-paypal="继续前往 PayPal"
+            data-msg-external="(在新标签页中打开)"
+          >
+            <input type="hidden" name="_language" value="zh-Hans">
+
+            <fieldset class="campo">
+              <legend>我们可以公开什么? <span class="req">(必填)</span></legend>
+              <div class="opcoes">
+                <label class="opcao"><input type="radio" name="publish" value="name" required> <span>公开我的姓名</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="amount" required> <span>公开金额</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="both" required> <span>公开我的姓名和金额</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="none" required> <span>都不公开</span></label>
+              </div>
+            </fieldset>
+
+            <div class="campo" id="campo-nome" hidden>
+              <label for="d-nome">要公开的姓名 <span class="req">(必填)</span></label>
+              <input id="d-nome" name="name" type="text" autocomplete="name" aria-describedby="d-nome-erro">
+              <p id="d-nome-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo" id="campo-valor" hidden>
+              <label for="d-valor">要公开的金额 <span class="req">(必填)</span></label>
+              <p id="d-valor-dica" class="dica">请注明货币,例如 50 USD。</p>
+              <input id="d-valor" name="amount" type="text" inputmode="decimal" aria-describedby="d-valor-dica d-valor-erro">
+              <p id="d-valor-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="hp" aria-hidden="true">
+              <label for="d-gotcha">请将此栏留空</label>
+              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div id="paypal" class="paypal" aria-live="polite" hidden></div>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">联系方式</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>地点</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, 印加圣谷, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">打开地图 <span class="externo">(在新标签页中打开)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>电话与 WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">通过 WhatsApp 发送消息 <span class="externo">(在新标签页中打开)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>参观</dt>
+            <dd>需提前预约<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>社交媒体</dt>
+            <dd>Instagram: 待确认<br>Facebook: 待确认</dd>
+          </div>
+          <div>
+            <dt>电子邮箱</dt>
+            <dd><ul><li><span class="email">donations@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 为盲人和低视力人士打造的感官步道</p>
+    <p>Azul Tika, Pumawanka, Urubamba, 印加圣谷, Cusco, Peru · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

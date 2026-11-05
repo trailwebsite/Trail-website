@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
-<html lang="pt">
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Como você pode ajudar — [Nombre del santuario]</title>
-  <meta name="description" content="Junte-se ao santuário como voluntário: conte como gostaria de ajudar e entraremos em contato.">
+  <title>Voluntariado — Inca Braille Trail</title>
+  <meta name="description" content="Voluntários são necessários com urgência: abrir e moldar trilhas, mover pedras, jardinagem e manutenção do terreno. Refeições incluídas; hospedagem para quem trabalha o dia inteiro.">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://PROYECTO.pages.dev/pt/volunteer/">
-  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
-  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
-  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
-  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
-  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
-  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="[Nombre del santuario]">
-  <meta property="og:title" content="Como você pode ajudar — [Nombre del santuario]">
-  <meta property="og:description" content="Junte-se ao santuário como voluntário: conte como gostaria de ajudar e entraremos em contato.">
-  <meta property="og:url" content="https://PROYECTO.pages.dev/pt/volunteer/">
-  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Voluntariado — Inca Braille Trail">
+  <meta property="og:description" content="Voluntários são necessários com urgência: abrir e moldar trilhas, mover pedras, jardinagem e manutenção do terreno. Refeições incluídas; hospedagem para quem trabalha o dia inteiro.">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/pt/volunteer/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
   <meta property="og:locale" content="pt_BR">
   <meta name="theme-color" content="#1b5e20">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -28,31 +28,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
+<body class="pagina-volunteer">
   <a class="pular" href="#contenido">Pular para o conteúdo</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca maiusculas" href="/pt/">[Nombre del santuario]</a>
+      <a class="marca maiusculas" href="/pt/">Inca Braille Trail</a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
 
       <nav aria-label="Navegação principal">
         <ul class="nav-lista" id="menu-principal">
           <li><a class="maiusculas" href="/pt/">Início</a></li>
-          <li><a class="maiusculas" href="/pt/volunteer/" aria-current="page">Como ajudar</a></li>
-          <li><a class="maiusculas" href="/pt/sponsors/">Patrocinadores</a></li>
+          <li><a class="maiusculas" href="/pt/volunteer/" aria-current="page">Voluntariado</a></li>
+          <li><a class="maiusculas" href="/pt/donations/">Doações</a></li>
+          <li><a class="maiusculas" href="/pt/audio-video/">Mídia</a></li>
           <li class="idioma">
             <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
               <span class="oculto-visual">Idioma: </span>Português
             </button>
             <ul class="idioma-lista" id="lista-idiomas" aria-label="Escolher idioma">
-              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
-              <li><a href="/en/volunteer/" lang="en" hreflang="en">English</a></li>
-              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt" aria-current="true">Português <span class="oculto-visual">(idioma atual)</span></a></li>
+              <li><a href="/volunteer/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/volunteer/" lang="pt-BR" hreflang="pt" aria-current="true">Português <span class="oculto-visual">(idioma atual)</span></a></li>
               <li><a href="/ko/volunteer/" lang="ko" hreflang="ko">한국어</a></li>
               <li><a href="/ja/volunteer/" lang="ja" hreflang="ja">日本語</a></li>
-              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
             </ul>
           </li>
         </ul>
@@ -61,78 +63,135 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+<!-- volunteer.html — voluntariado: texto do cliente, espaço para vídeo/foto/áudio dos voluntários e formulário ao Formspree -->
     <div class="pagina-topo">
       <div class="conteudo">
-        <h1 class="entra">Como você pode ajudar</h1>
-        <p class="entra atraso-1">Você pode se juntar como voluntário e dedicar tempo, conhecimento ou mãos ao cuidado do santuário. Conte para nós como gostaria de ajudar e entraremos em contato.</p>
+        <h1 class="entra">Voluntariado</h1>
+        <div class="intro entra atraso-1">
+          <p>Voluntários são necessários com urgência! Ajude a dar vida ao Inca Braille Trail criando caminhos acolhedores e cuidando do nosso belo terreno.</p>
+          <p>As tarefas incluem abrir e moldar trilhas, mover pedras, jardinagem e manutenção geral do terreno. Sua contribuição vai ajudar a abrir esta experiência sensorial aos visitantes cegos e com baixa visão e seus acompanhantes.</p>
+          <ul class="lista"><li>Voluntários por dia: almoço incluído.</li><li>Voluntários hospedados conosco e trabalhando dias inteiros: hospedagem, café da manhã, almoço e jantar incluídos.</li><li>Transporte: disponível a partir de um ponto de encontro combinado.</li></ul>
+          <p>Entre em contato para combinar datas e encontrar tarefas adequadas às suas habilidades.</p>
+        </div>
       </div>
     </div>
 
-    <section class="conteudo" aria-labelledby="form-titulo">
-      <h2 id="form-titulo" class="entra atraso-2">Formulário de voluntariado</h2>
-
-      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
-      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
-
-      <form
-        id="form-voluntario"
-        class="formulario entra atraso-3"
-        action="https://formspree.io/f/FORMSPREE_ID"
-        method="POST"
-        data-msg-required="Este campo é obrigatório."
-        data-msg-email="Digite um e-mail válido, por exemplo nome@exemplo.com."
-        data-msg-network="Não foi possível enviar a mensagem. Verifique sua conexão e tente de novo."
-        data-msg-summary="Não foi possível enviar o formulário. Verifique os campos marcados com erro."
-        data-msg-sending="Enviando…"
-        data-msg-success="Obrigado. Recebemos sua mensagem e entraremos em contato em breve."
-      >
-        <p class="nota-obrigatorio">Todos os campos são obrigatórios.</p>
-        <input type="hidden" name="_language" value="pt">
-
-        <div class="campo">
-          <label for="f-nome">Nome <span class="req">(obrigatório)</span></label>
-          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
-          <p id="f-nome-erro" class="campo-erro" hidden></p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-2-botao" aria-expanded="true" aria-controls="caixa-volunteer-2">Conheça nossos voluntários que trabalham na Braille Trail</button></h2>
+        <div class="caixa-painel" id="caixa-volunteer-2" role="region" aria-labelledby="caixa-volunteer-2-botao">
+          <p>Vídeo, fotos e áudio das pessoas que trabalham na trilha serão publicados aqui.</p>
+          <!-- Lugares vazios. Cada um vira um player ou uma galeria quando o arquivo chegar. Sem arquivo, só o aviso. -->
+          <ul class="vazios">
+            <li><strong>Vídeo</strong><span>Ainda não recebido.</span></li>
+            <li><strong>Fotos</strong><span>Ainda não recebido.</span></li>
+            <li><strong>Áudio</strong><span>Ainda não recebido.</span></li>
+          </ul>
         </div>
+      </section>
 
-        <div class="campo">
-          <label for="f-email">E-mail <span class="req">(obrigatório)</span></label>
-          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
-          <p id="f-email-erro" class="campo-erro" hidden></p>
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-3-botao" aria-expanded="true" aria-controls="caixa-volunteer-3">Formulário de voluntariado</button></h2>
+        <div class="caixa-painel" id="caixa-volunteer-3" role="region" aria-labelledby="caixa-volunteer-3-botao">
+          <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+          <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+          <form
+            id="form-voluntario"
+            class="formulario"
+            action="https://formspree.io/f/FORMSPREE_ID"
+            method="POST"
+            data-ativo="false"
+            data-msg-required="Este campo é obrigatório."
+            data-msg-email="Digite um e-mail válido, por exemplo nome@exemplo.com."
+            data-msg-network="Não foi possível enviar a mensagem. Verifique sua conexão e tente de novo."
+            data-msg-summary="Não foi possível enviar o formulário. Confira os campos marcados com erro."
+            data-msg-sending="Enviando…"
+            data-msg-success="Obrigado. Recebemos sua mensagem e entraremos em contato em breve."
+            data-msg-inactive="Este formulário ainda não está ativo. Vai funcionar depois que o dono do projeto confirmar o e-mail do Formspree, numa caixa à qual quem constrói o site não tem acesso. Destino previsto: volunteers@incabrailletrail.com."
+          >
+            <p class="nota-obrigatorio">Todos os campos são obrigatórios.</p>
+            <input type="hidden" name="_language" value="pt-BR">
+
+            <div class="campo">
+              <label for="f-nome">Nome <span class="req">(obrigatório)</span></label>
+              <input id="f-nome" name="name" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+              <p id="f-nome-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-email">E-mail <span class="req">(obrigatório)</span></label>
+              <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+              <p id="f-email-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-tarefa">Tarefa com a qual você gostaria de ajudar <span class="req">(obrigatório)</span></label>
+              <select id="f-tarefa" name="task" required aria-describedby="f-tarefa-erro">
+                <option value="">Escolha uma tarefa</option>
+                <option value="clearing and shaping trails">Abrir e moldar trilhas</option>
+                <option value="moving stones">Mover pedras</option>
+                <option value="gardening">Jardinagem</option>
+                <option value="general grounds maintenance">Manutenção geral do terreno</option>
+              </select>
+              <p id="f-tarefa-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-mensagem">Mensagem <span class="req">(obrigatório)</span></label>
+              <textarea id="f-mensagem" name="message" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+              <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-gotcha">Deixe este campo vazio</label>
+              <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="botao maiusculas" type="submit">Enviar mensagem</button>
+          </form>
         </div>
-
-        <div class="campo">
-          <label for="f-ajuda">Como você gostaria de ajudar <span class="req">(obrigatório)</span></label>
-          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
-            <option value="">Escolha uma opção</option>
-            <option value="tiempo">Dedicando tempo</option>
-            <option value="conocimientos">Compartilhando conhecimento</option>
-            <option value="manos">Com trabalho manual</option>
-          </select>
-          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <div class="campo">
-          <label for="f-mensagem">Mensagem <span class="req">(obrigatório)</span></label>
-          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
-          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
-        <div class="hp" aria-hidden="true">
-          <label for="f-gotcha">Deja este campo vacío</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <button class="botao maiusculas" type="submit">Enviar mensagem</button>
-      </form>
-    </section>
+      </section>
+    </div>
 
   </main>
 
   <footer class="rodape">
-    <p><strong>[Nombre del santuario]</strong> · Santuário de animais e plantas · © 2026</p>
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">Contato</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>Onde</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, Vale Sagrado dos Incas, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">Abrir o mapa <span class="externo">(abre em nova aba)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Telefone e WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp <span class="externo">(abre em nova aba)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Visitas</dt>
+            <dd>Somente com hora marcada<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>Redes sociais</dt>
+            <dd>Instagram: a confirmar<br>Facebook: a confirmar</dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · Uma trilha sensorial para pessoas cegas e com baixa visão</p>
+    <p>Azul Tika, Pumawanka, Urubamba, Vale Sagrado dos Incas, Cusco, Peru · © 2026</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

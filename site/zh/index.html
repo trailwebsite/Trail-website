@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
 <html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Nombre del santuario] — 动物与植物保护区</title>
-  <meta name="description" content="一个动物与植物共同生活、完成生命周期的保护区。为每一位来访者而设计。">
+  <title>Inca Braille Trail — 为盲人和低视力人士打造的感官步道,印加圣谷</title>
+  <meta name="description" content="位于 Peru Cusco 印加圣谷的一条教育性感官步道,正在为盲人和低视力人士及其家人、朋友和陪伴者开发中。">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://PROYECTO.pages.dev/zh/">
-  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/">
-  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/">
-  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/">
-  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/">
-  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/">
-  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/zh/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="[Nombre del santuario]">
-  <meta property="og:title" content="[Nombre del santuario] — 动物与植物保护区">
-  <meta property="og:description" content="一个动物与植物共同生活、完成生命周期的保护区。为每一位来访者而设计。">
-  <meta property="og:url" content="https://PROYECTO.pages.dev/zh/">
-  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Inca Braille Trail — 为盲人和低视力人士打造的感官步道,印加圣谷">
+  <meta property="og:description" content="位于 Peru Cusco 印加圣谷的一条教育性感官步道,正在为盲人和低视力人士及其家人、朋友和陪伴者开发中。">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/zh/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
   <meta property="og:locale" content="zh_CN">
   <meta name="theme-color" content="#1b5e20">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -28,31 +28,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
-  <a class="pular" href="#contenido">跳转到正文</a>
+<body class="pagina-home">
+  <a class="pular" href="#contenido">跳到正文</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca maiusculas" href="/zh/">[Nombre del santuario]</a>
+      <a class="marca maiusculas" href="/zh/">Inca Braille Trail</a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">菜单</button>
 
       <nav aria-label="主导航">
         <ul class="nav-lista" id="menu-principal">
           <li><a class="maiusculas" href="/zh/" aria-current="page">首页</a></li>
-          <li><a class="maiusculas" href="/zh/volunteer/">如何帮助</a></li>
-          <li><a class="maiusculas" href="/zh/sponsors/">赞助方</a></li>
+          <li><a class="maiusculas" href="/zh/volunteer/">志愿者</a></li>
+          <li><a class="maiusculas" href="/zh/donations/">捐赠</a></li>
+          <li><a class="maiusculas" href="/zh/audio-video/">媒体</a></li>
           <li class="idioma">
             <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
-              <span class="oculto-visual">语言: </span>中文
+              <span class="oculto-visual">语言: </span>简体中文
             </button>
             <ul class="idioma-lista" id="lista-idiomas" aria-label="选择语言">
-              <li><a href="/" lang="es" hreflang="es">Español</a></li>
-              <li><a href="/en/" lang="en" hreflang="en">English</a></li>
-              <li><a href="/pt/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/" lang="pt-BR" hreflang="pt">Português</a></li>
               <li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li>
               <li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li>
-              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">中文 <span class="oculto-visual">(当前语言)</span></a></li>
+              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">简体中文 <span class="oculto-visual">(当前语言)</span></a></li>
             </ul>
           </li>
         </ul>
@@ -61,46 +63,94 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-<!-- home.html — página inicial: hero com nome, introdução e dois links descritivos -->
-    <!--
-      Hero: hoje usa cor sólida. Quando houver foto, definir --hero-image no CSS
-      e adicionar a classe "com-foto" a esta div para ligar a camada escura.
-      Se a foto informar algo, usar <img> com alt descritivo; se for só fundo, deixar como background.
-    -->
+<!-- home.html — página inicial: cartaz do cliente no hero, h1 só para leitor de tela e três caixas de texto -->
     <div class="hero">
       <div class="hero-interno">
-        <h1 class="hero-titulo maiusculas entra">[Nombre del santuario]</h1>
-        <p class="hero-frase entra atraso-1">一个动物与植物共同生活、完成生命周期的保护区。</p>
+        <h1 class="oculto-visual">Inca Braille Trail</h1>
+        <picture class="hero-cartaz entra">
+          <source type="image/webp" srcset="/img/cartaz-inca-braille-trail.webp">
+          <img src="/img/cartaz-inca-braille-trail.jpg" width="921" height="478" alt="项目海报。一位身穿斗篷、头戴安第斯帽子的人手持白手杖,沿着带绳索扶手的石板小路行走,两旁是印加石墙和一座石拱门,远处是安第斯梯田和白雪覆盖的群山。路边的石牌上刻有盲文点。海报上的文字: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. 石牌上的文字: INCA TRAIL &amp; Braille." fetchpriority="high">
+        </picture>
+        <p class="hero-frase entra atraso-1">位于 Peru Cusco 印加圣谷,为盲人和低视力人士打造的教育性感官步道。</p>
       </div>
     </div>
 
-    <section class="conteudo" aria-labelledby="intro-titulo">
-      <h2 id="intro-titulo" class="entra atraso-2">关于我们</h2>
-      <p class="entra atraso-3">在这里，我们照料、保护，并与每一位来访者分享这段旅程。</p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-1-botao" aria-expanded="true" aria-controls="caixa-home-1">什么是 Inca Braille Trail?</button></h2>
+      <div class="caixa-painel" id="caixa-home-1" role="region" aria-labelledby="caixa-home-1-botao">
+        <p class="destaque">一段穿越自然、教育与感官的旅程</p>
+        <p>Inca Braille Trail 位于美丽的印加圣谷(Cusco, Peru),是一项专为盲人和低视力人士及其家人、朋友和陪伴者开发的教育性感官体验。</p>
+        <p>我们的愿景是创造一个温馨的地方,让访客能够亲近自然、学习、探索并分享有意义的经历,并在赞助者和捐赠者的支持下免费开放。</p>
+        <p>这条步道旨在通过触觉、嗅觉、听觉和味觉唤醒感官。访客将发现植物的质感、香草与花朵的芬芳、自然的声音,以及自然世界带来的种种美妙体验。</p>
+      </div>
     </section>
-
-    <section class="conteudo conteudo-suave" aria-labelledby="participar-titulo">
-      <h2 id="participar-titulo" class="entra atraso-4">如何参与</h2>
-      <ul class="blocos entra atraso-5">
-        <li>
-          <a class="bloco" href="/zh/volunteer/">
-            <span class="bloco-titulo">如何以志愿者身份提供帮助</span>
-            <span class="bloco-desc">以时间、知识或双手照料保护区。</span>
-          </a>
-        </li>
-        <li>
-          <a class="bloco" href="/zh/sponsors/">
-            <span class="bloco-titulo">支持本项目的人</span>
-            <span class="bloco-desc">让这个地方成为可能的个人与机构。</span>
-          </a>
-        </li>
-      </ul>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-2-botao" aria-expanded="true" aria-controls="caixa-home-2">生命的循环 – 向 Pachamama 学习</button></h2>
+      <div class="caixa-painel" id="caixa-home-2" role="region" aria-labelledby="caixa-home-2-botao">
+        <p>我们理念的核心,是对大地母亲 Pachamama 的敬意,以及对万物相互关联的理解。</p>
+        <p>通过我们的教育旅程“生命的循环”,访客将发现植物的需求与我们自身的需求是多么相似。</p>
+        <p>一粒小小的种子需要养分、水、温暖和照料才能生长,正如我们需要营养的食物、洁净的水、阳光和健康的环境才能茁壮成长。</p>
+        <p>植物从健康的土壤中汲取养分,从阳光中获取能量;而我们则依靠植物生产的食物获得自身的能量、成长和福祉。</p>
+        <p class="destaque">健康的土壤滋养健康的植物,健康的植物滋养健康的人。</p>
+        <p>动物在这一循环中同样不可或缺。从为花朵授粉的蜜蜂,到传播种子的鸟儿,再到提供天然肥料、让土壤更肥沃的农场动物,每一种生灵都在为自然的平衡贡献力量。</p>
+        <p>这些养分回归大地,帮助新的植物生长,完成了连接植物、动物与人的美丽循环。</p>
+        <p>在旅程中,访客将了解安第斯传统农耕和古代印加农耕,以及现代可持续农业。我们强调保存本土种子、堆肥、保护生物多样性,以及不依赖有害农药种植营养食物的重要性。</p>
+        <p>我们的目标是证明:爱护大地、生产健康食物可以是简单、可持续且人人可及的。</p>
+      </div>
     </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-3-botao" aria-expanded="true" aria-controls="caixa-home-3">人人相连的地方 – Ayni 的精神</button></h2>
+      <div class="caixa-painel" id="caixa-home-3" role="region" aria-labelledby="caixa-home-3-botao">
+        <p>Inca Braille Trail 的核心是古老的安第斯原则 Ayni,意为互惠——相信通过给予、接受和互相支持,我们能建立更坚强、更有同情心的社区。</p>
+        <p>我们的步道不只是一次教育体验。它是盲人和低视力人士及其家人、朋友和陪伴者相聚、分享经历、建立友谊、庆祝生活的地方。</p>
+        <p>我们也希望鼓励视力正常的访客更好地理解视障人士日常面对的挑战,培养更多的认识、同理心和尊重。</p>
+        <p>通过共同的经历,我们希望人们认识到:每个人都有宝贵的东西可以给予,我们都能从彼此身上学到东西。</p>
+        <p>正如我们滋养大地、大地滋养我们,通过善意、同情和互惠,我们彼此滋养。</p>
+        <p class="destaque">这就是 Ayni 的精神,也是 Inca Braille Trail 的心。</p>
+      </div>
+    </section>
+    </div>
 
   </main>
 
   <footer class="rodape">
-    <p><strong>[Nombre del santuario]</strong> · 动物与植物保护区 · © 2026</p>
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">联系方式</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>地点</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, 印加圣谷, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">打开地图 <span class="externo">(在新标签页中打开)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>电话与 WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">通过 WhatsApp 发送消息 <span class="externo">(在新标签页中打开)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>参观</dt>
+            <dd>需提前预约<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>社交媒体</dt>
+            <dd>Instagram: 待确认<br>Facebook: 待确认</dd>
+          </div>
+          <div>
+            <dt>电子邮箱</dt>
+            <dd><ul><li><span class="email">contact@incabrailletrail.com</span></li>
+              <li><span class="email">bookings@incabrailletrail.com</span></li>
+              <li><span class="email">info@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 为盲人和低视力人士打造的感官步道</p>
+    <p>Azul Tika, Pumawanka, Urubamba, 印加圣谷, Cusco, Peru · © 2026</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

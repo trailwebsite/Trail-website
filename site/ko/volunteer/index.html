@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>도움 주는 방법 — [Nombre del santuario]</title>
-  <meta name="description" content="자원봉사자로 보호구역에 참여하세요. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.">
+  <title>자원봉사 — Inca Braille Trail</title>
+  <meta name="description" content="자원봉사자가 시급히 필요합니다: 탐방로 정비, 돌 옮기기, 정원 가꾸기, 부지 관리. 식사 제공, 종일 봉사자는 숙소 제공.">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://PROYECTO.pages.dev/ko/volunteer/">
-  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
-  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
-  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
-  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
-  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
-  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="[Nombre del santuario]">
-  <meta property="og:title" content="도움 주는 방법 — [Nombre del santuario]">
-  <meta property="og:description" content="자원봉사자로 보호구역에 참여하세요. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.">
-  <meta property="og:url" content="https://PROYECTO.pages.dev/ko/volunteer/">
-  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="자원봉사 — Inca Braille Trail">
+  <meta property="og:description" content="자원봉사자가 시급히 필요합니다: 탐방로 정비, 돌 옮기기, 정원 가꾸기, 부지 관리. 식사 제공, 종일 봉사자는 숙소 제공.">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/ko/volunteer/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
   <meta property="og:locale" content="ko_KR">
   <meta name="theme-color" content="#1b5e20">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -28,31 +28,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
+<body class="pagina-volunteer">
   <a class="pular" href="#contenido">본문으로 건너뛰기</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca maiusculas" href="/ko/">[Nombre del santuario]</a>
+      <a class="marca maiusculas" href="/ko/">Inca Braille Trail</a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">메뉴</button>
 
-      <nav aria-label="주요 탐색">
+      <nav aria-label="주 메뉴">
         <ul class="nav-lista" id="menu-principal">
           <li><a class="maiusculas" href="/ko/">홈</a></li>
-          <li><a class="maiusculas" href="/ko/volunteer/" aria-current="page">도움 주기</a></li>
-          <li><a class="maiusculas" href="/ko/sponsors/">후원사</a></li>
+          <li><a class="maiusculas" href="/ko/volunteer/" aria-current="page">자원봉사</a></li>
+          <li><a class="maiusculas" href="/ko/donations/">후원</a></li>
+          <li><a class="maiusculas" href="/ko/audio-video/">미디어</a></li>
           <li class="idioma">
             <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
               <span class="oculto-visual">언어: </span>한국어
             </button>
             <ul class="idioma-lista" id="lista-idiomas" aria-label="언어 선택">
-              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
-              <li><a href="/en/volunteer/" lang="en" hreflang="en">English</a></li>
-              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/volunteer/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/volunteer/" lang="pt-BR" hreflang="pt">Português</a></li>
               <li><a href="/ko/volunteer/" lang="ko" hreflang="ko" aria-current="true">한국어 <span class="oculto-visual">(현재 언어)</span></a></li>
               <li><a href="/ja/volunteer/" lang="ja" hreflang="ja">日本語</a></li>
-              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
             </ul>
           </li>
         </ul>
@@ -61,78 +63,135 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+<!-- volunteer.html — voluntariado: texto do cliente, espaço para vídeo/foto/áudio dos voluntários e formulário ao Formspree -->
     <div class="pagina-topo">
       <div class="conteudo">
-        <h1 class="entra">도움 주는 방법</h1>
-        <p class="entra atraso-1">자원봉사자로 참여하여 시간, 지식 또는 손길을 보호구역 돌봄에 보탤 수 있습니다. 어떻게 돕고 싶은지 알려주시면 연락드리겠습니다.</p>
+        <h1 class="entra">자원봉사</h1>
+        <div class="intro entra atraso-1">
+          <p>자원봉사자가 시급히 필요합니다! 따뜻한 길을 만들고 아름다운 부지를 돌보며 Inca Braille Trail에 생명을 불어넣는 일에 함께해 주세요.</p>
+          <p>작업에는 탐방로 정비와 길 내기, 돌 옮기기, 정원 가꾸기, 부지 전반의 관리가 포함됩니다. 여러분의 기여는 시각장애인과 저시력 방문객, 그리고 동행자에게 이 감각 체험을 여는 데 도움이 됩니다.</p>
+          <ul class="lista"><li>당일 봉사자: 점심 제공.</li><li>숙박하며 종일 일하는 봉사자: 숙소, 아침, 점심, 저녁 제공.</li><li>교통: 합의된 집결 지점에서 이용 가능.</li></ul>
+          <p>날짜를 정하고 능력에 맞는 작업을 찾으려면 연락해 주세요.</p>
+        </div>
       </div>
     </div>
 
-    <section class="conteudo" aria-labelledby="form-titulo">
-      <h2 id="form-titulo" class="entra atraso-2">자원봉사 신청</h2>
-
-      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
-      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
-
-      <form
-        id="form-voluntario"
-        class="formulario entra atraso-3"
-        action="https://formspree.io/f/FORMSPREE_ID"
-        method="POST"
-        data-msg-required="필수 항목입니다."
-        data-msg-email="올바른 이메일 주소를 입력해 주세요. 예: name@example.com"
-        data-msg-network="메시지를 보내지 못했습니다. 연결을 확인하고 다시 시도해 주세요."
-        data-msg-summary="양식을 보낼 수 없습니다. 오류가 표시된 항목을 확인해 주세요."
-        data-msg-sending="보내는 중…"
-        data-msg-success="감사합니다. 메시지를 받았으며 곧 연락드리겠습니다."
-      >
-        <p class="nota-obrigatorio">모든 항목은 필수입니다.</p>
-        <input type="hidden" name="_language" value="ko">
-
-        <div class="campo">
-          <label for="f-nome">이름 <span class="req">(필수)</span></label>
-          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
-          <p id="f-nome-erro" class="campo-erro" hidden></p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-2-botao" aria-expanded="true" aria-controls="caixa-volunteer-2">Braille Trail에서 일하는 우리 자원봉사자들을 만나 보세요</button></h2>
+        <div class="caixa-painel" id="caixa-volunteer-2" role="region" aria-labelledby="caixa-volunteer-2-botao">
+          <p>탐방로에서 일하는 사람들의 비디오, 사진, 오디오가 여기에 게시됩니다.</p>
+          <!-- Lugares vazios. Cada um vira um player ou uma galeria quando o arquivo chegar. Sem arquivo, só o aviso. -->
+          <ul class="vazios">
+            <li><strong>비디오</strong><span>아직 받지 못했습니다.</span></li>
+            <li><strong>사진</strong><span>아직 받지 못했습니다.</span></li>
+            <li><strong>오디오</strong><span>아직 받지 못했습니다.</span></li>
+          </ul>
         </div>
+      </section>
 
-        <div class="campo">
-          <label for="f-email">이메일 <span class="req">(필수)</span></label>
-          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
-          <p id="f-email-erro" class="campo-erro" hidden></p>
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-3-botao" aria-expanded="true" aria-controls="caixa-volunteer-3">자원봉사 신청 양식</button></h2>
+        <div class="caixa-painel" id="caixa-volunteer-3" role="region" aria-labelledby="caixa-volunteer-3-botao">
+          <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+          <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+          <form
+            id="form-voluntario"
+            class="formulario"
+            action="https://formspree.io/f/FORMSPREE_ID"
+            method="POST"
+            data-ativo="false"
+            data-msg-required="이 항목은 필수입니다."
+            data-msg-email="올바른 이메일 주소를 입력하세요. 예: name@example.com"
+            data-msg-network="메시지를 보낼 수 없습니다. 연결을 확인하고 다시 시도해 주세요."
+            data-msg-summary="양식을 보낼 수 없습니다. 오류로 표시된 항목을 확인해 주세요."
+            data-msg-sending="보내는 중…"
+            data-msg-success="감사합니다. 메시지를 받았으며 곧 연락드리겠습니다."
+            data-msg-inactive="이 양식은 아직 활성화되지 않았습니다. 프로젝트 소유자가 사이트 제작자는 접근할 수 없는 받은편지함에서 Formspree 이메일을 확인한 뒤에 작동합니다. 예정 수신처: volunteers@incabrailletrail.com."
+          >
+            <p class="nota-obrigatorio">모든 항목은 필수입니다.</p>
+            <input type="hidden" name="_language" value="ko">
+
+            <div class="campo">
+              <label for="f-nome">이름 <span class="req">(필수)</span></label>
+              <input id="f-nome" name="name" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+              <p id="f-nome-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-email">이메일 주소 <span class="req">(필수)</span></label>
+              <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+              <p id="f-email-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-tarefa">돕고 싶은 작업 <span class="req">(필수)</span></label>
+              <select id="f-tarefa" name="task" required aria-describedby="f-tarefa-erro">
+                <option value="">작업을 선택하세요</option>
+                <option value="clearing and shaping trails">탐방로 정비와 길 내기</option>
+                <option value="moving stones">돌 옮기기</option>
+                <option value="gardening">정원 가꾸기</option>
+                <option value="general grounds maintenance">부지 전반 관리</option>
+              </select>
+              <p id="f-tarefa-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-mensagem">메시지 <span class="req">(필수)</span></label>
+              <textarea id="f-mensagem" name="message" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+              <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-gotcha">이 칸은 비워 두세요</label>
+              <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="botao maiusculas" type="submit">메시지 보내기</button>
+          </form>
         </div>
-
-        <div class="campo">
-          <label for="f-ajuda">어떻게 돕고 싶으신가요 <span class="req">(필수)</span></label>
-          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
-            <option value="">선택하세요</option>
-            <option value="tiempo">시간을 내어</option>
-            <option value="conocimientos">지식을 나누어</option>
-            <option value="manos">직접 손으로</option>
-          </select>
-          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <div class="campo">
-          <label for="f-mensagem">메시지 <span class="req">(필수)</span></label>
-          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
-          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
-        <div class="hp" aria-hidden="true">
-          <label for="f-gotcha">Deja este campo vacío</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <button class="botao maiusculas" type="submit">메시지 보내기</button>
-      </form>
-    </section>
+      </section>
+    </div>
 
   </main>
 
   <footer class="rodape">
-    <p><strong>[Nombre del santuario]</strong> · 동물과 식물의 보호구역 · © 2026</p>
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">연락처</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>위치</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, 잉카 성스러운 계곡, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">지도 열기 <span class="externo">(새 탭에서 열림)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>전화와 WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">WhatsApp으로 메시지 보내기 <span class="externo">(새 탭에서 열림)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>방문</dt>
+            <dd>사전 예약제<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>소셜 미디어</dt>
+            <dd>Instagram: 확인 예정<br>Facebook: 확인 예정</dd>
+          </div>
+          <div>
+            <dt>이메일</dt>
+            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 시각장애인과 저시력인을 위한 감각 탐방로</p>
+    <p>Azul Tika, Pumawanka, Urubamba, 잉카 성스러운 계곡, Cusco, Peru · © 2026</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

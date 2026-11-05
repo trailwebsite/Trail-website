@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Nombre del santuario] — 동물과 식물의 보호구역</title>
-  <meta name="description" content="동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다. 모든 사람이 둘러볼 수 있도록 설계되었습니다.">
+  <title>Inca Braille Trail — 시각장애인과 저시력인을 위한 감각 탐방로, 잉카 성스러운 계곡</title>
+  <meta name="description" content="Peru Cusco의 잉카 성스러운 계곡에서 시각장애인과 저시력인, 그리고 그 가족, 친구, 동행자를 위해 개발 중인 교육적이고 감각적인 탐방로입니다.">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://PROYECTO.pages.dev/ko/">
-  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/">
-  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/">
-  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/">
-  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/">
-  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/">
-  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/ko/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="[Nombre del santuario]">
-  <meta property="og:title" content="[Nombre del santuario] — 동물과 식물의 보호구역">
-  <meta property="og:description" content="동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다. 모든 사람이 둘러볼 수 있도록 설계되었습니다.">
-  <meta property="og:url" content="https://PROYECTO.pages.dev/ko/">
-  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Inca Braille Trail — 시각장애인과 저시력인을 위한 감각 탐방로, 잉카 성스러운 계곡">
+  <meta property="og:description" content="Peru Cusco의 잉카 성스러운 계곡에서 시각장애인과 저시력인, 그리고 그 가족, 친구, 동행자를 위해 개발 중인 교육적이고 감각적인 탐방로입니다.">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/ko/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
   <meta property="og:locale" content="ko_KR">
   <meta name="theme-color" content="#1b5e20">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -28,31 +28,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
+<body class="pagina-home">
   <a class="pular" href="#contenido">본문으로 건너뛰기</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca maiusculas" href="/ko/">[Nombre del santuario]</a>
+      <a class="marca maiusculas" href="/ko/">Inca Braille Trail</a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">메뉴</button>
 
-      <nav aria-label="주요 탐색">
+      <nav aria-label="주 메뉴">
         <ul class="nav-lista" id="menu-principal">
           <li><a class="maiusculas" href="/ko/" aria-current="page">홈</a></li>
-          <li><a class="maiusculas" href="/ko/volunteer/">도움 주기</a></li>
-          <li><a class="maiusculas" href="/ko/sponsors/">후원사</a></li>
+          <li><a class="maiusculas" href="/ko/volunteer/">자원봉사</a></li>
+          <li><a class="maiusculas" href="/ko/donations/">후원</a></li>
+          <li><a class="maiusculas" href="/ko/audio-video/">미디어</a></li>
           <li class="idioma">
             <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
               <span class="oculto-visual">언어: </span>한국어
             </button>
             <ul class="idioma-lista" id="lista-idiomas" aria-label="언어 선택">
-              <li><a href="/" lang="es" hreflang="es">Español</a></li>
-              <li><a href="/en/" lang="en" hreflang="en">English</a></li>
-              <li><a href="/pt/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/" lang="pt-BR" hreflang="pt">Português</a></li>
               <li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어 <span class="oculto-visual">(현재 언어)</span></a></li>
               <li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li>
-              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
             </ul>
           </li>
         </ul>
@@ -61,46 +63,94 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-<!-- home.html — página inicial: hero com nome, introdução e dois links descritivos -->
-    <!--
-      Hero: hoje usa cor sólida. Quando houver foto, definir --hero-image no CSS
-      e adicionar a classe "com-foto" a esta div para ligar a camada escura.
-      Se a foto informar algo, usar <img> com alt descritivo; se for só fundo, deixar como background.
-    -->
+<!-- home.html — página inicial: cartaz do cliente no hero, h1 só para leitor de tela e três caixas de texto -->
     <div class="hero">
       <div class="hero-interno">
-        <h1 class="hero-titulo maiusculas entra">[Nombre del santuario]</h1>
-        <p class="hero-frase entra atraso-1">동물과 식물이 함께 살아가며 생애 주기를 완성하는 보호구역입니다.</p>
+        <h1 class="oculto-visual">Inca Braille Trail</h1>
+        <picture class="hero-cartaz entra">
+          <source type="image/webp" srcset="/img/cartaz-inca-braille-trail.webp">
+          <img src="/img/cartaz-inca-braille-trail.jpg" width="921" height="478" alt="프로젝트 포스터. 판초와 안데스 모자를 쓴 사람이 흰 지팡이를 짚고 밧줄 난간이 있는 돌길을 걷고 있으며, 잉카 돌담과 아치 사이로 안데스 계단식 밭과 눈 덮인 산이 보입니다. 길가의 돌 표지판에는 점자가 새겨져 있습니다. 포스터에는 이렇게 적혀 있습니다: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. 돌 표지판에는 이렇게 적혀 있습니다: INCA TRAIL &amp; Braille." fetchpriority="high">
+        </picture>
+        <p class="hero-frase entra atraso-1">Peru Cusco의 잉카 성스러운 계곡에 있는, 시각장애인과 저시력인을 위한 교육적이고 감각적인 탐방로입니다.</p>
       </div>
     </div>
 
-    <section class="conteudo" aria-labelledby="intro-titulo">
-      <h2 id="intro-titulo" class="entra atraso-2">우리는 누구인가요</h2>
-      <p class="entra atraso-3">이곳에서 우리는 돌보고 보호하며, 찾아오시는 모든 분과 그 여정을 나눕니다.</p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-1-botao" aria-expanded="true" aria-controls="caixa-home-1">Inca Braille Trail이란 무엇인가요?</button></h2>
+      <div class="caixa-painel" id="caixa-home-1" role="region" aria-labelledby="caixa-home-1-botao">
+        <p class="destaque">자연, 교육, 감각을 지나는 여정</p>
+        <p>아름다운 잉카 성스러운 계곡(Cusco, Peru)에 자리한 Inca Braille Trail은 시각장애인과 저시력인, 그리고 그 가족, 친구, 동행자를 위해 특별히 개발 중인 교육적이고 감각적인 체험입니다.</p>
+        <p>우리의 비전은 방문객이 자연을 즐기고, 배우고, 탐험하고, 의미 있는 경험을 나눌 수 있는 따뜻한 공간을 만드는 것입니다. 후원자와 기부의 도움으로 무료로 운영됩니다.</p>
+        <p>이 탐방로는 촉각, 후각, 청각, 미각으로 감각을 일깨우도록 설계되었습니다. 방문객은 식물의 질감, 허브와 꽃의 향기, 자연의 소리, 그리고 자연이 선사하는 수많은 멋진 경험을 발견하게 됩니다.</p>
+      </div>
     </section>
-
-    <section class="conteudo conteudo-suave" aria-labelledby="participar-titulo">
-      <h2 id="participar-titulo" class="entra atraso-4">참여 방법</h2>
-      <ul class="blocos entra atraso-5">
-        <li>
-          <a class="bloco" href="/ko/volunteer/">
-            <span class="bloco-titulo">자원봉사로 돕는 방법</span>
-            <span class="bloco-desc">시간, 지식, 손길로 보호구역을 돌봅니다.</span>
-          </a>
-        </li>
-        <li>
-          <a class="bloco" href="/ko/sponsors/">
-            <span class="bloco-titulo">프로젝트를 지원하는 분들</span>
-            <span class="bloco-desc">이곳을 가능하게 하는 사람들과 단체입니다.</span>
-          </a>
-        </li>
-      </ul>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-2-botao" aria-expanded="true" aria-controls="caixa-home-2">생명의 순환 – Pachamama에게 배우다</button></h2>
+      <div class="caixa-painel" id="caixa-home-2" role="region" aria-labelledby="caixa-home-2-botao">
+        <p>우리 철학의 중심에는 어머니 대지 Pachamama에 대한 존중과, 모든 생명이 서로 이어져 있다는 이해가 있습니다.</p>
+        <p>교육 여정 &#39;생명의 순환&#39;을 통해 방문객은 식물의 필요가 우리의 필요와 얼마나 닮았는지 발견하게 됩니다.</p>
+        <p>작은 씨앗이 자라려면 양분, 물, 온기, 돌봄이 필요합니다. 우리가 건강하게 살아가려면 영양가 있는 음식, 깨끗한 물, 햇빛, 건강한 환경이 필요한 것과 같습니다.</p>
+        <p>식물은 건강한 흙에서 양분을, 햇빛에서 에너지를 얻습니다. 우리는 식물이 만든 먹거리에 기대어 에너지와 성장, 안녕을 얻습니다.</p>
+        <p class="destaque">건강한 흙이 건강한 식물을 기르고, 건강한 식물이 건강한 사람을 먹여 살립니다.</p>
+        <p>동물도 이 순환에서 꼭 필요한 역할을 합니다. 꽃가루를 옮기는 꿀벌, 씨앗을 퍼뜨리는 새, 흙을 기름지게 하는 천연 거름을 주는 농장 동물까지, 모든 생명체가 자연의 균형에 기여합니다.</p>
+        <p>이 양분은 다시 땅으로 돌아가 새 식물이 자라도록 돕고, 식물과 동물과 사람을 잇는 아름다운 순환을 완성합니다.</p>
+        <p>여정을 따라 방문객은 전통 안데스 농법과 고대 잉카 농법을 현대의 지속 가능한 농업과 함께 살펴봅니다. 우리는 토종 씨앗 보존, 퇴비 만들기, 생물 다양성 보호, 그리고 해로운 농약 없이 영양가 있는 먹거리를 기르는 일의 중요성을 강조합니다.</p>
+        <p>우리의 목표는 땅을 돌보고 건강한 먹거리를 생산하는 일이 단순하고 지속 가능하며 누구나 할 수 있는 일임을 보여 주는 것입니다.</p>
+      </div>
     </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-3-botao" aria-expanded="true" aria-controls="caixa-home-3">모두가 이어지는 곳 – Ayni의 정신</button></h2>
+      <div class="caixa-painel" id="caixa-home-3" role="region" aria-labelledby="caixa-home-3-botao">
+        <p>Inca Braille Trail의 중심에는 고대 안데스의 원리 Ayni가 있습니다. Ayni는 호혜, 곧 서로 주고받고 돕는 가운데 더 강하고 따뜻한 공동체가 만들어진다는 믿음을 뜻합니다.</p>
+        <p>우리 탐방로는 교육 체험 그 이상입니다. 시각장애인과 저시력인, 그 가족, 친구, 동행자가 함께 모여 경험을 나누고, 우정을 쌓고, 삶을 축하하는 곳입니다.</p>
+        <p>또한 비장애 방문객이 시각장애인이 겪는 일상의 어려움을 더 잘 이해하고, 더 깊은 인식과 공감, 존중을 키우기를 바랍니다.</p>
+        <p>함께하는 경험을 통해, 누구나 소중한 것을 나눌 수 있고 우리 모두 서로에게 배울 것이 있다는 사실을 깨닫기를 바랍니다.</p>
+        <p>우리가 땅을 돌보고 땅이 우리를 돌보듯, 친절과 연민과 호혜로 우리는 서로를 돌봅니다.</p>
+        <p class="destaque">이것이 Ayni의 정신이며, Inca Braille Trail의 심장입니다.</p>
+      </div>
+    </section>
+    </div>
 
   </main>
 
   <footer class="rodape">
-    <p><strong>[Nombre del santuario]</strong> · 동물과 식물의 보호구역 · © 2026</p>
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">연락처</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>위치</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, 잉카 성스러운 계곡, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">지도 열기 <span class="externo">(새 탭에서 열림)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>전화와 WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">WhatsApp으로 메시지 보내기 <span class="externo">(새 탭에서 열림)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>방문</dt>
+            <dd>사전 예약제<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>소셜 미디어</dt>
+            <dd>Instagram: 확인 예정<br>Facebook: 확인 예정</dd>
+          </div>
+          <div>
+            <dt>이메일</dt>
+            <dd><ul><li><span class="email">contact@incabrailletrail.com</span></li>
+              <li><span class="email">bookings@incabrailletrail.com</span></li>
+              <li><span class="email">info@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 시각장애인과 저시력인을 위한 감각 탐방로</p>
+    <p>Azul Tika, Pumawanka, Urubamba, 잉카 성스러운 계곡, Cusco, Peru · © 2026</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

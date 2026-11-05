@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Nombre del santuario] — 動物と植物のサンクチュアリ</title>
-  <meta name="description" content="動物と植物が共に生き、その生涯をまっとうするサンクチュアリです。すべての人が訪れられるように設計されています。">
+  <title>Inca Braille Trail — 視覚障害者とロービジョンの人のための感覚トレイル、インカの聖なる谷</title>
+  <meta name="description" content="Peru の Cusco、インカの聖なる谷で、視覚障害者とロービジョンの人、そしてその家族、友人、同行者のために開発中の教育的で感覚的なトレイルです。">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://PROYECTO.pages.dev/ja/">
-  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/">
-  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/">
-  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/">
-  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/">
-  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/">
-  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/ja/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="[Nombre del santuario]">
-  <meta property="og:title" content="[Nombre del santuario] — 動物と植物のサンクチュアリ">
-  <meta property="og:description" content="動物と植物が共に生き、その生涯をまっとうするサンクチュアリです。すべての人が訪れられるように設計されています。">
-  <meta property="og:url" content="https://PROYECTO.pages.dev/ja/">
-  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Inca Braille Trail — 視覚障害者とロービジョンの人のための感覚トレイル、インカの聖なる谷">
+  <meta property="og:description" content="Peru の Cusco、インカの聖なる谷で、視覚障害者とロービジョンの人、そしてその家族、友人、同行者のために開発中の教育的で感覚的なトレイルです。">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/ja/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
   <meta property="og:locale" content="ja_JP">
   <meta name="theme-color" content="#1b5e20">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -28,31 +28,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
+<body class="pagina-home">
   <a class="pular" href="#contenido">本文へスキップ</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca maiusculas" href="/ja/">[Nombre del santuario]</a>
+      <a class="marca maiusculas" href="/ja/">Inca Braille Trail</a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">メニュー</button>
 
       <nav aria-label="メインナビゲーション">
         <ul class="nav-lista" id="menu-principal">
           <li><a class="maiusculas" href="/ja/" aria-current="page">ホーム</a></li>
-          <li><a class="maiusculas" href="/ja/volunteer/">支援する</a></li>
-          <li><a class="maiusculas" href="/ja/sponsors/">スポンサー</a></li>
+          <li><a class="maiusculas" href="/ja/volunteer/">ボランティア</a></li>
+          <li><a class="maiusculas" href="/ja/donations/">寄付</a></li>
+          <li><a class="maiusculas" href="/ja/audio-video/">メディア</a></li>
           <li class="idioma">
             <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
               <span class="oculto-visual">言語: </span>日本語
             </button>
             <ul class="idioma-lista" id="lista-idiomas" aria-label="言語を選択">
-              <li><a href="/" lang="es" hreflang="es">Español</a></li>
-              <li><a href="/en/" lang="en" hreflang="en">English</a></li>
-              <li><a href="/pt/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/" lang="pt-BR" hreflang="pt">Português</a></li>
               <li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li>
               <li><a href="/ja/" lang="ja" hreflang="ja" aria-current="true">日本語 <span class="oculto-visual">(現在の言語)</span></a></li>
-              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
             </ul>
           </li>
         </ul>
@@ -61,46 +63,94 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-<!-- home.html — página inicial: hero com nome, introdução e dois links descritivos -->
-    <!--
-      Hero: hoje usa cor sólida. Quando houver foto, definir --hero-image no CSS
-      e adicionar a classe "com-foto" a esta div para ligar a camada escura.
-      Se a foto informar algo, usar <img> com alt descritivo; se for só fundo, deixar como background.
-    -->
+<!-- home.html — página inicial: cartaz do cliente no hero, h1 só para leitor de tela e três caixas de texto -->
     <div class="hero">
       <div class="hero-interno">
-        <h1 class="hero-titulo maiusculas entra">[Nombre del santuario]</h1>
-        <p class="hero-frase entra atraso-1">動物と植物が共に生き、その生涯をまっとうするサンクチュアリです。</p>
+        <h1 class="oculto-visual">Inca Braille Trail</h1>
+        <picture class="hero-cartaz entra">
+          <source type="image/webp" srcset="/img/cartaz-inca-braille-trail.webp">
+          <img src="/img/cartaz-inca-braille-trail.jpg" width="921" height="478" alt="プロジェクトのポスター。ポンチョとアンデスの帽子を身につけた人が白杖を使い、ロープの手すりがある石畳の道を歩いている。インカの石壁とアーチの間から、アンデスの段々畑と雪をいただく山々が見える。道沿いの石の標識には点字が刻まれている。ポスターの文字: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. 石の標識の文字: INCA TRAIL &amp; Braille." fetchpriority="high">
+        </picture>
+        <p class="hero-frase entra atraso-1">Peru の Cusco、インカの聖なる谷にある、視覚障害者とロービジョンの人のための教育的で感覚的なトレイルです。</p>
       </div>
     </div>
 
-    <section class="conteudo" aria-labelledby="intro-titulo">
-      <h2 id="intro-titulo" class="entra atraso-2">私たちについて</h2>
-      <p class="entra atraso-3">私たちはここで命を守り、育み、訪れるすべての方とその歩みを分かち合います。</p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-1-botao" aria-expanded="true" aria-controls="caixa-home-1">Inca Braille Trail とは</button></h2>
+      <div class="caixa-painel" id="caixa-home-1" role="region" aria-labelledby="caixa-home-1-botao">
+        <p class="destaque">自然、学び、感覚をめぐる旅</p>
+        <p>美しいインカの聖なる谷(Cusco, Peru)に位置する Inca Braille Trail は、視覚障害者とロービジョンの人、そしてその家族、友人、同行者のために特別に開発中の、教育的で感覚的な体験です。</p>
+        <p>私たちのビジョンは、訪れる人が自然を楽しみ、学び、探索し、意味のある体験を分かち合える、温かな場所をつくることです。スポンサーと寄付の支えにより、無料で提供します。</p>
+        <p>このトレイルは、触覚、嗅覚、聴覚、味覚を通して感覚を刺激するよう設計されています。訪れる人は、植物の手ざわり、ハーブや花の香り、自然の音、そして自然界が差し出す数多くのすばらしい体験に出会います。</p>
+      </div>
     </section>
-
-    <section class="conteudo conteudo-suave" aria-labelledby="participar-titulo">
-      <h2 id="participar-titulo" class="entra atraso-4">参加する</h2>
-      <ul class="blocos entra atraso-5">
-        <li>
-          <a class="bloco" href="/ja/volunteer/">
-            <span class="bloco-titulo">ボランティアとして支援する方法</span>
-            <span class="bloco-desc">時間、知識、手仕事でサンクチュアリを支えます。</span>
-          </a>
-        </li>
-        <li>
-          <a class="bloco" href="/ja/sponsors/">
-            <span class="bloco-titulo">プロジェクトを支える方々</span>
-            <span class="bloco-desc">この場所を可能にしている人々と団体です。</span>
-          </a>
-        </li>
-      </ul>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-2-botao" aria-expanded="true" aria-controls="caixa-home-2">いのちの循環 – Pachamama から学ぶ</button></h2>
+      <div class="caixa-painel" id="caixa-home-2" role="region" aria-labelledby="caixa-home-2-botao">
+        <p>私たちの理念の中心には、母なる大地 Pachamama への敬意と、すべての生き物はつながっているという理解があります。</p>
+        <p>教育の旅「いのちの循環」を通して、訪れる人は植物の必要とするものが私たち自身のそれとよく似ていることを発見します。</p>
+        <p>小さな種が育つには、養分、水、温かさ、世話が必要です。私たちが健やかに生きるために、栄養のある食べ物、きれいな水、日光、健全な環境が必要なのと同じです。</p>
+        <p>植物は健康な土から養分を、日光からエネルギーを得ます。私たちは植物が生み出す食べ物に頼って、エネルギーと成長と健やかさを得ています。</p>
+        <p class="destaque">健康な土が健康な植物を育て、健康な植物が健康な人を養います。</p>
+        <p>動物もこの循環で欠かせない役割を担っています。花に受粉するミツバチ、種を運ぶ鳥、土を豊かにする天然の堆肥をもたらす家畜まで、すべての生き物が自然のバランスに貢献しています。</p>
+        <p>これらの養分は大地に還り、新しい植物の成長を助け、植物と動物と人をつなぐ美しい循環を完成させます。</p>
+        <p>旅の途中で、訪れる人はアンデスの伝統農法と古代インカの農法を、現代の持続可能な農業とともに学びます。私たちは在来種の種を守ること、堆肥づくり、生物多様性の保護、有害な農薬に頼らず栄養のある食べ物を育てることの大切さを強調します。</p>
+        <p>私たちの目標は、大地を大切にし健康な食べ物を生産することが、シンプルで、持続可能で、誰にでもできることだと示すことです。</p>
+      </div>
     </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-3-botao" aria-expanded="true" aria-controls="caixa-home-3">誰もがつながる場所 – Ayni の精神</button></h2>
+      <div class="caixa-painel" id="caixa-home-3" role="region" aria-labelledby="caixa-home-3-botao">
+        <p>Inca Braille Trail の中心には、古代アンデスの原理 Ayni があります。Ayni は互恵、つまり与え、受け取り、支え合うことで、より強く思いやりのある共同体が生まれるという信念を意味します。</p>
+        <p>私たちのトレイルは教育体験にとどまりません。視覚障害者とロービジョンの人、その家族、友人、同行者が集い、体験を分かち合い、友情を育み、人生を祝う場所です。</p>
+        <p>また、目の見える来訪者が視覚障害のある人の日々の困難をよりよく理解し、より深い気づき、共感、敬意を育むきっかけになることを願っています。</p>
+        <p>共有する体験を通して、誰もが価値あるものを差し出せること、そして私たちは皆、互いから学ぶことがあると気づいてほしいのです。</p>
+        <p>私たちが大地を育み大地が私たちを育むように、やさしさと思いやりと互恵によって、私たちは互いを育みます。</p>
+        <p class="destaque">これが Ayni の精神であり、Inca Braille Trail の心です。</p>
+      </div>
+    </section>
+    </div>
 
   </main>
 
   <footer class="rodape">
-    <p><strong>[Nombre del santuario]</strong> · 動物と植物のサンクチュアリ · © 2026</p>
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">お問い合わせ</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>場所</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, インカの聖なる谷, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">地図を開く <span class="externo">(新しいタブで開きます)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>電話と WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">WhatsApp でメッセージを送る <span class="externo">(新しいタブで開きます)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>見学</dt>
+            <dd>事前予約制<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>SNS</dt>
+            <dd>Instagram: 確認待ち<br>Facebook: 確認待ち</dd>
+          </div>
+          <div>
+            <dt>メール</dt>
+            <dd><ul><li><span class="email">contact@incabrailletrail.com</span></li>
+              <li><span class="email">bookings@incabrailletrail.com</span></li>
+              <li><span class="email">info@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 視覚障害者とロービジョンの人のための感覚トレイル</p>
+    <p>Azul Tika, Pumawanka, Urubamba, インカの聖なる谷, Cusco, Peru · © 2026</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

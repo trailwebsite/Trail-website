@@ -1,4 +1,4 @@
-// build.mjs — gera o site estático em /site: 3 páginas × 6 idiomas, sitemap, robots, headers e ativos
+// build.mjs — gera o site estático em /site: 4 páginas × 6 idiomas, redirects, sitemap, robots, headers e ativos
 import { readFile, writeFile, mkdir, rm, cp, readdir } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -8,20 +8,27 @@ const RAIZ = dirname(fileURLToPath(import.meta.url))
 const SRC = join(RAIZ, 'src')
 const SAIDA = join(RAIZ, 'site')
 
+// inglês na raiz, sem prefixo; os demais idiomas com prefixo
 const IDIOMAS = [
-  { code: 'es', prefix: '' },
-  { code: 'en', prefix: 'en' },
+  { code: 'en', prefix: '' },
+  { code: 'es', prefix: 'es' },
   { code: 'pt', prefix: 'pt' },
   { code: 'ko', prefix: 'ko' },
   { code: 'ja', prefix: 'ja' },
   { code: 'zh', prefix: 'zh' },
 ]
-const PAGINAS = ['home', 'volunteer', 'sponsors']
-const OG_LOCALE = { es: 'es_ES', en: 'en_US', pt: 'pt_BR', ko: 'ko_KR', ja: 'ja_JP', zh: 'zh_CN' }
+const PAGINAS = [
+  { id: 'home', rota: '' },
+  { id: 'volunteer', rota: 'volunteer' },
+  { id: 'donations', rota: 'donations' },
+  { id: 'audiovideo', rota: 'audio-video' },
+]
+const OG_LOCALE = { en: 'en_US', es: 'es_PE', pt: 'pt_BR', ko: 'ko_KR', ja: 'ja_JP', zh: 'zh_CN' }
+const PLACEHOLDERS = { formspreeId: 'FORMSPREE_ID', formspreeDonacoesId: 'FORMSPREE_DONACOES_ID' }
 
 // caminho público — raiz do site, sempre com barra final
 function caminho(idioma, pagina) {
-  const partes = [idioma.prefix, pagina === 'home' ? '' : pagina].filter(Boolean)
+  const partes = [idioma.prefix, pagina.rota].filter(Boolean)
   return partes.length ? `/${partes.join('/')}/` : '/'
 }
 
@@ -45,7 +52,7 @@ function render(template, ctx) {
   })
 }
 
-// interpolar — substitui {siteName} dentro das strings de tradução
+// interpolar — substitui {siteName} e afins dentro das strings de tradução
 function interpolar(valor, vars) {
   if (typeof valor === 'string') return valor.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? vars[k] : m))
   if (Array.isArray(valor)) return valor.map((v) => interpolar(v, vars))
@@ -57,8 +64,8 @@ function interpolar(valor, vars) {
 
 function navHtml(t, idioma, paginaAtual) {
   return PAGINAS.map((p) => {
-    const atual = p === paginaAtual ? ' aria-current="page"' : ''
-    return `<li><a class="maiusculas" href="${caminho(idioma, p)}"${atual}>${escapar(t.nav[p])}</a></li>`
+    const atual = p.id === paginaAtual.id ? ' aria-current="page"' : ''
+    return `<li><a class="maiusculas" href="${caminho(idioma, p)}"${atual}>${escapar(t.nav[p.id])}</a></li>`
   }).join('\n          ')
 }
 
@@ -81,18 +88,106 @@ function alternatesHtml(site, traducoes, pagina) {
   return linhas.join('\n  ')
 }
 
-function sitemapXml(site) {
+function sitemapXml(site, traducoes) {
   const urls = []
   for (const pagina of PAGINAS) {
     for (const idioma of IDIOMAS) {
       const alternates = IDIOMAS.map((alt) =>
-        `    <xhtml:link rel="alternate" hreflang="${alt.code === 'zh' ? 'zh-Hans' : alt.code}" href="${site.baseUrl}${caminho(alt, pagina)}"/>`,
+        `    <xhtml:link rel="alternate" hreflang="${traducoes[alt.code].hreflang}" href="${site.baseUrl}${caminho(alt, pagina)}"/>`,
       )
       alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${site.baseUrl}${caminho(IDIOMAS[0], pagina)}"/>`)
       urls.push(`  <url>\n    <loc>${site.baseUrl}${caminho(idioma, pagina)}</loc>\n${alternates.join('\n')}\n  </url>`)
     }
   }
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`
+}
+
+// redirects — rotas antigas: /en/* era o inglês (agora raiz) e /sponsors/ virou /donations/ no mesmo idioma
+function redirectsTxt() {
+  const linhas = ['# Rotas antigas. Inglês saiu de /en/ para a raiz; sponsors virou donations.']
+  for (const idioma of IDIOMAS) {
+    const prefixoAntigo = idioma.code === 'es' ? '' : `/${idioma.code}`
+    const prefixoNovo = idioma.prefix ? `/${idioma.prefix}` : ''
+    const destino = `${prefixoNovo}/donations/`
+    linhas.push(`${prefixoAntigo}/sponsors    ${destino}  301`)
+    linhas.push(`${prefixoAntigo}/sponsors/   ${destino}  301`)
+    linhas.push(`${prefixoAntigo}/sponsors/*  ${destino}  301`)
+  }
+  linhas.push('/en     /  301')
+  linhas.push('/en/    /  301')
+  linhas.push('/en/*   /:splat  301')
+  return linhas.join('\n') + '\n'
+}
+
+// blocoHtml — um item de conteúdo de caixa: parágrafo, destaque ou lista
+function blocoHtml(item) {
+  if (typeof item === 'string') return `<p>${escapar(item)}</p>`
+  if (item.lead) return `<p class="destaque">${escapar(item.lead)}</p>`
+  if (item.list) return `<ul class="lista">${item.list.map((i) => `<li>${escapar(i)}</li>`).join('')}</ul>`
+  throw new Error(`Bloco de caixa desconhecido: ${JSON.stringify(item)}`)
+}
+
+// caixaHtml — caixa que abre e fecha: botão dentro de h2 e painel; o JS fecha ao carregar
+function caixaHtml(id, titulo, corpo) {
+  return `<section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="${id}-botao" aria-expanded="true" aria-controls="${id}">${escapar(titulo)}</button></h2>
+      <div class="caixa-painel" id="${id}" role="region" aria-labelledby="${id}-botao">
+        ${corpo}
+      </div>
+    </section>`
+}
+
+// caixasTexto — caixas só de texto, vindas do JSON de idioma (boxes[]); a ordem é a do arquivo
+function caixasTexto(pagina, boxes) {
+  return boxes.map((caixa, i) =>
+    caixaHtml(`caixa-${pagina.id}-${i + 1}`, caixa.title, caixa.content.map(blocoHtml).join('\n        ')),
+  )
+}
+
+// cada página mostra só o email da função dela; visitas trazem o de reservas em todas
+const EMAILS_DA_PAGINA = {
+  home: ['contact', 'bookings', 'info'],
+  volunteer: ['volunteers'],
+  donations: ['donations'],
+  audiovideo: ['contact'],
+}
+
+function contatoHtml(t, site, pagina) {
+  const c = t.contact
+  const emails = EMAILS_DA_PAGINA[pagina.id].map((chave) =>
+    `<li><span class="email">${escapar(site.contato.emails[chave])}</span></li>`,
+  ).join('\n              ')
+  return `<section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">${escapar(c.heading)}</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>${escapar(c.placeLabel)}</dt>
+            <dd>${escapar(c.place)}<br>
+              <a class="botao botao-leve" href="${site.contato.mapa}" target="_blank" rel="noopener noreferrer">${escapar(c.mapButton)} <span class="externo">${escapar(t.external)}</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>${escapar(c.phoneLabel)}</dt>
+            <dd><a href="tel:${site.contato.telefone.replaceAll(' ', '')}">${escapar(site.contato.telefone)}</a><br>
+              <a href="${site.contato.whatsapp}" target="_blank" rel="noopener noreferrer">${escapar(c.whatsappLink)} <span class="externo">${escapar(t.external)}</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>${escapar(c.visitsLabel)}</dt>
+            <dd>${escapar(c.visitsValue)}<br><span class="email">${escapar(site.contato.emails.bookings)}</span></dd>
+          </div>
+          <div>
+            <dt>${escapar(c.socialLabel)}</dt>
+            <dd>Instagram: ${escapar(c.tbc)}<br>Facebook: ${escapar(c.tbc)}</dd>
+          </div>
+          <div>
+            <dt>${escapar(c.emailsLabel)}</dt>
+            <dd><ul>${emails}</ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>`
 }
 
 const FAVICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="3" fill="#1b5e20"/><circle cx="16" cy="16" r="8" fill="none" stroke="#fff" stroke-width="2"/></svg>\n`
@@ -160,12 +255,13 @@ async function main() {
   const site = JSON.parse(await readFile(join(SRC, 'site.json'), 'utf8'))
   const layout = await readFile(join(SRC, 'templates', 'layout.html'), 'utf8')
   const templates = {}
-  for (const p of PAGINAS) templates[p] = await readFile(join(SRC, 'templates', `${p}.html`), 'utf8')
+  for (const p of PAGINAS) templates[p.id] = await readFile(join(SRC, 'templates', `${p.id}.html`), 'utf8')
 
+  const vars = { siteName: site.siteName, dominio: site.dominioPretendido }
   const traducoes = {}
   for (const idioma of IDIOMAS) {
     const bruto = JSON.parse(await readFile(join(SRC, 'i18n', `${idioma.code}.json`), 'utf8'))
-    traducoes[idioma.code] = interpolar(bruto, { siteName: site.siteName })
+    traducoes[idioma.code] = interpolar(bruto, vars)
   }
 
   await rm(SAIDA, { recursive: true, force: true })
@@ -173,6 +269,8 @@ async function main() {
 
   const ano = new Date().getFullYear()
   const robots = site.robotsNoindex ? '<meta name="robots" content="noindex">' : ''
+  const voluntarioAtivo = site.formspreeId !== PLACEHOLDERS.formspreeId
+  const doacoesAtivo = site.formspreeDonacoesId !== PLACEHOLDERS.formspreeDonacoesId
   let gerados = 0
 
   for (const idioma of IDIOMAS) {
@@ -181,9 +279,11 @@ async function main() {
       const ctx = {
         siteName: site.siteName,
         formspreeId: site.formspreeId,
+        formspreeDonacoesId: doacoesAtivo ? site.formspreeDonacoesId : '',
+        paypalUrl: site.paypalUrl,
         htmlLang: t.htmlLang,
-        title: t[pagina].title,
-        description: t[pagina].description,
+        title: t[pagina.id].title,
+        description: t[pagina.id].description,
         canonical: `${site.baseUrl}${caminho(idioma, pagina)}`,
         ogImage: `${site.baseUrl}/img/og.png`,
         ogLocale: OG_LOCALE[idioma.code],
@@ -191,12 +291,24 @@ async function main() {
         alternates: alternatesHtml(site, traducoes, pagina),
         year: ano,
         t,
-        url: Object.fromEntries(PAGINAS.map((p) => [p, caminho(idioma, p)])),
+        url: Object.fromEntries(PAGINAS.map((p) => [p.id, caminho(idioma, p)])),
+        paginaId: pagina.id,
         navItems: navHtml(t, idioma, pagina),
         langItems: idiomasHtml(traducoes, idioma, pagina),
-        sponsorItems: t.sponsors.items.map((item) => `<li>${escapar(item)}</li>`).join('\n        '),
+        contato: contatoHtml(t, site, pagina),
+        volunteerIntro: pagina.id === 'volunteer'
+          ? t.volunteer.boxes[0].content.map(blocoHtml).join('\n          ')
+          : '',
+        caixa: caixasTexto(pagina, t[pagina.id].boxes || []),
+        cartaz: {
+          jpg: `/img/${site.cartaz.arquivo}.jpg`,
+          webp: `/img/${site.cartaz.arquivo}.webp`,
+          largura: site.cartaz.largura,
+          altura: site.cartaz.altura,
+        },
+        voluntarioAtivo: String(voluntarioAtivo),
       }
-      ctx.content = render(templates[pagina], ctx)
+      ctx.content = render(templates[pagina.id], ctx)
       const html = render(layout, ctx)
       const pasta = join(SAIDA, caminho(idioma, pagina))
       await mkdir(pasta, { recursive: true })
@@ -212,11 +324,14 @@ async function main() {
   if (!temOgReal) await writeFile(join(SAIDA, 'img', 'og.png'), pngSolido(1200, 630, [0x1b, 0x5e, 0x20]))
   await writeFile(join(SAIDA, 'favicon.svg'), FAVICON)
   await writeFile(join(SAIDA, '_headers'), HEADERS)
-  await writeFile(join(SAIDA, 'sitemap.xml'), sitemapXml(site))
+  await writeFile(join(SAIDA, '_redirects'), redirectsTxt())
+  await writeFile(join(SAIDA, 'sitemap.xml'), sitemapXml(site, traducoes))
   await writeFile(join(SAIDA, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`)
 
   console.log(`Build concluído: ${gerados} páginas HTML em ${SAIDA}`)
-  if (site.formspreeId === 'FORMSPREE_ID') console.warn('Aviso: formspreeId ainda é o placeholder. O formulário não envia até configurar src/site.json.')
+  if (!voluntarioAtivo) console.warn('Aviso: formspreeId ainda é o placeholder. O formulário de voluntariado não envia até configurar src/site.json.')
+  if (!doacoesAtivo) console.warn('Aviso: formspreeDonacoesId ainda é o placeholder. A escolha de publicação não é registrada até configurar src/site.json.')
+  if (!site.paypalUrl) console.warn('Aviso: paypalUrl vazio. O botão do PayPal aparece desativado até o cliente enviar o link.')
   if (site.robotsNoindex) console.warn('Aviso: robotsNoindex=true. O site pede aos buscadores para não indexar.')
 }
 

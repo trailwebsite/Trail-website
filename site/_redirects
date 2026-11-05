@@ -1,0 +1,22 @@
+# Rotas antigas. Inglês saiu de /en/ para a raiz; sponsors virou donations.
+/en/sponsors    /donations/  301
+/en/sponsors/   /donations/  301
+/en/sponsors/*  /donations/  301
+/sponsors    /es/donations/  301
+/sponsors/   /es/donations/  301
+/sponsors/*  /es/donations/  301
+/pt/sponsors    /pt/donations/  301
+/pt/sponsors/   /pt/donations/  301
+/pt/sponsors/*  /pt/donations/  301
+/ko/sponsors    /ko/donations/  301
+/ko/sponsors/   /ko/donations/  301
+/ko/sponsors/*  /ko/donations/  301
+/ja/sponsors    /ja/donations/  301
+/ja/sponsors/   /ja/donations/  301
+/ja/sponsors/*  /ja/donations/  301
+/zh/sponsors    /zh/donations/  301
+/zh/sponsors/   /zh/donations/  301
+/zh/sponsors/*  /zh/donations/  301
+/en     /  301
+/en/    /  301
+/en/*   /:splat  301

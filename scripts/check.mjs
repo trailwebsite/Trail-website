@@ -8,13 +8,11 @@ const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SITE = join(RAIZ, 'site')
 const site = JSON.parse(await readFile(join(RAIZ, 'src', 'site.json'), 'utf8'))
 
-const ESPERADO = {
-  '/': ['es'], '/volunteer/': ['es'], '/sponsors/': ['es'],
-  '/en/': ['en'], '/en/volunteer/': ['en'], '/en/sponsors/': ['en'],
-  '/pt/': ['pt'], '/pt/volunteer/': ['pt'], '/pt/sponsors/': ['pt'],
-  '/ko/': ['ko'], '/ko/volunteer/': ['ko'], '/ko/sponsors/': ['ko'],
-  '/ja/': ['ja'], '/ja/volunteer/': ['ja'], '/ja/sponsors/': ['ja'],
-  '/zh/': ['zh-Hans'], '/zh/volunteer/': ['zh-Hans'], '/zh/sponsors/': ['zh-Hans'],
+// inglês na raiz; 4 páginas × 6 idiomas
+const ESPERADO = {}
+const LANGS = { '': 'en', '/es': 'es', '/pt': 'pt-BR', '/ko': 'ko', '/ja': 'ja', '/zh': 'zh-Hans' }
+for (const [prefixo, lang] of Object.entries(LANGS)) {
+  for (const rota of ['', 'volunteer/', 'donations/', 'audio-video/']) ESPERADO[`${prefixo}/${rota}`] = [lang]
 }
 
 const falhas = []
@@ -36,7 +34,7 @@ async function existe(caminho) {
 
 const arquivos = await listar(SITE)
 const htmls = arquivos.filter((a) => a.endsWith('.html'))
-if (htmls.length !== 18) falha(`Esperava 18 HTML, encontrei ${htmls.length}`)
+if (htmls.length !== 24) falha(`Esperava 24 HTML, encontrei ${htmls.length}`)
 
 const titulos = new Set()
 const textoCss = await readFile(join(SITE, 'css', 'style.css'), 'utf8')
@@ -110,8 +108,8 @@ for (const arquivo of htmls) {
 // console.log esquecido
 if (/console\.(log|debug)\(/.test(textoJs)) falha('console.log/debug esquecido em JS')
 
-// classes CSS sem uso em HTML nem JS ("com-foto" fica preparada para quando houver foto no hero)
-const PREPARADAS = new Set(['com-foto'])
+// classes CSS sem uso em HTML nem JS
+const PREPARADAS = new Set()
 const cssSemUrl = textoCss.replace(/\/\*[\s\S]*?\*\//g, '').replace(/url\([^)]*\)/g, '')
 const classes = new Set([...cssSemUrl.matchAll(/\.([a-zA-Z_][\w-]*)/g)].map((m) => m[1]))
 for (const classe of classes) {
@@ -132,7 +130,7 @@ for (const arquivo of arquivos.filter((a) => !a.endsWith('.html'))) {
 // servidor local: toda URL deve responder 200
 const servidor = await servir(SITE, 0)
 const base = `http://127.0.0.1:${servidor.address().port}`
-const urls = [...Object.keys(ESPERADO), '/css/style.css', '/js/site.js', '/js/flag.js', '/favicon.svg', '/robots.txt', '/sitemap.xml', '/img/og.png', '/fonts/montserrat-latin-wght-normal.woff2']
+const urls = [...Object.keys(ESPERADO), '/css/style.css', '/js/site.js', '/js/flag.js', '/favicon.svg', '/robots.txt', '/sitemap.xml', '/img/og.png', '/img/cartaz-inca-braille-trail.jpg', '/img/cartaz-inca-braille-trail.webp', '/fonts/montserrat-latin-wght-normal.woff2']
 for (const url of urls) {
   const resposta = await fetch(base + url)
   if (resposta.status !== 200) falha(`HTTP ${resposta.status} em ${url}`)

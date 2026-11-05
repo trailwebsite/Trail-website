@@ -1,183 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://PROYECTO.pages.dev/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/"/>
+    <loc>https://incabrailletrail.pages.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/en/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/"/>
+    <loc>https://incabrailletrail.pages.dev/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/pt/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/"/>
+    <loc>https://incabrailletrail.pages.dev/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/ko/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/"/>
+    <loc>https://incabrailletrail.pages.dev/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/ja/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/"/>
+    <loc>https://incabrailletrail.pages.dev/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/"/>
+    <loc>https://incabrailletrail.pages.dev/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/volunteer/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/"/>
+    <loc>https://incabrailletrail.pages.dev/volunteer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/en/volunteer/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/"/>
+    <loc>https://incabrailletrail.pages.dev/es/volunteer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/pt/volunteer/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/"/>
+    <loc>https://incabrailletrail.pages.dev/pt/volunteer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/ko/volunteer/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/"/>
+    <loc>https://incabrailletrail.pages.dev/ko/volunteer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/ja/volunteer/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/"/>
+    <loc>https://incabrailletrail.pages.dev/ja/volunteer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/zh/volunteer/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/"/>
+    <loc>https://incabrailletrail.pages.dev/zh/volunteer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/sponsors/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/"/>
+    <loc>https://incabrailletrail.pages.dev/donations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/en/sponsors/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/"/>
+    <loc>https://incabrailletrail.pages.dev/es/donations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/pt/sponsors/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/"/>
+    <loc>https://incabrailletrail.pages.dev/pt/donations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/ko/sponsors/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/"/>
+    <loc>https://incabrailletrail.pages.dev/ko/donations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/ja/sponsors/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/"/>
+    <loc>https://incabrailletrail.pages.dev/ja/donations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/"/>
   </url>
   <url>
-    <loc>https://PROYECTO.pages.dev/zh/sponsors/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/sponsors/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/sponsors/"/>
+    <loc>https://incabrailletrail.pages.dev/zh/donations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail.pages.dev/audio-video/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/audio-video/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail.pages.dev/es/audio-video/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/audio-video/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail.pages.dev/pt/audio-video/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/audio-video/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail.pages.dev/ko/audio-video/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/audio-video/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail.pages.dev/ja/audio-video/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/audio-video/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail.pages.dev/zh/audio-video/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/audio-video/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/audio-video/"/>
   </url>
 </urlset>

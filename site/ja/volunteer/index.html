@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>支援する方法 — [Nombre del santuario]</title>
-  <meta name="description" content="ボランティアとしてサンクチュアリに参加しませんか。どのように支援したいかをお聞かせください。こちらからご連絡します。">
+  <title>ボランティア — Inca Braille Trail</title>
+  <meta name="description" content="ボランティアを緊急募集:トレイルの整備、石の運搬、庭仕事、敷地の管理。食事付き、終日作業の方には宿泊を提供。">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://PROYECTO.pages.dev/ja/volunteer/">
-  <link rel="alternate" hreflang="es" href="https://PROYECTO.pages.dev/volunteer/">
-  <link rel="alternate" hreflang="en" href="https://PROYECTO.pages.dev/en/volunteer/">
-  <link rel="alternate" hreflang="pt" href="https://PROYECTO.pages.dev/pt/volunteer/">
-  <link rel="alternate" hreflang="ko" href="https://PROYECTO.pages.dev/ko/volunteer/">
-  <link rel="alternate" hreflang="ja" href="https://PROYECTO.pages.dev/ja/volunteer/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://PROYECTO.pages.dev/zh/volunteer/">
-  <link rel="alternate" hreflang="x-default" href="https://PROYECTO.pages.dev/volunteer/">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/volunteer/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/volunteer/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/volunteer/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/volunteer/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/volunteer/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/volunteer/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/volunteer/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="[Nombre del santuario]">
-  <meta property="og:title" content="支援する方法 — [Nombre del santuario]">
-  <meta property="og:description" content="ボランティアとしてサンクチュアリに参加しませんか。どのように支援したいかをお聞かせください。こちらからご連絡します。">
-  <meta property="og:url" content="https://PROYECTO.pages.dev/ja/volunteer/">
-  <meta property="og:image" content="https://PROYECTO.pages.dev/img/og.png">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="ボランティア — Inca Braille Trail">
+  <meta property="og:description" content="ボランティアを緊急募集:トレイルの整備、石の運搬、庭仕事、敷地の管理。食事付き、終日作業の方には宿泊を提供。">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/ja/volunteer/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
   <meta property="og:locale" content="ja_JP">
   <meta name="theme-color" content="#1b5e20">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -28,31 +28,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
+<body class="pagina-volunteer">
   <a class="pular" href="#contenido">本文へスキップ</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca maiusculas" href="/ja/">[Nombre del santuario]</a>
+      <a class="marca maiusculas" href="/ja/">Inca Braille Trail</a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">メニュー</button>
 
       <nav aria-label="メインナビゲーション">
         <ul class="nav-lista" id="menu-principal">
           <li><a class="maiusculas" href="/ja/">ホーム</a></li>
-          <li><a class="maiusculas" href="/ja/volunteer/" aria-current="page">支援する</a></li>
-          <li><a class="maiusculas" href="/ja/sponsors/">スポンサー</a></li>
+          <li><a class="maiusculas" href="/ja/volunteer/" aria-current="page">ボランティア</a></li>
+          <li><a class="maiusculas" href="/ja/donations/">寄付</a></li>
+          <li><a class="maiusculas" href="/ja/audio-video/">メディア</a></li>
           <li class="idioma">
             <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
               <span class="oculto-visual">言語: </span>日本語
             </button>
             <ul class="idioma-lista" id="lista-idiomas" aria-label="言語を選択">
-              <li><a href="/volunteer/" lang="es" hreflang="es">Español</a></li>
-              <li><a href="/en/volunteer/" lang="en" hreflang="en">English</a></li>
-              <li><a href="/pt/volunteer/" lang="pt" hreflang="pt">Português</a></li>
+              <li><a href="/volunteer/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/volunteer/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/volunteer/" lang="pt-BR" hreflang="pt">Português</a></li>
               <li><a href="/ko/volunteer/" lang="ko" hreflang="ko">한국어</a></li>
               <li><a href="/ja/volunteer/" lang="ja" hreflang="ja" aria-current="true">日本語 <span class="oculto-visual">(現在の言語)</span></a></li>
-              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">中文</a></li>
+              <li><a href="/zh/volunteer/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
             </ul>
           </li>
         </ul>
@@ -61,78 +63,135 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-<!-- volunteer.html — página de voluntariado: texto e formulário enviado ao Formspree -->
+<!-- volunteer.html — voluntariado: texto do cliente, espaço para vídeo/foto/áudio dos voluntários e formulário ao Formspree -->
     <div class="pagina-topo">
       <div class="conteudo">
-        <h1 class="entra">支援する方法</h1>
-        <p class="entra atraso-1">ボランティアとして参加し、時間や知識、手仕事をサンクチュアリの世話に役立てることができます。どのように支援したいかをお聞かせください。こちらからご連絡します。</p>
+        <h1 class="entra">ボランティア</h1>
+        <div class="intro entra atraso-1">
+          <p>ボランティアを緊急募集しています!歩きやすい道をつくり、美しい敷地を手入れして、Inca Braille Trail に命を吹き込む手伝いをしてください。</p>
+          <p>作業には、トレイルの整備と道づくり、石の運搬、庭仕事、敷地全般の管理が含まれます。あなたの貢献が、この感覚体験を視覚障害者とロービジョンの来訪者、そしてその同行者に開く助けになります。</p>
+          <ul class="lista"><li>日帰りボランティア:昼食を提供。</li><li>宿泊して終日作業するボランティア:宿泊、朝食、昼食、夕食を提供。</li><li>交通:合意した集合場所から送迎あり。</li></ul>
+          <p>日程を調整し、あなたの能力に合った作業を見つけるために、ご連絡ください。</p>
+        </div>
       </div>
     </div>
 
-    <section class="conteudo" aria-labelledby="form-titulo">
-      <h2 id="form-titulo" class="entra atraso-2">ボランティア申し込みフォーム</h2>
-
-      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
-      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
-
-      <form
-        id="form-voluntario"
-        class="formulario entra atraso-3"
-        action="https://formspree.io/f/FORMSPREE_ID"
-        method="POST"
-        data-msg-required="この項目は必須です。"
-        data-msg-email="有効なメールアドレスを入力してください。例: name@example.com"
-        data-msg-network="メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
-        data-msg-summary="フォームを送信できませんでした。エラーの付いた項目を確認してください。"
-        data-msg-sending="送信中…"
-        data-msg-success="ありがとうございます。メッセージを受け取りました。近日中にご連絡します。"
-      >
-        <p class="nota-obrigatorio">すべての項目は必須です。</p>
-        <input type="hidden" name="_language" value="ja">
-
-        <div class="campo">
-          <label for="f-nome">お名前 <span class="req">(必須)</span></label>
-          <input id="f-nome" name="nombre" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
-          <p id="f-nome-erro" class="campo-erro" hidden></p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-2-botao" aria-expanded="true" aria-controls="caixa-volunteer-2">Braille Trail で働く私たちのボランティアに会う</button></h2>
+        <div class="caixa-painel" id="caixa-volunteer-2" role="region" aria-labelledby="caixa-volunteer-2-botao">
+          <p>トレイルで働く人々の動画、写真、音声をここに掲載します。</p>
+          <!-- Lugares vazios. Cada um vira um player ou uma galeria quando o arquivo chegar. Sem arquivo, só o aviso. -->
+          <ul class="vazios">
+            <li><strong>動画</strong><span>まだ届いていません。</span></li>
+            <li><strong>写真</strong><span>まだ届いていません。</span></li>
+            <li><strong>音声</strong><span>まだ届いていません。</span></li>
+          </ul>
         </div>
+      </section>
 
-        <div class="campo">
-          <label for="f-email">メールアドレス <span class="req">(必須)</span></label>
-          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
-          <p id="f-email-erro" class="campo-erro" hidden></p>
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-3-botao" aria-expanded="true" aria-controls="caixa-volunteer-3">ボランティア申し込みフォーム</button></h2>
+        <div class="caixa-painel" id="caixa-volunteer-3" role="region" aria-labelledby="caixa-volunteer-3-botao">
+          <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+          <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+          <form
+            id="form-voluntario"
+            class="formulario"
+            action="https://formspree.io/f/FORMSPREE_ID"
+            method="POST"
+            data-ativo="false"
+            data-msg-required="この項目は必須です。"
+            data-msg-email="有効なメールアドレスを入力してください。例:name@example.com"
+            data-msg-network="メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
+            data-msg-summary="フォームを送信できませんでした。エラーの付いた項目を確認してください。"
+            data-msg-sending="送信中…"
+            data-msg-success="ありがとうございます。メッセージを受け取りました。近日中にご連絡します。"
+            data-msg-inactive="このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:volunteers@incabrailletrail.com。"
+          >
+            <p class="nota-obrigatorio">すべての項目は必須です。</p>
+            <input type="hidden" name="_language" value="ja">
+
+            <div class="campo">
+              <label for="f-nome">お名前 <span class="req">(必須)</span></label>
+              <input id="f-nome" name="name" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
+              <p id="f-nome-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-email">メールアドレス <span class="req">(必須)</span></label>
+              <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
+              <p id="f-email-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-tarefa">手伝いたい作業 <span class="req">(必須)</span></label>
+              <select id="f-tarefa" name="task" required aria-describedby="f-tarefa-erro">
+                <option value="">作業を選択してください</option>
+                <option value="clearing and shaping trails">トレイルの整備と道づくり</option>
+                <option value="moving stones">石の運搬</option>
+                <option value="gardening">庭仕事</option>
+                <option value="general grounds maintenance">敷地全般の管理</option>
+              </select>
+              <p id="f-tarefa-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo">
+              <label for="f-mensagem">メッセージ <span class="req">(必須)</span></label>
+              <textarea id="f-mensagem" name="message" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
+              <p id="f-mensagem-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-gotcha">この欄は空のままにしてください</label>
+              <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="botao maiusculas" type="submit">メッセージを送信</button>
+          </form>
         </div>
-
-        <div class="campo">
-          <label for="f-ajuda">どのように支援したいですか <span class="req">(必須)</span></label>
-          <select id="f-ajuda" name="ayuda" required aria-describedby="f-ajuda-erro">
-            <option value="">選択してください</option>
-            <option value="tiempo">時間を提供する</option>
-            <option value="conocimientos">知識を提供する</option>
-            <option value="manos">作業を手伝う</option>
-          </select>
-          <p id="f-ajuda-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <div class="campo">
-          <label for="f-mensagem">メッセージ <span class="req">(必須)</span></label>
-          <textarea id="f-mensagem" name="mensaje" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
-          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
-        <div class="hp" aria-hidden="true">
-          <label for="f-gotcha">Deja este campo vacío</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <button class="botao maiusculas" type="submit">メッセージを送信</button>
-      </form>
-    </section>
+      </section>
+    </div>
 
   </main>
 
   <footer class="rodape">
-    <p><strong>[Nombre del santuario]</strong> · 動物と植物のサンクチュアリ · © 2026</p>
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">お問い合わせ</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>場所</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, インカの聖なる谷, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">地図を開く <span class="externo">(新しいタブで開きます)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>電話と WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">WhatsApp でメッセージを送る <span class="externo">(新しいタブで開きます)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>見学</dt>
+            <dd>事前予約制<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>SNS</dt>
+            <dd>Instagram: 確認待ち<br>Facebook: 確認待ち</dd>
+          </div>
+          <div>
+            <dt>メール</dt>
+            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 視覚障害者とロービジョンの人のための感覚トレイル</p>
+    <p>Azul Tika, Pumawanka, Urubamba, インカの聖なる谷, Cusco, Peru · © 2026</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

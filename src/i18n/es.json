@@ -9,42 +9,139 @@
     "label": "Navegación principal",
     "menu": "Menú",
     "home": "Inicio",
-    "volunteer": "Cómo ayudar",
-    "sponsors": "Patrocinadores"
+    "volunteer": "Voluntariado",
+    "donations": "Donaciones",
+    "audiovideo": "Medios"
   },
   "lang": {
     "button": "Idioma",
     "list": "Elegir idioma",
     "current": "(idioma actual)"
   },
+  "construction": {
+    "heading": "Sitio en construcción",
+    "intro": "Esta es una versión de trabajo. Falta que el dueño del proyecto entregue:",
+    "items": [
+      "Los correos electrónicos que aparecen en este sitio todavía no han sido creados.",
+      "El formulario de voluntariado no envía mensajes hasta que se confirme la cuenta de Formspree.",
+      "El formulario de donación no envía nada hasta que Formspree esté conectado: la elección de publicar nombre o monto todavía no se registra en ningún lugar.",
+      "Cuentas de Instagram y Facebook por confirmar.",
+      "Enlace de PayPal por recibir.",
+      "Audio y video del sendero por recibir.",
+      "Fotos y videos de los voluntarios por recibir.",
+      "Dominio {dominio} por registrar."
+    ]
+  },
+  "contact": {
+    "heading": "Contacto",
+    "placeLabel": "Dónde",
+    "place": "Azul Tika, Pumawanka, Urubamba, Valle Sagrado de los Incas, Cusco, Perú",
+    "mapButton": "Abrir el mapa",
+    "phoneLabel": "Teléfono y WhatsApp",
+    "whatsappLink": "Escribir por WhatsApp",
+    "visitsLabel": "Visitas",
+    "visitsValue": "Con cita previa",
+    "socialLabel": "Redes sociales",
+    "tbc": "por confirmar",
+    "websiteLabel": "Sitio web previsto",
+    "websiteNote": "Registro del dominio pendiente.",
+    "emailsLabel": "Correo electrónico",
+    "emailRoles": {
+      "info": "consultas generales",
+      "bookings": "visitas y reservas",
+      "volunteers": "consultas de voluntariado",
+      "donations": "patrocinadores y donaciones",
+      "contact": "contacto principal propuesto"
+    },
+    "emailsNote": "Estas direcciones fueron las solicitadas por el proyecto. El dueño del proyecto todavía debe crearlas, y no reciben mensajes hasta que eso ocurra. Cuando existan, solo se envían las direcciones finales, nunca las contraseñas, para vincularlas a esta página."
+  },
+  "footer": {
+    "text": "Un sendero sensorial para personas ciegas y con baja visión"
+  },
   "home": {
-    "title": "{siteName} — Santuario de animales y plantas",
-    "description": "Un santuario donde animales y plantas conviven y completan su ciclo de vida. Pensado para ser recorrido por todas las personas.",
-    "tagline": "Un santuario donde animales y plantas conviven y completan su ciclo de vida.",
-    "introHeading": "Quiénes somos",
-    "intro": "Aquí cuidamos, protegemos y compartimos ese camino con todas las personas que nos visitan.",
-    "linksHeading": "Cómo participar",
-    "linkVolunteer": "Cómo puedes ayudar como voluntario",
-    "linkVolunteerDesc": "Tiempo, conocimientos o manos para el cuidado del santuario.",
-    "linkSponsors": "Quiénes apoyan el proyecto",
-    "linkSponsorsDesc": "Personas y organizaciones que hacen posible este lugar."
+    "title": "{siteName} — Un sendero sensorial para personas ciegas y con baja visión, Valle Sagrado de los Incas",
+    "description": "Un sendero educativo y sensorial en desarrollo para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes, en el Valle Sagrado de los Incas, Cusco, Perú.",
+    "heroAlt": "Afiche del proyecto. Una persona con poncho y gorro andino camina con bastón blanco por un sendero de piedra con baranda de soga, entre muros incas de piedra y un arco, con terrazas andinas y montañas nevadas al fondo. Carteles de piedra junto al sendero llevan puntos en braille. El afiche dice: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. Un cartel de piedra dice: INCA TRAIL & Braille.",
+    "tagline": "Un sendero educativo y sensorial para personas ciegas y con baja visión, en el Valle Sagrado de los Incas, Cusco, Perú.",
+    "boxes": [
+      {
+        "title": "¿Qué es el Inca Braille Trail?",
+        "content": [
+          { "lead": "Un recorrido por la naturaleza, la educación y los sentidos" },
+          "Ubicado en el hermoso Valle Sagrado de los Incas, Cusco, Perú, el Inca Braille Trail es una experiencia educativa y sensorial que se desarrolla específicamente para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes.",
+          "Nuestra visión es crear un lugar acogedor donde los visitantes puedan disfrutar de la naturaleza, aprender, explorar y compartir experiencias significativas, de forma gratuita gracias al apoyo de patrocinadores y donaciones.",
+          "El sendero está diseñado para estimular los sentidos a través del tacto, el olfato, el oído y el gusto. Los visitantes descubrirán las texturas de las plantas, las fragancias de hierbas y flores, los sonidos de la naturaleza y las muchas experiencias maravillosas que el mundo natural ofrece."
+        ]
+      },
+      {
+        "title": "El ciclo de la vida – Aprender de la Pachamama",
+        "content": [
+          "En el centro de nuestra filosofía está el respeto por la Pachamama, la Madre Tierra, y la comprensión de que todos los seres vivos están conectados.",
+          "A través de nuestro recorrido educativo, El ciclo de la vida, los visitantes descubrirán cómo las necesidades de las plantas reflejan de cerca las nuestras.",
+          "Una pequeña semilla necesita alimento, agua, calor y cuidado para crecer, así como nosotros necesitamos comida nutritiva, agua limpia, luz del sol y un ambiente sano para prosperar.",
+          "Las plantas toman nutrientes de un suelo sano y energía de la luz del sol, mientras que nosotros dependemos del alimento que producen para nuestra propia energía, crecimiento y bienestar.",
+          { "lead": "Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas." },
+          "Los animales también cumplen un papel esencial en este ciclo. Desde las abejas que polinizan las flores hasta las aves que dispersan semillas, y los animales de granja que aportan abono natural que enriquece el suelo, cada criatura contribuye al equilibrio de la naturaleza.",
+          "Estos nutrientes vuelven a la tierra, ayudan a crecer a nuevas plantas y completan el hermoso ciclo que une a plantas, animales y personas.",
+          "A lo largo del recorrido, los visitantes explorarán las prácticas agrícolas tradicionales andinas y las de los antiguos incas junto con la agricultura sostenible moderna. Destacamos la importancia de conservar las semillas nativas, hacer compost, proteger la biodiversidad y cultivar alimentos nutritivos sin depender de químicos agrícolas dañinos.",
+          "Nuestro objetivo es demostrar que cuidar la tierra y producir alimentos sanos puede ser simple, sostenible y accesible para todos."
+        ]
+      },
+      {
+        "title": "Un lugar para que todos se conecten – El espíritu del Ayni",
+        "content": [
+          "En el corazón del Inca Braille Trail está el antiguo principio andino del Ayni, que significa reciprocidad: la convicción de que al dar, recibir y apoyarnos unos a otros creamos comunidades más fuertes y más compasivas.",
+          "Nuestro sendero es más que una experiencia educativa. Es un lugar donde las personas ciegas y con baja visión, sus familias, amigos y acompañantes pueden reunirse, compartir experiencias, hacer amistades y celebrar la vida.",
+          "También esperamos animar a los visitantes videntes a comprender mejor los desafíos cotidianos que enfrentan las personas con discapacidad visual, desarrollando mayor conciencia, empatía y respeto.",
+          "A través de experiencias compartidas, queremos que las personas reconozcan que todos tenemos algo valioso que ofrecer y que todos tenemos algo que aprender de los demás.",
+          "Así como nosotros cuidamos la tierra y la tierra nos cuida, con bondad, compasión y reciprocidad nos cuidamos unos a otros.",
+          { "lead": "Este es el espíritu del Ayni, y el corazón del Inca Braille Trail." }
+        ]
+      }
+    ]
   },
   "volunteer": {
-    "title": "Cómo puedes ayudar — {siteName}",
-    "description": "Súmate como voluntario al santuario: cuéntanos cómo te gustaría ayudar y te contactaremos.",
-    "h1": "Cómo puedes ayudar",
-    "intro": "Puedes sumarte como voluntario y dedicar tiempo, conocimientos o manos al cuidado del santuario. Cuéntanos cómo te gustaría ayudar y te contactaremos.",
+    "title": "Voluntariado — {siteName}",
+    "description": "Se necesitan voluntarios con urgencia: despejar y dar forma a senderos, mover piedras, jardinería y mantenimiento del terreno. Comidas incluidas; alojamiento para quienes trabajan jornadas completas.",
+    "h1": "Voluntariado",
+    "lead": "Se necesitan voluntarios con urgencia para abrir el sendero a los visitantes ciegos y con baja visión.",
+    "boxes": [
+      {
+        "title": "Ayuda a construir el sendero",
+        "content": [
+          "¡Se necesitan voluntarios con urgencia! Ayuda a dar vida al Inca Braille Trail creando caminos acogedores y cuidando nuestro hermoso terreno.",
+          "Las tareas incluyen despejar y dar forma a los senderos, mover piedras, jardinería y mantenimiento general del terreno. Tu aporte ayudará a abrir esta experiencia sensorial a los visitantes ciegos y con baja visión y a sus acompañantes.",
+          { "list": [
+            "Voluntarios por el día: almuerzo incluido.",
+            "Voluntarios que se alojan con nosotros y trabajan jornadas completas: alojamiento, desayuno, almuerzo y cena incluidos.",
+            "Transporte: disponible desde un punto de recogida acordado."
+          ] },
+          "Contáctanos para coordinar fechas y encontrar tareas adecuadas a tus capacidades."
+        ]
+      }
+    ],
+    "media": {
+      "title": "Conoce a nuestros voluntarios que trabajan en el Braille Trail",
+      "intro": "Aquí se publicarán el video, las fotos y el audio de las personas que trabajan en el sendero.",
+      "video": "Video",
+      "photos": "Fotos",
+      "audio": "Audio",
+      "pending": "Todavía no recibido."
+    },
     "form": {
       "heading": "Formulario de voluntariado",
+      "inactive": "Este formulario todavía no está activo. Funcionará cuando el dueño del proyecto confirme el correo de Formspree, en una bandeja a la que quien construye el sitio no tiene acceso. Destino previsto: volunteers@incabrailletrail.com.",
       "requiredNote": "Todos los campos son obligatorios.",
       "name": "Nombre",
       "email": "Correo electrónico",
-      "help": "Cómo te gustaría ayudar",
-      "helpChoose": "Elige una opción",
-      "helpTime": "Dedicando tiempo",
-      "helpKnowledge": "Aportando conocimientos",
-      "helpHands": "Con trabajo manual",
+      "task": "Tarea con la que te gustaría ayudar",
+      "taskChoose": "Elige una tarea",
+      "taskTrails": "Despejar y dar forma a los senderos",
+      "taskStones": "Mover piedras",
+      "taskGardening": "Jardinería",
+      "taskGrounds": "Mantenimiento general del terreno",
       "message": "Mensaje",
+      "honeypot": "Deja este campo vacío",
       "submit": "Enviar mensaje",
       "sending": "Enviando…",
       "success": "Gracias. Recibimos tu mensaje y te contactaremos pronto.",
@@ -54,15 +151,49 @@
       "errNetwork": "No se pudo enviar el mensaje. Comprueba tu conexión e inténtalo de nuevo."
     }
   },
-  "sponsors": {
-    "title": "Patrocinadores y apoyadores — {siteName}",
-    "description": "Personas y organizaciones que apoyan al santuario y hacen posible el proyecto.",
-    "h1": "Patrocinadores y apoyadores",
-    "intro": "Este proyecto es posible gracias a personas y organizaciones que creen en él. Aquí reconoceremos a quienes nos apoyan.",
-    "listHeading": "Quienes nos apoyan",
-    "items": ["Patrocinador 1", "Patrocinador 2", "Patrocinador 3"]
+  "donations": {
+    "title": "Donaciones — {siteName}",
+    "description": "Las donaciones y los patrocinadores mantienen el Inca Braille Trail gratuito para los visitantes. El pago se hace por PayPal. Cada donante elige si publicar su nombre, el monto, ambos o ninguno.",
+    "h1": "Donaciones",
+    "lead": "Las donaciones y los patrocinadores mantienen el sendero gratuito para los visitantes. El pago se hace por PayPal, no en este sitio.",
+    "boxes": [
+      {
+        "title": "Cómo se reconocen las donaciones",
+        "content": [
+          "Cada donante puede elegir si publicar su nombre, el monto de la donación, ambos o ninguno. Las donaciones anónimas son bienvenidas.",
+          "Todavía no se publica ningún nombre en este sitio."
+        ]
+      }
+    ],
+    "form": {
+      "heading": "Formulario de donación",
+      "intro": "Elige qué se puede publicar antes de ir a PayPal. El botón de PayPal aparece cuando la elección está completa.",
+      "formspreeInactive": "La elección de publicar nombre o monto no se registra en ningún lugar hasta que Formspree esté conectado. Destino previsto: donations@incabrailletrail.com.",
+      "legend": "¿Qué podemos publicar?",
+      "optName": "Publicar mi nombre",
+      "optAmount": "Publicar el monto",
+      "optBoth": "Publicar mi nombre y el monto",
+      "optNone": "No publicar ninguno",
+      "name": "Nombre a publicar",
+      "amount": "Monto a publicar",
+      "amountHint": "Incluye la moneda, por ejemplo 50 USD.",
+      "honeypot": "Deja este campo vacío",
+      "paypal": "Continuar a PayPal",
+      "paypalPending": "El enlace de PayPal todavía no ha sido entregado. Este botón abrirá PayPal cuando el dueño del proyecto envíe el enlace.",
+      "errRequired": "Este campo es obligatorio."
+    }
   },
-  "footer": {
-    "text": "Santuario de animales y plantas"
+  "audiovideo": {
+    "title": "Audio y video — {siteName}",
+    "description": "Audio y video del Inca Braille Trail, con transcripción, subtítulos y audiodescripción. Archivos por recibir.",
+    "h1": "Audio y video",
+    "lead": "Audio y video del sendero, con transcripción, subtítulos y audiodescripción. Los archivos todavía no han sido recibidos.",
+    "boxes": [
+      { "title": "Audio de la visita", "content": ["La grabación de audio de la visita todavía no ha sido recibida. Se publicará aquí cuando el dueño del proyecto la envíe."] },
+      { "title": "Transcripción", "content": ["La transcripción del audio todavía no ha sido recibida. Se publicará aquí como texto cuando el dueño del proyecto la envíe."] },
+      { "title": "Video", "content": ["El video del sendero todavía no ha sido recibido. Se publicará aquí cuando el dueño del proyecto lo envíe."] },
+      { "title": "Subtítulos", "content": ["Los subtítulos del video todavía no han sido recibidos. Se publicarán junto con el video cuando el dueño del proyecto los envíe."] },
+      { "title": "Audiodescripción", "content": ["La audiodescripción del video todavía no ha sido recibida. Se publicará junto con el video cuando el dueño del proyecto la envíe."] }
+    ]
   }
 }

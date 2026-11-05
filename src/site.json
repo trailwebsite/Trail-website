@@ -1,6 +1,26 @@
 {
-  "baseUrl": "https://PROYECTO.pages.dev",
-  "siteName": "[Nombre del santuario]",
+  "baseUrl": "https://incabrailletrail.pages.dev",
+  "siteName": "Inca Braille Trail",
+  "dominioPretendido": "www.incabrailletrail.com",
   "formspreeId": "FORMSPREE_ID",
-  "robotsNoindex": true
+  "formspreeDonacoesId": "FORMSPREE_DONACOES_ID",
+  "paypalUrl": "",
+  "robotsNoindex": true,
+  "contato": {
+    "telefone": "+51 914 015 544",
+    "whatsapp": "https://wa.me/51914015544",
+    "mapa": "https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9",
+    "emails": {
+      "info": "info@incabrailletrail.com",
+      "bookings": "bookings@incabrailletrail.com",
+      "volunteers": "volunteers@incabrailletrail.com",
+      "donations": "donations@incabrailletrail.com",
+      "contact": "contact@incabrailletrail.com"
+    }
+  },
+  "cartaz": {
+    "arquivo": "cartaz-inca-braille-trail",
+    "largura": 921,
+    "altura": 478
+  }
 }

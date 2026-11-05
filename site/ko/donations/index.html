@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>후원 — Inca Braille Trail</title>
+  <meta name="description" content="후원과 기부로 Inca Braille Trail은 방문객에게 무료로 열립니다. 결제는 PayPal로 이루어집니다. 기부자는 이름, 금액, 둘 다, 또는 둘 다 공개하지 않기를 선택할 수 있습니다.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/ko/donations/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/donations/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/donations/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/donations/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/donations/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/donations/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/donations/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/donations/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="후원 — Inca Braille Trail">
+  <meta property="og:description" content="후원과 기부로 Inca Braille Trail은 방문객에게 무료로 열립니다. 결제는 PayPal로 이루어집니다. 기부자는 이름, 금액, 둘 다, 또는 둘 다 공개하지 않기를 선택할 수 있습니다.">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/ko/donations/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body class="pagina-donations">
+  <a class="pular" href="#contenido">본문으로 건너뛰기</a>
+
+  <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/ko/">Inca Braille Trail</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">메뉴</button>
+
+      <nav aria-label="주 메뉴">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/ko/">홈</a></li>
+          <li><a class="maiusculas" href="/ko/volunteer/">자원봉사</a></li>
+          <li><a class="maiusculas" href="/ko/donations/" aria-current="page">후원</a></li>
+          <li><a class="maiusculas" href="/ko/audio-video/">미디어</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">언어: </span>한국어
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="언어 선택">
+              <li><a href="/donations/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/donations/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/donations/" lang="pt-BR" hreflang="pt">Português</a></li>
+              <li><a href="/ko/donations/" lang="ko" hreflang="ko" aria-current="true">한국어 <span class="oculto-visual">(현재 언어)</span></a></li>
+              <li><a href="/ja/donations/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/donations/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- donations.html — doações: regra de publicação e formulário da escolha; o pagamento acontece no PayPal, fora do site -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">후원</h1>
+        <p class="entra atraso-1">후원과 기부로 탐방로는 방문객에게 무료로 열립니다. 결제는 이 사이트가 아니라 PayPal에서 이루어집니다.</p>
+      </div>
+    </div>
+
+    <div class="conteudo form-direto entra atraso-2">
+      <h2 class="secao-titulo">후원 양식</h2>
+      <p>PayPal로 이동하기 전에 무엇을 공개할 수 있는지 선택하세요. 선택을 마치면 PayPal 버튼이 나타납니다.</p>
+
+      <!-- O formulário não tem botão próprio: quando fica válido, o controle do PayPal aparece. A escolha vai ao Formspree ao clicar nele. -->
+      <form
+            id="form-doacao"
+            class="formulario"
+            method="POST"
+            data-formspree=""
+            data-paypal=""
+            data-msg-required="이 항목은 필수입니다."
+            data-msg-paypal="PayPal로 계속하기"
+            data-msg-external="(새 탭에서 열림)"
+          >
+            <input type="hidden" name="_language" value="ko">
+
+            <fieldset class="campo">
+              <legend>무엇을 공개해도 될까요? <span class="req">(필수)</span></legend>
+              <div class="opcoes">
+                <label class="opcao"><input type="radio" name="publish" value="name" required> <span>내 이름 공개</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="amount" required> <span>금액 공개</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="both" required> <span>내 이름과 금액 공개</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="none" required> <span>둘 다 공개하지 않음</span></label>
+              </div>
+            </fieldset>
+
+            <div class="campo" id="campo-nome" hidden>
+              <label for="d-nome">공개할 이름 <span class="req">(필수)</span></label>
+              <input id="d-nome" name="name" type="text" autocomplete="name" aria-describedby="d-nome-erro">
+              <p id="d-nome-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo" id="campo-valor" hidden>
+              <label for="d-valor">공개할 금액 <span class="req">(필수)</span></label>
+              <p id="d-valor-dica" class="dica">통화를 함께 적어 주세요. 예: 50 USD</p>
+              <input id="d-valor" name="amount" type="text" inputmode="decimal" aria-describedby="d-valor-dica d-valor-erro">
+              <p id="d-valor-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="hp" aria-hidden="true">
+              <label for="d-gotcha">이 칸은 비워 두세요</label>
+              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div id="paypal" class="paypal" aria-live="polite" hidden></div>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">연락처</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>위치</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, 잉카 성스러운 계곡, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">지도 열기 <span class="externo">(새 탭에서 열림)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>전화와 WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">WhatsApp으로 메시지 보내기 <span class="externo">(새 탭에서 열림)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>방문</dt>
+            <dd>사전 예약제<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>소셜 미디어</dt>
+            <dd>Instagram: 확인 예정<br>Facebook: 확인 예정</dd>
+          </div>
+          <div>
+            <dt>이메일</dt>
+            <dd><ul><li><span class="email">donations@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · 시각장애인과 저시력인을 위한 감각 탐방로</p>
+    <p>Azul Tika, Pumawanka, Urubamba, 잉카 성스러운 계곡, Cusco, Peru · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

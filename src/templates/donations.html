@@ -1,0 +1,56 @@
+<!-- donations.html — doações: regra de publicação e formulário da escolha; o pagamento acontece no PayPal, fora do site -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">{{t.donations.h1}}</h1>
+        <p class="entra atraso-1">{{t.donations.lead}}</p>
+      </div>
+    </div>
+
+    <div class="conteudo form-direto entra atraso-2">
+      <h2 class="secao-titulo">{{t.donations.form.heading}}</h2>
+      <p>{{t.donations.form.intro}}</p>
+
+      <!-- O formulário não tem botão próprio: quando fica válido, o controle do PayPal aparece. A escolha vai ao Formspree ao clicar nele. -->
+      <form
+            id="form-doacao"
+            class="formulario"
+            method="POST"
+            data-formspree="{{formspreeDonacoesId}}"
+            data-paypal="{{paypalUrl}}"
+            data-msg-required="{{t.donations.form.errRequired}}"
+            data-msg-paypal="{{t.donations.form.paypal}}"
+            data-msg-external="{{t.external}}"
+          >
+            <input type="hidden" name="_language" value="{{htmlLang}}">
+
+            <fieldset class="campo">
+              <legend>{{t.donations.form.legend}} <span class="req">({{t.required}})</span></legend>
+              <div class="opcoes">
+                <label class="opcao"><input type="radio" name="publish" value="name" required> <span>{{t.donations.form.optName}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="amount" required> <span>{{t.donations.form.optAmount}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="both" required> <span>{{t.donations.form.optBoth}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="none" required> <span>{{t.donations.form.optNone}}</span></label>
+              </div>
+            </fieldset>
+
+            <div class="campo" id="campo-nome" hidden>
+              <label for="d-nome">{{t.donations.form.name}} <span class="req">({{t.required}})</span></label>
+              <input id="d-nome" name="name" type="text" autocomplete="name" aria-describedby="d-nome-erro">
+              <p id="d-nome-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="campo" id="campo-valor" hidden>
+              <label for="d-valor">{{t.donations.form.amount}} <span class="req">({{t.required}})</span></label>
+              <p id="d-valor-dica" class="dica">{{t.donations.form.amountHint}}</p>
+              <input id="d-valor" name="amount" type="text" inputmode="decimal" aria-describedby="d-valor-dica d-valor-erro">
+              <p id="d-valor-erro" class="campo-erro" hidden></p>
+            </div>
+
+            <div class="hp" aria-hidden="true">
+              <label for="d-gotcha">{{t.donations.form.honeypot}}</label>
+              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div id="paypal" class="paypal" aria-live="polite" hidden></div>
+      </form>
+    </div>

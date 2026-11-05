@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main e rodapé -->
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
 <html lang="{{htmlLang}}">
 <head>
   <meta charset="utf-8">
@@ -22,10 +22,11 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/flag.js"></script>
 </head>
-<body>
+<body class="pagina-{{paginaId}}">
   <a class="pular" href="#contenido">{{t.skip}}</a>
 
   <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
       <a class="marca maiusculas" href="{{url.home}}">{{siteName}}</a>
 
@@ -52,7 +53,10 @@
   </main>
 
   <footer class="rodape">
-    <p><strong>{{siteName}}</strong> · {{t.footer.text}} · © {{year}}</p>
+    <div class="faixa" aria-hidden="true"></div>
+    {{{contato}}}
+    <p><strong>{{siteName}}</strong> · {{t.footer.text}}</p>
+    <p>{{t.contact.place}} · © {{year}}</p>
   </footer>
 
   <script src="/js/site.js" defer></script>

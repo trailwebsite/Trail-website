@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inca Braille Trail — Un sendero sensorial para personas ciegas y con baja visión, Valle Sagrado de los Incas</title>
+  <meta name="description" content="Un sendero educativo y sensorial en desarrollo para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes, en el Valle Sagrado de los Incas, Cusco, Perú.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://incabrailletrail.pages.dev/es/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail.pages.dev/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail.pages.dev/es/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail.pages.dev/pt/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail.pages.dev/ko/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail.pages.dev/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail.pages.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Inca Braille Trail — Un sendero sensorial para personas ciegas y con baja visión, Valle Sagrado de los Incas">
+  <meta property="og:description" content="Un sendero educativo y sensorial en desarrollo para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes, en el Valle Sagrado de los Incas, Cusco, Perú.">
+  <meta property="og:url" content="https://incabrailletrail.pages.dev/es/">
+  <meta property="og:image" content="https://incabrailletrail.pages.dev/img/og.png">
+  <meta property="og:locale" content="es_PE">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body class="pagina-home">
+  <a class="pular" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
+    <div class="cabecalho-interno">
+      <a class="marca maiusculas" href="/es/">Inca Braille Trail</a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/es/" aria-current="page">Inicio</a></li>
+          <li><a class="maiusculas" href="/es/volunteer/">Voluntariado</a></li>
+          <li><a class="maiusculas" href="/es/donations/">Donaciones</a></li>
+          <li><a class="maiusculas" href="/es/audio-video/">Medios</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">Idioma: </span>Español
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="Elegir idioma">
+              <li><a href="/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/" lang="es" hreflang="es" aria-current="true">Español <span class="oculto-visual">(idioma actual)</span></a></li>
+              <li><a href="/pt/" lang="pt-BR" hreflang="pt">Português</a></li>
+              <li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- home.html — página inicial: cartaz do cliente no hero, h1 só para leitor de tela e três caixas de texto -->
+    <div class="hero">
+      <div class="hero-interno">
+        <h1 class="oculto-visual">Inca Braille Trail</h1>
+        <picture class="hero-cartaz entra">
+          <source type="image/webp" srcset="/img/cartaz-inca-braille-trail.webp">
+          <img src="/img/cartaz-inca-braille-trail.jpg" width="921" height="478" alt="Afiche del proyecto. Una persona con poncho y gorro andino camina con bastón blanco por un sendero de piedra con baranda de soga, entre muros incas de piedra y un arco, con terrazas andinas y montañas nevadas al fondo. Carteles de piedra junto al sendero llevan puntos en braille. El afiche dice: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. Un cartel de piedra dice: INCA TRAIL &amp; Braille." fetchpriority="high">
+        </picture>
+        <p class="hero-frase entra atraso-1">Un sendero educativo y sensorial para personas ciegas y con baja visión, en el Valle Sagrado de los Incas, Cusco, Perú.</p>
+      </div>
+    </div>
+
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-1-botao" aria-expanded="true" aria-controls="caixa-home-1">¿Qué es el Inca Braille Trail?</button></h2>
+      <div class="caixa-painel" id="caixa-home-1" role="region" aria-labelledby="caixa-home-1-botao">
+        <p class="destaque">Un recorrido por la naturaleza, la educación y los sentidos</p>
+        <p>Ubicado en el hermoso Valle Sagrado de los Incas, Cusco, Perú, el Inca Braille Trail es una experiencia educativa y sensorial que se desarrolla específicamente para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes.</p>
+        <p>Nuestra visión es crear un lugar acogedor donde los visitantes puedan disfrutar de la naturaleza, aprender, explorar y compartir experiencias significativas, de forma gratuita gracias al apoyo de patrocinadores y donaciones.</p>
+        <p>El sendero está diseñado para estimular los sentidos a través del tacto, el olfato, el oído y el gusto. Los visitantes descubrirán las texturas de las plantas, las fragancias de hierbas y flores, los sonidos de la naturaleza y las muchas experiencias maravillosas que el mundo natural ofrece.</p>
+      </div>
+    </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-2-botao" aria-expanded="true" aria-controls="caixa-home-2">El ciclo de la vida – Aprender de la Pachamama</button></h2>
+      <div class="caixa-painel" id="caixa-home-2" role="region" aria-labelledby="caixa-home-2-botao">
+        <p>En el centro de nuestra filosofía está el respeto por la Pachamama, la Madre Tierra, y la comprensión de que todos los seres vivos están conectados.</p>
+        <p>A través de nuestro recorrido educativo, El ciclo de la vida, los visitantes descubrirán cómo las necesidades de las plantas reflejan de cerca las nuestras.</p>
+        <p>Una pequeña semilla necesita alimento, agua, calor y cuidado para crecer, así como nosotros necesitamos comida nutritiva, agua limpia, luz del sol y un ambiente sano para prosperar.</p>
+        <p>Las plantas toman nutrientes de un suelo sano y energía de la luz del sol, mientras que nosotros dependemos del alimento que producen para nuestra propia energía, crecimiento y bienestar.</p>
+        <p class="destaque">Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas.</p>
+        <p>Los animales también cumplen un papel esencial en este ciclo. Desde las abejas que polinizan las flores hasta las aves que dispersan semillas, y los animales de granja que aportan abono natural que enriquece el suelo, cada criatura contribuye al equilibrio de la naturaleza.</p>
+        <p>Estos nutrientes vuelven a la tierra, ayudan a crecer a nuevas plantas y completan el hermoso ciclo que une a plantas, animales y personas.</p>
+        <p>A lo largo del recorrido, los visitantes explorarán las prácticas agrícolas tradicionales andinas y las de los antiguos incas junto con la agricultura sostenible moderna. Destacamos la importancia de conservar las semillas nativas, hacer compost, proteger la biodiversidad y cultivar alimentos nutritivos sin depender de químicos agrícolas dañinos.</p>
+        <p>Nuestro objetivo es demostrar que cuidar la tierra y producir alimentos sanos puede ser simple, sostenible y accesible para todos.</p>
+      </div>
+    </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-home-3-botao" aria-expanded="true" aria-controls="caixa-home-3">Un lugar para que todos se conecten – El espíritu del Ayni</button></h2>
+      <div class="caixa-painel" id="caixa-home-3" role="region" aria-labelledby="caixa-home-3-botao">
+        <p>En el corazón del Inca Braille Trail está el antiguo principio andino del Ayni, que significa reciprocidad: la convicción de que al dar, recibir y apoyarnos unos a otros creamos comunidades más fuertes y más compasivas.</p>
+        <p>Nuestro sendero es más que una experiencia educativa. Es un lugar donde las personas ciegas y con baja visión, sus familias, amigos y acompañantes pueden reunirse, compartir experiencias, hacer amistades y celebrar la vida.</p>
+        <p>También esperamos animar a los visitantes videntes a comprender mejor los desafíos cotidianos que enfrentan las personas con discapacidad visual, desarrollando mayor conciencia, empatía y respeto.</p>
+        <p>A través de experiencias compartidas, queremos que las personas reconozcan que todos tenemos algo valioso que ofrecer y que todos tenemos algo que aprender de los demás.</p>
+        <p>Así como nosotros cuidamos la tierra y la tierra nos cuida, con bondad, compasión y reciprocidad nos cuidamos unos a otros.</p>
+        <p class="destaque">Este es el espíritu del Ayni, y el corazón del Inca Braille Trail.</p>
+      </div>
+    </section>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">Contacto</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>Dónde</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, Valle Sagrado de los Incas, Cusco, Perú<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">Abrir el mapa <span class="externo">(se abre en otra pestaña)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Teléfono y WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp <span class="externo">(se abre en otra pestaña)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Visitas</dt>
+            <dd>Con cita previa<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>Redes sociales</dt>
+            <dd>Instagram: por confirmar<br>Facebook: por confirmar</dd>
+          </div>
+          <div>
+            <dt>Correo electrónico</dt>
+            <dd><ul><li><span class="email">contact@incabrailletrail.com</span></li>
+              <li><span class="email">bookings@incabrailletrail.com</span></li>
+              <li><span class="email">info@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · Un sendero sensorial para personas ciegas y con baja visión</p>
+    <p>Azul Tika, Pumawanka, Urubamba, Valle Sagrado de los Incas, Cusco, Perú · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>
