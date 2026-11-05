@@ -190,8 +190,6 @@ function contatoHtml(t, site, pagina) {
     </section>`
 }
 
-const FAVICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="3" fill="#1b5e20"/><circle cx="16" cy="16" r="8" fill="none" stroke="#fff" stroke-width="2"/></svg>\n`
-
 const HEADERS = `/*
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; frame-ancestors 'none'
   X-Content-Type-Options: nosniff
@@ -322,7 +320,6 @@ async function main() {
   await cp(join(SRC, 'fonts'), join(SAIDA, 'fonts'), { recursive: true })
   const temOgReal = await copiarImagens()
   if (!temOgReal) await writeFile(join(SAIDA, 'img', 'og.png'), pngSolido(1200, 630, [0x1b, 0x5e, 0x20]))
-  await writeFile(join(SAIDA, 'favicon.svg'), FAVICON)
   await writeFile(join(SAIDA, '_headers'), HEADERS)
   await writeFile(join(SAIDA, '_redirects'), redirectsTxt())
   await writeFile(join(SAIDA, 'sitemap.xml'), sitemapXml(site, traducoes))

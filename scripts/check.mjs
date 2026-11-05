@@ -130,7 +130,7 @@ for (const arquivo of arquivos.filter((a) => !a.endsWith('.html'))) {
 // servidor local: toda URL deve responder 200
 const servidor = await servir(SITE, 0)
 const base = `http://127.0.0.1:${servidor.address().port}`
-const urls = [...Object.keys(ESPERADO), '/css/style.css', '/js/site.js', '/js/flag.js', '/favicon.svg', '/robots.txt', '/sitemap.xml', '/img/og.png', '/img/cartaz-inca-braille-trail.jpg', '/img/cartaz-inca-braille-trail.webp', '/fonts/montserrat-latin-wght-normal.woff2']
+const urls = [...Object.keys(ESPERADO), '/css/style.css', '/js/site.js', '/js/flag.js', '/img/logo-inca-braille-trail.png', '/robots.txt', '/sitemap.xml', '/img/og.png', '/img/cartaz-inca-braille-trail.jpg', '/img/cartaz-inca-braille-trail.webp', '/fonts/montserrat-latin-wght-normal.woff2']
 for (const url of urls) {
   const resposta = await fetch(base + url)
   if (resposta.status !== 200) falha(`HTTP ${resposta.status} em ${url}`)
