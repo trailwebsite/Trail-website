@@ -79,19 +79,22 @@
       <form
         id="form-voluntario"
         class="formulario"
-        action="https://formspree.io/f/FORMSPREE_ID"
+        action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
         method="POST"
-        data-ativo="false"
+        data-ativo="true"
+        data-msg-activate="info.inkabrailletrail@gmail.com 을 열고 FormSubmit 메일의 확인 링크를 누르세요. 그 클릭 전까지 메시지는 대기하며 전달되지 않습니다."
         data-msg-required="이 항목은 필수입니다."
         data-msg-email="올바른 이메일 주소를 입력하세요. 예: name@example.com"
         data-msg-network="메시지를 보낼 수 없습니다. 연결을 확인하고 다시 시도해 주세요."
         data-msg-summary="양식을 보낼 수 없습니다. 오류로 표시된 항목을 확인해 주세요."
         data-msg-sending="보내는 중…"
         data-msg-success="감사합니다. 메시지를 받았으며 곧 연락드리겠습니다."
-        data-msg-inactive="이 양식은 아직 활성화되지 않았습니다. 프로젝트 소유자가 사이트 제작자는 접근할 수 없는 받은편지함에서 Formspree 이메일을 확인한 뒤에 작동합니다. 예정 수신처: volunteers@incabrailletrail.com."
+        data-msg-inactive="이 양식은 아직 활성화되지 않았습니다. 프로젝트 소유자가 사이트 제작자는 접근할 수 없는 받은편지함에서 Formspree 이메일을 확인한 뒤에 작동합니다. 예정 수신처: info@incabrailletrail.com."
       >
         <p class="nota-obrigatorio">모든 항목은 필수입니다.</p>
         <input type="hidden" name="_language" value="ko">
+        <input type="hidden" name="_subject" value="Voluntariado — Inca Braille Trail">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="campo">
           <label for="f-nome">이름 <span class="req">(필수)</span></label>
@@ -126,11 +129,12 @@
         <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
         <div class="hp" aria-hidden="true">
           <label for="f-gotcha">이 칸은 비워 두세요</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="f-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
         </div>
 
         <button class="botao maiusculas" type="submit">메시지 보내기</button>
       </form>
+      <p class="nota-email">이 페이지의 메시지는 info.inkabrailletrail@gmail.com 으로 보내집니다.</p>
     </div>
 
     <div class="caixas entra atraso-2">
@@ -169,16 +173,12 @@
             </dd>
           </div>
           <div>
-            <dt>방문</dt>
-            <dd>사전 예약제<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>소셜 미디어</dt>
             <dd>Instagram: 확인 예정<br>Facebook: 확인 예정</dd>
           </div>
           <div>
             <dt>이메일</dt>
-            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

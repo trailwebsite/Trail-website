@@ -5,6 +5,8 @@
   "skip": "跳到正文",
   "external": "(在新标签页中打开)",
   "required": "必填",
+  "inboxNote": "本页的消息会发往 info.inkabrailletrail@gmail.com。",
+  "formActivate": "请打开 info.inkabrailletrail@gmail.com，点击 FormSubmit 邮件里的确认链接。在点击之前，消息不会送达。",
   "nav": {
     "label": "主导航",
     "menu": "菜单",
@@ -132,7 +134,7 @@
     },
     "form": {
       "heading": "志愿者表单",
-      "inactive": "此表单尚未启用。项目负责人需在网站建设者无法访问的收件箱中确认 Formspree 邮件后,表单才会生效。拟定的接收邮箱:volunteers@incabrailletrail.com。",
+      "inactive": "此表单尚未启用。项目负责人需在网站建设者无法访问的收件箱中确认 Formspree 邮件后,表单才会生效。拟定的接收邮箱:info@incabrailletrail.com。",
       "requiredNote": "所有字段均为必填。",
       "name": "姓名",
       "email": "电子邮箱",
@@ -183,7 +185,7 @@
     "form": {
       "heading": "捐赠表单",
       "intro": "请选择我们可以公开的内容。",
-      "emailNote": "此表单将发往一个我们还没有的电子邮箱。在该地址存在之前,内容不会送达任何地方。",
+      "emailNote": "此表单发往 info@incabrailletrail.com。该地址还不存在,在它存在之前,内容不会送达任何地方。",
       "legend": "我们可以公开什么?",
       "optName": "公开我的姓名",
       "optAmount": "公开金额",

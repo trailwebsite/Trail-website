@@ -95,17 +95,20 @@
           <form
             id="form-doacao"
             class="formulario"
-            action="https://formspree.io/f/FORMSPREE_DONACOES_ID"
+            action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
             method="POST"
-            data-ativo="false"
+            data-ativo="true"
+            data-msg-activate="请打开 info.inkabrailletrail@gmail.com，点击 FormSubmit 邮件里的确认链接。在点击之前，消息不会送达。"
             data-msg-required="此字段为必填。"
             data-msg-network="留言无法发送。请检查网络连接后重试。"
             data-msg-summary="表单无法发送。请检查标有错误的字段。"
             data-msg-sending="正在发送…"
             data-msg-success="谢谢。我们已收到你的选择。"
-            data-msg-inactive="此表单将发往一个我们还没有的电子邮箱。在该地址存在之前,内容不会送达任何地方。"
+            data-msg-inactive="此表单发往 info@incabrailletrail.com。该地址还不存在,在它存在之前,内容不会送达任何地方。"
           >
             <input type="hidden" name="_language" value="zh-Hans">
+            <input type="hidden" name="_subject" value="Doação — Inca Braille Trail">
+            <input type="hidden" name="_captcha" value="false">
 
             <fieldset class="campo">
               <legend>我们可以公开什么? <span class="req">(必填)</span></legend>
@@ -133,13 +136,13 @@
 
             <div class="hp" aria-hidden="true">
               <label for="d-gotcha">请将此栏留空</label>
-              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="d-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
             </div>
 
             <button class="botao maiusculas" type="submit">发送选择</button>
           </form>
 
-          <p class="nota-email">此表单将发往一个我们还没有的电子邮箱。在该地址存在之前,内容不会送达任何地方。</p>
+          <p class="nota-email">本页的消息会发往 info.inkabrailletrail@gmail.com。</p>
 
           <h3 class="secao-titulo">捐赠账户</h3>
           <dl class="contas">
@@ -185,16 +188,12 @@
             </dd>
           </div>
           <div>
-            <dt>参观</dt>
-            <dd>需提前预约<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>社交媒体</dt>
             <dd>Instagram: 待确认<br>Facebook: 待确认</dd>
           </div>
           <div>
             <dt>电子邮箱</dt>
-            <dd><ul><li><span class="email">donations@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

@@ -5,6 +5,8 @@
   "skip": "본문으로 건너뛰기",
   "external": "(새 탭에서 열림)",
   "required": "필수",
+  "inboxNote": "이 페이지의 메시지는 info.inkabrailletrail@gmail.com 으로 보내집니다.",
+  "formActivate": "info.inkabrailletrail@gmail.com 을 열고 FormSubmit 메일의 확인 링크를 누르세요. 그 클릭 전까지 메시지는 대기하며 전달되지 않습니다.",
   "nav": {
     "label": "주 메뉴",
     "menu": "메뉴",
@@ -132,7 +134,7 @@
     },
     "form": {
       "heading": "자원봉사 신청 양식",
-      "inactive": "이 양식은 아직 활성화되지 않았습니다. 프로젝트 소유자가 사이트 제작자는 접근할 수 없는 받은편지함에서 Formspree 이메일을 확인한 뒤에 작동합니다. 예정 수신처: volunteers@incabrailletrail.com.",
+      "inactive": "이 양식은 아직 활성화되지 않았습니다. 프로젝트 소유자가 사이트 제작자는 접근할 수 없는 받은편지함에서 Formspree 이메일을 확인한 뒤에 작동합니다. 예정 수신처: info@incabrailletrail.com.",
       "requiredNote": "모든 항목은 필수입니다.",
       "name": "이름",
       "email": "이메일 주소",
@@ -183,7 +185,7 @@
     "form": {
       "heading": "기부 양식",
       "intro": "무엇을 공개해도 될지 선택하세요.",
-      "emailNote": "이 양식은 아직 없는 이메일로 보내도록 되어 있습니다. 그 주소가 생기기 전에는 아무 데도 전달되지 않습니다.",
+      "emailNote": "이 양식은 info@incabrailletrail.com 으로 보내도록 되어 있습니다. 그 주소는 아직 없어서, 생기기 전에는 아무 데도 전달되지 않습니다.",
       "legend": "무엇을 공개해도 될까요?",
       "optName": "내 이름 공개",
       "optAmount": "금액 공개",

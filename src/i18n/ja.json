@@ -5,6 +5,8 @@
   "skip": "本文へスキップ",
   "external": "(新しいタブで開きます)",
   "required": "必須",
+  "inboxNote": "このページのメッセージは info.inkabrailletrail@gmail.com に送られます。",
+  "formActivate": "info.inkabrailletrail@gmail.com を開き、FormSubmit からのメールにある確認リンクをクリックしてください。そのクリックまで、メッセージは届きません。",
   "nav": {
     "label": "メインナビゲーション",
     "menu": "メニュー",
@@ -132,7 +134,7 @@
     },
     "form": {
       "heading": "ボランティア申し込みフォーム",
-      "inactive": "このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:volunteers@incabrailletrail.com。",
+      "inactive": "このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:info@incabrailletrail.com。",
       "requiredNote": "すべての項目は必須です。",
       "name": "お名前",
       "email": "メールアドレス",
@@ -183,7 +185,7 @@
     "form": {
       "heading": "寄付フォーム",
       "intro": "公開してよいものを選んでください。",
-      "emailNote": "このフォームは、まだ手元にないメールアドレス宛です。そのアドレスができるまで、何も届きません。",
+      "emailNote": "このフォームの宛先は info@incabrailletrail.com です。そのアドレスはまだないので、できるまで何も届きません。",
       "legend": "何を公開してよいですか?",
       "optName": "名前を公開する",
       "optAmount": "金額を公開する",

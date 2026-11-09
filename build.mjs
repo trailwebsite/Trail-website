@@ -25,7 +25,6 @@ const PAGINAS = [
   { id: 'audiovideo', rota: 'audio-video' },
 ]
 const OG_LOCALE = { en: 'en_US', es: 'es_PE', pt: 'pt_BR', ko: 'ko_KR', ja: 'ja_JP', zh: 'zh_CN' }
-const PLACEHOLDERS = { formspreeId: 'FORMSPREE_ID', formspreeDonacoesId: 'FORMSPREE_DONACOES_ID' }
 
 // caminho público — raiz do site, sempre com barra final
 function caminho(idioma, pagina) {
@@ -145,13 +144,13 @@ function caixasTexto(pagina, boxes) {
   )
 }
 
-// cada página mostra só o email da função dela; visitas trazem o de reservas em todas
+// por enquanto o cliente só quer info@; os outros endereços ficam fora da página
 const EMAILS_DA_PAGINA = {
-  home: ['contact', 'bookings', 'info'],
-  trails: ['bookings'],
-  volunteer: ['volunteers'],
-  donations: ['donations'],
-  audiovideo: ['contact'],
+  home: ['info'],
+  trails: ['info'],
+  volunteer: ['info'],
+  donations: ['info'],
+  audiovideo: ['info'],
 }
 
 function contatoHtml(t, site, pagina) {
@@ -176,10 +175,6 @@ function contatoHtml(t, site, pagina) {
             </dd>
           </div>
           <div>
-            <dt>${escapar(c.visitsLabel)}</dt>
-            <dd>${escapar(c.visitsValue)}<br><span class="email">${escapar(site.contato.emails.bookings)}</span></dd>
-          </div>
-          <div>
             <dt>${escapar(c.socialLabel)}</dt>
             <dd>Instagram: ${escapar(c.tbc)}<br>Facebook: ${escapar(c.tbc)}</dd>
           </div>
@@ -193,7 +188,7 @@ function contatoHtml(t, site, pagina) {
 }
 
 const HEADERS = `/*
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io https://formsubmit.co; form-action https://formspree.io https://formsubmit.co; base-uri 'self'; object-src 'none'; frame-ancestors 'none'
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
@@ -269,8 +264,9 @@ async function main() {
 
   const ano = new Date().getFullYear()
   const robots = site.robotsNoindex ? '<meta name="robots" content="noindex">' : ''
-  const voluntarioAtivo = site.formspreeId !== PLACEHOLDERS.formspreeId
-  const doacoesAtivo = site.formspreeDonacoesId !== PLACEHOLDERS.formspreeDonacoesId
+  const recepcao = typeof site.recepcao === 'string' ? site.recepcao.trim() : ''
+  const formsAtivos = recepcao.includes('@')
+  const formAction = formsAtivos ? `https://formsubmit.co/ajax/${recepcao}` : ''
   let gerados = 0
 
   for (const idioma of IDIOMAS) {
@@ -278,9 +274,8 @@ async function main() {
     for (const pagina of PAGINAS) {
       const ctx = {
         siteName: site.siteName,
-        formspreeId: site.formspreeId,
-        formspreeDonacoesId: site.formspreeDonacoesId,
-        doacoesAtivo: String(doacoesAtivo),
+        formAction,
+        formsAtivos: String(formsAtivos),
         contas: site.doacao,
         htmlLang: t.htmlLang,
         title: t[pagina.id].title,
@@ -310,7 +305,7 @@ async function main() {
           largura: site.cartaz.largura,
           altura: site.cartaz.altura,
         },
-        voluntarioAtivo: String(voluntarioAtivo),
+        voluntarioAtivo: String(formsAtivos),
       }
       ctx.content = render(templates[pagina.id], ctx)
       const html = render(layout, ctx)
@@ -332,8 +327,7 @@ async function main() {
   await writeFile(join(SAIDA, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`)
 
   console.log(`Build concluído: ${gerados} páginas HTML em ${SAIDA}`)
-  if (!voluntarioAtivo) console.warn('Aviso: formspreeId ainda é o placeholder. O formulário de voluntariado não envia até configurar src/site.json.')
-  if (!doacoesAtivo) console.warn('Aviso: formspreeDonacoesId ainda é o placeholder. O formulário de doação não envia até configurar src/site.json.')
+  if (!formsAtivos) console.warn('Aviso: recepcao vazia em src/site.json. Os formulários não enviam.')
   if (site.robotsNoindex) console.warn('Aviso: robotsNoindex=true. O site pede aos buscadores para não indexar.')
 }
 

@@ -13,9 +13,10 @@
       <form
         id="form-voluntario"
         class="formulario"
-        action="https://formspree.io/f/{{formspreeId}}"
+        action="{{formAction}}"
         method="POST"
-        data-ativo="{{voluntarioAtivo}}"
+        data-ativo="{{formsAtivos}}"
+        data-msg-activate="{{t.formActivate}}"
         data-msg-required="{{t.volunteer.form.errRequired}}"
         data-msg-email="{{t.volunteer.form.errEmail}}"
         data-msg-network="{{t.volunteer.form.errNetwork}}"
@@ -26,6 +27,8 @@
       >
         <p class="nota-obrigatorio">{{t.volunteer.form.requiredNote}}</p>
         <input type="hidden" name="_language" value="{{htmlLang}}">
+        <input type="hidden" name="_subject" value="Voluntariado — Inca Braille Trail">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="campo">
           <label for="f-nome">{{t.volunteer.form.name}} <span class="req">({{t.required}})</span></label>
@@ -60,11 +63,12 @@
         <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
         <div class="hp" aria-hidden="true">
           <label for="f-gotcha">{{t.volunteer.form.honeypot}}</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="f-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
         </div>
 
         <button class="botao maiusculas" type="submit">{{t.volunteer.form.submit}}</button>
       </form>
+      <p class="nota-email">{{t.inboxNote}}</p>
     </div>
 
     <div class="caixas entra atraso-2">

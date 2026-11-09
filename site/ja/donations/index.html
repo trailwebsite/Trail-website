@@ -95,17 +95,20 @@
           <form
             id="form-doacao"
             class="formulario"
-            action="https://formspree.io/f/FORMSPREE_DONACOES_ID"
+            action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
             method="POST"
-            data-ativo="false"
+            data-ativo="true"
+            data-msg-activate="info.inkabrailletrail@gmail.com を開き、FormSubmit からのメールにある確認リンクをクリックしてください。そのクリックまで、メッセージは届きません。"
             data-msg-required="この項目は必須です。"
             data-msg-network="メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
             data-msg-summary="フォームを送信できませんでした。エラーの欄を確認してください。"
             data-msg-sending="送信中…"
             data-msg-success="ありがとうございます。選択を受け取りました。"
-            data-msg-inactive="このフォームは、まだ手元にないメールアドレス宛です。そのアドレスができるまで、何も届きません。"
+            data-msg-inactive="このフォームの宛先は info@incabrailletrail.com です。そのアドレスはまだないので、できるまで何も届きません。"
           >
             <input type="hidden" name="_language" value="ja">
+            <input type="hidden" name="_subject" value="Doação — Inca Braille Trail">
+            <input type="hidden" name="_captcha" value="false">
 
             <fieldset class="campo">
               <legend>何を公開してよいですか? <span class="req">(必須)</span></legend>
@@ -133,13 +136,13 @@
 
             <div class="hp" aria-hidden="true">
               <label for="d-gotcha">この欄は空のままにしてください</label>
-              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="d-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
             </div>
 
             <button class="botao maiusculas" type="submit">選択を送る</button>
           </form>
 
-          <p class="nota-email">このフォームは、まだ手元にないメールアドレス宛です。そのアドレスができるまで、何も届きません。</p>
+          <p class="nota-email">このページのメッセージは info.inkabrailletrail@gmail.com に送られます。</p>
 
           <h3 class="secao-titulo">寄付先の口座</h3>
           <dl class="contas">
@@ -185,16 +188,12 @@
             </dd>
           </div>
           <div>
-            <dt>見学</dt>
-            <dd>事前予約制<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>SNS</dt>
             <dd>Instagram: 確認待ち<br>Facebook: 確認待ち</dd>
           </div>
           <div>
             <dt>メール</dt>
-            <dd><ul><li><span class="email">donations@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

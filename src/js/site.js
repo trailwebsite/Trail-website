@@ -88,7 +88,19 @@
     }
   }
 
-  // formulário de voluntariado — validação própria, foco no primeiro erro e envio por fetch ao Formspree
+  // resposta do FormSubmit: success vem como texto "true" ou "false"; ativação ainda não clicada não é sucesso
+  async function envioAceito(resposta) {
+    const dados = await resposta.json().catch(() => null)
+    const ok = dados && (dados.success === true || dados.success === 'true')
+    if (!resposta.ok || !ok) {
+      const texto = dados && dados.message ? String(dados.message) : ''
+      const erro = new Error(texto || `HTTP ${resposta.status}`)
+      erro.ativar = /activat/i.test(texto)
+      throw erro
+    }
+  }
+
+  // formulário de voluntariado — validação própria, foco no primeiro erro e envio ao Gmail de recepção
   function voluntariado() {
     const form = document.getElementById('form-voluntario')
     if (!form) return
@@ -167,13 +179,13 @@
           body: new FormData(form),
           headers: { Accept: 'application/json' },
         })
-        if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`)
+        await envioAceito(resposta)
         form.hidden = true
         mostrarEstado(msg.msgSuccess)
         estado.focus()
-      } catch {
+      } catch (erro) {
         estado.hidden = true
-        mostrarAlerta(msg.msgNetwork)
+        mostrarAlerta(erro && erro.ativar ? msg.msgActivate : msg.msgNetwork)
         alerta.focus()
         botaoEnviar.disabled = false
         botaoEnviar.textContent = rotuloEnviar
@@ -181,7 +193,7 @@
     })
   }
 
-  // escolha de doação — mostra nome/valor conforme a opção e envia ao Formspree; sem e-mail, nada sai
+  // escolha de doação — mostra nome/valor conforme a opção e envia ao mesmo Gmail de recepção
   function doacao() {
     const form = document.getElementById('form-doacao')
     if (!form) return
@@ -292,13 +304,13 @@
           body: new FormData(form),
           headers: { Accept: 'application/json' },
         })
-        if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`)
+        await envioAceito(resposta)
         form.hidden = true
         mostrarEstado(msg.msgSuccess)
         estado.focus()
-      } catch {
+      } catch (erro) {
         estado.hidden = true
-        mostrarAlerta(msg.msgNetwork)
+        mostrarAlerta(erro && erro.ativar ? msg.msgActivate : msg.msgNetwork)
         alerta.focus()
         botaoEnviar.disabled = false
         botaoEnviar.textContent = rotuloEnviar

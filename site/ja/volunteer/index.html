@@ -79,19 +79,22 @@
       <form
         id="form-voluntario"
         class="formulario"
-        action="https://formspree.io/f/FORMSPREE_ID"
+        action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
         method="POST"
-        data-ativo="false"
+        data-ativo="true"
+        data-msg-activate="info.inkabrailletrail@gmail.com を開き、FormSubmit からのメールにある確認リンクをクリックしてください。そのクリックまで、メッセージは届きません。"
         data-msg-required="この項目は必須です。"
         data-msg-email="有効なメールアドレスを入力してください。例:name@example.com"
         data-msg-network="メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
         data-msg-summary="フォームを送信できませんでした。エラーの付いた項目を確認してください。"
         data-msg-sending="送信中…"
         data-msg-success="ありがとうございます。メッセージを受け取りました。近日中にご連絡します。"
-        data-msg-inactive="このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:volunteers@incabrailletrail.com。"
+        data-msg-inactive="このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:info@incabrailletrail.com。"
       >
         <p class="nota-obrigatorio">すべての項目は必須です。</p>
         <input type="hidden" name="_language" value="ja">
+        <input type="hidden" name="_subject" value="Voluntariado — Inca Braille Trail">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="campo">
           <label for="f-nome">お名前 <span class="req">(必須)</span></label>
@@ -126,11 +129,12 @@
         <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
         <div class="hp" aria-hidden="true">
           <label for="f-gotcha">この欄は空のままにしてください</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="f-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
         </div>
 
         <button class="botao maiusculas" type="submit">メッセージを送信</button>
       </form>
+      <p class="nota-email">このページのメッセージは info.inkabrailletrail@gmail.com に送られます。</p>
     </div>
 
     <div class="caixas entra atraso-2">
@@ -169,16 +173,12 @@
             </dd>
           </div>
           <div>
-            <dt>見学</dt>
-            <dd>事前予約制<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>SNS</dt>
             <dd>Instagram: 確認待ち<br>Facebook: 確認待ち</dd>
           </div>
           <div>
             <dt>メール</dt>
-            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

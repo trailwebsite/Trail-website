@@ -5,6 +5,8 @@
   "skip": "Skip to content",
   "external": "(opens in a new tab)",
   "required": "required",
+  "inboxNote": "Messages from this page are sent to info.inkabrailletrail@gmail.com.",
+  "formActivate": "Open info.inkabrailletrail@gmail.com and click the confirmation link in the message from FormSubmit. Until that click, the message waits and is not delivered.",
   "nav": {
     "label": "Main navigation",
     "menu": "Menu",
@@ -132,7 +134,7 @@
     },
     "form": {
       "heading": "Volunteer form",
-      "inactive": "This form is not active yet. It will work after the project owner confirms the Formspree email, in an inbox the site builder has no access to. Intended destination: volunteers@incabrailletrail.com.",
+      "inactive": "This form is not active yet. It will work after the project owner confirms the Formspree email, in an inbox the site builder has no access to. Intended destination: info@incabrailletrail.com.",
       "requiredNote": "All fields are required.",
       "name": "Name",
       "email": "Email address",
@@ -183,7 +185,7 @@
     "form": {
       "heading": "Donation form",
       "intro": "Choose what we may publish.",
-      "emailNote": "This form is sent to an email address we do not have yet. Nothing is delivered until that address exists.",
+      "emailNote": "This form is sent to info@incabrailletrail.com. That address does not exist yet, so nothing is delivered until it does.",
       "legend": "What may we publish?",
       "optName": "Publish my name",
       "optAmount": "Publish the amount",

@@ -95,17 +95,20 @@
           <form
             id="form-doacao"
             class="formulario"
-            action="https://formspree.io/f/FORMSPREE_DONACOES_ID"
+            action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
             method="POST"
-            data-ativo="false"
+            data-ativo="true"
+            data-msg-activate="Abre info.inkabrailletrail@gmail.com y pulsa el enlace de confirmación del mensaje de FormSubmit. Hasta ese clic, el mensaje queda en espera y no se entrega."
             data-msg-required="Este campo es obligatorio."
             data-msg-network="No se pudo enviar el mensaje. Comprueba tu conexión e inténtalo de nuevo."
             data-msg-summary="No se pudo enviar el formulario. Revisa los campos marcados con error."
             data-msg-sending="Enviando…"
             data-msg-success="Gracias. Recibimos tu elección."
-            data-msg-inactive="Este formulario se envía a un correo que todavía no tenemos. No llega a ningún lugar hasta que esa dirección exista."
+            data-msg-inactive="Este formulario se envía a info@incabrailletrail.com. Esa dirección todavía no existe, así que no llega a ningún lugar hasta que exista."
           >
             <input type="hidden" name="_language" value="es">
+            <input type="hidden" name="_subject" value="Doação — Inca Braille Trail">
+            <input type="hidden" name="_captcha" value="false">
 
             <fieldset class="campo">
               <legend>¿Qué podemos publicar? <span class="req">(obligatorio)</span></legend>
@@ -133,13 +136,13 @@
 
             <div class="hp" aria-hidden="true">
               <label for="d-gotcha">Deja este campo vacío</label>
-              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="d-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
             </div>
 
             <button class="botao maiusculas" type="submit">Enviar elección</button>
           </form>
 
-          <p class="nota-email">Este formulario se envía a un correo que todavía no tenemos. No llega a ningún lugar hasta que esa dirección exista.</p>
+          <p class="nota-email">Los mensajes de esta página se envían a info.inkabrailletrail@gmail.com.</p>
 
           <h3 class="secao-titulo">Datos bancarios para donar</h3>
           <dl class="contas">
@@ -185,16 +188,12 @@
             </dd>
           </div>
           <div>
-            <dt>Visitas</dt>
-            <dd>Con cita previa<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>Redes sociales</dt>
             <dd>Instagram: por confirmar<br>Facebook: por confirmar</dd>
           </div>
           <div>
             <dt>Correo electrónico</dt>
-            <dd><ul><li><span class="email">donations@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

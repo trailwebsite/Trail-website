@@ -5,6 +5,8 @@
   "skip": "Saltar al contenido",
   "external": "(se abre en otra pestaña)",
   "required": "obligatorio",
+  "inboxNote": "Los mensajes de esta página se envían a info.inkabrailletrail@gmail.com.",
+  "formActivate": "Abre info.inkabrailletrail@gmail.com y pulsa el enlace de confirmación del mensaje de FormSubmit. Hasta ese clic, el mensaje queda en espera y no se entrega.",
   "nav": {
     "label": "Navegación principal",
     "menu": "Menú",
@@ -132,7 +134,7 @@
     },
     "form": {
       "heading": "Formulario de voluntariado",
-      "inactive": "Este formulario todavía no está activo. Funcionará cuando el dueño del proyecto confirme el correo de Formspree, en una bandeja a la que quien construye el sitio no tiene acceso. Destino previsto: volunteers@incabrailletrail.com.",
+      "inactive": "Este formulario todavía no está activo. Funcionará cuando el dueño del proyecto confirme el correo de Formspree, en una bandeja a la que quien construye el sitio no tiene acceso. Destino previsto: info@incabrailletrail.com.",
       "requiredNote": "Todos los campos son obligatorios.",
       "name": "Nombre",
       "email": "Correo electrónico",
@@ -183,7 +185,7 @@
     "form": {
       "heading": "Formulario de donación",
       "intro": "Elige qué podemos publicar.",
-      "emailNote": "Este formulario se envía a un correo que todavía no tenemos. No llega a ningún lugar hasta que esa dirección exista.",
+      "emailNote": "Este formulario se envía a info@incabrailletrail.com. Esa dirección todavía no existe, así que no llega a ningún lugar hasta que exista.",
       "legend": "¿Qué podemos publicar?",
       "optName": "Publicar mi nombre",
       "optAmount": "Publicar el monto",

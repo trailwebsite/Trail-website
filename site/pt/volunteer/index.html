@@ -79,19 +79,22 @@
       <form
         id="form-voluntario"
         class="formulario"
-        action="https://formspree.io/f/FORMSPREE_ID"
+        action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
         method="POST"
-        data-ativo="false"
+        data-ativo="true"
+        data-msg-activate="Abra info.inkabrailletrail@gmail.com e clique no link de confirmação da mensagem do FormSubmit. Até esse clique, a mensagem fica esperando e não é entregue."
         data-msg-required="Este campo é obrigatório."
         data-msg-email="Digite um e-mail válido, por exemplo nome@exemplo.com."
         data-msg-network="Não foi possível enviar a mensagem. Verifique sua conexão e tente de novo."
         data-msg-summary="Não foi possível enviar o formulário. Confira os campos marcados com erro."
         data-msg-sending="Enviando…"
         data-msg-success="Obrigado. Recebemos sua mensagem e entraremos em contato em breve."
-        data-msg-inactive="Este formulário ainda não está ativo. Vai funcionar depois que o dono do projeto confirmar o e-mail do Formspree, numa caixa à qual quem constrói o site não tem acesso. Destino previsto: volunteers@incabrailletrail.com."
+        data-msg-inactive="Este formulário ainda não está ativo. Vai funcionar depois que o dono do projeto confirmar o e-mail do Formspree, numa caixa à qual quem constrói o site não tem acesso. Destino previsto: info@incabrailletrail.com."
       >
         <p class="nota-obrigatorio">Todos os campos são obrigatórios.</p>
         <input type="hidden" name="_language" value="pt-BR">
+        <input type="hidden" name="_subject" value="Voluntariado — Inca Braille Trail">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="campo">
           <label for="f-nome">Nome <span class="req">(obrigatório)</span></label>
@@ -126,11 +129,12 @@
         <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
         <div class="hp" aria-hidden="true">
           <label for="f-gotcha">Deixe este campo vazio</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="f-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
         </div>
 
         <button class="botao maiusculas" type="submit">Enviar mensagem</button>
       </form>
+      <p class="nota-email">As mensagens desta página são enviadas para info.inkabrailletrail@gmail.com.</p>
     </div>
 
     <div class="caixas entra atraso-2">
@@ -169,16 +173,12 @@
             </dd>
           </div>
           <div>
-            <dt>Visitas</dt>
-            <dd>Somente com hora marcada<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>Redes sociais</dt>
             <dd>Instagram: a confirmar<br>Facebook: a confirmar</dd>
           </div>
           <div>
             <dt>E-mail</dt>
-            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

@@ -79,19 +79,22 @@
       <form
         id="form-voluntario"
         class="formulario"
-        action="https://formspree.io/f/FORMSPREE_ID"
+        action="https://formsubmit.co/ajax/info.inkabrailletrail@gmail.com"
         method="POST"
-        data-ativo="false"
+        data-ativo="true"
+        data-msg-activate="请打开 info.inkabrailletrail@gmail.com，点击 FormSubmit 邮件里的确认链接。在点击之前，消息不会送达。"
         data-msg-required="此字段为必填。"
         data-msg-email="请输入有效的电子邮箱,例如 name@example.com。"
         data-msg-network="留言无法发送。请检查网络连接后重试。"
         data-msg-summary="表单无法发送。请检查标有错误的字段。"
         data-msg-sending="发送中…"
         data-msg-success="谢谢。我们已收到您的留言,会尽快与您联系。"
-        data-msg-inactive="此表单尚未启用。项目负责人需在网站建设者无法访问的收件箱中确认 Formspree 邮件后,表单才会生效。拟定的接收邮箱:volunteers@incabrailletrail.com。"
+        data-msg-inactive="此表单尚未启用。项目负责人需在网站建设者无法访问的收件箱中确认 Formspree 邮件后,表单才会生效。拟定的接收邮箱:info@incabrailletrail.com。"
       >
         <p class="nota-obrigatorio">所有字段均为必填。</p>
         <input type="hidden" name="_language" value="zh-Hans">
+        <input type="hidden" name="_subject" value="Voluntariado — Inca Braille Trail">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="campo">
           <label for="f-nome">姓名 <span class="req">(必填)</span></label>
@@ -126,11 +129,12 @@
         <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
         <div class="hp" aria-hidden="true">
           <label for="f-gotcha">请将此栏留空</label>
-          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="f-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
         </div>
 
         <button class="botao maiusculas" type="submit">发送留言</button>
       </form>
+      <p class="nota-email">本页的消息会发往 info.inkabrailletrail@gmail.com。</p>
     </div>
 
     <div class="caixas entra atraso-2">
@@ -169,16 +173,12 @@
             </dd>
           </div>
           <div>
-            <dt>参观</dt>
-            <dd>需提前预约<br><span class="email">bookings@incabrailletrail.com</span></dd>
-          </div>
-          <div>
             <dt>社交媒体</dt>
             <dd>Instagram: 待确认<br>Facebook: 待确认</dd>
           </div>
           <div>
             <dt>电子邮箱</dt>
-            <dd><ul><li><span class="email">volunteers@incabrailletrail.com</span></li></ul></dd>
+            <dd><ul><li><span class="email">info.inkabrailletrail@gmail.com</span></li></ul></dd>
           </div>
         </dl>
       </div>

@@ -27,9 +27,10 @@
           <form
             id="form-doacao"
             class="formulario"
-            action="https://formspree.io/f/{{formspreeDonacoesId}}"
+            action="{{formAction}}"
             method="POST"
-            data-ativo="{{doacoesAtivo}}"
+            data-ativo="{{formsAtivos}}"
+            data-msg-activate="{{t.formActivate}}"
             data-msg-required="{{t.donations.form.errRequired}}"
             data-msg-network="{{t.donations.form.errNetwork}}"
             data-msg-summary="{{t.donations.form.summary}}"
@@ -38,6 +39,8 @@
             data-msg-inactive="{{t.donations.form.emailNote}}"
           >
             <input type="hidden" name="_language" value="{{htmlLang}}">
+            <input type="hidden" name="_subject" value="Doação — Inca Braille Trail">
+            <input type="hidden" name="_captcha" value="false">
 
             <fieldset class="campo">
               <legend>{{t.donations.form.legend}} <span class="req">({{t.required}})</span></legend>
@@ -65,13 +68,13 @@
 
             <div class="hp" aria-hidden="true">
               <label for="d-gotcha">{{t.donations.form.honeypot}}</label>
-              <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              <input id="d-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
             </div>
 
             <button class="botao maiusculas" type="submit">{{t.donations.form.submit}}</button>
           </form>
 
-          <p class="nota-email">{{t.donations.form.emailNote}}</p>
+          <p class="nota-email">{{t.inboxNote}}</p>
 
           <h3 class="secao-titulo">{{t.donations.bank.heading}}</h3>
           <dl class="contas">
