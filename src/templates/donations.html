@@ -1,36 +1,53 @@
-<!-- donations.html — doações: regra de publicação e formulário da escolha; o pagamento acontece no PayPal, fora do site -->
+<!-- donations.html — patrocinadores: texto e lugares de logo; a doação, o formulário e as contas ficam numa caixa -->
     <div class="pagina-topo">
       <div class="conteudo">
         <h1 class="entra">{{t.donations.h1}}</h1>
         <p class="entra atraso-1">{{t.donations.lead}}</p>
+        <ul class="logos" aria-label="{{t.donations.logosLabel}}">
+          <li>{{t.donations.logoPending}}</li>
+          <li>{{t.donations.logoPending}}</li>
+          <li>{{t.donations.logoPending}}</li>
+          <li>{{t.donations.logoPending}}</li>
+        </ul>
       </div>
     </div>
 
-    <div class="conteudo form-direto entra atraso-2">
-      <h2 class="secao-titulo">{{t.donations.form.heading}}</h2>
-      <p>{{t.donations.form.intro}}</p>
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-donations-1-botao" aria-expanded="true" aria-controls="caixa-donations-1">{{t.donations.boxes.0.title}}</button></h2>
+        <div class="caixa-painel" id="caixa-donations-1" role="region" aria-labelledby="caixa-donations-1-botao">
+          {{{doacaoTexto}}}
 
-      <!-- O formulário não tem botão próprio: quando fica válido, o controle do PayPal aparece. A escolha vai ao Formspree ao clicar nele. -->
-      <form
+          <h3 class="secao-titulo">{{t.donations.form.heading}}</h3>
+          <p>{{t.donations.form.intro}}</p>
+
+          <div id="form-doacao-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
+          <div id="form-doacao-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+
+          <form
             id="form-doacao"
             class="formulario"
+            action="https://formspree.io/f/{{formspreeDonacoesId}}"
             method="POST"
-            data-formspree="{{formspreeDonacoesId}}"
-            data-paypal="{{paypalUrl}}"
+            data-ativo="{{doacoesAtivo}}"
             data-msg-required="{{t.donations.form.errRequired}}"
-            data-msg-paypal="{{t.donations.form.paypal}}"
-            data-msg-external="{{t.external}}"
+            data-msg-network="{{t.donations.form.errNetwork}}"
+            data-msg-summary="{{t.donations.form.summary}}"
+            data-msg-sending="{{t.donations.form.sending}}"
+            data-msg-success="{{t.donations.form.success}}"
+            data-msg-inactive="{{t.donations.form.emailNote}}"
           >
             <input type="hidden" name="_language" value="{{htmlLang}}">
 
             <fieldset class="campo">
               <legend>{{t.donations.form.legend}} <span class="req">({{t.required}})</span></legend>
               <div class="opcoes">
-                <label class="opcao"><input type="radio" name="publish" value="name" required> <span>{{t.donations.form.optName}}</span></label>
-                <label class="opcao"><input type="radio" name="publish" value="amount" required> <span>{{t.donations.form.optAmount}}</span></label>
-                <label class="opcao"><input type="radio" name="publish" value="both" required> <span>{{t.donations.form.optBoth}}</span></label>
-                <label class="opcao"><input type="radio" name="publish" value="none" required> <span>{{t.donations.form.optNone}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="name" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optName}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="amount" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optAmount}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="both" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optBoth}}</span></label>
+                <label class="opcao"><input type="radio" name="publish" value="none" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optNone}}</span></label>
               </div>
+              <p id="d-escolha-erro" class="campo-erro" hidden></p>
             </fieldset>
 
             <div class="campo" id="campo-nome" hidden>
@@ -51,6 +68,30 @@
               <input id="d-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
             </div>
 
-            <div id="paypal" class="paypal" aria-live="polite" hidden></div>
-      </form>
+            <button class="botao maiusculas" type="submit">{{t.donations.form.submit}}</button>
+          </form>
+
+          <p class="nota-email">{{t.donations.form.emailNote}}</p>
+
+          <h3 class="secao-titulo">{{t.donations.bank.heading}}</h3>
+          <dl class="contas">
+            <div>
+              <dt>{{t.donations.bank.soles}}</dt>
+              <dd>{{contas.soles.bcp}}</dd>
+            </div>
+            <div>
+              <dt>{{t.donations.bank.solesInter}}</dt>
+              <dd>{{contas.soles.interbancaria}}</dd>
+            </div>
+            <div>
+              <dt>{{t.donations.bank.dolares}}</dt>
+              <dd>{{contas.dolares.bcp}}</dd>
+            </div>
+            <div>
+              <dt>{{t.donations.bank.dolaresInter}}</dt>
+              <dd>{{contas.dolares.interbancaria}}</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
     </div>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trails — Inca Braille Trail</title>
+  <meta name="description" content="Two walks on the Inca Braille Trail: one to learn about the cycle of life, and a sensory walk of touch, scent and sensation. The texts are still placeholders.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://incabrailletrail-436.pages.dev/trails/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Trails — Inca Braille Trail">
+  <meta property="og:description" content="Two walks on the Inca Braille Trail: one to learn about the cycle of life, and a sensory walk of touch, scent and sensation. The texts are still placeholders.">
+  <meta property="og:url" content="https://incabrailletrail-436.pages.dev/trails/">
+  <meta property="og:image" content="https://incabrailletrail-436.pages.dev/img/og.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/img/logo-inca-braille-trail.png" type="image/png">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body class="pagina-trails">
+  <a class="pular" href="#contenido">Skip to content</a>
+
+  <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
+    <div class="cabecalho-interno">
+      <a class="marca" href="/"><img class="marca-logo" src="/img/logo-inca-braille-trail.png" alt="Inca Braille Trail" width="192" height="188"></a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/">Home</a></li>
+          <li><a class="maiusculas" href="/trails/" aria-current="page">Trails</a></li>
+          <li><a class="maiusculas" href="/volunteer/">Volunteer</a></li>
+          <li><a class="maiusculas" href="/donations/">Sponsors</a></li>
+          <li><a class="maiusculas" href="/audio-video/">Media</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">Language: </span>English
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="Choose a language">
+              <li><a href="/trails/" lang="en" hreflang="en" aria-current="true">English <span class="oculto-visual">(current language)</span></a></li>
+              <li><a href="/es/trails/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/trails/" lang="pt-BR" hreflang="pt">Português</a></li>
+              <li><a href="/ko/trails/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/trails/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/trails/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- trails.html — caminhadas: duas caixas provisórias, educativa e sensorial, até o cliente mandar o texto -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">Trails</h1>
+        <p class="entra atraso-1">Two walks are planned. These texts are placeholders until the project owner sends the full description.</p>
+      </div>
+    </div>
+
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trails-1-botao" aria-expanded="true" aria-controls="caixa-trails-1">Educational walks</button></h2>
+      <div class="caixa-painel" id="caixa-trails-1" role="region" aria-labelledby="caixa-trails-1-botao">
+        <p>A walk to learn about the cycle of life. This sentence is a placeholder and will be replaced when the project description arrives.</p>
+      </div>
+    </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trails-2-botao" aria-expanded="true" aria-controls="caixa-trails-2">Sensory walks</button></h2>
+      <div class="caixa-painel" id="caixa-trails-2" role="region" aria-labelledby="caixa-trails-2-botao">
+        <p>A sensory walk of touch, scents and sensations. This sentence is a placeholder and will be replaced when the project description arrives.</p>
+      </div>
+    </section>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">Contact</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>Where</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, Sacred Valley of the Incas, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">Open the map <span class="externo">(opens in a new tab)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Phone and WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">Message on WhatsApp <span class="externo">(opens in a new tab)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Visits</dt>
+            <dd>By advance arrangement<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>Social media</dt>
+            <dd>Instagram: to be confirmed<br>Facebook: to be confirmed</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><ul><li><span class="email">bookings@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · A sensory trail for blind and visually impaired people</p>
+    <p>Azul Tika, Pumawanka, Urubamba, Sacred Valley of the Incas, Cusco, Peru · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

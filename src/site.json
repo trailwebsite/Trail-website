@@ -1,10 +1,9 @@
 {
-  "baseUrl": "https://incabrailletrail.pages.dev",
+  "baseUrl": "https://incabrailletrail-436.pages.dev",
   "siteName": "Inca Braille Trail",
   "dominioPretendido": "www.incabrailletrail.com",
   "formspreeId": "FORMSPREE_ID",
   "formspreeDonacoesId": "FORMSPREE_DONACOES_ID",
-  "paypalUrl": "",
   "robotsNoindex": true,
   "contato": {
     "telefone": "+51 914 015 544",
@@ -17,6 +16,10 @@
       "donations": "donations@incabrailletrail.com",
       "contact": "contact@incabrailletrail.com"
     }
+  },
+  "doacao": {
+    "soles": { "bcp": "2857096163099", "interbancaria": "00228500709616309956" },
+    "dolares": { "bcp": "2857096168159", "interbancaria": "00228500709616815953" }
   },
   "cartaz": {
     "arquivo": "cartaz-inca-braille-trail",

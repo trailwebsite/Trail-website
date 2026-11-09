@@ -8,11 +8,11 @@ const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..')
 const SITE = join(RAIZ, 'site')
 const site = JSON.parse(await readFile(join(RAIZ, 'src', 'site.json'), 'utf8'))
 
-// inglês na raiz; 4 páginas × 6 idiomas
+// inglês na raiz; 5 páginas × 6 idiomas
 const ESPERADO = {}
 const LANGS = { '': 'en', '/es': 'es', '/pt': 'pt-BR', '/ko': 'ko', '/ja': 'ja', '/zh': 'zh-Hans' }
 for (const [prefixo, lang] of Object.entries(LANGS)) {
-  for (const rota of ['', 'volunteer/', 'donations/', 'audio-video/']) ESPERADO[`${prefixo}/${rota}`] = [lang]
+  for (const rota of ['', 'trails/', 'volunteer/', 'donations/', 'audio-video/']) ESPERADO[`${prefixo}/${rota}`] = [lang]
 }
 
 const falhas = []
@@ -34,7 +34,7 @@ async function existe(caminho) {
 
 const arquivos = await listar(SITE)
 const htmls = arquivos.filter((a) => a.endsWith('.html'))
-if (htmls.length !== 24) falha(`Esperava 24 HTML, encontrei ${htmls.length}`)
+if (htmls.length !== 30) falha(`Esperava 30 HTML, encontrei ${htmls.length}`)
 
 const titulos = new Set()
 const textoCss = await readFile(join(SITE, 'css', 'style.css'), 'utf8')

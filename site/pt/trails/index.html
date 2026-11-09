@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- layout.html — casca comum de toda página: head, cabeçalho com navegação, main, contato e rodapé -->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trilhas — Inca Braille Trail</title>
+  <meta name="description" content="Duas caminhadas no Inca Braille Trail: uma para aprender o ciclo da vida e outra sensorial, de toque, cheiros e sensações. Os textos ainda são provisórios.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://incabrailletrail-436.pages.dev/pt/trails/">
+  <link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/">
+  <link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/">
+  <link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/">
+  <link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/">
+  <link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/">
+  <link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inca Braille Trail">
+  <meta property="og:title" content="Trilhas — Inca Braille Trail">
+  <meta property="og:description" content="Duas caminhadas no Inca Braille Trail: uma para aprender o ciclo da vida e outra sensorial, de toque, cheiros e sensações. Os textos ainda são provisórios.">
+  <meta property="og:url" content="https://incabrailletrail-436.pages.dev/pt/trails/">
+  <meta property="og:image" content="https://incabrailletrail-436.pages.dev/img/og.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="theme-color" content="#1b5e20">
+  <link rel="icon" href="/img/logo-inca-braille-trail.png" type="image/png">
+  <link rel="preload" href="/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/flag.js"></script>
+</head>
+<body class="pagina-trails">
+  <a class="pular" href="#contenido">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="faixa" aria-hidden="true"></div>
+    <div class="cabecalho-interno">
+      <a class="marca" href="/pt/"><img class="marca-logo" src="/img/logo-inca-braille-trail.png" alt="Inca Braille Trail" width="192" height="188"></a>
+
+      <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-lista" id="menu-principal">
+          <li><a class="maiusculas" href="/pt/">Início</a></li>
+          <li><a class="maiusculas" href="/pt/trails/" aria-current="page">Trilhas</a></li>
+          <li><a class="maiusculas" href="/pt/volunteer/">Voluntariado</a></li>
+          <li><a class="maiusculas" href="/pt/donations/">Patrocinadores</a></li>
+          <li><a class="maiusculas" href="/pt/audio-video/">Mídia</a></li>
+          <li class="idioma">
+            <button class="idioma-botao maiusculas" type="button" aria-expanded="false" aria-controls="lista-idiomas">
+              <span class="oculto-visual">Idioma: </span>Português
+            </button>
+            <ul class="idioma-lista" id="lista-idiomas" aria-label="Escolher idioma">
+              <li><a href="/trails/" lang="en" hreflang="en">English</a></li>
+              <li><a href="/es/trails/" lang="es" hreflang="es">Español</a></li>
+              <li><a href="/pt/trails/" lang="pt-BR" hreflang="pt" aria-current="true">Português <span class="oculto-visual">(idioma atual)</span></a></li>
+              <li><a href="/ko/trails/" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="/ja/trails/" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="/zh/trails/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+<!-- trails.html — caminhadas: duas caixas provisórias, educativa e sensorial, até o cliente mandar o texto -->
+    <div class="pagina-topo">
+      <div class="conteudo">
+        <h1 class="entra">Trilhas</h1>
+        <p class="entra atraso-1">Há duas caminhadas previstas. Estes textos são provisórios até o dono do projeto enviar a descrição completa.</p>
+      </div>
+    </div>
+
+    <div class="caixas entra atraso-2">
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trails-1-botao" aria-expanded="true" aria-controls="caixa-trails-1">Caminhadas educativas</button></h2>
+      <div class="caixa-painel" id="caixa-trails-1" role="region" aria-labelledby="caixa-trails-1-botao">
+        <p>Uma caminhada para aprender o ciclo da vida. Esta frase é um marcador de lugar e será trocada quando a descrição do projeto chegar.</p>
+      </div>
+    </section>
+      <section class="caixa">
+      <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trails-2-botao" aria-expanded="true" aria-controls="caixa-trails-2">Caminhadas sensoriais</button></h2>
+      <div class="caixa-painel" id="caixa-trails-2" role="region" aria-labelledby="caixa-trails-2-botao">
+        <p>Uma caminhada sensorial de toque, cheiros e sensações. Esta frase é um marcador de lugar e será trocada quando a descrição do projeto chegar.</p>
+      </div>
+    </section>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="faixa" aria-hidden="true"></div>
+    <section class="contato" aria-labelledby="contato-titulo">
+      <div class="contato-interno">
+        <h2 id="contato-titulo">Contato</h2>
+        <dl class="contato-lista">
+          <div>
+            <dt>Onde</dt>
+            <dd>Azul Tika, Pumawanka, Urubamba, Vale Sagrado dos Incas, Cusco, Peru<br>
+              <a class="botao botao-leve" href="https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9" target="_blank" rel="noopener noreferrer">Abrir o mapa <span class="externo">(abre em nova aba)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Telefone e WhatsApp</dt>
+            <dd><a href="tel:+51914015544">+51 914 015 544</a><br>
+              <a href="https://wa.me/51914015544" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp <span class="externo">(abre em nova aba)</span></a>
+            </dd>
+          </div>
+          <div>
+            <dt>Visitas</dt>
+            <dd>Somente com hora marcada<br><span class="email">bookings@incabrailletrail.com</span></dd>
+          </div>
+          <div>
+            <dt>Redes sociais</dt>
+            <dd>Instagram: a confirmar<br>Facebook: a confirmar</dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd><ul><li><span class="email">bookings@incabrailletrail.com</span></li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <p><strong>Inca Braille Trail</strong> · Uma trilha sensorial para pessoas cegas e com baixa visão</p>
+    <p>Azul Tika, Pumawanka, Urubamba, Vale Sagrado dos Incas, Cusco, Peru · © 2026</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

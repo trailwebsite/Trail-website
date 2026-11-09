@@ -1,4 +1,4 @@
-<!-- home.html — página inicial: cartaz do cliente no hero, h1 só para leitor de tela e três caixas de texto -->
+<!-- home.html — página inicial: cartaz, aviso de construção, chamado de voluntários e três caixas -->
     <div class="hero">
       <div class="hero-interno">
         <h1 class="oculto-visual">{{siteName}}</h1>
@@ -7,6 +7,16 @@
           <img src="{{cartaz.jpg}}" width="{{cartaz.largura}}" height="{{cartaz.altura}}" alt="{{t.home.heroAlt}}" fetchpriority="high">
         </picture>
         <p class="hero-frase entra atraso-1">{{t.home.tagline}}</p>
+      </div>
+    </div>
+
+    <div class="conteudo miolo">
+      <div class="aviso entra atraso-1">
+        <div class="faixa" aria-hidden="true"></div>
+        <p>{{t.home.banner}}</p>
+      </div>
+      <div class="intro entra atraso-2">
+        {{{apelo}}}
       </div>
     </div>
 

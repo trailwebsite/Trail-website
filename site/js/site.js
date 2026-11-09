@@ -1,4 +1,4 @@
-// site.js — comportamento acessível: menu, idioma, caixas que abrem e fecham, formulário de voluntariado e escolha de doação
+// site.js — comportamento acessível: menu, idioma, caixas que abrem e fecham, formulário de voluntariado e formulário de doação
 (() => {
   'use strict'
 
@@ -181,21 +181,24 @@
     })
   }
 
-  // escolha de doação — mostra nome/valor conforme a opção; o controle do PayPal só aparece com o formulário válido
+  // escolha de doação — mostra nome/valor conforme a opção e envia ao Formspree; sem e-mail, nada sai
   function doacao() {
     const form = document.getElementById('form-doacao')
     if (!form) return
 
+    const alerta = document.getElementById('form-doacao-alerta')
+    const estado = document.getElementById('form-doacao-estado')
+    const botaoEnviar = form.querySelector('.botao')
+    const rotuloEnviar = botaoEnviar.textContent
     const msg = form.dataset
     const opcoes = Array.from(form.querySelectorAll('input[name="publish"]'))
     const nome = document.getElementById('d-nome')
     const valor = document.getElementById('d-valor')
-    const paypal = document.getElementById('paypal')
+    const escolhaErro = document.getElementById('d-escolha-erro')
     form.noValidate = true
 
     const escolha = () => (opcoes.find((o) => o.checked) || {}).value || ''
 
-    // campo fora da escolha fica escondido e desativado: não aparece nem viaja no envio
     function mostrarCampo(campo, mostrar) {
       campo.closest('.campo').hidden = !mostrar
       campo.required = mostrar
@@ -203,72 +206,105 @@
       if (!mostrar) limparErro(campo)
     }
 
-    function valido() {
-      const e = escolha()
-      if (!e) return false
-      if (nome.required && !nome.value.trim()) return false
-      if (valor.required && !valor.value.trim()) return false
-      return true
+    function limparEscolha() {
+      escolhaErro.textContent = ''
+      escolhaErro.hidden = true
+      for (const opcao of opcoes) opcao.removeAttribute('aria-invalid')
+    }
+
+    function marcarEscolha() {
+      escolhaErro.textContent = msg.msgRequired
+      escolhaErro.hidden = false
+      for (const opcao of opcoes) opcao.setAttribute('aria-invalid', 'true')
     }
 
     function atualizar() {
       const e = escolha()
       mostrarCampo(nome, e === 'name' || e === 'both')
       mostrarCampo(valor, e === 'amount' || e === 'both')
-      paypal.hidden = !valido()
+      if (e) limparEscolha()
     }
 
-    // registra a escolha no Formspree; sem ID, não há para onde mandar
-    function registrarEscolha() {
-      if (!msg.formspree) return
-      fetch(`https://formspree.io/f/${msg.formspree}`, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
-        keepalive: true,
-      }).catch(() => {})
+    function mostrarAlerta(texto) {
+      alerta.textContent = texto
+      alerta.hidden = false
     }
 
-    // controle do PayPal: sem link, botão desativado e sem destino; com link, abre em nova aba e registra a escolha antes
-    function montarPaypal() {
-      if (!msg.paypal) {
-        const botao = document.createElement('button')
-        botao.type = 'button'
-        botao.className = 'botao'
-        botao.setAttribute('aria-disabled', 'true')
-        botao.textContent = msg.msgPaypal
-        paypal.append(botao)
-        return
+    function esconderAlerta() {
+      alerta.textContent = ''
+      alerta.hidden = true
+    }
+
+    function mostrarEstado(texto) {
+      estado.textContent = texto
+      estado.hidden = false
+    }
+
+    function validar() {
+      const comErro = []
+      limparEscolha()
+      if (!escolha()) {
+        marcarEscolha()
+        comErro.push(opcoes[0])
       }
-      const link = document.createElement('a')
-      link.className = 'botao'
-      link.href = msg.paypal
-      link.target = '_blank'
-      link.rel = 'noopener noreferrer'
-      link.textContent = `${msg.msgPaypal} `
-      const externo = document.createElement('span')
-      externo.className = 'externo'
-      externo.textContent = msg.msgExternal
-      link.append(externo)
-      link.addEventListener('click', registrarEscolha)
-      paypal.append(link)
+      for (const campo of [nome, valor]) {
+        if (!campo.required || campo.disabled) continue
+        limparErro(campo)
+        if (!campo.value.trim()) {
+          marcarErro(campo, msg.msgRequired)
+          comErro.push(campo)
+        }
+      }
+      return comErro
     }
 
     for (const opcao of opcoes) opcao.addEventListener('change', atualizar)
     for (const campo of [nome, valor]) {
       campo.addEventListener('input', () => {
         if (campo.getAttribute('aria-invalid') === 'true') limparErro(campo)
-        paypal.hidden = !valido()
-      })
-      campo.addEventListener('blur', () => {
-        if (campo.required && !campo.value.trim()) marcarErro(campo, msg.msgRequired)
       })
     }
 
-    // sem botão de envio próprio: Enter num campo não manda nada
-    form.addEventListener('submit', (evento) => evento.preventDefault())
+    form.addEventListener('submit', async (evento) => {
+      evento.preventDefault()
+      esconderAlerta()
 
-    montarPaypal()
+      const comErro = validar()
+      if (comErro.length) {
+        mostrarAlerta(msg.msgSummary)
+        comErro[0].focus()
+        return
+      }
+
+      if (msg.ativo !== 'true') {
+        mostrarAlerta(msg.msgInactive)
+        alerta.focus()
+        return
+      }
+
+      botaoEnviar.disabled = true
+      botaoEnviar.textContent = msg.msgSending
+      mostrarEstado(msg.msgSending)
+
+      try {
+        const resposta = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        })
+        if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`)
+        form.hidden = true
+        mostrarEstado(msg.msgSuccess)
+        estado.focus()
+      } catch {
+        estado.hidden = true
+        mostrarAlerta(msg.msgNetwork)
+        alerta.focus()
+        botaoEnviar.disabled = false
+        botaoEnviar.textContent = rotuloEnviar
+      }
+    })
+
     atualizar()
   }
 

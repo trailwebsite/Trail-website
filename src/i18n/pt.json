@@ -9,8 +9,9 @@
     "label": "Navegação principal",
     "menu": "Menu",
     "home": "Início",
+    "trails": "Trilhas",
     "volunteer": "Voluntariado",
-    "donations": "Doações",
+    "donations": "Patrocinadores",
     "audiovideo": "Mídia"
   },
   "lang": {
@@ -26,7 +27,7 @@
       "O formulário de voluntariado não envia mensagens até a conta do Formspree ser confirmada.",
       "O formulário de doação não envia nada até o Formspree ser conectado: a escolha de publicar nome ou valor ainda não é registrada em lugar nenhum.",
       "Contas de Instagram e Facebook a confirmar.",
-      "Link do PayPal a receber.",
+      "As doações são transferidas para as contas bancárias da página de patrocinadores. O dono do projeto vai confirmar se as duas contas ficam.",
       "Áudio e vídeo da trilha a receber.",
       "Fotos e vídeos dos voluntários a receber.",
       "Domínio {dominio} a registrar."
@@ -63,6 +64,7 @@
     "description": "Uma trilha educativa e sensorial em desenvolvimento para pessoas cegas e com baixa visão, com suas famílias, amigos e acompanhantes, no Vale Sagrado dos Incas, Cusco, Peru.",
     "heroAlt": "Cartaz do projeto. Uma pessoa de poncho e gorro andino caminha com bengala branca por um caminho de pedra com corrimão de corda, entre muros incas de pedra e um arco, com terraços andinos e montanhas nevadas ao fundo. Placas de pedra ao longo do caminho trazem pontos em braile. O cartaz diz: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. Uma placa de pedra diz: INCA TRAIL, com braile embaixo.",
     "tagline": "Uma trilha educativa e sensorial para pessoas cegas e com baixa visão, no Vale Sagrado dos Incas, Cusco, Peru.",
+    "banner": "Este site é um projeto em construção.",
     "boxes": [
       {
         "title": "O que é o Inca Braille Trail?",
@@ -151,15 +153,28 @@
       "errNetwork": "Não foi possível enviar a mensagem. Verifique sua conexão e tente de novo."
     }
   },
+  "trails": {
+    "title": "Trilhas — {siteName}",
+    "description": "Duas caminhadas no Inca Braille Trail: uma para aprender o ciclo da vida e outra sensorial, de toque, cheiros e sensações. Os textos ainda são provisórios.",
+    "h1": "Trilhas",
+    "lead": "Há duas caminhadas previstas. Estes textos são provisórios até o dono do projeto enviar a descrição completa.",
+    "boxes": [
+      { "title": "Caminhadas educativas", "content": ["Uma caminhada para aprender o ciclo da vida. Esta frase é um marcador de lugar e será trocada quando a descrição do projeto chegar."] },
+      { "title": "Caminhadas sensoriais", "content": ["Uma caminhada sensorial de toque, cheiros e sensações. Esta frase é um marcador de lugar e será trocada quando a descrição do projeto chegar."] }
+    ]
+  },
   "donations": {
-    "title": "Doações — {siteName}",
-    "description": "Doações e patrocinadores mantêm o Inca Braille Trail gratuito para os visitantes. O pagamento é feito pelo PayPal. Quem doa escolhe se publica o nome, o valor, ambos ou nenhum.",
-    "h1": "Doações",
-    "lead": "Doações e patrocinadores mantêm a trilha gratuita para os visitantes. O pagamento é feito pelo PayPal, não neste site.",
+    "title": "Patrocinadores — {siteName}",
+    "description": "Empresas e marcas podem apoiar o Inca Braille Trail. Com o acordo delas, um logo pode aparecer aqui. As doações são feitas por transferência bancária.",
+    "h1": "Patrocinadores",
+    "lead": "Se a sua empresa ou a sua marca pode contribuir com este projeto, entre em contato. Com o seu acordo, o logo da sua marca pode aparecer aqui.",
+    "logosLabel": "Espaços para logos de patrocinadores",
+    "logoPending": "Espaço para um logo",
     "boxes": [
       {
-        "title": "Como as doações são reconhecidas",
+        "title": "Doação",
         "content": [
+          "As doações mantêm a trilha gratuita para os visitantes. A transferência é feita para as contas bancárias desta página.",
           "Quem doa pode escolher se publica o nome, o valor da doação, ambos ou nenhum. Doações anônimas são bem-vindas.",
           "Nenhum nome é publicado neste site por enquanto."
         ]
@@ -167,8 +182,8 @@
     ],
     "form": {
       "heading": "Formulário de doação",
-      "intro": "Escolha o que pode ser publicado antes de ir ao PayPal. O botão do PayPal aparece quando a escolha estiver completa.",
-      "formspreeInactive": "A escolha de publicar nome ou valor ainda não é registrada em lugar nenhum até o Formspree ser conectado. Destino previsto: donations@incabrailletrail.com.",
+      "intro": "Escolha o que podemos publicar.",
+      "emailNote": "Este formulário é enviado para um e-mail que ainda não temos. Nada chega a lugar nenhum até esse endereço existir.",
       "legend": "O que podemos publicar?",
       "optName": "Publicar meu nome",
       "optAmount": "Publicar o valor",
@@ -178,9 +193,19 @@
       "amount": "Valor a publicar",
       "amountHint": "Inclua a moeda, por exemplo 50 USD.",
       "honeypot": "Deixe este campo vazio",
-      "paypal": "Continuar para o PayPal",
-      "paypalPending": "O link do PayPal ainda não foi enviado. Este botão vai abrir o PayPal quando o dono do projeto mandar o link.",
-      "errRequired": "Este campo é obrigatório."
+      "submit": "Enviar escolha",
+      "sending": "Enviando…",
+      "success": "Obrigado. Recebemos a sua escolha.",
+      "summary": "Não foi possível enviar o formulário. Confira os campos marcados com erro.",
+      "errRequired": "Este campo é obrigatório.",
+      "errNetwork": "Não foi possível enviar a mensagem. Verifique sua conexão e tente de novo."
+    },
+    "bank": {
+      "heading": "Dados bancários para doar",
+      "soles": "Conta BCP em soles",
+      "solesInter": "Número da conta interbancária em soles",
+      "dolares": "Conta BCP em dólares",
+      "dolaresInter": "Número da conta interbancária em dólares"
     }
   },
   "audiovideo": {

@@ -1,4 +1,4 @@
-// build.mjs — gera o site estático em /site: 4 páginas × 6 idiomas, redirects, sitemap, robots, headers e ativos
+// build.mjs — gera o site estático em /site: 5 páginas × 6 idiomas, redirects, sitemap, robots, headers e ativos
 import { readFile, writeFile, mkdir, rm, cp, readdir } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -19,6 +19,7 @@ const IDIOMAS = [
 ]
 const PAGINAS = [
   { id: 'home', rota: '' },
+  { id: 'trails', rota: 'trails' },
   { id: 'volunteer', rota: 'volunteer' },
   { id: 'donations', rota: 'donations' },
   { id: 'audiovideo', rota: 'audio-video' },
@@ -147,6 +148,7 @@ function caixasTexto(pagina, boxes) {
 // cada página mostra só o email da função dela; visitas trazem o de reservas em todas
 const EMAILS_DA_PAGINA = {
   home: ['contact', 'bookings', 'info'],
+  trails: ['bookings'],
   volunteer: ['volunteers'],
   donations: ['donations'],
   audiovideo: ['contact'],
@@ -277,8 +279,9 @@ async function main() {
       const ctx = {
         siteName: site.siteName,
         formspreeId: site.formspreeId,
-        formspreeDonacoesId: doacoesAtivo ? site.formspreeDonacoesId : '',
-        paypalUrl: site.paypalUrl,
+        formspreeDonacoesId: site.formspreeDonacoesId,
+        doacoesAtivo: String(doacoesAtivo),
+        contas: site.doacao,
         htmlLang: t.htmlLang,
         title: t[pagina.id].title,
         description: t[pagina.id].description,
@@ -294,8 +297,11 @@ async function main() {
         navItems: navHtml(t, idioma, pagina),
         langItems: idiomasHtml(traducoes, idioma, pagina),
         contato: contatoHtml(t, site, pagina),
-        volunteerIntro: pagina.id === 'volunteer'
+        apelo: pagina.id === 'home'
           ? t.volunteer.boxes[0].content.map(blocoHtml).join('\n          ')
+          : '',
+        doacaoTexto: pagina.id === 'donations'
+          ? t.donations.boxes[0].content.map(blocoHtml).join('\n          ')
           : '',
         caixa: caixasTexto(pagina, t[pagina.id].boxes || []),
         cartaz: {
@@ -327,8 +333,7 @@ async function main() {
 
   console.log(`Build concluído: ${gerados} páginas HTML em ${SAIDA}`)
   if (!voluntarioAtivo) console.warn('Aviso: formspreeId ainda é o placeholder. O formulário de voluntariado não envia até configurar src/site.json.')
-  if (!doacoesAtivo) console.warn('Aviso: formspreeDonacoesId ainda é o placeholder. A escolha de publicação não é registrada até configurar src/site.json.')
-  if (!site.paypalUrl) console.warn('Aviso: paypalUrl vazio. O botão do PayPal aparece desativado até o cliente enviar o link.')
+  if (!doacoesAtivo) console.warn('Aviso: formspreeDonacoesId ainda é o placeholder. O formulário de doação não envia até configurar src/site.json.')
   if (site.robotsNoindex) console.warn('Aviso: robotsNoindex=true. O site pede aos buscadores para não indexar.')
 }
 

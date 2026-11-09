@@ -162,8 +162,9 @@ a:hover { color: var(--verde); }
   transition: color var(--dur) var(--curva), border-color var(--dur) var(--curva);
 }
 .nav-lista > li > a:hover { color: var(--verde-escuro); }
-/* Só a barrinha muda de cor. O texto do menu fica verde. Home vermelho, voluntariado amarelo, doações azul, áudio roxo. */
+/* Só a barrinha muda de cor. O texto do menu fica verde. Home vermelho, trilhas laranja, voluntariado amarelo, patrocinadores azul, áudio roxo. */
 .pagina-home { --marca: #d7263d; }
+.pagina-trails { --marca: #f26b1d; }
 .pagina-volunteer { --marca: #f2c230; }
 .pagina-donations { --marca: #3a8fd9; }
 .pagina-audiovideo { --marca: #7b3fa0; }
@@ -249,6 +250,40 @@ html:not(.js) .caixa-botao::after { display: none; }
 .pagina-topo h1 { font-size: clamp(1.9rem, 3.26vw, 2.48rem); font-weight: 700; color: var(--verde-escuro); }
 .pagina-topo p, .intro p { margin-top: .75rem; color: var(--texto-2); }
 .intro ul { margin-top: .75rem; }
+.miolo { padding-top: 1.25rem; padding-bottom: .25rem; }
+.aviso {
+  background: var(--fundo-suave);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+  text-align: center;
+}
+.aviso p { margin: 0; padding: .9rem 1.25rem; font-weight: 700; color: var(--verde-escuro); }
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.logos li {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem;
+  text-align: center;
+  color: var(--texto-3);
+  background: var(--fundo-suave);
+  border: 1px dashed var(--borda-controle);
+  border-radius: var(--raio);
+}
+.nota-email { margin-top: 1.25rem; color: var(--texto-2); }
+.contas { margin-top: .75rem; }
+.contas div + div { margin-top: .85rem; }
+.contas dt { font-weight: 700; color: var(--verde-escuro); }
+.contas dd { margin: .15rem 0 0; font-variant-numeric: tabular-nums; letter-spacing: .03em; }
 
 /* ── Conteúdo ── */
 .conteudo {
@@ -275,6 +310,7 @@ html:not(.js) .caixa-botao::after { display: none; }
 .caixa:has(.caixa-botao[aria-expanded="true"]) { border-color: var(--verde); box-shadow: var(--sombra); }
 .caixa-titulo { font-size: 1.28rem; }
 .secao-titulo { font-size: 1.28rem; font-weight: 700; color: var(--verde-escuro); }
+.caixa-painel .secao-titulo { margin-top: 1.5rem; }
 .form-direto > p { margin: .75rem 0 1.25rem; color: var(--texto-2); }
 .caixa-botao {
   display: flex;
@@ -357,6 +393,7 @@ html:not(.js) .caixa-botao::after { display: none; }
 /* ── Formulário ── */
 .nota-obrigatorio { color: var(--texto-3); margin-bottom: 1.25rem; }
 .formulario { max-width: none; }
+.formulario .botao { margin-top: .5rem; }
 .campo { margin-bottom: 1.5rem; }
 fieldset.campo { border: 0; padding: 0; min-width: 0; }
 .campo label, .campo legend { display: block; font-weight: 700; margin-bottom: .45rem; padding: 0; }
@@ -423,8 +460,6 @@ fieldset.campo { border: 0; padding: 0; min-width: 0; }
 .botao-leve:hover { color: var(--branco); }
 
 /* Controle do PayPal: nasce escondido, aparece com o formulário válido */
-.paypal { margin-top: .5rem; }
-.paypal:not([hidden]) { animation: aparecer .35s var(--curva) both; }
 
 .alerta, .estado {
   padding: 1rem 1.25rem;
@@ -505,6 +540,7 @@ fieldset.campo { border: 0; padding: 0; min-width: 0; }
   .contato h2 { font-size: calc(1rem - 6px); }
   .rodape > p { font-size: calc(.75rem - 6px); }
   .contato-lista { grid-template-columns: 1fr; }
+  .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .caixa-botao { padding: .9rem 3mm; }
   .caixa-painel { padding: .25rem 3mm 1.25rem; }
 }

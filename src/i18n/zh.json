@@ -9,8 +9,9 @@
     "label": "主导航",
     "menu": "菜单",
     "home": "首页",
+    "trails": "步道",
     "volunteer": "志愿者",
-    "donations": "捐赠",
+    "donations": "赞助",
     "audiovideo": "媒体"
   },
   "lang": {
@@ -26,7 +27,7 @@
       "志愿者表单在 Formspree 账户确认之前不会发送消息。",
       "捐赠表单在 Formspree 接入之前不会发送任何内容:公开姓名或金额的选择目前不会被记录在任何地方。",
       "Instagram 和 Facebook 账号待确认。",
-      "PayPal 链接待接收。",
+      "捐赠汇入赞助页上的银行账户。两个账户是否都保留，由项目负责人确认。",
       "步道的音频与视频待接收。",
       "志愿者的照片与视频待接收。",
       "域名 {dominio} 待注册。"
@@ -63,6 +64,7 @@
     "description": "位于 Peru Cusco 印加圣谷的一条教育性感官步道,正在为盲人和低视力人士及其家人、朋友和陪伴者开发中。",
     "heroAlt": "项目海报。一位身穿斗篷、头戴安第斯帽子的人手持白手杖,沿着带绳索扶手的石板小路行走,两旁是印加石墙和一座石拱门,远处是安第斯梯田和白雪覆盖的群山。路边的石牌上刻有盲文点。海报上的文字: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. 石牌上写着 INCA TRAIL，下面有盲文。",
     "tagline": "位于 Peru Cusco 印加圣谷,为盲人和低视力人士打造的教育性感官步道。",
+    "banner": "本网站是一个建设中的项目。",
     "boxes": [
       {
         "title": "什么是 Inca Braille Trail?",
@@ -151,15 +153,28 @@
       "errNetwork": "留言无法发送。请检查网络连接后重试。"
     }
   },
+  "trails": {
+    "title": "步道 — {siteName}",
+    "description": "Inca Braille Trail 的两条步行路线:一条了解生命循环,另一条是触觉、气味和感受的感官步行。文字仍是占位。",
+    "h1": "步道",
+    "lead": "计划有两条步行路线。下面的文字是占位,等项目负责人发来完整说明后再替换。",
+    "boxes": [
+      { "title": "教育步道", "content": ["一条用来了解生命循环的步行。这句话是占位,项目说明到达后会替换。"] },
+      { "title": "感官步道", "content": ["一条触觉、气味和感受的感官步行。这句话是占位,项目说明到达后会替换。"] }
+    ]
+  },
   "donations": {
-    "title": "捐赠 — {siteName}",
-    "description": "捐赠和赞助让 Inca Braille Trail 对访客免费开放。付款通过 PayPal 完成。捐赠者可选择公开姓名、金额、两者都公开,或都不公开。",
-    "h1": "捐赠",
-    "lead": "捐赠和赞助让步道对访客免费开放。付款通过 PayPal 完成,而非在本网站上。",
+    "title": "赞助 — {siteName}",
+    "description": "企业和品牌可以支持 Inca Braille Trail。在同意之后,标志可以出现在这里。捐赠通过银行转账完成。",
+    "h1": "赞助",
+    "lead": "如果您的企业或品牌能为这个项目贡献一份力量,欢迎与我们联系。在您同意之后,您的品牌标志可以出现在这里。",
+    "logosLabel": "赞助标志的位置",
+    "logoPending": "标志位置",
     "boxes": [
       {
-        "title": "捐赠如何致谢",
+        "title": "捐赠",
         "content": [
+          "捐赠让步道对访客保持免费。转账汇入本页的银行账户。",
           "捐赠者可以选择公开姓名、捐赠金额、两者都公开,或都不公开。欢迎匿名捐赠。",
           "本网站目前未公开任何姓名。"
         ]
@@ -167,8 +182,8 @@
     ],
     "form": {
       "heading": "捐赠表单",
-      "intro": "前往 PayPal 之前,请选择可以公开的内容。选择完成后会出现 PayPal 按钮。",
-      "formspreeInactive": "在 Formspree 接入之前,公开姓名或金额的选择不会被记录在任何地方。拟定的接收邮箱:donations@incabrailletrail.com。",
+      "intro": "请选择我们可以公开的内容。",
+      "emailNote": "此表单将发往一个我们还没有的电子邮箱。在该地址存在之前,内容不会送达任何地方。",
       "legend": "我们可以公开什么?",
       "optName": "公开我的姓名",
       "optAmount": "公开金额",
@@ -178,9 +193,19 @@
       "amount": "要公开的金额",
       "amountHint": "请注明货币,例如 50 USD。",
       "honeypot": "请将此栏留空",
-      "paypal": "继续前往 PayPal",
-      "paypalPending": "PayPal 链接尚未提供。项目负责人发送链接后,此按钮将打开 PayPal。",
-      "errRequired": "此字段为必填。"
+      "submit": "发送选择",
+      "sending": "正在发送…",
+      "success": "谢谢。我们已收到你的选择。",
+      "summary": "表单无法发送。请检查标有错误的字段。",
+      "errRequired": "此字段为必填。",
+      "errNetwork": "留言无法发送。请检查网络连接后重试。"
+    },
+    "bank": {
+      "heading": "捐赠账户",
+      "soles": "BCP 索尔账户",
+      "solesInter": "索尔跨行账号",
+      "dolares": "BCP 美元账户",
+      "dolaresInter": "美元跨行账号"
     }
   },
   "audiovideo": {
