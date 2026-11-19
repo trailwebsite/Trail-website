@@ -24,12 +24,18 @@
     }
   },
   "doacao": {
-    "soles": { "bcp": "2857096163099", "interbancaria": "00228500709616309956" },
-    "dolares": { "bcp": "2857096168159", "interbancaria": "00228500709616815953" }
+    "soles": {
+      "bcp": "2857096163099",
+      "interbancaria": "00228500709616309956"
+    },
+    "dolares": {
+      "bcp": "2857096168159",
+      "interbancaria": "00228500709616815953"
+    }
   },
   "cartaz": {
     "arquivo": "cartaz-inca-braille-trail",
-    "largura": 2142,
-    "altura": 734
+    "largura": 1856,
+    "altura": 576
   }
 }

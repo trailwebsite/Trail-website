@@ -365,6 +365,25 @@ async function idiomas(dbx) {
   return row ? row.valor.split(',').filter(Boolean) : ['en', 'es', 'pt', 'ko', 'ja', 'zh']
 }
 
+// repetirPendentes — nova tentativa só no login, ao abrir o editor ou ao salvar; lote curto para não estourar CPU
+const LOTE_PENDENTE = 6
+
+async function repetirPendentes(dbx, env) {
+  const fila = await dbx.all('SELECT chave, idioma FROM texto WHERE pendente = 1 LIMIT ?', LOTE_PENDENTE)
+  let feitos = 0
+  for (const row of fila) {
+    const todos = await dbx.all('SELECT idioma, valor, pendente FROM texto WHERE chave = ?', row.chave)
+    const fonte = todos.find((item) => !item.pendente && item.valor)
+    if (!fonte) continue
+    const mapa = await traduzirTodos(fonte.valor, fonte.idioma, [row.idioma], env)
+    const info = mapa[row.idioma]
+    if (!info || info.pendente) continue
+    await gravarTextos(dbx, row.chave, [{ idioma: row.idioma, valor: info.valor, pendente: 0 }])
+    feitos += 1
+  }
+  return feitos
+}
+
 async function chaveExiste(dbx, chave) {
   return !!(await dbx.get('SELECT 1 AS n FROM texto WHERE chave = ? LIMIT 1', chave))
 }
@@ -448,6 +467,9 @@ async function painel(context, dbx, url) {
     const sessao = await lerSessao(dbx, cookies.painel_sessao, env.SESSION_SECRET)
     if (!sessao) return texto(404, 'Not found')
     const nome = caminho.endsWith('.css') ? 'editor.css' : caminho.endsWith('ver.js') ? 'ver.js' : 'editor.js'
+    if (nome === 'editor.js') {
+      try { await repetirPendentes(dbx, env) } catch { /* a fila fica para a próxima entrada */ }
+    }
     const asset = await env.ASSETS.fetch(new Request(new URL(`/interno/${nome}`, request.url)))
     const headers = new Headers(asset.headers)
     headers.set('cache-control', 'no-store')
@@ -479,6 +501,7 @@ async function login(request, dbx, env, ip, cookies) {
     await zerar(dbx, `email:${email}`)
     const sessao = await criarSessao(dbx, env.SESSION_SECRET)
     await auditar(dbx, 'login', ip, 'sesión abierta')
+    try { await repetirPendentes(dbx, env) } catch { /* a fila fica para a próxima entrada */ }
     return ir('/', [
       cookie('painel_sessao', sessao.token, SESSAO_MS / 1000),
       cookie('painel_csrf', sessao.csrf, SESSAO_MS / 1000),
@@ -522,6 +545,9 @@ async function registro(request, dbx, env, ip, caminho) {
 async function api(request, dbx, env, url, ip) {
   const porta = await exigir(dbx, request, env)
   if (porta.erro) return porta.erro
+  if (request.method === 'POST') {
+    try { await repetirPendentes(dbx, env) } catch { /* o salvamento segue mesmo se a fila falhar */ }
+  }
   const rota = url.pathname
   if (rota === '/panel/api/texto' && request.method === 'GET') {
     const chave = url.searchParams.get('chave') || ''
