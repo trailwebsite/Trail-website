@@ -42,7 +42,6 @@
     document.head.appendChild(estilo)
     const codigo = document.createElement('script')
     codigo.src = '/panel/editor.js'
-    codigo.defer = true
     document.body.appendChild(codigo)
   }
 
@@ -578,17 +577,82 @@
     }
   }
 
-  // retratos — o nome abre a foto e o texto
+  // retratos — a miniatura abre a foto à esquerda e a biografia à direita
   function retratos() {
-    for (const botao of document.querySelectorAll('.perfil-botao')) {
-      const painel = document.getElementById(botao.getAttribute('aria-controls'))
-      if (!painel) continue
-      botao.addEventListener('click', () => {
-        const abrir = botao.getAttribute('aria-expanded') !== 'true'
-        botao.setAttribute('aria-expanded', String(abrir))
-        painel.classList.toggle('aberto', abrir)
+    const visor = document.getElementById('visor-voluntarios')
+    const botoes = Array.from(document.querySelectorAll('.voluntario-mini'))
+    if (!visor || !botoes.length) return
+    const foto = visor.querySelector('.visor-foto')
+    const nome = visor.querySelector('.visor-bio-nome')
+    const texto = visor.querySelector('.visor-bio-texto')
+    const fechar = visor.querySelector('.visor-fechar')
+    let indice = 0
+    let origem = null
+
+    function mostrar(n) {
+      indice = (n + botoes.length) % botoes.length
+      const item = botoes[indice].closest('.voluntario')
+      const previa = botoes[indice].querySelector('img')
+      foto.src = previa.currentSrc || previa.src
+      foto.alt = previa.alt || ''
+      nome.textContent = item.querySelector('.voluntario-nome')?.textContent?.trim() || ''
+      texto.replaceChildren()
+      for (const paragrafo of item.querySelectorAll('.voluntario-bio p')) {
+        const copia = document.createElement('p')
+        copia.textContent = paragrafo.textContent
+        texto.append(copia)
+      }
+      visor.classList.remove('visor-bio-viva')
+      void visor.offsetWidth
+      visor.classList.add('visor-bio-viva')
+      const reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      nome.style.animationDelay = reduzir ? '0s' : '.15s'
+      texto.querySelectorAll('p').forEach((el, i) => {
+        el.style.animationDelay = reduzir ? '0s' : `${0.5 + i * 0.5}s`
       })
     }
+
+    function fundo(ligado) {
+      for (const el of document.querySelectorAll('body > header, body > footer, #contenido > .pagina-topo, #contenido > .conteudo')) {
+        el.inert = ligado
+      }
+    }
+
+    function abrir(i, botao) {
+      origem = botao
+      visor.hidden = false
+      document.body.classList.add('visor-aberto')
+      fundo(true)
+      mostrar(i)
+      fechar.focus()
+    }
+
+    function cerrar() {
+      if (visor.hidden) return
+      visor.hidden = true
+      visor.classList.remove('visor-bio-viva')
+      document.body.classList.remove('visor-aberto')
+      fundo(false)
+      if (origem) origem.focus()
+    }
+
+    botoes.forEach((botao, i) => botao.addEventListener('click', () => abrir(i, botao)))
+    visor.querySelector('.visor-anterior').addEventListener('click', () => mostrar(indice - 1))
+    visor.querySelector('.visor-proximo').addEventListener('click', () => mostrar(indice + 1))
+    fechar.addEventListener('click', cerrar)
+    document.addEventListener('keydown', (evento) => {
+      if (visor.hidden) return
+      if (evento.key === 'Escape') {
+        evento.preventDefault()
+        cerrar()
+      } else if (evento.key === 'ArrowLeft') {
+        evento.preventDefault()
+        mostrar(indice - 1)
+      } else if (evento.key === 'ArrowRight') {
+        evento.preventDefault()
+        mostrar(indice + 1)
+      }
+    })
   }
 
   // inscrição — desce até o formulário e abre a caixa; vale para o botão e para o menu
