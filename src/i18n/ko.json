@@ -15,8 +15,8 @@
     "donations": "기부",
     "audiovideo": "미디어",
     "open": "페이지 열기",
-    "educational": "Trail 1: Educational Path",
-    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "educational": "트레일 1: 교육 코스",
+    "sensory": "트레일 2: 향기·약용 코스",
     "sponsors": "제휴 파트너",
     "app": "앱"
   },
@@ -69,7 +69,7 @@
     "title": "{siteName} — 시각장애인과 저시력인을 위한 감각 탐방로, 잉카 성스러운 계곡",
     "description": "Peru Cusco의 잉카 성스러운 계곡에서 시각장애인과 저시력인, 그리고 그 가족, 친구, 동행자를 위해 개발 중인 교육적이고 감각적인 탐방로입니다.",
     "heroAlt": "프로젝트 포스터. 털모자와 주황 판초를 입은 사람이 흰 지팡이를 짚고 나무 울타리 옆 돌길을 걷고 있으며, 여성과 아이가 서 있는 2층 돌집을 지나갑니다. 두 사람이 닭들 사이 초록 밭에 심고 있고, 레아 두 마리가 돌담 옆에 있습니다. 뒤에는 눈 덮인 산이 있습니다. 포스터에는 이렇게 적혀 있습니다: INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE. 표지판에는 프로젝트가 공사 중이며 자원봉사자가 급히 필요하다고 적혀 있습니다.",
-    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
+    "tagline": "생명 순환과 안데스 농업을 따라가는, 처음 선보이는 교육·감각 여정\n\n시각장애인과 저시력인을 위해 설계되었습니다.\n\n시력이 있는 방문객은 트레일에서 안대를 쓸 수 있습니다. 잠시 시야를 내려놓으면 농장의 소리·질감·향에 집중하고, 평소 놓치던 디테일을 발견하며 자연과 더 깊게 연결됩니다.",
     "banner": "이 웹사이트는 건설 중인 프로젝트입니다.",
     "boxes": [
       {
@@ -118,7 +118,7 @@
     "title": "자원봉사 — {siteName}",
     "description": "자원봉사자가 시급히 필요합니다: 탐방로 정비, 돌 옮기기, 정원 가꾸기, 부지 관리. 식사 제공, 종일 봉사자는 숙소 제공.",
     "h1": "자원봉사",
-    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroLine": "많은 손이 이 프로젝트에 마음을 담아 가능하게 만듭니다. 그들을 만나고, 이곳을 지나간 각 손의 이야기를 찾아보세요.",
     "heroAlt": "두 손이 키 큰 초록 식물을 안고 있습니다. 주변에는 더 많은 식물과 언덕이 있습니다.",
     "signNow": "자원봉사자로 신청하기",
     "lead": "시각장애인과 저시력 방문객에게 탐방로를 열기 위해 자원봉사자가 시급히 필요합니다.",
@@ -126,8 +126,8 @@
       {
         "title": "탐방로 만들기에 함께해 주세요",
         "content": [
-          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
-          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          "여러분의 도움이 필요합니다!!!\n가족도 환영합니다!\nInca Braille Trail을 살아 움직이게 도와주세요\n왜?\n이 Inca Braille Trail은 NFC/QR 기술로 시각장애·저시력인을 위한 교육과 감각 활동을 제공하고, 시력이 있는 일반 방문객도 시각을 잠시 제한해 다른 감각을 더 깊게 쓰도록 돕는 최초의 시도입니다.\n이 경험을 통해 형편이 어려운 이들에 대한 연민을 느끼고, 자신의 내면의 마법에 대한 감수성을 알아차리길 바랍니다.\n모금은 시각장애·저시력인과 가족·돌봄이에게 Inca Braille Trail에서 하루를 무료로 제공하는 데 직접 쓰입니다. 쿠스코 왕복 교통, 점심, 가져갈 선물이 포함됩니다.\n돌봄이와 가족은 자주 잊힙니다. 함께 축하하며, 모두에게 즐겁고 평생 남을 행사가 되도록 도와주세요.",
+          "도움이 필요합니다:\n-작은 돌길\n-기본 울타리\n-요리\n-소셜 미디어\n-일반 청소\n-갈퀴질\n-향기 식물 심기",
           {
             "list": [
               "당일 봉사자: 점심 제공.",
@@ -181,14 +181,14 @@
       },
       "vegprtsmkl6": {
         "name": "Nello Fraboni:",
-        "alt": "Nello Fraboni: smiles in a volunteer photo.",
-        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "alt": "자원봉사자 사진에서 미소 짓는 Nello Fraboni.",
+        "who": "나이 46세. 프랑스계 미국인 원예가로, 식물·자연·지속 가능한 농업에 열정을 갖고 있습니다. 재배, 번식, 온실 관리에 풍부한 경험이 있습니다. 현재 페루에서 퍼머컬처와 열대 재배 시스템을 탐구하고 있습니다.\n씨앗·식물·동물 생명을 올바르게 돌보는 일이 우리 자신과 얼마나 깊이 연결되는지, 그 이중성을 경험하게 됩니다.",
         "work": "",
         "why": ""
       }
     },
     "form": {
-      "heading": "Join Here!",
+      "heading": "여기서 참여하세요!",
       "lead": "자원봉사자로 신청하려면 아래 양식을 작성하세요.",
       "inactive": "이 양식은 아직 활성화되지 않았습니다. 프로젝트 소유자가 사이트 제작자는 접근할 수 없는 받은편지함에서 Formspree 이메일을 확인한 뒤에 작동합니다. 예정 수신처: info@incabrailletrail.com.",
       "requiredNote": "모든 항목은 필수입니다.",
@@ -299,12 +299,12 @@
   "educational": {
     "title": "교육 트레일 — {siteName}",
     "description": "음식이 자라고, 퇴비가 되어 흙으로 돌아가고, 다시 음식이 되는 과정을 걷는 길입니다.",
-    "h1": "Trail 1: Educational Path",
+    "h1": "트레일 1: 교육 코스",
     "heroLine": "여기서 삶의 순환을 따라 길 전체를 배웁니다.",
     "heroAlt": "두 손이 잎 사이 작은 초록 열매를 들고 있습니다. 열매 하나가 펼친 손바닥에 있습니다.",
     "moreTitle": "더 알아보기:",
-    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
-    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "lead": "앱을 다운로드하세요. 그러면 경험이 시작됩니다. 두 가지 옵션:\n1: 시각장애·저시력: 오디오 버전\n2: 시력 있음: 정류장에서 QR/NFC 스캔\n\n모든 분기점에는 점자 정보 카드가 있습니다.\n1. 시각장애·저시력: 오디오 버전\n시력 있는 안내자가 없으면 훈련된 자원봉사자가 동행합니다. 안내 오디오가 20개 정보 정류장을 안내합니다. 길에 4곳의 휴식 지점이 있으며, 각 지점에서 다음으로 가기 전 질문 5개에 답합니다. 핸드레일이 길을 안내합니다. 각 핸드레일 끝의 공이 손 바꿈(오른손↔왼손)을 알립니다. 흰지팡이로 감지되는 돌 가장자리가 방향을 안내합니다. 각 레일 끝의 종은 Q&A용 좌석을 쉽게 찾게 합니다.",
+    "p1": "생태:\n함께 일하기... 코스의 중요한 흥미로운 사실\n\n문화와 역사: 잉카부터 오늘까지 문화·역사적 음식과 관습 알아보기\n씨앗 준비: 재배·저장, 그리고 미래 세대를 위해 지켜야 하는 이유\n토양: 토양 준비, 퇴비, 미생물과 관리\n곤충: 수분, 유익종, 자연적 해충 관리\n동물 투입: 다른 유익 동물의 역할\n식물 관리: 식물 관계, 병 식별과 관리\n다시 심기: 수확 주기, 생태계 돕기, 환경 지원\n수확: 언제, 어떻게\n지구적 영향: 새·옛 데이터를 보며 변화에 대비\n물 관리: 수질 검사, 문제 파악, 새 해법, 청소·유지, 보존과 보호\n다시 심기: 수확 주기, 환경 도움\n동물 돌봄: 밭갈이부터 분뇨까지, 생명 순환에서 동물의 큰 역할 이해하기. 행동을 듣고 감각하기.\n(펼치기)\n공동체: 함께 일하기, 관계, 지지하고 나누기.",
     "p2": "",
     "p3": "건강한 흙은 건강한 식물을 기릅니다. 건강한 식물은 건강한 사람을 먹입니다. 교육 트레일은 그 생각을 걸어 갈 수 있는 길로 들려 줍니다.",
     "gallery": {
@@ -336,11 +336,11 @@
   "sensory": {
     "title": "감각 트레일 — {siteName}",
     "description": "촉감, 향, 소리, 발밑의 땅으로 걷는 길입니다. 시각장애인과 함께 걷는 사람을 위한 길입니다.",
-    "h1": "Trail 2: Aromatic and Medicinal Path",
-    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "h1": "트레일 2: 향기·약용 코스",
+    "heroLine": "이 길에서 식물을 식별하고 활용하는 법을 배웁니다. 진행하면서 모두 다운로드되어 나중에 쓸 수 있습니다.",
     "heroAlt": "수염 난 남성이 옆모습으로 초록 식물에 가까이 다가갑니다. 위쪽에는 안경테 아래만 보입니다.",
     "moreTitle": "더 알아보기:",
-    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "lead": "앱을 다운로드하세요. 그러면 경험이 시작됩니다. 점자 지도를 처음부터 끝까지 만지거나 보세요.\n두 가지 옵션:\n1: 시각장애·저시력: 오디오 버전\n2: 시력 있음: 정류장에서 QR/NFC 스캔\n모든 분기점에 점자 정보 카드가 있습니다.\n시각장애·저시력: 오디오 버전\n\n이 감각 길에서 Apus(산의 정령)와 Pachamama(어머니 대지)가 우리에게 주는 경이와 향을 경험합니다. 각 식물의 전통·약용·요리·개인 관리 용도와 준비법 정보가 담긴 QR/NFC 표시도 있습니다. 이 정보는 가져가서 언제든 다시 볼 수 있습니다.\n제가 여러 정보 트레일을 다녀도 내용을 기억하기 어렵거나, 적어 두고 잃어버리곤 했기 때문입니다. 이제는 필요할 때 바로 확인할 수 있습니다.\n즐기세요! :)",
     "p1": "감각 트레일에서는 천천히 걸으며 이 장소를 몸으로 만나라는 초대를 받습니다. 밧줄 난간이 길을 안내합니다. 돌, 나무, 잎, 꽃을 만질 수 있습니다. 허브와 젖은 흙은 향을 줍니다. 물, 새, 바람은 소리를 줍니다.",
     "p2": "발밑의 땅은 돌에서 흙으로 바뀌고, 걸음마다 지금 어디인지 말해 줍니다. 이 길의 어떤 것도 시력에 기대지 않습니다.",
     "p3": "",

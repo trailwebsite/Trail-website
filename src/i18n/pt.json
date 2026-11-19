@@ -15,8 +15,8 @@
     "donations": "Doações",
     "audiovideo": "Mídia",
     "open": "Mostrar páginas",
-    "educational": "Trail 1: Educational Path",
-    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "educational": "Trilha 1: Caminho educativo",
+    "sensory": "Trilha 2: Caminho aromático e medicinal",
     "sponsors": "Parceiros afiliados",
     "app": "Aplicativo"
   },
@@ -69,7 +69,7 @@
     "title": "{siteName} — Uma trilha sensorial para pessoas cegas e com baixa visão, Vale Sagrado dos Incas",
     "description": "Uma trilha educativa e sensorial em desenvolvimento para pessoas cegas e com baixa visão, com suas famílias, amigos e acompanhantes, no Vale Sagrado dos Incas, Cusco, Peru.",
     "heroAlt": "Cartaz do projeto. Uma pessoa de gorro de lã e poncho laranja caminha com bengala branca por um caminho de pedra ao lado de uma cerca de madeira, passando por uma casa de pedra de dois andares onde estão uma mulher e uma criança. Duas pessoas plantam num campo verde entre galinhas, e duas emas estão junto a um muro de pedra, com montanhas nevadas ao fundo. O cartaz diz: INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE. Uma placa diz que o projeto está em construção e que voluntários são necessários com urgência.",
-    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
+    "tagline": "Uma jornada educativa e sensorial inédita pelo ciclo da vida e pela agricultura andina\n\nFeita para pessoas cegas e com baixa visão.\n\nVisitantes videntes podem escolher usar uma venda na trilha. Ao deixar a visão de lado por um momento, sintonizam-se com os sons, texturas e cheiros da fazenda, descobrem detalhes que costumam passar despercebidos e sentem-se mais conectados ao mundo natural.",
     "banner": "Este site é um projeto em construção.",
     "boxes": [
       {
@@ -118,7 +118,7 @@
     "title": "Voluntários — {siteName}",
     "description": "Voluntários são necessários com urgência: abrir e moldar trilhas, mover pedras, jardinagem e manutenção do terreno. Refeições incluídas; hospedagem para quem trabalha o dia inteiro.",
     "h1": "Voluntários",
-    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroLine": "Muitas mãos colocam o coração neste projeto e o tornam possível. Conheça-as e encontre a história de cada mão que por aqui passou.",
     "heroAlt": "Umas mãos seguram um feixe de plantas verdes altas. Em volta há mais plantas e um morro.",
     "signNow": "Inscreva-se como voluntário",
     "lead": "Voluntários são necessários com urgência para abrir a trilha aos visitantes cegos e com baixa visão.",
@@ -126,8 +126,8 @@
       {
         "title": "Ajude a construir a trilha",
         "content": [
-          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
-          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          "PRECISAMOS DA SUA AJUDA!!!\nFamílias são bem-vindas!\nAjude a dar vida à Inca Braille Trail\nPOR QUÊ?\nEsta Inca Braille Trail é a primeira do tipo com tecnologia NFC/QR para levar educação e atividades sensoriais a pessoas cegas e com baixa visão, e também para que o público com visão intensifique os outros sentidos pela privação visual.\nNossa esperança é que, ao viver isso, você sinta mais compaixão por quem tem menos oportunidades e reconheça sua própria sensibilidade à sua magia interior.\nOs fundos arrecadados vão diretamente para oferecer um dia gratuito na Inca Braille Trail a pessoas cegas ou com baixa visão, com suas famílias e cuidadores. O dia inclui transporte de ida e volta de Cusco, almoço e um presente para levar para casa.\nMuitas vezes cuidadores e famílias são esquecidos — vamos celebrar juntos tornando isto um evento divertido e inesquecível para todos.",
+          "Ajuda necessária:\n-Pequenos caminhos de pedra\n-Cercamento básico\n-Cozinha\n-Redes sociais\n-Limpeza geral\n-Enxada/rastelo\n-Plantar aromáticas",
           {
             "list": [
               "Voluntários por dia: almoço incluído.",
@@ -181,14 +181,14 @@
       },
       "vegprtsmkl6": {
         "name": "Nello Fraboni:",
-        "alt": "Nello Fraboni: smiles in a volunteer photo.",
-        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "alt": "Nello Fraboni sorri em uma foto de voluntário.",
+        "who": "Tem 46 anos. É horticultor franco-americano, apaixonado por plantas, natureza e agricultura sustentável. Tem ampla experiência em cultivo, propagação e manejo de estufas. Atualmente no Peru, explora a permacultura e sistemas de cultivo tropical.\nVocê vai vivenciar a dualidade de como o cuidado correto de sementes, plantas e vida animal se relaciona profundamente conosco.",
         "work": "",
         "why": ""
       }
     },
     "form": {
-      "heading": "Join Here!",
+      "heading": "Participe aqui!",
       "lead": "Para se inscrever como voluntário, preencha o formulário abaixo.",
       "inactive": "Este formulário ainda não está ativo. Vai funcionar depois que o dono do projeto confirmar o e-mail do Formspree, numa caixa à qual quem constrói o site não tem acesso. Destino previsto: info@incabrailletrail.com.",
       "requiredNote": "Todos os campos são obrigatórios.",
@@ -299,12 +299,12 @@
   "educational": {
     "title": "Trilha educativa — {siteName}",
     "description": "Uma caminhada que ensina como o alimento cresce, volta à terra como composto e vira comida de novo.",
-    "h1": "Trail 1: Educational Path",
+    "h1": "Trilha 1: Caminho educativo",
     "heroLine": "Aqui você aprende o caminho inteiro pelo ciclo da vida.",
     "heroAlt": "Duas mãos seguram frutos verdes pequenos entre folhas. Um fruto descansa numa palma aberta.",
     "moreTitle": "Conheça mais sobre:",
-    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
-    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "lead": "Baixe o app: aí começa a experiência. Duas opções:\n1: Baixa visão / cegueira: versão em áudio\n2: Com visão: leitura QR/NFC nas estações.\n\nTodos os pontos de junção têm cartões de informação em braille.\n1. Baixa visão / cegueira: versão em áudio\nVocê terá um voluntário treinado se não trouxer guia vidente. O áudio guiado leva você por 20 estações de informação. Haverá 4 pontos de descanso. Em cada um, responda 5 perguntas antes de seguir. Um corrimão ajuda a orientar. Uma bola no fim de cada corrimão indica a troca de mão (direita para esquerda ou o contrário). Bordas de pedra detectáveis com bengala branca guiam a direção. Um sino no fim de cada corrimão marca um assento fácil de achar para o Q&A.",
+    "p1": "Ecologia:\nTrabalhar juntos... Fatos curiosos importantes no percurso\n\nCultura e história: identificar alimentos e práticas culturais e históricas dos incas até nós.\nPreparação de sementes: cultivo, armazenamento e por que devemos protegê-las para as próximas gerações.\nSolo: preparo do solo, compostagem, micróbios e cuidado\nInsetos: polinização, espécies benéficas e manejo natural de pragas\nAporte animal: fontes de outros animais benéficos\nCuidado das plantas: relações entre plantas, identificar doenças e manejo\nReplantio: ciclos de colheita, ajudar os ecossistemas, apoio ambiental\nColheita: quando e como\nImpacto global: olhar dados novos e antigos para nos prepararmos às mudanças\nGestão da água: testes, identificar problemas, novas soluções, limpeza e manutenção, preservar e proteger\nReplantio: ciclos de colheita, ajuda ambiental\nCuidado animal: entender o grande papel dos animais no ciclo da vida, do arado ao esterco. Aprender a ouvir e sentir seus comportamentos.\n(expandir)\nComunidade: trabalhar com outros, relações, apoiar e compartilhar.",
     "p2": "",
     "p3": "Solo saudável cria plantas saudáveis. Plantas saudáveis alimentam pessoas saudáveis. A trilha educativa é essa ideia, contada como um caminho que dá para caminhar.",
     "gallery": {
@@ -336,11 +336,11 @@
   "sensory": {
     "title": "Trilha sensorial — {siteName}",
     "description": "Uma caminhada de toque, aroma, som e chão, para pessoas cegas ou com baixa visão e para quem caminha com elas.",
-    "h1": "Trail 2: Aromatic and Medicinal Path",
-    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "h1": "Trilha 2: Caminho aromático e medicinal",
+    "heroLine": "Neste caminho você aprende a identificar e usar as plantas. Tudo é baixado ao longo do percurso para usar depois.",
     "heroAlt": "Um homem de barba se aproxima de plantas verdes, visto de lado. Em cima só aparece a borda dos óculos.",
     "moreTitle": "Conheça mais sobre:",
-    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "lead": "Baixe o app: aí começa a experiência. Sinta ou veja o mapa em braille do início ao fim.\nDuas opções:\n1: Baixa visão / cegueira: versão em áudio\n2: Com visão: leitura QR/NFC nas estações.\nTodos os pontos de junção têm cartões de informação em braille.\nBaixa visão / cegueira: versão em áudio\n\nNeste caminho sensorial você vivencia as maravilhas e aromas com que os Apus (espíritos da montanha) e a Pachamama (Mãe Terra) nos nutrem. Também haverá marcadores QR/NFC com informação detalhada sobre cada planta: usos tradicionais, medicinais, culinários e de cuidado pessoal, e como prepará-las. Você poderá levar tudo isso para consultar quando quiser.\nO motivo principal é que eu mesmo visitei muitos caminhos informativos e não retinha o conteúdo, ou anotava e depois perdia as notas; agora você pode consultar quando precisar.\nAproveite! :)",
     "p1": "Na trilha sensorial, as pessoas são convidadas a caminhar devagar e encontrar este lugar com o corpo. Um corrimão de corda marca o caminho. Há pedra, madeira, folhas e flores para tocar. As ervas e a terra úmida oferecem aroma. A água, os pássaros e o vento oferecem som.",
     "p2": "O chão muda sob os pés, da pedra para a terra, e cada passo diz onde você está. Nada nesta caminhada depende da visão.",
     "p3": "",

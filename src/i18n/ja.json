@@ -15,8 +15,8 @@
     "donations": "寄付",
     "audiovideo": "メディア",
     "open": "ページを表示",
-    "educational": "Trail 1: Educational Path",
-    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "educational": "トレイル1：教育の道",
+    "sensory": "トレイル2：香りと薬草の道",
     "sponsors": "提携パートナー",
     "app": "アプリ"
   },
@@ -69,7 +69,7 @@
     "title": "{siteName} — 視覚障害者とロービジョンの人のための感覚トレイル、インカの聖なる谷",
     "description": "Peru の Cusco、インカの聖なる谷で、視覚障害者とロービジョンの人、そしてその家族、友人、同行者のために開発中の教育的で感覚的なトレイルです。",
     "heroAlt": "プロジェクトのポスター。ニット帽とオレンジのポンチョの人が白杖を使い、木の柵に沿った石畳の道を、女性と子どもが立つ2階建ての石の家のそばで歩いている。2人が鶏のいる緑の畑で植え、レアが2羽、石垣のそばにいる。背後には雪をいただく山々がある。ポスターの文字: INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE. 看板には、プロジェクトは工事中で、ボランティアが緊急に必要だと書いてある。",
-    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
+    "tagline": "生命の循環とアンデス農業をめぐる、これまでにない教育・感覚の旅\n\n視覚障害者とロービジョンの人のために設計されています。\n\n晴眼の来訪者はトレイルでアイマスクを選ぶことができます。しばらく視覚を脇に置くことで、農場の音・感触・香りに意識を向け、普段見落とす細部に気づき、自然世界とのつながりをより深く感じられます。",
     "banner": "このウェブサイトは建設中のプロジェクトです。",
     "boxes": [
       {
@@ -118,7 +118,7 @@
     "title": "ボランティア — {siteName}",
     "description": "ボランティアを緊急募集:トレイルの整備、石の運搬、庭仕事、敷地の管理。食事付き、終日作業の方には宿泊を提供。",
     "h1": "ボランティア",
-    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroLine": "多くの手がこのプロジェクトに心を込め、実現させています。彼らに会い、ここを通った一つ一つの手の物語を見つけてください。",
     "heroAlt": "手が背の高い緑の植物を抱えています。周りにはさらに植物と丘があります。",
     "signNow": "ボランティアとして申し込む",
     "lead": "視覚障害者とロービジョンの来訪者にトレイルを開くため、ボランティアを緊急募集しています。",
@@ -126,8 +126,8 @@
       {
         "title": "トレイルづくりに力を貸してください",
         "content": [
-          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
-          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          "あなたの助けが必要です！！！\nご家族も歓迎します！\nInca Braille Trailを一緒に形にしてください\nなぜ？\nこのInca Braille Trailは、NFC/QR技術で視覚障害者・ロービジョンの人への教育と感覚体験を届け、晴眼の人も視覚を一時的に制限して他の感覚をより深く使えるようにする、初めての取り組みです。\nこの体験を通して、恵まれない人への思いやりが深まり、自分の内なる力への感受性に気づいてもらえたらと願っています。\n集まった資金は、視覚障害・ロービジョンの人と家族・介護者にInca Braille Trailでの無料の一日を提供するために直接使われます。クスコからの往復交通、昼食、持ち帰るギフトが含まれます。\n介護者や家族は忘れられがちです。一緒に祝い、みんなにとって楽しく一生の思い出になるイベントにしましょう。",
+          "手伝ってほしいこと:\n-小さな石の道\n-基本の柵づくり\n-料理\n-ソーシャルメディア\n-一般的な清掃\n-熊手かけ\n-香りの植物の植え付け",
           {
             "list": [
               "日帰りボランティア:昼食を提供。",
@@ -181,14 +181,14 @@
       },
       "vegprtsmkl6": {
         "name": "Nello Fraboni:",
-        "alt": "Nello Fraboni: smiles in a volunteer photo.",
-        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "alt": "ボランティア写真で微笑むNello Fraboni。",
+        "who": "46歳。フランス系アメリカ人の園芸家で、植物・自然・持続可能な農業に情熱を持っています。栽培、繁殖、温室管理の豊富な経験があります。現在ペルーでパーマカルチャーと熱帯の栽培システムを探求しています。\n種子・植物・動物の命を正しく守ることが、私たち自身とどれほど深く結びついているか、その両面性を体験できます。",
         "work": "",
         "why": ""
       }
     },
     "form": {
-      "heading": "Join Here!",
+      "heading": "ここから参加！",
       "lead": "ボランティアに申し込むには、下のフォームに記入してください。",
       "inactive": "このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:info@incabrailletrail.com。",
       "requiredNote": "すべての項目は必須です。",
@@ -299,12 +299,12 @@
   "educational": {
     "title": "教育の道 — {siteName}",
     "description": "食べ物が育ち、堆肥になって土に戻り、また食べ物になるまでを歩く道です。",
-    "h1": "Trail 1: Educational Path",
+    "h1": "トレイル1：教育の道",
     "heroLine": "ここでは、いのちの循環をたどる道のすべてを学びます。",
     "heroAlt": "二つの手が葉のあいだで小さな緑の実を持っています。一つの実が開いた手のひらにあります。",
     "moreTitle": "もっと知る：",
-    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
-    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "lead": "アプリをダウンロードすると体験が始まります。2つの選択肢：\n1：視覚障害・ロービジョン：音声版\n2：晴眼：各ステーションでQR/NFCスキャン\n\nすべての合流点に点字の情報カードがあります。\n1. 視覚障害・ロービジョン：音声版\n晴眼のガイドがいない場合は訓練されたボランティアが同行します。ガイド音声が20の情報ステーションを案内します。途中に休憩所が4つあり、それぞれで次へ進む前に5問に答えます。手すりが道順を助けます。各手すりの端の球が持ち手の左右切替を示します。白杖で感知できる石の縁が方向を案内します。各手すり端の鐘はQ&A用の席を見つけやすくします。",
+    "p1": "生態：\nともに働くこと…ルート上の大切な豆知識\n\n文化と歴史：インカから今に至る文化・歴史的な食と実践を見分ける\n種子の準備：栽培・保存、そして将来世代のために守る理由\n土壌：土づくり、堆肥、微生物と手入れ\n昆虫：受粉、益虫、自然な病害虫管理\n動物の役割：他の有益な動物からの恵み\n植物の手入れ：植物同士の関係、病気の見分けと管理\n植え直し：収穫の循環、生態系を助けること、環境への支援\n収穫：いつ、どのように\n地球規模の影響：新旧のデータを見て変化に備える\n水の管理：水質検査、問題の特定、新しい解決、清掃と維持、保全と保護\n植え直し：収穫の循環、環境への助け\n動物のケア：畑を耕すことから糞まで、生命の循環で動物が果たす大きな役割を理解する。行動を聞き、感じ取る。\n（展開）\nコミュニティ：他者と働くこと、関係、支え合いと分かち合い。",
     "p2": "",
     "p3": "健やかな土は健やかな植物を育てます。健やかな植物は健やかな人を養います。教育の道は、その考えを歩ける道として話すものです。",
     "gallery": {
@@ -336,11 +336,11 @@
   "sensory": {
     "title": "感覚の道 — {siteName}",
     "description": "触れること、香り、音、足もとの地面で歩く道です。視覚に障害のある人と、ともに歩く人のための道です。",
-    "h1": "Trail 2: Aromatic and Medicinal Path",
-    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "h1": "トレイル2：香りと薬草の道",
+    "heroLine": "この道では植物の見分け方と使い方を学びます。進みながらすべてをダウンロードし、後から使えます。",
     "heroAlt": "ひげの男性が横顔で緑の植物に近づいています。上には眼鏡の下端だけが見えます。",
     "moreTitle": "もっと知る：",
-    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "lead": "アプリをダウンロードすると体験が始まります。点字マップを最初から最後まで触るか見てください。\n2つの選択肢：\n1：視覚障害・ロービジョン：音声版\n2：晴眼：各ステーションでQR/NFCスキャン\nすべての合流点に点字の情報カードがあります。\n視覚障害・ロービジョン：音声版\n\nこの感覚の道では、Apus（山の精霊）とPachamama（母なる大地）が私たちを養う多くの不思議と香りを体験します。各植物の伝統・薬用・料理・パーソナルケアの使い方と調製法の詳細がQR/NFCマーカーにもあります。その情報は持ち帰って、いつでも参照できます。\n私自身、多くの情報トレイルを歩いても内容が残らず、メモしても後で失うことがあったからです。今は必要なときにすぐ見返せます。\n楽しんで！ :)",
     "p1": "感覚の道では、ゆっくり歩き、この場所を体で迎えるように招かれます。ロープの手すりが道を示します。石、木、葉、花に触れられます。ハーブと湿った土は香りを渡します。水と鳥と風は音を渡します。",
     "p2": "足もとは石から土へと変わり、一歩ごとに今いる場所を伝えます。この道の何も、見えていることに頼っていません。",
     "p3": "",

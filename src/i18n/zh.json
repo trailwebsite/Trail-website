@@ -15,8 +15,8 @@
     "donations": "捐赠",
     "audiovideo": "媒体",
     "open": "显示页面",
-    "educational": "Trail 1: Educational Path",
-    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "educational": "步道1：教育之路",
+    "sensory": "步道2：芳香与药用之路",
     "sponsors": "合作伙伴",
     "app": "应用"
   },
@@ -69,7 +69,7 @@
     "title": "{siteName} — 为盲人和低视力人士打造的感官步道,印加圣谷",
     "description": "位于 Peru Cusco 印加圣谷的一条教育性感官步道,正在为盲人和低视力人士及其家人、朋友和陪伴者开发中。",
     "heroAlt": "项目海报。一位戴毛线帽、穿橙色斗篷的人手持白手杖，沿着木栅栏旁的石板路行走，经过一栋有一位妇女和一个孩子的两层石屋。两个人在鸡群中的绿田里栽种，两只美洲鸵站在石墙边，后面是白雪覆盖的群山。海报上的文字：INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE。一块牌子写着项目正在建设中，急需志愿者。",
-    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
+    "tagline": "穿越生命循环与安第斯农业的、前所未有的教育与感官之旅\n\n为盲人和低视力人士设计。\n\n有视力的访客可选择在步道上戴眼罩。暂时放下视觉后，他们能更专注于农场的声音、质地与气味，发现平时容易忽略的细节，并更贴近自然。",
     "banner": "本网站是一个建设中的项目。",
     "boxes": [
       {
@@ -118,7 +118,7 @@
     "title": "志愿者 — {siteName}",
     "description": "急需志愿者:清理和修整步道、搬运石块、园艺和场地维护。提供餐食;全天工作的志愿者提供住宿。",
     "h1": "志愿者",
-    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroLine": "许多双手把心放进这个项目，使它成为可能。认识他们，并找到每一双经过这里的手的故事。",
     "heroAlt": "双手抱着一束高大的绿植。周围还有更多植物和山坡。",
     "signNow": "报名成为志愿者",
     "lead": "急需志愿者,帮助向盲人和低视力访客开放这条步道。",
@@ -126,8 +126,8 @@
       {
         "title": "帮助建设步道",
         "content": [
-          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
-          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          "我们需要你的帮助！！！\n欢迎家庭一起参与！\n帮助让 Inca Braille Trail 真正运转起来\n为什么？\n这条 Inca Braille Trail 是首个结合 NFC/QR 技术的项目，为盲人与低视力人士提供教育与感官活动，也让有视力的公众通过短暂限制视觉、更强烈地运用其他感官。\n我们希望你体验之后，会对处境更艰难的人多一分同情，并意识到自己内在的敏感与力量。\n筹得的资金将直接用于为盲人或低视力人士及其家人、照护者提供一天免费的 Inca Braille Trail 体验，包括往返库斯科的交通、午餐和可带回家的礼物。\n照护者与家人常常被遗忘——让我们一起庆祝，把这变成对所有人都有趣、难忘的一天。",
+          "需要帮助：\n-小型石径\n-基础围栏\n-烹饪\n-社交媒体\n-日常清洁\n-耙地\n-种植芳香植物",
           {
             "list": [
               "当日志愿者:提供午餐。",
@@ -181,14 +181,14 @@
       },
       "vegprtsmkl6": {
         "name": "Nello Fraboni:",
-        "alt": "Nello Fraboni: smiles in a volunteer photo.",
-        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "alt": "Nello Fraboni在志愿者照片中微笑。",
+        "who": "46岁。法裔美国园艺师，热爱植物、自然与可持续农业。在栽培、繁殖和温室管理方面经验丰富。目前在秘鲁探索永续农业与热带种植系统。\n你将体验到：正确照料种子、植物与动物生命，如何深深关联到我们自身——这双重意义。",
         "work": "",
         "why": ""
       }
     },
     "form": {
-      "heading": "Join Here!",
+      "heading": "在这里加入！",
       "lead": "如需报名做志愿者，请填写下面的表单。",
       "inactive": "此表单尚未启用。项目负责人需在网站建设者无法访问的收件箱中确认 Formspree 邮件后,表单才会生效。拟定的接收邮箱:info@incabrailletrail.com。",
       "requiredNote": "所有字段均为必填。",
@@ -299,12 +299,12 @@
   "educational": {
     "title": "教育步道 — {siteName}",
     "description": "一条讲述食物如何生长、变成堆肥回到泥土、再长成食物的步道。",
-    "h1": "Trail 1: Educational Path",
+    "h1": "步道1：教育之路",
     "heroLine": "在这里，你顺着生命的循环学完整条路。",
     "heroAlt": "两只手在叶子之间托着绿色的小果子。一颗果子停在张开的手心里。",
     "moreTitle": "进一步了解：",
-    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
-    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "lead": "请先下载应用，然后体验开始。两种选项：\n1：视障/低视力：音频版\n2：有视力：在站点扫描 QR/NFC\n\n所有交汇点都有盲文信息卡。\n1. 视障/低视力：音频版\n若没有视力向导，会有受训志愿者陪同。导览音频带你经过20个信息站点。途中有4处休息点；每处需回答5个问题后再继续。扶手帮助导向。每段扶手末端的球体表示换手（左换右或右换左）。白手杖可感知的石边引导方向。每段扶手末端的铃提示易于找到的问答座位。",
+    "p1": "生态：\n一起协作……路线上重要的有趣知识\n\n文化与历史：辨认从印加到今天的文化与历史食物及做法\n种子准备：栽培、储存，以及为何要为后代保护它们\n土壤：整地、堆肥、微生物与养护\n昆虫：授粉、有益物种与自然虫害管理\n动物投入：其他有益动物带来的来源\n植物养护：植物关系、识别病害与管理\n再种植：收获循环、帮助生态系统、环境支持\n收获：何时与如何\n全球影响：对照新旧数据，为变化做准备\n水资源管理：水质检测、发现问题、新方案、清洁维护、保存与保护\n再种植：收获循环、环境帮助\n动物照护：理解动物在生命循环中的大角色——从犁地到粪肥。学习倾听并感知它们的行为。\n（展开）\n社区：与他人协作、关系、支持与分享。",
     "p2": "",
     "p3": "健康的泥土长出健康的植物。健康的植物养活健康的人。教育步道把这个想法讲成一条可以走的路。",
     "gallery": {
@@ -336,11 +336,11 @@
   "sensory": {
     "title": "感官步道 — {siteName}",
     "description": "一条靠触摸、气味、声音和脚下土地行走的路，为视障人士和同行的人而设。",
-    "h1": "Trail 2: Aromatic and Medicinal Path",
-    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "h1": "步道2：芳香与药用之路",
+    "heroLine": "在这条路上，你学习辨认并使用植物。一路下载的内容可留到日后使用。",
     "heroAlt": "一位留着胡子的人侧身靠近绿色的植物。画面上方只露出眼镜的下沿。",
     "moreTitle": "进一步了解：",
-    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "lead": "请先下载应用，然后体验开始。从头到尾触摸或查看盲文地图。\n两种选项：\n1：视障/低视力：音频版\n2：有视力：在站点扫描 QR/NFC\n所有交汇点都有盲文信息卡。\n视障/低视力：音频版\n\n在这条感官之路上，你将体验 Apus（山灵）与 Pachamama（大地母亲）滋养我们的许多奇妙与香气。也会有 QR/NFC 标记，提供每种植物的传统、药用、烹饪与个护用途及制作方法。这些信息可以带走，随时查阅。\n主要原因是我自己走过许多信息步道，却记不住内容，或记下后又弄丢；现在你可以随时需要时再看。\n尽情享受！:)",
     "p1": "在感官步道上，人们被邀请慢慢走，用身体遇见这个地方。绳制扶手领着路。石头、木头、叶子和花都可以触摸。香草和湿土带来气味。水、鸟和风带来声音。",
     "p2": "脚下从石头变成泥土，每一步都告诉你身在何处。这条路上没有一件事依靠视力。",
     "p3": "",
