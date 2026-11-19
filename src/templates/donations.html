@@ -1,100 +1,62 @@
-<!-- donations.html — patrocinadores: texto e lugares de logo; a doação, o formulário e as contas ficam numa caixa -->
+<!-- donations.html — cabeçalho com foto, Google Form no box aberto e contas no centro -->
+    <header class="cabeca">
+      <picture class="cabeca-foto" data-edit-key="img.donations.cabeca" data-edit-type="image" data-alt-key="t.donations.heroAlt">
+        <source type="image/webp" srcset="/img/cabeca-doacao.webp">
+        <img src="/img/cabeca-doacao.jpg" width="1920" height="590" alt="{{t.donations.heroAlt}}">
+      </picture>
+      <div class="cabeca-texto">
+        <h1 class="cabeca-titulo">{{t.donations.h1}}</h1>
+        <p class="cabeca-frase">{{t.donations.heroLine}}</p>
+      </div>
+    </header>
+
     <div class="pagina-topo">
       <div class="conteudo">
-        <h1 class="entra">{{t.donations.h1}}</h1>
         <p class="entra atraso-1">{{t.donations.lead}}</p>
-        <ul class="logos" aria-label="{{t.donations.logosLabel}}">
-          <li>{{t.donations.logoPending}}</li>
-          <li>{{t.donations.logoPending}}</li>
-          <li>{{t.donations.logoPending}}</li>
-          <li>{{t.donations.logoPending}}</li>
-        </ul>
+        <p>{{t.donations.choice}}</p>
+        <p>{{t.donations.noneYet}}</p>
       </div>
     </div>
 
-    <div class="caixas entra atraso-2">
-      <section class="caixa">
-        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-donations-1-botao" aria-expanded="true" aria-controls="caixa-donations-1">{{t.donations.boxes.0.title}}</button></h2>
-        <div class="caixa-painel" id="caixa-donations-1" role="region" aria-labelledby="caixa-donations-1-botao">
-          {{{doacaoTexto}}}
+    <div class="conteudo form-direto entra atraso-2">
+      <section class="caixa tema caixa-fix" id="formulario-doacao">
+        <h2 class="caixa-titulo caixa-titulo-fix">{{t.donations.form.heading}}</h2>
+        <div class="caixa-painel">
+          <iframe
+            class="form-google"
+            title="{{t.donations.form.heading}}"
+            src="{{googleFormDoacao}}"
+          ></iframe>
+        </div>
+      </section>
 
-          <h3 class="secao-titulo">{{t.donations.form.heading}}</h3>
-          <p>{{t.donations.form.intro}}</p>
+      <section id="contas-doacao" class="contas-doacao" data-falha="{{t.donations.bank.copyFail}}">
+        <h2 id="contas-titulo" class="secao-titulo" tabindex="-1">{{t.donations.bank.revealed}}</h2>
+        <p id="copia-dica" class="dica">{{t.donations.bank.hint}}</p>
+        <p id="copia-estado" class="estado" aria-live="polite" hidden></p>
 
-          <div id="form-doacao-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
-          <div id="form-doacao-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
+        <h3>{{t.donations.bank.soles}}</h3>
+        <div class="copia-par" role="group" aria-label="{{t.donations.bank.groupSoles}}" aria-describedby="copia-dica">
+          <button class="botao botao-leve botao-copia" type="button" data-numero="{{contas.soles.bcp}}" data-numero-chave="contas.soles.bcp" data-copiado="{{t.donations.bank.copiedSolesBcp}}">
+            <span class="copia-banco">{{t.donations.bank.bcp}}</span>
+            <span class="copia-numero" data-edit-key="contas.soles.bcp" data-edit-type="text">{{contas.soles.bcp}}</span>
+          </button>
+          <button class="botao botao-leve botao-copia" type="button" data-numero="{{contas.soles.interbancaria}}" data-numero-chave="contas.soles.interbancaria" data-copiado="{{t.donations.bank.copiedSolesInter}}">
+            <span class="copia-banco">{{t.donations.bank.interbank}}</span>
+            <span class="copia-numero" data-edit-key="contas.soles.interbancaria" data-edit-type="text">{{contas.soles.interbancaria}}</span>
+          </button>
+        </div>
 
-          <form
-            id="form-doacao"
-            class="formulario"
-            action="{{formAction}}"
-            method="POST"
-            data-ativo="{{formsAtivos}}"
-            data-msg-activate="{{t.formActivate}}"
-            data-msg-required="{{t.donations.form.errRequired}}"
-            data-msg-network="{{t.donations.form.errNetwork}}"
-            data-msg-summary="{{t.donations.form.summary}}"
-            data-msg-sending="{{t.donations.form.sending}}"
-            data-msg-success="{{t.donations.form.success}}"
-            data-msg-inactive="{{t.donations.form.emailNote}}"
-          >
-            <input type="hidden" name="_language" value="{{htmlLang}}">
-            <input type="hidden" name="_subject" value="Doação — Inca Braille Trail">
-            <input type="hidden" name="_captcha" value="false">
-
-            <fieldset class="campo">
-              <legend>{{t.donations.form.legend}} <span class="req">({{t.required}})</span></legend>
-              <div class="opcoes">
-                <label class="opcao"><input type="radio" name="publish" value="name" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optName}}</span></label>
-                <label class="opcao"><input type="radio" name="publish" value="amount" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optAmount}}</span></label>
-                <label class="opcao"><input type="radio" name="publish" value="both" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optBoth}}</span></label>
-                <label class="opcao"><input type="radio" name="publish" value="none" required aria-describedby="d-escolha-erro"> <span>{{t.donations.form.optNone}}</span></label>
-              </div>
-              <p id="d-escolha-erro" class="campo-erro" hidden></p>
-            </fieldset>
-
-            <div class="campo" id="campo-nome" hidden>
-              <label for="d-nome">{{t.donations.form.name}} <span class="req">({{t.required}})</span></label>
-              <input id="d-nome" name="name" type="text" autocomplete="name" aria-describedby="d-nome-erro">
-              <p id="d-nome-erro" class="campo-erro" hidden></p>
-            </div>
-
-            <div class="campo" id="campo-valor" hidden>
-              <label for="d-valor">{{t.donations.form.amount}} <span class="req">({{t.required}})</span></label>
-              <p id="d-valor-dica" class="dica">{{t.donations.form.amountHint}}</p>
-              <input id="d-valor" name="amount" type="text" inputmode="decimal" aria-describedby="d-valor-dica d-valor-erro">
-              <p id="d-valor-erro" class="campo-erro" hidden></p>
-            </div>
-
-            <div class="hp" aria-hidden="true">
-              <label for="d-gotcha">{{t.donations.form.honeypot}}</label>
-              <input id="d-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
-            </div>
-
-            <button class="botao maiusculas" type="submit">{{t.donations.form.submit}}</button>
-          </form>
-
-          <p class="nota-email">{{t.inboxNote}}</p>
-
-          <h3 class="secao-titulo">{{t.donations.bank.heading}}</h3>
-          <dl class="contas">
-            <div>
-              <dt>{{t.donations.bank.soles}}</dt>
-              <dd>{{contas.soles.bcp}}</dd>
-            </div>
-            <div>
-              <dt>{{t.donations.bank.solesInter}}</dt>
-              <dd>{{contas.soles.interbancaria}}</dd>
-            </div>
-            <div>
-              <dt>{{t.donations.bank.dolares}}</dt>
-              <dd>{{contas.dolares.bcp}}</dd>
-            </div>
-            <div>
-              <dt>{{t.donations.bank.dolaresInter}}</dt>
-              <dd>{{contas.dolares.interbancaria}}</dd>
-            </div>
-          </dl>
+        <h3>{{t.donations.bank.dolares}}</h3>
+        <div class="copia-par" role="group" aria-label="{{t.donations.bank.groupDollars}}" aria-describedby="copia-dica">
+          <button class="botao botao-leve botao-copia" type="button" data-numero="{{contas.dolares.bcp}}" data-numero-chave="contas.dolares.bcp" data-copiado="{{t.donations.bank.copiedDollarsBcp}}">
+            <span class="copia-banco">{{t.donations.bank.bcp}}</span>
+            <span class="copia-numero" data-edit-key="contas.dolares.bcp" data-edit-type="text">{{contas.dolares.bcp}}</span>
+          </button>
+          <button class="botao botao-leve botao-copia" type="button" data-numero="{{contas.dolares.interbancaria}}" data-numero-chave="contas.dolares.interbancaria" data-copiado="{{t.donations.bank.copiedDollarsInter}}">
+            <span class="copia-banco">{{t.donations.bank.interbank}}</span>
+            <span class="copia-numero" data-edit-key="contas.dolares.interbancaria" data-edit-type="text">{{contas.dolares.interbancaria}}</span>
+          </button>
         </div>
       </section>
     </div>

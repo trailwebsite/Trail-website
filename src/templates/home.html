@@ -2,10 +2,13 @@
     <div class="hero">
       <div class="hero-interno">
         <h1 class="oculto-visual">{{siteName}}</h1>
-        <picture class="hero-cartaz entra">
-          <source type="image/webp" srcset="{{cartaz.webp}}">
-          <img src="{{cartaz.jpg}}" width="{{cartaz.largura}}" height="{{cartaz.altura}}" alt="{{t.home.heroAlt}}" fetchpriority="high">
-        </picture>
+        <div class="hero-cartaz entra">
+          <picture data-edit-key="img.home.cartaz" data-edit-type="image" data-alt-key="t.home.heroAlt">
+            <source type="image/webp" srcset="{{cartaz.webp}}">
+            <img src="{{cartaz.jpg}}" width="{{cartaz.largura}}" height="{{cartaz.altura}}" alt="{{t.home.heroAlt}}" fetchpriority="high">
+          </picture>
+          <a class="cabeca-inscricao hero-inscricao" href="{{url.volunteer}}#inscricao">{{t.volunteer.signNow}}</a>
+        </div>
         <p class="hero-frase entra atraso-1">{{t.home.tagline}}</p>
       </div>
     </div>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{title}}</title>
-  <meta name="description" content="{{description}}">
+  <title data-edit-key="{{titleKey}}">{{title}}</title>
+  <meta name="description" data-edit-key="{{descriptionKey}}" content="{{description}}">
   {{{robots}}}
   <link rel="canonical" href="{{canonical}}">
   {{{alternates}}}
@@ -28,7 +28,7 @@
   <header class="cabecalho">
     <div class="faixa" aria-hidden="true"></div>
     <div class="cabecalho-interno">
-      <a class="marca" href="{{url.home}}"><img class="marca-logo" src="/img/logo-inca-braille-trail.png" alt="{{siteName}}" width="192" height="188"></a>
+      <a class="marca" href="{{url.home}}"><img class="marca-logo" data-edit-key="img.logo" data-edit-type="image" data-alt-key="alt.img.logo" src="/img/logo-inca-braille-trail.png" alt="{{siteName}}" width="192" height="188"></a>
 
       <button class="menu-botao maiusculas" type="button" aria-expanded="false" aria-controls="menu-principal">{{t.nav.menu}}</button>
 
@@ -55,8 +55,15 @@
   <footer class="rodape">
     <div class="faixa" aria-hidden="true"></div>
     {{{contato}}}
-    <p><strong>{{siteName}}</strong> · {{t.footer.text}}</p>
-    <p>{{t.contact.place}} · © {{year}}</p>
+    <div class="afiliados-faixa">
+      <h2 class="afiliados-titulo" id="afiliados-titulo">{{t.sponsors.footerTitle}}</h2>
+      <ul class="afiliados" data-edit-key="lista.afiliados" data-edit-type="partners" aria-labelledby="afiliados-titulo">
+        <li class="afiliado-vazio"></li>
+        <li class="afiliado-vazio"></li>
+        <li class="afiliado-vazio"></li>
+        <li class="afiliado-vazio"></li>
+      </ul>
+    </div>
   </footer>
 
   <script src="/js/site.js" defer></script>

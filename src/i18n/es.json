@@ -5,16 +5,20 @@
   "skip": "Saltar al contenido",
   "external": "(se abre en otra pestaña)",
   "required": "obligatorio",
-  "inboxNote": "Los mensajes de esta página se envían a info.inkabrailletrail@gmail.com.",
-  "formActivate": "Abre info.inkabrailletrail@gmail.com y pulsa el enlace de confirmación del mensaje de FormSubmit. Hasta ese clic, el mensaje queda en espera y no se entrega.",
+  "inboxNote": "Los mensajes de esta página se envían a info.incabrailletrail@gmail.com.",
+  "formActivate": "Abre info.incabrailletrail@gmail.com y pulsa el enlace de confirmación del mensaje de FormSubmit. Hasta ese clic, el mensaje queda en espera y no se entrega.",
   "nav": {
     "label": "Navegación principal",
     "menu": "Menú",
     "home": "Inicio",
-    "trails": "Senderos",
     "volunteer": "Voluntariado",
-    "donations": "Patrocinadores",
-    "audiovideo": "Medios"
+    "donations": "Donaciones",
+    "audiovideo": "Medios",
+    "open": "Mostrar páginas",
+    "educational": "Trail 1: Educational Path",
+    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "sponsors": "Socios afiliados",
+    "app": "Aplicación"
   },
   "lang": {
     "button": "Idioma",
@@ -27,9 +31,9 @@
     "items": [
       "Los correos electrónicos que aparecen en este sitio todavía no han sido creados.",
       "El formulario de voluntariado no envía mensajes hasta que se confirme la cuenta de Formspree.",
-      "El formulario de donación no envía nada hasta que Formspree esté conectado: la elección de publicar nombre o monto todavía no se registra en ningún lugar.",
+      "El formulario de donación envía los datos al correo del proyecto. Las cuentas bancarias quedan visibles en la página.",
       "Cuentas de Instagram y Facebook por confirmar.",
-      "Las donaciones se transfieren a las cuentas bancarias de la página de patrocinadores. El dueño del proyecto confirmará si las dos cuentas se quedan.",
+      "Las transferencias usan las cuentas visibles en la página. El dueño del proyecto confirmará si las dos cuentas se quedan.",
       "Audio y video del sendero por recibir.",
       "Fotos y videos de los voluntarios por recibir.",
       "Dominio {dominio} por registrar."
@@ -64,14 +68,16 @@
   "home": {
     "title": "{siteName} — Un sendero sensorial para personas ciegas y con baja visión, Valle Sagrado de los Incas",
     "description": "Un sendero educativo y sensorial en desarrollo para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes, en el Valle Sagrado de los Incas, Cusco, Perú.",
-    "heroAlt": "Afiche del proyecto. Una persona con poncho y gorro andino camina con bastón blanco por un sendero de piedra con baranda de soga, entre muros incas de piedra y un arco, con terrazas andinas y montañas nevadas al fondo. Carteles de piedra junto al sendero llevan puntos en braille. El afiche dice: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. Un cartel de piedra dice: INCA TRAIL, con braille debajo.",
-    "tagline": "Un sendero educativo y sensorial para personas ciegas y con baja visión, en el Valle Sagrado de los Incas, Cusco, Perú.",
+    "heroAlt": "Afiche del proyecto. Una persona con gorro de lana y poncho naranja camina con bastón blanco por un sendero de piedra junto a una cerca de madera, al lado de una casa de piedra de dos pisos donde están una mujer y un niño. Dos personas siembran en un campo verde entre gallinas, y dos ñandúes están junto a un muro de piedra, con montañas nevadas al fondo. El afiche dice: INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE. Un cartel dice que el proyecto está en construcción y que se necesitan voluntarios con urgencia.",
+    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
     "banner": "Este sitio es un proyecto en construcción.",
     "boxes": [
       {
         "title": "¿Qué es el Inca Braille Trail?",
         "content": [
-          { "lead": "Un recorrido por la naturaleza, la educación y los sentidos" },
+          {
+            "lead": "Un recorrido por la naturaleza, la educación y los sentidos"
+          },
           "Ubicado en el hermoso Valle Sagrado de los Incas, Cusco, Perú, el Inca Braille Trail es una experiencia educativa y sensorial que se desarrolla específicamente para personas ciegas y con baja visión, junto con sus familias, amigos y acompañantes.",
           "Nuestra visión es crear un lugar acogedor donde los visitantes puedan disfrutar de la naturaleza, aprender, explorar y compartir experiencias significativas, de forma gratuita gracias al apoyo de patrocinadores y donaciones.",
           "El sendero está diseñado para estimular los sentidos a través del tacto, el olfato, el oído y el gusto. Los visitantes descubrirán las texturas de las plantas, las fragancias de hierbas y flores, los sonidos de la naturaleza y las muchas experiencias maravillosas que el mundo natural ofrece."
@@ -84,7 +90,9 @@
           "A través de nuestro recorrido educativo, El ciclo de la vida, los visitantes descubrirán cómo las necesidades de las plantas reflejan de cerca las nuestras.",
           "Una pequeña semilla necesita alimento, agua, calor y cuidado para crecer, así como nosotros necesitamos comida nutritiva, agua limpia, luz del sol y un ambiente sano para prosperar.",
           "Las plantas toman nutrientes de un suelo sano y energía de la luz del sol, mientras que nosotros dependemos del alimento que producen para nuestra propia energía, crecimiento y bienestar.",
-          { "lead": "Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas." },
+          {
+            "lead": "Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas."
+          },
           "Los animales también cumplen un papel esencial en este ciclo. Desde las abejas que polinizan las flores hasta las aves que dispersan semillas, y los animales de granja que aportan abono natural que enriquece el suelo, cada criatura contribuye al equilibrio de la naturaleza.",
           "Estos nutrientes vuelven a la tierra, ayudan a crecer a nuevas plantas y completan el hermoso ciclo que une a plantas, animales y personas.",
           "A lo largo del recorrido, los visitantes explorarán las prácticas agrícolas tradicionales andinas y las de los antiguos incas junto con la agricultura sostenible moderna. Destacamos la importancia de conservar las semillas nativas, hacer compost, proteger la biodiversidad y cultivar alimentos nutritivos sin depender de químicos agrícolas dañinos.",
@@ -99,41 +107,89 @@
           "También esperamos animar a los visitantes videntes a comprender mejor los desafíos cotidianos que enfrentan las personas con discapacidad visual, desarrollando mayor conciencia, empatía y respeto.",
           "A través de experiencias compartidas, queremos que las personas reconozcan que todos tenemos algo valioso que ofrecer y que todos tenemos algo que aprender de los demás.",
           "Así como nosotros cuidamos la tierra y la tierra nos cuida, con bondad, compasión y reciprocidad nos cuidamos unos a otros.",
-          { "lead": "Este es el espíritu del Ayni, y el corazón del Inca Braille Trail." }
+          {
+            "lead": "Este es el espíritu del Ayni, y el corazón del Inca Braille Trail."
+          }
         ]
       }
     ]
   },
   "volunteer": {
-    "title": "Voluntariado — {siteName}",
+    "title": "Voluntarios — {siteName}",
     "description": "Se necesitan voluntarios con urgencia: despejar y dar forma a senderos, mover piedras, jardinería y mantenimiento del terreno. Comidas incluidas; alojamiento para quienes trabajan jornadas completas.",
-    "h1": "Voluntariado",
+    "h1": "Voluntarios",
+    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroAlt": "Unas manos sostienen un manojo de plantas verdes altas. Alrededor hay más plantas y un cerro.",
+    "signNow": "Inscríbete como voluntario",
     "lead": "Se necesitan voluntarios con urgencia para abrir el sendero a los visitantes ciegos y con baja visión.",
     "boxes": [
       {
         "title": "Ayuda a construir el sendero",
         "content": [
-          "¡Se necesitan voluntarios con urgencia! Ayuda a dar vida al Inca Braille Trail creando caminos acogedores y cuidando nuestro hermoso terreno.",
-          "Las tareas incluyen despejar y dar forma a los senderos, mover piedras, jardinería y mantenimiento general del terreno. Tu aporte ayudará a abrir esta experiencia sensorial a los visitantes ciegos y con baja visión y a sus acompañantes.",
-          { "list": [
-            "Voluntarios por el día: almuerzo incluido.",
-            "Voluntarios que se alojan con nosotros y trabajan jornadas completas: alojamiento, desayuno, almuerzo y cena incluidos.",
-            "Transporte: disponible desde un punto de recogida acordado."
-          ] },
+          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
+          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          {
+            "list": [
+              "Voluntarios por el día: almuerzo incluido.",
+              "Voluntarios que se alojan con nosotros y trabajan jornadas completas: alojamiento, desayuno, almuerzo y cena incluidos.",
+              "Transporte: disponible desde un punto de recogida acordado."
+            ]
+          },
           "Contáctanos para coordinar fechas y encontrar tareas adecuadas a tus capacidades."
         ]
       }
     ],
+    "work": {
+      "title": "Conozcan el trabajo de los voluntarios",
+      "lead": "Estamos trabajando duro para construir los senderos. Aquí tienes algunas imágenes de nuestro trabajo.",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "position": "Imagen",
+      "close": "Cerrar",
+      "open": "Abrir imagen",
+      "openVideo": "Abrir video",
+      "thumbs": "Miniaturas",
+      "photo1": "Tres personas construyen un muro de piedra en una ladera de tierra. Un hombre de barba canosa está de rodillas y sostiene una cinta de medir. Un hombre calvo carga un tronco largo. Otra persona con sombrero se inclina sobre las piedras. Detrás hay un contenedor verde y montañas.",
+      "photo2": "El mismo muro de piedra. El hombre de barba canosa sostiene la cinta de medir. La persona del sombrero trabaja en las piedras. El hombre calvo, con un guante rojo, tira de una herramienta de mango largo.",
+      "photo3": "Tres hombres trabajan junto a un muro bajo de piedra. Un hombre de barba canosa, con una camiseta negra del número 23 y botas de goma, sonríe a la cámara. Un hombre de sombrero ancho señala hacia un lado. Un hombre calvo, con guantes rojos, se inclina sobre un rastrillo. Detrás hay un contenedor verde, árboles y montañas.",
+      "photo4": "Herramientas cuelgan de un alambre en una pared clara: un cultivador pequeño, tres palas de mano, dos alicates y un serrucho. Un bieldo está en la tierra, junto a una lona azul y una bolsa naranja.",
+      "video": "El mismo trabajo en movimiento: miden el suelo, arman el muro de piedra y mueven la madera, con las montañas detrás."
+    },
     "media": {
-      "title": "Conoce a nuestros voluntarios que trabajan en el Braille Trail",
-      "intro": "Aquí se publicarán el video, las fotos y el audio de las personas que trabajan en el sendero.",
-      "video": "Video",
-      "photos": "Fotos",
-      "audio": "Audio",
-      "pending": "Todavía no recibido."
+      "title": "Conozcan a los voluntarios",
+      "intro": "Las manos que construyen este proyecto.",
+      "matias": {
+        "name": "Matias Lopez",
+        "alt": "Matias Lopez está en cuclillas junto a un ñandú que come de un recipiente de metal. Tiene el pelo oscuro, barba y lentes, y lleva una camiseta oscura y guantes de trabajo. Detrás hay un toldo azul, una mesa y árboles.",
+        "who": "Matias Lopez tiene 38 años y es de Argentina. Está en el Perú para viajar y conocer lugares nuevos.",
+        "work": "Es técnico forestal y chef, con especialidad en panes.",
+        "why": "Es voluntario porque el proyecto es hermoso y por la intención que hay detrás. Le parece muy interesante."
+      },
+      "patrick": {
+        "name": "Patrick De Vries",
+        "alt": "Patrick De Vries sonríe junto a un perro blanco grande en un camino de piedra. Es calvo, lleva una camiseta gris y sostiene una taza blanca con su nombre. Al fondo hay montañas y árboles.",
+        "who": "Patrick De Vries tiene 55 años y es de los Países Bajos. Está en el Perú para explorar la cultura.",
+        "work": "Trabaja en aduanas y logística, y también es manitas: electricidad, carpintería y plomería.",
+        "why": "Ayudar a las personas está en su naturaleza. Le encanta la idea de trabajar en algo nuevo y de beneficio, ayudando a otros."
+      },
+      "pamella": {
+        "name": "Pamella Garcia",
+        "alt": "Pamella Garcia sonríe en la entrada de una carpa blanca de lona. Tiene el pelo corto y oscuro, una camiseta negra con una calavera de colores y un collar. La enmarcan cortinas blancas y una viga de madera.",
+        "who": "Pamella Garcia tiene 31 años y es de Brasil. Vive en el Perú desde hace 6 años porque siente que es su nueva casa.",
+        "work": "Está a cargo del diseño web y de la ingeniería de software de las aplicaciones del proyecto.",
+        "why": "Lo que más le gusta de trabajar en el proyecto es que se trata de una iniciativa que nace del corazón y de la voluntad de conectar a las personas con la naturaleza de una manera muy bonita."
+      },
+      "vegprtsmkl6": {
+        "name": "Nello Fraboni:",
+        "alt": "Nello Fraboni: smiles in a volunteer photo.",
+        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "work": "",
+        "why": ""
+      }
     },
     "form": {
-      "heading": "Formulario de voluntariado",
+      "heading": "Join Here!",
+      "lead": "Para inscribirte como voluntario, completa el formulario de abajo.",
       "inactive": "Este formulario todavía no está activo. Funcionará cuando el dueño del proyecto confirme el correo de Formspree, en una bandeja a la que quien construye el sitio no tiene acceso. Destino previsto: info@incabrailletrail.com.",
       "requiredNote": "Todos los campos son obligatorios.",
       "name": "Nombre",
@@ -155,59 +211,51 @@
       "errNetwork": "No se pudo enviar el mensaje. Comprueba tu conexión e inténtalo de nuevo."
     }
   },
-  "trails": {
-    "title": "Senderos — {siteName}",
-    "description": "Dos caminatas en el Inca Braille Trail: una para aprender el ciclo de la vida y otra sensorial, de tacto, olores y sensaciones. Los textos todavía son provisionales.",
-    "h1": "Senderos",
-    "lead": "Hay dos caminatas previstas. Estos textos son provisionales hasta que el dueño del proyecto envíe la descripción completa.",
-    "boxes": [
-      { "title": "Caminatas educativas", "content": ["Una caminata para aprender el ciclo de la vida. Esta frase es un marcador de posición y se reemplazará cuando llegue la descripción del proyecto."] },
-      { "title": "Caminatas sensoriales", "content": ["Una caminata sensorial de tacto, olores y sensaciones. Esta frase es un marcador de posición y se reemplazará cuando llegue la descripción del proyecto."] }
-    ]
-  },
   "donations": {
-    "title": "Patrocinadores — {siteName}",
-    "description": "Empresas y marcas pueden apoyar el Inca Braille Trail. Con su acuerdo, un logo puede aparecer aquí. Las donaciones se hacen por transferencia bancaria.",
-    "h1": "Patrocinadores",
-    "lead": "Si tu empresa o tu marca puede aportar algo a este proyecto, ponte en contacto. Con tu acuerdo, el logo de tu marca puede aparecer aquí.",
-    "logosLabel": "Espacios para logos de patrocinadores",
-    "logoPending": "Espacio para un logo",
-    "boxes": [
-      {
-        "title": "Donación",
-        "content": [
-          "Las donaciones mantienen el sendero gratuito para los visitantes. La transferencia se hace a las cuentas bancarias de esta página.",
-          "Cada donante puede elegir si publicar su nombre, el monto de la donación, ambos o ninguno. Las donaciones anónimas son bienvenidas.",
-          "Todavía no se publica ningún nombre en este sitio."
-        ]
-      }
-    ],
+    "title": "Donaciones — {siteName}",
+    "description": "Las donaciones mantienen el sendero gratuito. Las cuentas bancarias están en esta página, listas para copiar.",
+    "h1": "Donaciones",
+    "heroLine": "Cada donación mantiene este camino libre para quien camina con el tacto y la confianza.",
+    "heroAlt": "Un hombre sonriente con sombrero de sol y gafas azules se agacha en el suelo del bosque y sostiene hojas secas con ambas manos.",
+    "lead": "Las donaciones mantienen el sendero gratuito para quienes lo visitan.",
+    "choice": "Puedes publicar tu nombre y el monto, publicar solo tu nombre, o donar en anonimato. Las donaciones anónimas son bienvenidas.",
+    "noneYet": "Todavía no se publica ningún nombre en este sitio.",
     "form": {
-      "heading": "Formulario de donación",
-      "intro": "Elige qué podemos publicar.",
-      "emailNote": "Este formulario se envía a info@incabrailletrail.com. Esa dirección todavía no existe, así que no llega a ningún lugar hasta que exista.",
-      "legend": "¿Qué podemos publicar?",
-      "optName": "Publicar mi nombre",
-      "optAmount": "Publicar el monto",
-      "optBoth": "Publicar mi nombre y el monto",
-      "optNone": "No publicar ninguno",
-      "name": "Nombre a publicar",
-      "amount": "Monto a publicar",
+      "heading": "Datos de la donación",
+      "intro": "Las cuentas bancarias están en esta página. También puedes enviar tus datos con este formulario.",
+      "name": "Nombre completo",
+      "country": "País",
+      "date": "Fecha de envío de la donación",
+      "amount": "Monto que pretendes donar",
       "amountHint": "Incluye la moneda, por ejemplo 50 USD.",
+      "legend": "¿Qué podemos publicar?",
+      "optBoth": "Publicar mi nombre y el monto",
+      "optName": "Publicar solo mi nombre",
+      "optAnonymous": "Donación anónima. No publicar nada.",
       "honeypot": "Deja este campo vacío",
-      "submit": "Enviar elección",
+      "submit": "Enviar los datos de la donación",
       "sending": "Enviando…",
-      "success": "Gracias. Recibimos tu elección.",
+      "success": "Gracias. Recibimos tus datos.",
       "summary": "No se pudo enviar el formulario. Revisa los campos marcados con error.",
       "errRequired": "Este campo es obligatorio.",
-      "errNetwork": "No se pudo enviar el mensaje. Comprueba tu conexión e inténtalo de nuevo."
+      "errDate": "Escribe una fecha real.",
+      "errNetwork": "No se pudo enviar el mensaje. Revisa tu conexión e inténtalo de nuevo.",
+      "emailNote": "Este formulario todavía no envía. El destino es info.incabrailletrail@gmail.com."
     },
     "bank": {
-      "heading": "Datos bancarios para donar",
-      "soles": "Cuenta BCP en soles",
-      "solesInter": "Número de cuenta interbancaria en soles",
-      "dolares": "Cuenta BCP en dólares",
-      "dolaresInter": "Número de cuenta interbancaria en dólares"
+      "revealed": "Cuentas bancarias",
+      "hint": "Haz clic en un botón para copiar el número.",
+      "soles": "Cuenta bancaria en soles",
+      "dolares": "Cuenta bancaria en dólares",
+      "bcp": "BCP",
+      "interbank": "Interbank",
+      "groupSoles": "Copiar una cuenta en soles",
+      "groupDollars": "Copiar una cuenta en dólares",
+      "copiedSolesBcp": "Se copió la cuenta BCP en soles.",
+      "copiedSolesInter": "Se copió la cuenta Interbank en soles.",
+      "copiedDollarsBcp": "Se copió la cuenta BCP en dólares.",
+      "copiedDollarsInter": "Se copió la cuenta Interbank en dólares.",
+      "copyFail": "No se pudo copiar. El número está en el botón. Selecciónalo y cópialo a mano."
     }
   },
   "audiovideo": {
@@ -216,11 +264,134 @@
     "h1": "Audio y video",
     "lead": "Audio y video del sendero, con transcripción, subtítulos y audiodescripción. Los archivos todavía no han sido recibidos.",
     "boxes": [
-      { "title": "Audio de la visita", "content": ["La grabación de audio de la visita todavía no ha sido recibida. Se publicará aquí cuando el dueño del proyecto la envíe."] },
-      { "title": "Transcripción", "content": ["La transcripción del audio todavía no ha sido recibida. Se publicará aquí como texto cuando el dueño del proyecto la envíe."] },
-      { "title": "Video", "content": ["El video del sendero todavía no ha sido recibido. Se publicará aquí cuando el dueño del proyecto lo envíe."] },
-      { "title": "Subtítulos", "content": ["Los subtítulos del video todavía no han sido recibidos. Se publicarán junto con el video cuando el dueño del proyecto los envíe."] },
-      { "title": "Audiodescripción", "content": ["La audiodescripción del video todavía no ha sido recibida. Se publicará junto con el video cuando el dueño del proyecto la envíe."] }
+      {
+        "title": "Audio de la visita",
+        "content": [
+          "La grabación de audio de la visita todavía no ha sido recibida. Se publicará aquí cuando el dueño del proyecto la envíe."
+        ]
+      },
+      {
+        "title": "Transcripción",
+        "content": [
+          "La transcripción del audio todavía no ha sido recibida. Se publicará aquí como texto cuando el dueño del proyecto la envíe."
+        ]
+      },
+      {
+        "title": "Video",
+        "content": [
+          "El video del sendero todavía no ha sido recibido. Se publicará aquí cuando el dueño del proyecto lo envíe."
+        ]
+      },
+      {
+        "title": "Subtítulos",
+        "content": [
+          "Los subtítulos del video todavía no han sido recibidos. Se publicarán junto con el video cuando el dueño del proyecto los envíe."
+        ]
+      },
+      {
+        "title": "Audiodescripción",
+        "content": [
+          "La audiodescripción del video todavía no ha sido recibida. Se publicará junto con el video cuando el dueño del proyecto la envíe."
+        ]
+      }
     ]
+  },
+  "educational": {
+    "title": "Sendero educativo — {siteName}",
+    "description": "Una caminata que enseña cómo crece el alimento, vuelve a la tierra como compost y se convierte otra vez en comida.",
+    "h1": "Trail 1: Educational Path",
+    "heroLine": "Aquí aprendes todo el camino por el ciclo de la vida.",
+    "heroAlt": "Dos manos sostienen frutos verdes pequeños entre hojas. Un fruto descansa en una palma abierta.",
+    "moreTitle": "Conoce más sobre:",
+    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
+    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "p2": "",
+    "p3": "Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas. El sendero educativo es esa idea, contada como un camino que se puede caminar.",
+    "gallery": {
+      "title": "¿Quieres conocer un poco de lo que hay en el sendero?",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "close": "Cerrar",
+      "open": "Abrir imagen",
+      "thumbs": "Miniaturas",
+      "photo1": "Una planta joven, de hojas anchas, crece en el cantero bajo la malla de sombra, con las mangueras de riego en la tierra.",
+      "photo2": "Un hombre con sombrero y lentes se agacha y sostiene un gran ramo blanco entre plantas de hojas finas.",
+      "photo3": "Una mano se extiende sobre bandejas de plantines rojos y verdes. Otras bandejas todavía tienen solo tierra.",
+      "photo4": "Un hombre con sombrero sostiene una botella de plástico unida por una manguera a un tambor azul, junto a la mesa de trabajo.",
+      "photo5": "Un montón de viruta y aserrín, listo para cubrir el suelo.",
+      "photo6": "Un hombre con sombrero sostiene un puñado de compost oscuro junto a un tubo perforado, en un cantero cubierto de paja.",
+      "photo7": "Dos pavos, uno al lado del otro, contra una malla verde.",
+      "photo8": "Tallos secos y restos de planta amontonados, el comienzo del compost.",
+      "photo9": "Flores amarillas se inclinan sobre un pequeño estanque de agua rojiza, con piedras detrás.",
+      "photo10": "Un hombre se agacha en el pasto entre dos alpacas, una marrón y una blanca, sosteniendo las cuerdas.",
+      "photo11": "Manos abiertas sostienen frutos verdes pequeños, todavía en la rama con hojas.",
+      "photo12": "Plantas jóvenes de maíz crecen en hileras sobre un terreno pedregoso, con las montañas detrás.",
+      "photo13": "Un cactus alto se alza entre cactus redondos, en suelo de piedra.",
+      "photo14": "Hileras de papa crecen en la tierra oscura, con piedras y la ladera detrás.",
+      "photo15": "Un muro de piedra seca, de rocas redondeadas, con árboles y montañas bajo el cielo azul.",
+      "photo16": "Un ramo de flores rosa intenso, de cerca, con hojas verdes detrás.",
+      "photo17": "Un muro de bloques de piedra clara, encajados unos con otros."
+    }
+  },
+  "sensory": {
+    "title": "Sendero sensorial — {siteName}",
+    "description": "Una caminata de tacto, aroma, sonido y suelo, para personas ciegas o con baja visión y para quienes las acompañan.",
+    "h1": "Trail 2: Aromatic and Medicinal Path",
+    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "heroAlt": "Un hombre con barba se acerca a unas plantas verdes, visto de lado. Arriba solo se ve el borde de los lentes.",
+    "moreTitle": "Conoce más sobre:",
+    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "p1": "En el sendero sensorial, las personas están invitadas a caminar despacio y encontrar este lugar con el cuerpo. Un pasamanos de cuerda marca el camino. Hay piedra, madera, hojas y flores para tocar. Las hierbas y la tierra húmeda ofrecen aroma. El agua, los pájaros y el viento ofrecen sonido.",
+    "p2": "El suelo cambia bajo los pies, de piedra a tierra, y cada paso dice dónde estás. Nada en esta caminata depende de la vista.",
+    "p3": "",
+    "gallery": {
+      "title": "¿Quieres conocer un poco de lo que hay en el sendero?",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "close": "Cerrar",
+      "open": "Abrir imagen",
+      "thumbs": "Miniaturas",
+      "photo1": "Una mano descansa en la tierra, entre plantines verdes y la manguera de riego.",
+      "photo2": "Un hombre con sombrero y lentes prueba una hoja verde, muy cerca de la cámara.",
+      "photo3": "Una mano sostiene un ramo de tomates verdes pequeños, algunos todavía en flor.",
+      "photo4": "Un hombre con lentes se acerca para oler un cantero lleno de hojas verdes.",
+      "photo5": "Una mano sostiene compost oscuro, lleno de lombrices.",
+      "photo6": "Un hombre con sombrero se agacha entre las flores y sostiene una flor pequeña y clara. Una flor naranja ocupa el frente.",
+      "photo7": "Plantas verdes y redondas flotan en el agua rojiza.",
+      "photo8": "Un hombre se sienta al pie de un árbol y sostiene un puñado de hojas secas.",
+      "photo9": "Un hombre sostiene dos gallinas marrones, una en cada brazo, con árboles detrás.",
+      "photo10": "Una mano toca el agua clara que corre sobre piedras oscuras.",
+      "photo11": "Un hombre con sombrero sonríe y abraza una planta alta y frondosa, con las montañas detrás.",
+      "photo12": "Una mano toca las hojas de una planta de tallos rojos, en un cantero verde.",
+      "photo13": "Un cojín espeso de musgo crece junto a la piedra, con hojas suculentas arriba.",
+      "photo14": "Musgo y plantas pequeñas crecen entre las piedras de un muro."
+    }
+  },
+  "sponsors": {
+    "title": "Patrocinadores — {siteName}",
+    "description": "Una marca u organización puede caminar con este proyecto. Con tu acuerdo, el logo aparece al final de las páginas.",
+    "h1": "Socios afiliados",
+    "heroLine": "Súmate a este lindo proyecto enviando tu apoyo.",
+    "heroAlt": "Frutos verdes de camalote y hojas redondas flotan juntos en el agua marrón.",
+    "lead": "Si tienes una marca y quieres acompañar este sendero, escríbenos.",
+    "p1": "Un socio puede contribuir como le quede mejor: con materiales para el camino, con trabajo, con ideas o patrocinando el proyecto.",
+    "p2": "Si tienes una marca o una organización y quieres ser nuestro socio en este camino, escríbenos y te responderemos.",
+    "p3": "Con tu acuerdo, tu logo aparece al final de las páginas, entre los socios afiliados.",
+    "boxTitle": "Sé nuestro socio",
+    "boxNote": "El formulario quedará en este espacio.",
+    "footerTitle": "Socios afiliados:",
+    "logosLabel": "Espacios para logos de socios",
+    "logoPending": "Espacio para un logo"
+  },
+  "app": {
+    "title": "Inka Braille Trail App — {siteName}",
+    "description": "Inka Braille Trail App guía a las personas ciegas y con baja visión por el recorrido y cuenta la historia de cada estación.",
+    "h1": "Inka Braille Trail App",
+    "lead": "Esta aplicación abre el sendero a las personas ciegas y con baja visión.",
+    "p1": "Guía a la visita por el recorrido. En cada estación cuenta la historia de ese lugar, para que el camino se pueda seguir escuchando.",
+    "p2": "El sendero queda al alcance de quien no puede verlo. Cada parada tiene una voz, y la historia de la estación marca el camino.",
+    "p3": "Las imágenes de la aplicación irán en los espacios de abajo.",
+    "slotsLabel": "Espacios para imágenes de la aplicación",
+    "slot": "Espacio para una imagen"
   }
 }

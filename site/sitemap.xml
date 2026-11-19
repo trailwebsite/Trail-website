@@ -61,64 +61,124 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/trails/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/"/>
+    <loc>https://incabrailletrail-436.pages.dev/educational-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/es/trails/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/"/>
+    <loc>https://incabrailletrail-436.pages.dev/es/educational-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/pt/trails/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/"/>
+    <loc>https://incabrailletrail-436.pages.dev/pt/educational-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/ko/trails/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/"/>
+    <loc>https://incabrailletrail-436.pages.dev/ko/educational-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/ja/trails/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/"/>
+    <loc>https://incabrailletrail-436.pages.dev/ja/educational-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/zh/trails/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/trails/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/trails/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/trails/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/trails/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/trails/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/trails/"/>
+    <loc>https://incabrailletrail-436.pages.dev/zh/educational-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/educational-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/educational-trail/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/sensory-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/es/sensory-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/pt/sensory-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/ko/sensory-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/ja/sensory-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/zh/sensory-trail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sensory-trail/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sensory-trail/"/>
   </url>
   <url>
     <loc>https://incabrailletrail-436.pages.dev/volunteer/</loc>
@@ -181,6 +241,66 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/volunteer/"/>
   </url>
   <url>
+    <loc>https://incabrailletrail-436.pages.dev/sponsors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/es/sponsors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/pt/sponsors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/ko/sponsors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/ja/sponsors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+  </url>
+  <url>
+    <loc>https://incabrailletrail-436.pages.dev/zh/sponsors/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/sponsors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/sponsors/"/>
+  </url>
+  <url>
     <loc>https://incabrailletrail-436.pages.dev/donations/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/donations/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/donations/"/>
@@ -241,63 +361,63 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/donations/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/audio-video/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
+    <loc>https://incabrailletrail-436.pages.dev/app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/app/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/app/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/es/audio-video/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
+    <loc>https://incabrailletrail-436.pages.dev/es/app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/app/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/app/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/pt/audio-video/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
+    <loc>https://incabrailletrail-436.pages.dev/pt/app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/app/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/app/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/ko/audio-video/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
+    <loc>https://incabrailletrail-436.pages.dev/ko/app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/app/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/app/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/ja/audio-video/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
+    <loc>https://incabrailletrail-436.pages.dev/ja/app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/app/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/app/"/>
   </url>
   <url>
-    <loc>https://incabrailletrail-436.pages.dev/zh/audio-video/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/audio-video/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/audio-video/"/>
+    <loc>https://incabrailletrail-436.pages.dev/zh/app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://incabrailletrail-436.pages.dev/app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://incabrailletrail-436.pages.dev/es/app/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://incabrailletrail-436.pages.dev/pt/app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://incabrailletrail-436.pages.dev/ko/app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://incabrailletrail-436.pages.dev/ja/app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://incabrailletrail-436.pages.dev/zh/app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://incabrailletrail-436.pages.dev/app/"/>
   </url>
 </urlset>

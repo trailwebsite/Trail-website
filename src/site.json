@@ -4,14 +4,19 @@
   "dominioPretendido": "www.incabrailletrail.com",
   "formspreeId": "FORMSPREE_ID",
   "formspreeDonacoesId": "FORMSPREE_DONACOES_ID",
-  "recepcao": "info.inkabrailletrail@gmail.com",
+  "recepcao": "info.incabrailletrail@gmail.com",
+  "googleForms": {
+    "voluntario": "https://docs.google.com/forms/d/e/1FAIpQLSe-QFENxYj7xBP1UdejtaoieXUICTMhWHoDaLj7pbC6xdSxzw/viewform?embedded=true",
+    "doacao": "https://docs.google.com/forms/d/e/1FAIpQLSdr4ActDDrpEZxBswC57XBbFLvbZU6kFk3RzshjK1zCXpwhjw/viewform?embedded=true",
+    "afiliado": "https://docs.google.com/forms/d/e/1FAIpQLSflcADPJQVieoH134JqeMAYYJFyi2lCI5FFDSByU8yL4fCuqg/viewform?embedded=true"
+  },
   "robotsNoindex": true,
   "contato": {
     "telefone": "+51 914 015 544",
     "whatsapp": "https://wa.me/51914015544",
-    "mapa": "https://maps.app.goo.gl/DiaSBL3hbmQdhvJD9",
+    "mapa": "https://www.google.com/maps/place/Azul+Tika/@-13.2684024,-72.1482081,15z/data=!4m10!1m2!2m1!1sAzul+Tika+Pumawanka+Urubamba+Sacred+Valley+of+the+Incas+Cusco+Peru!3m6!1s0x916ddde89df9040f:0x41dc7fd832bf736a!8m2!3d-13.2679743!4d-72.1293137!15sCkJBenVsIFRpa2EgUHVtYXdhbmthIFVydWJhbWJhIFNhY3JlZCBWYWxsZXkgb2YgdGhlIEluY2FzIEN1c2NvIFBlcnWSAQ53ZWxsbmVzc19ob3RlbOABAA!16s%2Fg%2F11z3mr_s6r?entry=ttu&g_ep=EgoyMDI2MTEwNC4wIKXMDSoASAFQAw%3D%3D",
     "emails": {
-      "info": "info.inkabrailletrail@gmail.com",
+      "info": "info.incabrailletrail@gmail.com",
       "bookings": "bookings@incabrailletrail.com",
       "volunteers": "volunteers@incabrailletrail.com",
       "donations": "donations@incabrailletrail.com",
@@ -24,7 +29,7 @@
   },
   "cartaz": {
     "arquivo": "cartaz-inca-braille-trail",
-    "largura": 5600,
-    "altura": 1912
+    "largura": 2142,
+    "altura": 734
   }
 }

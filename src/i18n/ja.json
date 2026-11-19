@@ -5,16 +5,20 @@
   "skip": "本文へスキップ",
   "external": "(新しいタブで開きます)",
   "required": "必須",
-  "inboxNote": "このページのメッセージは info.inkabrailletrail@gmail.com に送られます。",
-  "formActivate": "info.inkabrailletrail@gmail.com を開き、FormSubmit からのメールにある確認リンクをクリックしてください。そのクリックまで、メッセージは届きません。",
+  "inboxNote": "このページのメッセージは info.incabrailletrail@gmail.com に送られます。",
+  "formActivate": "info.incabrailletrail@gmail.com を開き、FormSubmit からのメールにある確認リンクをクリックしてください。そのクリックまで、メッセージは届きません。",
   "nav": {
     "label": "メインナビゲーション",
     "menu": "メニュー",
     "home": "ホーム",
-    "trails": "散策路",
     "volunteer": "ボランティア",
-    "donations": "スポンサー",
-    "audiovideo": "メディア"
+    "donations": "寄付",
+    "audiovideo": "メディア",
+    "open": "ページを表示",
+    "educational": "Trail 1: Educational Path",
+    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "sponsors": "提携パートナー",
+    "app": "アプリ"
   },
   "lang": {
     "button": "言語",
@@ -27,9 +31,9 @@
     "items": [
       "このサイトに記載のメールアドレスはまだ作成されていません。",
       "ボランティア申し込みフォームは、Formspree のアカウントが確認されるまでメッセージを送信しません。",
-      "寄付フォームは Formspree が接続されるまで何も送信しません。名前や金額の公開に関する選択は、まだどこにも記録されません。",
+      "寄付フォームは内容をプロジェクトのメールへ送ります。銀行口座はページに表示されたままです。",
       "Instagram と Facebook のアカウントは確認待ちです。",
-      "寄付はスポンサーのページにある銀行口座へ振り込みます。二つの口座を残すかは、プロジェクト責任者が確認します。",
+      "振込は、ページに表示されている口座を使います。二つの口座を残すかは、プロジェクトの持ち主が確認します。",
       "トレイルの音声と動画は受け取り待ちです。",
       "ボランティアの写真と動画は受け取り待ちです。",
       "ドメイン {dominio} は登録待ちです。"
@@ -64,14 +68,16 @@
   "home": {
     "title": "{siteName} — 視覚障害者とロービジョンの人のための感覚トレイル、インカの聖なる谷",
     "description": "Peru の Cusco、インカの聖なる谷で、視覚障害者とロービジョンの人、そしてその家族、友人、同行者のために開発中の教育的で感覚的なトレイルです。",
-    "heroAlt": "プロジェクトのポスター。ポンチョとアンデスの帽子を身につけた人が白杖を使い、ロープの手すりがある石畳の道を歩いている。インカの石壁とアーチの間から、アンデスの段々畑と雪をいただく山々が見える。道沿いの石の標識には点字が刻まれている。ポスターの文字: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. 石の標識には INCA TRAIL とあり、その下に点字があります。",
-    "tagline": "Peru の Cusco、インカの聖なる谷にある、視覚障害者とロービジョンの人のための教育的で感覚的なトレイルです。",
+    "heroAlt": "プロジェクトのポスター。ニット帽とオレンジのポンチョの人が白杖を使い、木の柵に沿った石畳の道を、女性と子どもが立つ2階建ての石の家のそばで歩いている。2人が鶏のいる緑の畑で植え、レアが2羽、石垣のそばにいる。背後には雪をいただく山々がある。ポスターの文字: INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE. 看板には、プロジェクトは工事中で、ボランティアが緊急に必要だと書いてある。",
+    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
     "banner": "このウェブサイトは建設中のプロジェクトです。",
     "boxes": [
       {
         "title": "Inca Braille Trail とは",
         "content": [
-          { "lead": "自然、学び、感覚をめぐる旅" },
+          {
+            "lead": "自然、学び、感覚をめぐる旅"
+          },
           "美しいインカの聖なる谷(Cusco, Peru)に位置する Inca Braille Trail は、視覚障害者とロービジョンの人、そしてその家族、友人、同行者のために特別に開発中の、教育的で感覚的な体験です。",
           "私たちのビジョンは、訪れる人が自然を楽しみ、学び、探索し、意味のある体験を分かち合える、温かな場所をつくることです。スポンサーと寄付の支えにより、無料で提供します。",
           "このトレイルは、触覚、嗅覚、聴覚、味覚を通して感覚を刺激するよう設計されています。訪れる人は、植物の手ざわり、ハーブや花の香り、自然の音、そして自然界が差し出す数多くのすばらしい体験に出会います。"
@@ -84,7 +90,9 @@
           "教育の旅「いのちの循環」を通して、訪れる人は植物の必要とするものが私たち自身のそれとよく似ていることを発見します。",
           "小さな種が育つには、養分、水、温かさ、世話が必要です。私たちが健やかに生きるために、栄養のある食べ物、きれいな水、日光、健全な環境が必要なのと同じです。",
           "植物は健康な土から養分を、日光からエネルギーを得ます。私たちは植物が生み出す食べ物に頼って、エネルギーと成長と健やかさを得ています。",
-          { "lead": "健康な土が健康な植物を育て、健康な植物が健康な人を養います。" },
+          {
+            "lead": "健康な土が健康な植物を育て、健康な植物が健康な人を養います。"
+          },
           "動物もこの循環で欠かせない役割を担っています。花に受粉するミツバチ、種を運ぶ鳥、土を豊かにする天然の堆肥をもたらす家畜まで、すべての生き物が自然のバランスに貢献しています。",
           "これらの養分は大地に還り、新しい植物の成長を助け、植物と動物と人をつなぐ美しい循環を完成させます。",
           "旅の途中で、訪れる人はアンデスの伝統農法と古代インカの農法を、現代の持続可能な農業とともに学びます。私たちは在来種の種を守ること、堆肥づくり、生物多様性の保護、有害な農薬に頼らず栄養のある食べ物を育てることの大切さを強調します。",
@@ -99,7 +107,9 @@
           "また、目の見える来訪者が視覚障害のある人の日々の困難をよりよく理解し、より深い気づき、共感、敬意を育むきっかけになることを願っています。",
           "共有する体験を通して、誰もが価値あるものを差し出せること、そして私たちは皆、互いから学ぶことがあると気づいてほしいのです。",
           "私たちが大地を育み大地が私たちを育むように、やさしさと思いやりと互恵によって、私たちは互いを育みます。",
-          { "lead": "これが Ayni の精神であり、Inca Braille Trail の心です。" }
+          {
+            "lead": "これが Ayni の精神であり、Inca Braille Trail の心です。"
+          }
         ]
       }
     ]
@@ -108,32 +118,78 @@
     "title": "ボランティア — {siteName}",
     "description": "ボランティアを緊急募集:トレイルの整備、石の運搬、庭仕事、敷地の管理。食事付き、終日作業の方には宿泊を提供。",
     "h1": "ボランティア",
+    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroAlt": "手が背の高い緑の植物を抱えています。周りにはさらに植物と丘があります。",
+    "signNow": "ボランティアとして申し込む",
     "lead": "視覚障害者とロービジョンの来訪者にトレイルを開くため、ボランティアを緊急募集しています。",
     "boxes": [
       {
         "title": "トレイルづくりに力を貸してください",
         "content": [
-          "ボランティアを緊急募集しています!歩きやすい道をつくり、美しい敷地を手入れして、Inca Braille Trail に命を吹き込む手伝いをしてください。",
-          "作業には、トレイルの整備と道づくり、石の運搬、庭仕事、敷地全般の管理が含まれます。あなたの貢献が、この感覚体験を視覚障害者とロービジョンの来訪者、そしてその同行者に開く助けになります。",
-          { "list": [
-            "日帰りボランティア:昼食を提供。",
-            "宿泊して終日作業するボランティア:宿泊、朝食、昼食、夕食を提供。",
-            "交通:合意した集合場所から送迎あり。"
-          ] },
+          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
+          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          {
+            "list": [
+              "日帰りボランティア:昼食を提供。",
+              "宿泊して終日作業するボランティア:宿泊、朝食、昼食、夕食を提供。",
+              "交通:合意した集合場所から送迎あり。"
+            ]
+          },
           "日程を調整し、あなたの能力に合った作業を見つけるために、ご連絡ください。"
         ]
       }
     ],
+    "work": {
+      "title": "ボランティアの仕事を見てください",
+      "lead": "トレイルを築くために、力を尽くしています。私たちの仕事の写真をいくつかご覧ください。",
+      "prev": "前へ",
+      "next": "次へ",
+      "position": "画像",
+      "close": "閉じる",
+      "open": "画像を開く",
+      "openVideo": "動画を開く",
+      "thumbs": "サムネイル",
+      "photo1": "3人が土の斜面で石垣を積んでいます。白ひげの男性がひざまずいてメジャーを持っています。坊主の男性が長い丸太を担いでいます。帽子の人が石の上にかがんでいます。背後には緑のコンテナと山があります。",
+      "photo2": "同じ石垣です。白ひげの男性がメジャーを持っています。帽子の人が石を積んでいます。坊主の男性が赤い手袋で、長い柄の道具を引いています。",
+      "photo3": "3人が低い石垣のそばで働いています。白ひげの男性が、オレンジの23の黒いシャツと長靴でカメラに微笑んでいます。つばの広い帽子の男性が横を指さしています。坊主の男性が赤い手袋で、熊手にかがんでいます。背後には緑のコンテナ、木々、山があります。",
+      "photo4": "薄い壁の針金に道具が下がっています。小さな耕具、移植ごて3本、ペンチ2つ、のこぎりです。フォークが土の上に立ち、隣に青いシートとオレンジの袋があります。",
+      "video": "同じ作業の様子です。地面を測り、石垣を積み、木材を運んでいます。背後には山があります。"
+    },
     "media": {
-      "title": "Braille Trail で働く私たちのボランティアに会う",
-      "intro": "トレイルで働く人々の動画、写真、音声をここに掲載します。",
-      "video": "動画",
-      "photos": "写真",
-      "audio": "音声",
-      "pending": "まだ届いていません。"
+      "title": "ボランティアに会いましょう",
+      "intro": "このプロジェクトを築く手。",
+      "matias": {
+        "name": "Matias Lopez",
+        "alt": "Matias Lopez が、金属のボウルから餌を食べるレアのそばにしゃがんでいます。黒髪にひげ、めがねで、暗い色のシャツと作業用手袋をつけています。背後には青いタープ、机、木々があります。",
+        "who": "Matias Lopez は38歳で、アルゼンチン出身です。旅と、新しい場所を知るためにペルーにいます。",
+        "work": "森林技術者で、シェフでもあります。パンが専門です。",
+        "why": "プロジェクトが美しく、その背後にある意図に心を動かされてボランティアをしています。とても興味深いと感じています。"
+      },
+      "patrick": {
+        "name": "Patrick De Vries",
+        "alt": "Patrick De Vries が石の道で大きな白い犬のそばに微笑んでいます。坊主頭で、灰色のシャツを着て、自分の名前が入った白いマグカップを持っています。背景は山と木々です。",
+        "who": "Patrick De Vries は55歳で、オランダ出身です。文化を探るためにペルーにいます。",
+        "work": "税関と物流の仕事をしています。便利屋としても、電気、大工、配管を手がけます。",
+        "why": "人を助けるのは彼の性質です。新しいこと、そして誰かの役に立つことに関わるのが好きです。"
+      },
+      "pamella": {
+        "name": "Pamella Garcia",
+        "alt": "Pamella Garcia が白いキャンバスのテントの入り口で微笑んでいます。短い黒髪で、色とりどりの頭蓋骨が描かれた黒いシャツとネックレスをつけています。白いカーテンと木の梁がまわりを縁取ります。",
+        "who": "Pamella Garcia は31歳で、ブラジル出身です。ペルーが新しい家のように感じられ、6年住んでいます。",
+        "work": "プロジェクトのアプリのウェブデザインとソフトウェアエンジニアリングを担当しています。",
+        "why": "このプロジェクトで働くうえでいちばん好きなのは、心から始まり、人と自然をとても美しい形でつなごうとする意志から生まれた取り組みだからです。"
+      },
+      "vegprtsmkl6": {
+        "name": "Nello Fraboni:",
+        "alt": "Nello Fraboni: smiles in a volunteer photo.",
+        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "work": "",
+        "why": ""
+      }
     },
     "form": {
-      "heading": "ボランティア申し込みフォーム",
+      "heading": "Join Here!",
+      "lead": "ボランティアに申し込むには、下のフォームに記入してください。",
       "inactive": "このフォームはまだ有効ではありません。プロジェクト責任者が、サイト制作者はアクセスできない受信箱で Formspree のメールを確認した後に機能します。予定の送信先:info@incabrailletrail.com。",
       "requiredNote": "すべての項目は必須です。",
       "name": "お名前",
@@ -155,59 +211,51 @@
       "errNetwork": "メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
     }
   },
-  "trails": {
-    "title": "散策路 — {siteName}",
-    "description": "Inca Braille Trail の二つの散策です。一つは生命の循環を学び、もう一つは触感、香り、感覚の散策です。文章はまだ仮のものです。",
-    "h1": "散策路",
-    "lead": "二つの散策を予定しています。以下の文章は、プロジェクト責任者から詳しい説明が届くまでの仮の文です。",
-    "boxes": [
-      { "title": "教育の散策", "content": ["生命の循環を学ぶための散策です。この文は仮のもので、プロジェクトの説明が届き次第差し替えます。"] },
-      { "title": "感覚の散策", "content": ["触感、香り、感覚をたどる散策です。この文は仮のもので、プロジェクトの説明が届き次第差し替えます。"] }
-    ]
-  },
   "donations": {
-    "title": "スポンサー — {siteName}",
-    "description": "企業やブランドは Inca Braille Trail を支えることができます。同意があれば、ロゴをここに掲載できます。寄付は銀行振込です。",
-    "h1": "スポンサー",
-    "lead": "企業やブランドでこのプロジェクトに貢献できる方は、ご連絡ください。ご同意いただければ、ブランドのロゴをここに掲載できます。",
-    "logosLabel": "スポンサーのロゴの場所",
-    "logoPending": "ロゴの場所",
-    "boxes": [
-      {
-        "title": "寄付",
-        "content": [
-          "寄付はトレイルを来訪者に無料で開いておく支えです。振り込みは、このページの銀行口座へ行います。",
-          "寄付者は、名前、寄付金額、その両方、またはどちらも公開しないかを選ぶことができます。匿名の寄付も歓迎します。",
-          "現在、このサイトにはどなたの名前も掲載されていません。"
-        ]
-      }
-    ],
+    "title": "寄付 — {siteName}",
+    "description": "寄付が、この道を無料に保ちます。銀行口座はこのページにあり、番号をコピーできます。",
+    "h1": "寄付",
+    "heroLine": "ひとつひとつの寄付が、触れて歩む人のためにこの道を無料に保ちます。",
+    "heroAlt": "日よけ帽と青い眼鏡の男性が森の地面にしゃがみ、乾いた葉を両手で持って微笑んでいます。",
+    "lead": "寄付は、訪れる人のためにこの道を無料に保ちます。",
+    "choice": "名前と金額を公開する、名前だけを公開する、または匿名で寄付する、の三つから選べます。匿名の寄付も歓迎します。",
+    "noneYet": "このサイトには、まだどの名前も公開されていません。",
     "form": {
-      "heading": "寄付フォーム",
-      "intro": "公開してよいものを選んでください。",
-      "emailNote": "このフォームの宛先は info@incabrailletrail.com です。そのアドレスはまだないので、できるまで何も届きません。",
-      "legend": "何を公開してよいですか?",
-      "optName": "名前を公開する",
-      "optAmount": "金額を公開する",
+      "heading": "寄付の内容",
+      "intro": "銀行口座はこのページにあります。このフォームから内容を送ることもできます。",
+      "name": "氏名",
+      "country": "国",
+      "date": "寄付を送る日",
+      "amount": "寄付する予定の金額",
+      "amountHint": "通貨も書いてください。例: 50 USD。",
+      "legend": "何を公開してよいですか？",
       "optBoth": "名前と金額を公開する",
-      "optNone": "どちらも公開しない",
-      "name": "公開する名前",
-      "amount": "公開する金額",
-      "amountHint": "通貨も記入してください。例:50 USD",
+      "optName": "名前だけを公開する",
+      "optAnonymous": "匿名の寄付。何も公開しない。",
       "honeypot": "この欄は空のままにしてください",
-      "submit": "選択を送る",
-      "sending": "送信中…",
-      "success": "ありがとうございます。選択を受け取りました。",
-      "summary": "フォームを送信できませんでした。エラーの欄を確認してください。",
-      "errRequired": "この項目は必須です。",
-      "errNetwork": "メッセージを送信できませんでした。接続を確認して、もう一度お試しください。"
+      "submit": "寄付の内容を送信",
+      "sending": "送信しています…",
+      "success": "ありがとうございます。内容を受け取りました。",
+      "summary": "フォームを送れませんでした。エラーの出た欄を確認してください。",
+      "errRequired": "この欄は必須です。",
+      "errDate": "実在する日付を入れてください。",
+      "errNetwork": "メッセージを送れませんでした。接続を確認して、もう一度試してください。",
+      "emailNote": "このフォームはまだ送信されません。宛先は info.incabrailletrail@gmail.com です。"
     },
     "bank": {
-      "heading": "寄付先の口座",
-      "soles": "BCP ソル口座",
-      "solesInter": "ソルの銀行間口座番号",
-      "dolares": "BCP ドル口座",
-      "dolaresInter": "ドルの銀行間口座番号"
+      "revealed": "銀行口座",
+      "hint": "ボタンを押すと、番号がコピーされます。",
+      "soles": "ソルの口座",
+      "dolares": "ドルの口座",
+      "bcp": "BCP",
+      "interbank": "Interbank",
+      "groupSoles": "ソルの口座をコピー",
+      "groupDollars": "ドルの口座をコピー",
+      "copiedSolesBcp": "ソルの BCP 口座をコピーしました。",
+      "copiedSolesInter": "ソルの Interbank 口座をコピーしました。",
+      "copiedDollarsBcp": "ドルの BCP 口座をコピーしました。",
+      "copiedDollarsInter": "ドルの Interbank 口座をコピーしました。",
+      "copyFail": "コピーできませんでした。番号はボタンにあります。選んで、手でコピーしてください。"
     }
   },
   "audiovideo": {
@@ -216,11 +264,134 @@
     "h1": "音声と動画",
     "lead": "トレイルの音声と動画、文字起こし、字幕、音声解説。ファイルはまだ届いていません。",
     "boxes": [
-      { "title": "見学の音声", "content": ["見学の音声録音はまだ届いていません。プロジェクト責任者から届き次第、ここに掲載します。"] },
-      { "title": "文字起こし", "content": ["音声の文字起こしはまだ届いていません。プロジェクト責任者から届き次第、テキストとしてここに掲載します。"] },
-      { "title": "動画", "content": ["トレイルの動画はまだ届いていません。プロジェクト責任者から届き次第、ここに掲載します。"] },
-      { "title": "字幕", "content": ["動画の字幕はまだ届いていません。プロジェクト責任者から届き次第、動画とともに掲載します。"] },
-      { "title": "音声解説", "content": ["動画の音声解説はまだ届いていません。プロジェクト責任者から届き次第、動画とともに掲載します。"] }
+      {
+        "title": "見学の音声",
+        "content": [
+          "見学の音声録音はまだ届いていません。プロジェクト責任者から届き次第、ここに掲載します。"
+        ]
+      },
+      {
+        "title": "文字起こし",
+        "content": [
+          "音声の文字起こしはまだ届いていません。プロジェクト責任者から届き次第、テキストとしてここに掲載します。"
+        ]
+      },
+      {
+        "title": "動画",
+        "content": [
+          "トレイルの動画はまだ届いていません。プロジェクト責任者から届き次第、ここに掲載します。"
+        ]
+      },
+      {
+        "title": "字幕",
+        "content": [
+          "動画の字幕はまだ届いていません。プロジェクト責任者から届き次第、動画とともに掲載します。"
+        ]
+      },
+      {
+        "title": "音声解説",
+        "content": [
+          "動画の音声解説はまだ届いていません。プロジェクト責任者から届き次第、動画とともに掲載します。"
+        ]
+      }
     ]
+  },
+  "educational": {
+    "title": "教育の道 — {siteName}",
+    "description": "食べ物が育ち、堆肥になって土に戻り、また食べ物になるまでを歩く道です。",
+    "h1": "Trail 1: Educational Path",
+    "heroLine": "ここでは、いのちの循環をたどる道のすべてを学びます。",
+    "heroAlt": "二つの手が葉のあいだで小さな緑の実を持っています。一つの実が開いた手のひらにあります。",
+    "moreTitle": "もっと知る：",
+    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
+    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "p2": "",
+    "p3": "健やかな土は健やかな植物を育てます。健やかな植物は健やかな人を養います。教育の道は、その考えを歩ける道として話すものです。",
+    "gallery": {
+      "title": "この道にあるものを、少し見てみませんか？",
+      "prev": "前へ",
+      "next": "次へ",
+      "close": "閉じる",
+      "open": "画像を開く",
+      "thumbs": "サムネイル",
+      "photo1": "幅の広い葉の若い株が、遮光ネットの下の畝で育ち、土の上に灌水ホースが通っています。",
+      "photo2": "帽子と眼鏡の男性がしゃがみ、細い葉のあいだで白い花の房を持っています。",
+      "photo3": "手が赤と緑の苗トレイの上に伸びています。ほかのトレイにはまだ土だけです。",
+      "photo4": "帽子の男性が、青いドラム缶にホースでつながったペットボトルを持ち、そばに作業台があります。",
+      "photo5": "土を覆うための木くずとおがくずの山です。",
+      "photo6": "帽子の男性が、わらを敷いた畝で、穴の開いた管のそばに黒い堆肥をひとつかみ持っています。",
+      "photo7": "緑の網の前に、七面鳥が二羽並んでいます。",
+      "photo8": "乾いた茎と植物の残りが積もっています。堆肥のはじまりです。",
+      "photo9": "黄色い花が赤みのある水の小さな池に傾き、後ろに岩があります。",
+      "photo10": "男性が茶と白のアルパカのあいだの草の上でしゃがみ、綱を持っています。",
+      "photo11": "開いた手が、葉のついた枝にまだ残る小さな緑の実を受けています。",
+      "photo12": "若いトウモロコシが石の多い地面に列をなし、後ろに山があります。",
+      "photo13": "背の高いサボテンが、丸い玉サボテンのあいだ、岩の地面に立っています。",
+      "photo14": "ジャガイモの株が黒い土に列をなし、後ろに岩と斜面があります。",
+      "photo15": "丸い石を積んだ石垣です。青い空の下に木と山があります。",
+      "photo16": "明るいピンクの花がアップで集まり、後ろに緑の葉があります。",
+      "photo17": "淡い色の切石を組み合わせた壁です。"
+    }
+  },
+  "sensory": {
+    "title": "感覚の道 — {siteName}",
+    "description": "触れること、香り、音、足もとの地面で歩く道です。視覚に障害のある人と、ともに歩く人のための道です。",
+    "h1": "Trail 2: Aromatic and Medicinal Path",
+    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "heroAlt": "ひげの男性が横顔で緑の植物に近づいています。上には眼鏡の下端だけが見えます。",
+    "moreTitle": "もっと知る：",
+    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "p1": "感覚の道では、ゆっくり歩き、この場所を体で迎えるように招かれます。ロープの手すりが道を示します。石、木、葉、花に触れられます。ハーブと湿った土は香りを渡します。水と鳥と風は音を渡します。",
+    "p2": "足もとは石から土へと変わり、一歩ごとに今いる場所を伝えます。この道の何も、見えていることに頼っていません。",
+    "p3": "",
+    "gallery": {
+      "title": "この道にあるものを、少し見てみませんか？",
+      "prev": "前へ",
+      "next": "次へ",
+      "close": "閉じる",
+      "open": "画像を開く",
+      "thumbs": "サムネイル",
+      "photo1": "手が、若い緑の苗と灌水ホースのあいだの土の上に置かれています。",
+      "photo2": "帽子と眼鏡の男性が、カメラの近くで緑の葉を口にしています。",
+      "photo3": "手が、まだ花の残る小さな緑のトマトの房を持っています。",
+      "photo4": "眼鏡の男性が、緑の葉の密な畝に顔を近づけて匂いをかいでいます。",
+      "photo5": "手が、ミミズの多い黒い堆肥を持っています。",
+      "photo6": "帽子の男性が花のあいだにしゃがみ、小さく淡い花を持っています。手前にオレンジの花があります。",
+      "photo7": "丸い緑の水草が、赤みのある水に浮いています。",
+      "photo8": "男性が木の根元に座り、枯れた葉をひとつかみ持っています。",
+      "photo9": "男性が茶色の雌鶏を左右の腕に一羽ずつ抱え、後ろに木があります。",
+      "photo10": "手が、暗い岩の上を流れる澄んだ水に触れています。",
+      "photo11": "帽子の男性が笑顔で背の高い葉の株を抱え、後ろに山があります。",
+      "photo12": "手が、緑の作物の畝で、赤い茎の葉に触れています。",
+      "photo13": "厚い苔が岩に寄り、上に小さな多肉の葉があります。",
+      "photo14": "苔と小さな植物が、石垣の石のあいだに育っています。"
+    }
+  },
+  "sponsors": {
+    "title": "スポンサー — {siteName}",
+    "description": "ブランドや団体がこのプロジェクトとともに歩けます。同意があれば、ロゴはページの下部に現れます。",
+    "h1": "提携パートナー",
+    "heroLine": "この美しいプロジェクトに、あなたの支援を送って参加してください。",
+    "heroAlt": "丸い葉と緑のホテイアオイの実が、茶色い水面に一緒に浮かんでいます。",
+    "lead": "ブランドがあり、この道とともにありたい方は、私たちに書いてください。",
+    "p1": "パートナーは、合う形で貢献できます。道のための資材、仕事、アイデア、またはプロジェクトの後援です。",
+    "p2": "ブランドや団体があり、この道のパートナーになりたい方は、手紙をください。こちらから返します。",
+    "p3": "同意があれば、ロゴはページの下部、提携パートナーの中に現れます。",
+    "boxTitle": "パートナーになる",
+    "boxNote": "フォームはこの場所に入ります。",
+    "footerTitle": "提携パートナー:",
+    "logosLabel": "パートナーのロゴを置く場所",
+    "logoPending": "ロゴを置く場所"
+  },
+  "app": {
+    "title": "Inka Braille Trail App — {siteName}",
+    "description": "Inka Braille Trail Appは、視覚に障害のある人をツアーに沿って案内し、各ステーションの物語を語ります。",
+    "h1": "Inka Braille Trail App",
+    "lead": "この道を、視覚に障害のある人に開くアプリです。",
+    "p1": "訪問者をツアーに沿って案内します。各ステーションでその場所の物語を語り、道を聞きながらたどれるようにします。",
+    "p2": "見えなくても、道は手の届くところにあります。各停車地には声があり、そのステーションの物語が道を示します。",
+    "p3": "アプリの画像は、下の場所に置きます。",
+    "slotsLabel": "アプリの画像を置く場所",
+    "slot": "画像を置く場所"
   }
 }

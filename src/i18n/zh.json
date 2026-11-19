@@ -5,16 +5,20 @@
   "skip": "跳到正文",
   "external": "(在新标签页中打开)",
   "required": "必填",
-  "inboxNote": "本页的消息会发往 info.inkabrailletrail@gmail.com。",
-  "formActivate": "请打开 info.inkabrailletrail@gmail.com，点击 FormSubmit 邮件里的确认链接。在点击之前，消息不会送达。",
+  "inboxNote": "本页的消息会发往 info.incabrailletrail@gmail.com。",
+  "formActivate": "请打开 info.incabrailletrail@gmail.com，点击 FormSubmit 邮件里的确认链接。在点击之前，消息不会送达。",
   "nav": {
     "label": "主导航",
     "menu": "菜单",
     "home": "首页",
-    "trails": "步道",
     "volunteer": "志愿者",
-    "donations": "赞助",
-    "audiovideo": "媒体"
+    "donations": "捐赠",
+    "audiovideo": "媒体",
+    "open": "显示页面",
+    "educational": "Trail 1: Educational Path",
+    "sensory": "Trail 2: Aromatic and Medicinal Path",
+    "sponsors": "合作伙伴",
+    "app": "应用"
   },
   "lang": {
     "button": "语言",
@@ -27,9 +31,9 @@
     "items": [
       "本网站列出的电子邮箱尚未创建。",
       "志愿者表单在 Formspree 账户确认之前不会发送消息。",
-      "捐赠表单在 Formspree 接入之前不会发送任何内容:公开姓名或金额的选择目前不会被记录在任何地方。",
+      "捐赠表会把内容发到项目邮箱。银行账户一直显示在页面上。",
       "Instagram 和 Facebook 账号待确认。",
-      "捐赠汇入赞助页上的银行账户。两个账户是否都保留，由项目负责人确认。",
+      "转账使用页面上显示的账户。项目主人会确认两个账户是否都保留。",
       "步道的音频与视频待接收。",
       "志愿者的照片与视频待接收。",
       "域名 {dominio} 待注册。"
@@ -64,14 +68,16 @@
   "home": {
     "title": "{siteName} — 为盲人和低视力人士打造的感官步道,印加圣谷",
     "description": "位于 Peru Cusco 印加圣谷的一条教育性感官步道,正在为盲人和低视力人士及其家人、朋友和陪伴者开发中。",
-    "heroAlt": "项目海报。一位身穿斗篷、头戴安第斯帽子的人手持白手杖,沿着带绳索扶手的石板小路行走,两旁是印加石墙和一座石拱门,远处是安第斯梯田和白雪覆盖的群山。路边的石牌上刻有盲文点。海报上的文字: THE INCA BRAILLE TRAIL — GUIDING FOOTSTEPS THROUGH HISTORY. 石牌上写着 INCA TRAIL，下面有盲文。",
-    "tagline": "位于 Peru Cusco 印加圣谷,为盲人和低视力人士打造的教育性感官步道。",
+    "heroAlt": "项目海报。一位戴毛线帽、穿橙色斗篷的人手持白手杖，沿着木栅栏旁的石板路行走，经过一栋有一位妇女和一个孩子的两层石屋。两个人在鸡群中的绿田里栽种，两只美洲鸵站在石墙边，后面是白雪覆盖的群山。海报上的文字：INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE。一块牌子写着项目正在建设中，急需志愿者。",
+    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
     "banner": "本网站是一个建设中的项目。",
     "boxes": [
       {
         "title": "什么是 Inca Braille Trail?",
         "content": [
-          { "lead": "一段穿越自然、教育与感官的旅程" },
+          {
+            "lead": "一段穿越自然、教育与感官的旅程"
+          },
           "Inca Braille Trail 位于美丽的印加圣谷(Cusco, Peru),是一项专为盲人和低视力人士及其家人、朋友和陪伴者开发的教育性感官体验。",
           "我们的愿景是创造一个温馨的地方,让访客能够亲近自然、学习、探索并分享有意义的经历,并在赞助者和捐赠者的支持下免费开放。",
           "这条步道旨在通过触觉、嗅觉、听觉和味觉唤醒感官。访客将发现植物的质感、香草与花朵的芬芳、自然的声音,以及自然世界带来的种种美妙体验。"
@@ -81,10 +87,12 @@
         "title": "生命的循环 – 向 Pachamama 学习",
         "content": [
           "我们理念的核心,是对大地母亲 Pachamama 的敬意,以及对万物相互关联的理解。",
-          "通过我们的教育旅程\u201c生命的循环\u201d,访客将发现植物的需求与我们自身的需求是多么相似。",
+          "通过我们的教育旅程“生命的循环”,访客将发现植物的需求与我们自身的需求是多么相似。",
           "一粒小小的种子需要养分、水、温暖和照料才能生长,正如我们需要营养的食物、洁净的水、阳光和健康的环境才能茁壮成长。",
           "植物从健康的土壤中汲取养分,从阳光中获取能量;而我们则依靠植物生产的食物获得自身的能量、成长和福祉。",
-          { "lead": "健康的土壤滋养健康的植物,健康的植物滋养健康的人。" },
+          {
+            "lead": "健康的土壤滋养健康的植物,健康的植物滋养健康的人。"
+          },
           "动物在这一循环中同样不可或缺。从为花朵授粉的蜜蜂,到传播种子的鸟儿,再到提供天然肥料、让土壤更肥沃的农场动物,每一种生灵都在为自然的平衡贡献力量。",
           "这些养分回归大地,帮助新的植物生长,完成了连接植物、动物与人的美丽循环。",
           "在旅程中,访客将了解安第斯传统农耕和古代印加农耕,以及现代可持续农业。我们强调保存本土种子、堆肥、保护生物多样性,以及不依赖有害农药种植营养食物的重要性。",
@@ -99,7 +107,9 @@
           "我们也希望鼓励视力正常的访客更好地理解视障人士日常面对的挑战,培养更多的认识、同理心和尊重。",
           "通过共同的经历,我们希望人们认识到:每个人都有宝贵的东西可以给予,我们都能从彼此身上学到东西。",
           "正如我们滋养大地、大地滋养我们,通过善意、同情和互惠,我们彼此滋养。",
-          { "lead": "这就是 Ayni 的精神,也是 Inca Braille Trail 的心。" }
+          {
+            "lead": "这就是 Ayni 的精神,也是 Inca Braille Trail 的心。"
+          }
         ]
       }
     ]
@@ -108,32 +118,78 @@
     "title": "志愿者 — {siteName}",
     "description": "急需志愿者:清理和修整步道、搬运石块、园艺和场地维护。提供餐食;全天工作的志愿者提供住宿。",
     "h1": "志愿者",
+    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
+    "heroAlt": "双手抱着一束高大的绿植。周围还有更多植物和山坡。",
+    "signNow": "报名成为志愿者",
     "lead": "急需志愿者,帮助向盲人和低视力访客开放这条步道。",
     "boxes": [
       {
         "title": "帮助建设步道",
         "content": [
-          "急需志愿者!通过开辟宜人的小路和照料我们美丽的场地,帮助 Inca Braille Trail 焕发生机。",
-          "工作包括清理和修整步道、搬运石块、园艺以及场地的日常维护。您的贡献将帮助向盲人和低视力访客及其陪伴者开放这一感官体验。",
-          { "list": [
-            "当日志愿者:提供午餐。",
-            "住宿并全天工作的志愿者:提供住宿、早餐、午餐和晚餐。",
-            "交通:可从约定的集合地点接送。"
-          ] },
+          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
+          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
+          {
+            "list": [
+              "当日志愿者:提供午餐。",
+              "住宿并全天工作的志愿者:提供住宿、早餐、午餐和晚餐。",
+              "交通:可从约定的集合地点接送。"
+            ]
+          },
           "请联系我们安排日期,并找到适合您能力的工作。"
         ]
       }
     ],
+    "work": {
+      "title": "看看志愿者的工作",
+      "lead": "我们正在努力修建步道。这里有几张我们工作的照片。",
+      "prev": "上一张",
+      "next": "下一张",
+      "position": "画面",
+      "close": "关闭",
+      "open": "打开图片",
+      "openVideo": "打开视频",
+      "thumbs": "缩略图",
+      "photo1": "三个人在土坡上砌石墙。一位花白胡子的人跪着，拿着卷尺。一位光头扛着一根长木头。另一位戴帽子的人俯身在石头上。身后是绿色集装箱和群山。",
+      "photo2": "同一面石墙。花白胡子的人拿着卷尺。戴帽子的人在砌石头。光头戴着红手套，拉着一把长柄工具。",
+      "photo3": "三个人在矮石墙边干活。花白胡子的人穿着印有橙色23的黑衬衫和高筒胶靴，对着镜头微笑。戴宽檐帽的人指向一侧。光头戴着红手套，俯身扶着一把耙子。身后是绿色集装箱、树木和群山。",
+      "photo4": "浅色墙的铁丝上挂着工具：一把小耕具、三把小铲、两把钳子和一把锯。一把叉立在土上，旁边是蓝色防水布和一个橙色袋子。",
+      "video": "同一项工作的动态画面：测量地面、砌石墙、搬运木材，身后是群山。"
+    },
     "media": {
-      "title": "认识在 Braille Trail 上工作的志愿者",
-      "intro": "在步道上工作的人们的视频、照片和音频将发布在这里。",
-      "video": "视频",
-      "photos": "照片",
-      "audio": "音频",
-      "pending": "尚未收到。"
+      "title": "认识志愿者",
+      "intro": "建造这个项目的双手。",
+      "matias": {
+        "name": "Matias Lopez",
+        "alt": "Matias Lopez 蹲在一只正在金属碗里吃东西的美洲鸵旁边。他有黑发、胡须和眼镜，穿着深色衬衫，戴着工作手套。身后是蓝色篷布、一张桌子和树木。",
+        "who": "Matias Lopez 今年38岁，来自阿根廷。他来秘鲁是为了旅行，认识新的地方。",
+        "work": "他是林业技术员，也是厨师，擅长面包。",
+        "why": "他做志愿者，是因为这个项目很美好，也因为项目背后的用意。他觉得非常有意思。"
+      },
+      "patrick": {
+        "name": "Patrick De Vries",
+        "alt": "Patrick De Vries 在石路上，挨着一只大白狗微笑。他是光头，穿着灰色衬衫，手里拿着写有自己名字的白色马克杯。背景是群山和树木。",
+        "who": "Patrick De Vries 今年55岁，来自荷兰。他来秘鲁是为了探索这里的文化。",
+        "work": "他从事海关与物流，也做杂工：电工、木工和管道。",
+        "why": "帮助别人是他的天性。他喜欢参与一件新的、能让别人受益的事。"
+      },
+      "pamella": {
+        "name": "Pamella Garcia",
+        "alt": "Pamella Garcia 在白色帆布帐篷的入口微笑。她留着深色短发，穿着印有彩色骷髅的黑衬衫，戴着项链。白帘和一根木梁框住她。",
+        "who": "Pamella Garcia 今年31岁，来自巴西。她在秘鲁住了6年，因为这里让她觉得是自己的新家。",
+        "work": "她负责项目应用的网页设计和软件工程。",
+        "why": "她最喜欢在这个项目里工作的地方，是这是一份从心里出发的事，也是一份想用很美的方式把人和自然连在一起的意愿。"
+      },
+      "vegprtsmkl6": {
+        "name": "Nello Fraboni:",
+        "alt": "Nello Fraboni: smiles in a volunteer photo.",
+        "who": "Age 46 French American horticulturist passionate about plants, nature and sustainable agriculture. He has extensive experience in plant cultivation, propagation and greenhouse management. Currently in Peru, he is exploring permaculture and tropical growing systems.\nYou will experience the duality of how correct care of seeds, plants and animal life deeply relates to ourselves.",
+        "work": "",
+        "why": ""
+      }
     },
     "form": {
-      "heading": "志愿者表单",
+      "heading": "Join Here!",
+      "lead": "如需报名做志愿者，请填写下面的表单。",
       "inactive": "此表单尚未启用。项目负责人需在网站建设者无法访问的收件箱中确认 Formspree 邮件后,表单才会生效。拟定的接收邮箱:info@incabrailletrail.com。",
       "requiredNote": "所有字段均为必填。",
       "name": "姓名",
@@ -155,59 +211,51 @@
       "errNetwork": "留言无法发送。请检查网络连接后重试。"
     }
   },
-  "trails": {
-    "title": "步道 — {siteName}",
-    "description": "Inca Braille Trail 的两条步行路线:一条了解生命循环,另一条是触觉、气味和感受的感官步行。文字仍是占位。",
-    "h1": "步道",
-    "lead": "计划有两条步行路线。下面的文字是占位,等项目负责人发来完整说明后再替换。",
-    "boxes": [
-      { "title": "教育步道", "content": ["一条用来了解生命循环的步行。这句话是占位,项目说明到达后会替换。"] },
-      { "title": "感官步道", "content": ["一条触觉、气味和感受的感官步行。这句话是占位,项目说明到达后会替换。"] }
-    ]
-  },
   "donations": {
-    "title": "赞助 — {siteName}",
-    "description": "企业和品牌可以支持 Inca Braille Trail。在同意之后,标志可以出现在这里。捐赠通过银行转账完成。",
-    "h1": "赞助",
-    "lead": "如果您的企业或品牌能为这个项目贡献一份力量,欢迎与我们联系。在您同意之后,您的品牌标志可以出现在这里。",
-    "logosLabel": "赞助标志的位置",
-    "logoPending": "标志位置",
-    "boxes": [
-      {
-        "title": "捐赠",
-        "content": [
-          "捐赠让步道对访客保持免费。转账汇入本页的银行账户。",
-          "捐赠者可以选择公开姓名、捐赠金额、两者都公开,或都不公开。欢迎匿名捐赠。",
-          "本网站目前未公开任何姓名。"
-        ]
-      }
-    ],
+    "title": "捐赠 — {siteName}",
+    "description": "捐赠让步道保持免费。银行账户在本页，号码可以直接复制。",
+    "h1": "捐赠",
+    "heroLine": "每一份捐赠，都让靠触觉与信任行走的人可以免费走上这条路。",
+    "heroAlt": "一位戴遮阳帽和蓝框眼镜的男子蹲在林地上微笑，双手捧着干叶。",
+    "lead": "捐赠让来访者可以免费走上这条步道。",
+    "choice": "你可以公开姓名和金额，只公开姓名，或匿名捐赠。匿名捐赠同样受欢迎。",
+    "noneYet": "这个网站目前还没有公开任何姓名。",
     "form": {
-      "heading": "捐赠表单",
-      "intro": "请选择我们可以公开的内容。",
-      "emailNote": "此表单发往 info@incabrailletrail.com。该地址还不存在,在它存在之前,内容不会送达任何地方。",
-      "legend": "我们可以公开什么?",
-      "optName": "公开我的姓名",
-      "optAmount": "公开金额",
+      "heading": "捐赠资料",
+      "intro": "银行账户在本页。你也可以用这张表送出资料。",
+      "name": "姓名",
+      "country": "国家",
+      "date": "汇出捐赠的日期",
+      "amount": "打算捐赠的金额",
+      "amountHint": "请写上货币，例如 50 USD。",
+      "legend": "我们可以公开什么？",
       "optBoth": "公开我的姓名和金额",
-      "optNone": "都不公开",
-      "name": "要公开的姓名",
-      "amount": "要公开的金额",
-      "amountHint": "请注明货币,例如 50 USD。",
-      "honeypot": "请将此栏留空",
-      "submit": "发送选择",
+      "optName": "只公开我的姓名",
+      "optAnonymous": "匿名捐赠。什么都不公开。",
+      "honeypot": "请把这一栏留空",
+      "submit": "送出捐赠资料",
       "sending": "正在发送…",
-      "success": "谢谢。我们已收到你的选择。",
-      "summary": "表单无法发送。请检查标有错误的字段。",
-      "errRequired": "此字段为必填。",
-      "errNetwork": "留言无法发送。请检查网络连接后重试。"
+      "success": "谢谢。我们收到了你的资料。",
+      "summary": "表单没能发送。请检查标出错误的栏目。",
+      "errRequired": "这一栏是必填的。",
+      "errDate": "请填写一个真实的日期。",
+      "errNetwork": "消息没能发送。请检查网络后再试。",
+      "emailNote": "这张表目前还不会发送。收件地址是 info.incabrailletrail@gmail.com。"
     },
     "bank": {
-      "heading": "捐赠账户",
-      "soles": "BCP 索尔账户",
-      "solesInter": "索尔跨行账号",
-      "dolares": "BCP 美元账户",
-      "dolaresInter": "美元跨行账号"
+      "revealed": "银行账户",
+      "hint": "点击按钮，即可把号码复制下来。",
+      "soles": "索尔账户",
+      "dolares": "美元账户",
+      "bcp": "BCP",
+      "interbank": "Interbank",
+      "groupSoles": "复制索尔账户",
+      "groupDollars": "复制美元账户",
+      "copiedSolesBcp": "已复制索尔 BCP 账户。",
+      "copiedSolesInter": "已复制索尔 Interbank 账户。",
+      "copiedDollarsBcp": "已复制美元 BCP 账户。",
+      "copiedDollarsInter": "已复制美元 Interbank 账户。",
+      "copyFail": "没能复制。号码就在按钮上。请选中后手动复制。"
     }
   },
   "audiovideo": {
@@ -216,11 +264,134 @@
     "h1": "音频与视频",
     "lead": "步道的音频与视频,附文字稿、字幕和口述影像。文件尚未收到。",
     "boxes": [
-      { "title": "参观音频", "content": ["参观的音频录音尚未收到。项目负责人发送后将在此发布。"] },
-      { "title": "文字稿", "content": ["音频的文字稿尚未收到。项目负责人发送后将在此以文本形式发布。"] },
-      { "title": "视频", "content": ["步道的视频尚未收到。项目负责人发送后将在此发布。"] },
-      { "title": "字幕", "content": ["视频的字幕尚未收到。项目负责人发送后将与视频一同发布。"] },
-      { "title": "口述影像", "content": ["视频的口述影像尚未收到。项目负责人发送后将与视频一同发布。"] }
+      {
+        "title": "参观音频",
+        "content": [
+          "参观的音频录音尚未收到。项目负责人发送后将在此发布。"
+        ]
+      },
+      {
+        "title": "文字稿",
+        "content": [
+          "音频的文字稿尚未收到。项目负责人发送后将在此以文本形式发布。"
+        ]
+      },
+      {
+        "title": "视频",
+        "content": [
+          "步道的视频尚未收到。项目负责人发送后将在此发布。"
+        ]
+      },
+      {
+        "title": "字幕",
+        "content": [
+          "视频的字幕尚未收到。项目负责人发送后将与视频一同发布。"
+        ]
+      },
+      {
+        "title": "口述影像",
+        "content": [
+          "视频的口述影像尚未收到。项目负责人发送后将与视频一同发布。"
+        ]
+      }
     ]
+  },
+  "educational": {
+    "title": "教育步道 — {siteName}",
+    "description": "一条讲述食物如何生长、变成堆肥回到泥土、再长成食物的步道。",
+    "h1": "Trail 1: Educational Path",
+    "heroLine": "在这里，你顺着生命的循环学完整条路。",
+    "heroAlt": "两只手在叶子之间托着绿色的小果子。一颗果子停在张开的手心里。",
+    "moreTitle": "进一步了解：",
+    "lead": "Download the app: Then the experience begins.Two options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio version\nYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next.A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path.A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
+    "p1": "Ecology:\nWorking together...Important fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals\nPlant Care: Plant relationships, Identifying disease and management\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help\nHarvesting: When and how\nGlobal Impact: Looking at new and old data to prepare for changes\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\n(expand)\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "p2": "",
+    "p3": "健康的泥土长出健康的植物。健康的植物养活健康的人。教育步道把这个想法讲成一条可以走的路。",
+    "gallery": {
+      "title": "想稍微了解一下这条路上有什么吗？",
+      "prev": "上一张",
+      "next": "下一张",
+      "close": "关闭",
+      "open": "打开图片",
+      "thumbs": "缩略图",
+      "photo1": "一株宽叶的幼苗长在遮阴网下的菜畦里，泥土上有灌溉水管。",
+      "photo2": "一个戴帽子和眼镜的男人蹲着，在细叶植物之间托着一大簇白花。",
+      "photo3": "一只手伸向红绿相间的育苗盘。旁边的盘子里还只有土。",
+      "photo4": "一个戴帽子的男人拿着塑料瓶，瓶子用软管连着蓝色桶，旁边是工作台。",
+      "photo5": "一堆木屑和锯末，准备用来覆盖土壤。",
+      "photo6": "一个戴帽子的男人在铺了秸秆的畦边，捧着一把深色堆肥，旁边是一根带孔的管子。",
+      "photo7": "两只火鸡并排站在绿色网前。",
+      "photo8": "干茎和植物残体堆在一起，这是堆肥的开始。",
+      "photo9": "黄花倾在一小池偏红的水上，后面是石头。",
+      "photo10": "一个男人蹲在草地上，夹在一只棕色羊驼和一只白色羊驼之间，手里拿着绳子。",
+      "photo11": "张开的手托着还长在带叶枝条上的小青果。",
+      "photo12": "幼小的玉米成行长在多石的地里，后面是山。",
+      "photo13": "一株高高的仙人掌立在圆球形仙人掌之间，地面是石头。",
+      "photo14": "土豆苗成行长在深色土里，后面是石头和山坡。",
+      "photo15": "一道用圆石干砌的墙，蓝天下有树和山。",
+      "photo16": "一簇鲜粉色的花，拍得很近，后面是绿叶。",
+      "photo17": "一道由浅色石块拼合而成的墙。"
+    }
+  },
+  "sensory": {
+    "title": "感官步道 — {siteName}",
+    "description": "一条靠触摸、气味、声音和脚下土地行走的路，为视障人士和同行的人而设。",
+    "h1": "Trail 2: Aromatic and Medicinal Path",
+    "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
+    "heroAlt": "一位留着胡子的人侧身靠近绿色的植物。画面上方只露出眼镜的下沿。",
+    "moreTitle": "进一步了解：",
+    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
+    "p1": "在感官步道上，人们被邀请慢慢走，用身体遇见这个地方。绳制扶手领着路。石头、木头、叶子和花都可以触摸。香草和湿土带来气味。水、鸟和风带来声音。",
+    "p2": "脚下从石头变成泥土，每一步都告诉你身在何处。这条路上没有一件事依靠视力。",
+    "p3": "",
+    "gallery": {
+      "title": "想稍微了解一下这条路上有什么吗？",
+      "prev": "上一张",
+      "next": "下一张",
+      "close": "关闭",
+      "open": "打开图片",
+      "thumbs": "缩略图",
+      "photo1": "一只手放在土上，周围是幼小的绿苗和灌溉水管。",
+      "photo2": "一个戴帽子和眼镜的男人凑近镜头，尝一片绿叶。",
+      "photo3": "一只手托着一串小青番茄，有的还开着花。",
+      "photo4": "一个戴眼镜的男人凑近密密的绿叶，在闻味道。",
+      "photo5": "一只手捧着满是蚯蚓的深色堆肥。",
+      "photo6": "一个戴帽子的男人蹲在花丛里，拿着一朵浅色小花。前景是一朵橙色的花。",
+      "photo7": "圆圆的绿色水生植物浮在偏红的水面上。",
+      "photo8": "一个男人坐在树根旁，捧着一把干叶。",
+      "photo9": "一个男人左右臂各抱一只棕色母鸡，后面是树。",
+      "photo10": "一只手触碰从深色石头上流过的清水。",
+      "photo11": "一个戴帽子的男人微笑着抱住一株高大的叶菜，后面是山。",
+      "photo12": "一只手在绿色菜畦里触摸红茎植物的叶子。",
+      "photo13": "厚厚的苔藓贴着石头生长，上面有小片多肉叶子。",
+      "photo14": "苔藓和小植物长在石墙的石头之间。"
+    }
+  },
+  "sponsors": {
+    "title": "赞助 — {siteName}",
+    "description": "品牌或机构可以与这个项目同行。征得同意后，标志会出现在页面底部。",
+    "h1": "合作伙伴",
+    "heroLine": "请参与这个美好的项目，送出你的支持。",
+    "heroAlt": "绿色的凤眼莲果实和圆叶一起浮在褐色的水面上。",
+    "lead": "如果你有一个品牌，并愿意与这条步道同行，请写信给我们。",
+    "p1": "合作伙伴可以用合适的方式出力：为道路提供材料，付出劳动，分享想法，或赞助这个项目。",
+    "p2": "如果你有品牌或机构，并想成为这条路上的伙伴，请写信给我们，我们会回复。",
+    "p3": "征得同意后，你的标志会出现在页面底部，和其他合作伙伴放在一起。",
+    "boxTitle": "成为我们的伙伴",
+    "boxNote": "表单会放在这里。",
+    "footerTitle": "合作伙伴:",
+    "logosLabel": "合作伙伴标志的空位",
+    "logoPending": "标志空位"
+  },
+  "app": {
+    "title": "Inka Braille Trail App — {siteName}",
+    "description": "Inka Braille Trail App 引导盲人和低视力访客走完游览，并讲述每一站的故事。",
+    "h1": "Inka Braille Trail App",
+    "lead": "这个应用把这条步道开放给盲人和低视力的人。",
+    "p1": "它引导访客走完游览。在每一站讲述那个地方的故事，让人可以边听边走。",
+    "p2": "看不见，也能走到这条路上。每一站都有声音，站点的故事就是路标。",
+    "p3": "应用的图片会放在下面的空位里。",
+    "slotsLabel": "应用图片的空位",
+    "slot": "图片空位"
   }
 }

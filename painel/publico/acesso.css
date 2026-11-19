@@ -1,0 +1,50 @@
+/* acesso.css — telas de registro, entrada e senha */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  background: #f6f7f4;
+  color: #1a1a1a;
+}
+main {
+  width: min(100%, 28rem);
+  background: #fff;
+  border: 1px solid #d9e0d4;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+h1 { font-size: 1.45rem; line-height: 1.25; margin: 0 0 .75rem; }
+p { line-height: 1.5; overflow-wrap: anywhere; }
+label { display: block; font-weight: 700; margin: .9rem 0 .3rem; }
+input {
+  width: 100%;
+  min-height: 48px;
+  padding: .6rem .75rem;
+  border: 1px solid #8aa384;
+  border-radius: 8px;
+  font: inherit;
+}
+button, a.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 1.1rem;
+  padding: .6rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: #1b5e20;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.erro { color: #8a1f1f; font-weight: 700; }
+a { color: #1b5e20; }
+:focus-visible { outline: 3px solid #1b5e20; outline-offset: 3px; }

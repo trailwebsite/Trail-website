@@ -1,0 +1,33 @@
+<!-- sponsors.html — cabeçalho, convite a parceiros e espaço do formulário -->
+    <header class="cabeca">
+      <picture class="cabeca-foto" data-edit-key="img.sponsors.cabeca" data-edit-type="image" data-alt-key="t.sponsors.heroAlt">
+        <source type="image/webp" srcset="/img/cabeca-afiliados.webp">
+        <img src="/img/cabeca-afiliados.jpg" width="1920" height="590" alt="{{t.sponsors.heroAlt}}">
+      </picture>
+      <div class="cabeca-texto">
+        <h1 class="cabeca-titulo">{{t.sponsors.h1}}</h1>
+        <p class="cabeca-frase">{{t.sponsors.heroLine}}</p>
+      </div>
+    </header>
+
+    <div class="conteudo entra atraso-1">
+      <section class="tema">
+        <p class="tema-intro">{{t.sponsors.lead}}</p>
+        <p>{{t.sponsors.p1}}</p>
+        <p>{{t.sponsors.p2}}</p>
+        <p>{{t.sponsors.p3}}</p>
+      </section>
+    </div>
+
+    <div class="conteudo form-direto entra atraso-2">
+      <section class="caixa tema" id="parceiro">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-parceiro-botao" aria-expanded="true" aria-controls="caixa-parceiro">{{t.sponsors.boxTitle}}</button></h2>
+        <div class="caixa-painel" id="caixa-parceiro" role="region" aria-labelledby="caixa-parceiro-botao">
+          <iframe
+            class="form-google form-afiliado"
+            title="{{t.sponsors.boxTitle}}"
+            src="{{googleFormAfiliado}}"
+          ></iframe>
+        </div>
+      </section>
+    </div>

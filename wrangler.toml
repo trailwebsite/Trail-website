@@ -1,0 +1,13 @@
+name = "incabrailletrail"
+compatibility_date = "2025-11-17"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "site"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "incabraille-painel"
+database_id = "9783d82c-d1f7-463d-87e6-46389938503d"
+
+[[r2_buckets]]
+binding = "MIDIA"
+bucket_name = "incabraille-midia"

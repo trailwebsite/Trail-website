@@ -1,87 +1,207 @@
-<!-- volunteer.html — voluntariado: o formulário é o conteúdo principal; o encontro com os voluntários fica na caixa -->
-    <div class="pagina-topo">
-      <div class="conteudo">
-        <h1 class="entra">{{t.volunteer.h1}}</h1>
+<!-- volunteer.html — cabeçalho com foto, voluntários, galeria e formulário -->
+    <header class="cabeca">
+      <picture class="cabeca-foto" data-edit-key="img.volunteer.cabeca" data-edit-type="image" data-alt-key="t.volunteer.heroAlt">
+        <source type="image/webp" srcset="/img/voluntario-cabeca.webp">
+        <img src="/img/voluntario-cabeca.jpg" width="1920" height="590" alt="{{t.volunteer.heroAlt}}">
+      </picture>
+      <div class="cabeca-texto">
+        <h1 class="cabeca-titulo">{{t.volunteer.h1}}</h1>
+        <p class="cabeca-frase">{{t.volunteer.heroLine}}</p>
       </div>
+      <a class="cabeca-inscricao" href="#inscricao">{{t.volunteer.signNow}}</a>
+    </header>
+
+    <div class="conteudo conteudo-largo entra atraso-1">
+      <section class="tema voluntarios-secao">
+        <h2 class="secao-titulo">{{t.volunteer.media.title}}</h2>
+        <p class="voluntarios-intro">{{t.volunteer.media.intro}}</p>
+        <ul class="voluntarios" data-edit-key="lista.voluntarios" data-edit-type="volunteers">
+          <li class="voluntario">
+            <div class="faixa" aria-hidden="true"></div>
+            <h3 class="perfil-nome">{{t.volunteer.media.matias.name}}</h3>
+            <button class="perfil-botao" type="button" id="caixa-matias-botao" aria-expanded="false" aria-controls="caixa-matias">{{t.volunteer.media.matias.name}}</button>
+            <div class="voluntario-miolo perfil-miolo" id="caixa-matias">
+              <figure class="perfil">
+                <picture data-edit-key="img.volunteer.matias" data-edit-type="image" data-alt-key="t.volunteer.media.matias.alt">
+                  <source type="image/webp" srcset="/img/voluntario-matias-lopez.webp">
+                  <img src="/img/voluntario-matias-lopez.jpg" width="768" height="1024" alt="{{t.volunteer.media.matias.alt}}">
+                </picture>
+              </figure>
+              <div class="perfil-info">
+                <p>{{t.volunteer.media.matias.who}}</p>
+                <p>{{t.volunteer.media.matias.work}}</p>
+                <p>{{t.volunteer.media.matias.why}}</p>
+              </div>
+            </div>
+          </li>
+          <li class="voluntario">
+            <div class="faixa" aria-hidden="true"></div>
+            <h3 class="perfil-nome">{{t.volunteer.media.patrick.name}}</h3>
+            <button class="perfil-botao" type="button" id="caixa-patrick-botao" aria-expanded="false" aria-controls="caixa-patrick">{{t.volunteer.media.patrick.name}}</button>
+            <div class="voluntario-miolo perfil-miolo" id="caixa-patrick">
+              <figure class="perfil">
+                <picture data-edit-key="img.volunteer.patrick" data-edit-type="image" data-alt-key="t.volunteer.media.patrick.alt">
+                  <source type="image/webp" srcset="/img/voluntario-patrick-de-vries.webp">
+                  <img src="/img/voluntario-patrick-de-vries.jpg" width="768" height="1024" alt="{{t.volunteer.media.patrick.alt}}">
+                </picture>
+              </figure>
+              <div class="perfil-info">
+                <p>{{t.volunteer.media.patrick.who}}</p>
+                <p>{{t.volunteer.media.patrick.work}}</p>
+                <p>{{t.volunteer.media.patrick.why}}</p>
+              </div>
+            </div>
+          </li>
+          <li class="voluntario">
+            <div class="faixa" aria-hidden="true"></div>
+            <h3 class="perfil-nome">{{t.volunteer.media.pamella.name}}</h3>
+            <button class="perfil-botao" type="button" id="caixa-pamella-botao" aria-expanded="false" aria-controls="caixa-pamella">{{t.volunteer.media.pamella.name}}</button>
+            <div class="voluntario-miolo perfil-miolo" id="caixa-pamella">
+              <figure class="perfil">
+                <picture data-edit-key="img.volunteer.pamella" data-edit-type="image" data-alt-key="t.volunteer.media.pamella.alt">
+                  <source type="image/webp" srcset="/img/voluntario-pamella-garcia.webp">
+                  <img src="/img/voluntario-pamella-garcia.jpg" width="954" height="1024" alt="{{t.volunteer.media.pamella.alt}}">
+                </picture>
+              </figure>
+              <div class="perfil-info">
+                <p>{{t.volunteer.media.pamella.who}}</p>
+                <p>{{t.volunteer.media.pamella.work}}</p>
+                <p>{{t.volunteer.media.pamella.why}}</p>
+              </div>
+            </div>
+          </li>
+          <li class="voluntario">
+            <div class="faixa" aria-hidden="true"></div>
+            <h3 class="perfil-nome">{{t.volunteer.media.vegprtsmkl6.name}}</h3>
+            <button class="perfil-botao" type="button" id="caixa-vegprtsmkl6-botao" aria-expanded="false" aria-controls="caixa-vegprtsmkl6">{{t.volunteer.media.vegprtsmkl6.name}}</button>
+            <div class="voluntario-miolo perfil-miolo" id="caixa-vegprtsmkl6">
+              <figure class="perfil">
+                <picture data-edit-key="img.volunteer.vegprtsmkl6" data-edit-type="image" data-alt-key="t.volunteer.media.vegprtsmkl6.alt">
+                  <source type="image/webp" srcset="/img/voluntario-nello-fraboni.webp">
+                  <img src="/img/voluntario-nello-fraboni.jpg" width="706" height="941" alt="{{t.volunteer.media.vegprtsmkl6.alt}}">
+                </picture>
+              </figure>
+              <div class="perfil-info">
+                <p>{{t.volunteer.media.vegprtsmkl6.who}}</p>
+                <p>{{t.volunteer.media.vegprtsmkl6.work}}</p>
+                <p>{{t.volunteer.media.vegprtsmkl6.why}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
 
-    <div class="conteudo form-direto entra atraso-1">
-      <h2 class="secao-titulo">{{t.volunteer.form.heading}}</h2>
-      <div id="form-alerta" class="alerta" role="alert" tabindex="-1" hidden></div>
-      <div id="form-estado" class="estado" aria-live="polite" tabindex="-1" hidden></div>
-
-      <form
-        id="form-voluntario"
-        class="formulario"
-        action="{{formAction}}"
-        method="POST"
-        data-ativo="{{formsAtivos}}"
-        data-msg-activate="{{t.formActivate}}"
-        data-msg-required="{{t.volunteer.form.errRequired}}"
-        data-msg-email="{{t.volunteer.form.errEmail}}"
-        data-msg-network="{{t.volunteer.form.errNetwork}}"
-        data-msg-summary="{{t.volunteer.form.summary}}"
-        data-msg-sending="{{t.volunteer.form.sending}}"
-        data-msg-success="{{t.volunteer.form.success}}"
-        data-msg-inactive="{{t.volunteer.form.inactive}}"
-      >
-        <p class="nota-obrigatorio">{{t.volunteer.form.requiredNote}}</p>
-        <input type="hidden" name="_language" value="{{htmlLang}}">
-        <input type="hidden" name="_subject" value="Voluntariado — Inca Braille Trail">
-        <input type="hidden" name="_captcha" value="false">
-
-        <div class="campo">
-          <label for="f-nome">{{t.volunteer.form.name}} <span class="req">({{t.required}})</span></label>
-          <input id="f-nome" name="name" type="text" required autocomplete="name" aria-describedby="f-nome-erro">
-          <p id="f-nome-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <div class="campo">
-          <label for="f-email">{{t.volunteer.form.email}} <span class="req">({{t.required}})</span></label>
-          <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-erro">
-          <p id="f-email-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <div class="campo">
-          <label for="f-tarefa">{{t.volunteer.form.task}} <span class="req">({{t.required}})</span></label>
-          <select id="f-tarefa" name="task" required aria-describedby="f-tarefa-erro">
-            <option value="">{{t.volunteer.form.taskChoose}}</option>
-            <option value="clearing and shaping trails">{{t.volunteer.form.taskTrails}}</option>
-            <option value="moving stones">{{t.volunteer.form.taskStones}}</option>
-            <option value="gardening">{{t.volunteer.form.taskGardening}}</option>
-            <option value="general grounds maintenance">{{t.volunteer.form.taskGrounds}}</option>
-          </select>
-          <p id="f-tarefa-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <div class="campo">
-          <label for="f-mensagem">{{t.volunteer.form.message}} <span class="req">({{t.required}})</span></label>
-          <textarea id="f-mensagem" name="message" rows="6" required aria-describedby="f-mensagem-erro"></textarea>
-          <p id="f-mensagem-erro" class="campo-erro" hidden></p>
-        </div>
-
-        <!-- Honeypot anti-spam: invisível e fora da ordem de tabulação. Humanos não preenchem. -->
-        <div class="hp" aria-hidden="true">
-          <label for="f-gotcha">{{t.volunteer.form.honeypot}}</label>
-              <input id="f-gotcha" name="_honey" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <button class="botao maiusculas" type="submit">{{t.volunteer.form.submit}}</button>
-      </form>
-      <p class="nota-email">{{t.inboxNote}}</p>
-    </div>
-
-    <div class="caixas entra atraso-2">
-      <section class="caixa">
-        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-volunteer-1-botao" aria-expanded="true" aria-controls="caixa-volunteer-1">{{t.volunteer.media.title}}</button></h2>
-        <div class="caixa-painel" id="caixa-volunteer-1" role="region" aria-labelledby="caixa-volunteer-1-botao">
-          <p>{{t.volunteer.media.intro}}</p>
-          <!-- Lugares vazios. Cada um vira um player ou uma galeria quando o arquivo chegar. Sem arquivo, só o aviso. -->
-          <ul class="vazios">
-            <li><strong>{{t.volunteer.media.video}}</strong><span>{{t.volunteer.media.pending}}</span></li>
-            <li><strong>{{t.volunteer.media.photos}}</strong><span>{{t.volunteer.media.pending}}</span></li>
-            <li><strong>{{t.volunteer.media.audio}}</strong><span>{{t.volunteer.media.pending}}</span></li>
+    <div class="conteudo galeria-larga entra atraso-2">
+      <section class="caixa tema" id="trabalho" data-galeria="visor-trabalho">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trabalho-botao" aria-expanded="true" aria-controls="caixa-trabalho">{{t.volunteer.work.title}}</button></h2>
+        <div class="caixa-painel" id="caixa-trabalho" role="region" aria-labelledby="caixa-trabalho-botao">
+          <p class="slide-lead">{{t.volunteer.work.lead}}</p>
+          <ul class="galeria">
+            <li class="galeria-item">
+              <button class="galeria-botao" type="button" data-tipo="imagem" data-src="/img/trabalho-muro-1.jpg" data-legenda="{{t.volunteer.work.photo1}}" aria-label="{{t.volunteer.work.open}} 1">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-muro-1.webp">
+                  <img src="/img/trabalho-muro-1.jpg" width="1024" height="768" alt="">
+                </picture>
+              </button>
+              <figure class="galeria-cheia">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-muro-1.webp">
+                  <img src="/img/trabalho-muro-1.jpg" width="1024" height="768" alt="{{t.volunteer.work.photo1}}">
+                </picture>
+                <figcaption>{{t.volunteer.work.photo1}}</figcaption>
+              </figure>
+            </li>
+            <li class="galeria-item">
+              <button class="galeria-botao" type="button" data-tipo="imagem" data-src="/img/trabalho-muro-2.jpg" data-legenda="{{t.volunteer.work.photo2}}" aria-label="{{t.volunteer.work.open}} 2">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-muro-2.webp">
+                  <img src="/img/trabalho-muro-2.jpg" width="1024" height="768" alt="">
+                </picture>
+              </button>
+              <figure class="galeria-cheia">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-muro-2.webp">
+                  <img src="/img/trabalho-muro-2.jpg" width="1024" height="768" alt="{{t.volunteer.work.photo2}}">
+                </picture>
+                <figcaption>{{t.volunteer.work.photo2}}</figcaption>
+              </figure>
+            </li>
+            <li class="galeria-item">
+              <button class="galeria-botao" type="button" data-tipo="imagem" data-src="/img/trabalho-equipe.jpg" data-legenda="{{t.volunteer.work.photo3}}" aria-label="{{t.volunteer.work.open}} 3">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-equipe.webp">
+                  <img src="/img/trabalho-equipe.jpg" width="1280" height="960" alt="">
+                </picture>
+              </button>
+              <figure class="galeria-cheia">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-equipe.webp">
+                  <img src="/img/trabalho-equipe.jpg" width="1280" height="960" alt="{{t.volunteer.work.photo3}}">
+                </picture>
+                <figcaption>{{t.volunteer.work.photo3}}</figcaption>
+              </figure>
+            </li>
+            <li class="galeria-item">
+              <button class="galeria-botao" type="button" data-tipo="imagem" data-src="/img/trabalho-ferramentas.jpg" data-legenda="{{t.volunteer.work.photo4}}" aria-label="{{t.volunteer.work.open}} 4">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-ferramentas.webp">
+                  <img src="/img/trabalho-ferramentas.jpg" width="960" height="1280" alt="">
+                </picture>
+              </button>
+              <figure class="galeria-cheia">
+                <picture>
+                  <source type="image/webp" srcset="/img/trabalho-ferramentas.webp">
+                  <img src="/img/trabalho-ferramentas.jpg" width="960" height="1280" alt="{{t.volunteer.work.photo4}}">
+                </picture>
+                <figcaption>{{t.volunteer.work.photo4}}</figcaption>
+              </figure>
+            </li>
+            <li class="galeria-item">
+              <button class="galeria-botao" type="button" data-tipo="video" data-src="/video/trabalho-trilha.mp4" data-legenda="{{t.volunteer.work.video}}" aria-label="{{t.volunteer.work.openVideo}}">
+                <video muted playsinline preload="metadata" tabindex="-1" aria-hidden="true">
+                  <source src="/video/trabalho-trilha.mp4#t=0.1" type="video/mp4">
+                </video>
+              </button>
+              <figure class="galeria-cheia">
+                <video controls playsinline preload="metadata" width="480" height="864" aria-label="{{t.volunteer.work.video}}">
+                  <source src="/video/trabalho-trilha.mp4" type="video/mp4">
+                </video>
+                <figcaption>{{t.volunteer.work.video}}</figcaption>
+              </figure>
+            </li>
           </ul>
         </div>
       </section>
+    </div>
+
+    <div class="conteudo form-direto entra atraso-2">
+      <section class="caixa tema" id="inscricao">
+        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-form-botao" aria-expanded="true" aria-controls="caixa-form">{{t.volunteer.form.heading}}</button></h2>
+        <div class="caixa-painel" id="caixa-form" role="region" aria-labelledby="caixa-form-botao">
+        <p class="tema-intro">{{t.volunteer.form.lead}}</p>
+        <!-- formulário Google — respostas vão para a conta Forms do projeto -->
+        <iframe
+          class="form-google"
+          title="{{t.volunteer.form.heading}}"
+          src="{{googleFormVoluntario}}"
+        ></iframe>
+        </div>
+      </section>
+    </div>
+
+    <div class="visor" id="visor-trabalho" role="dialog" aria-modal="true" aria-labelledby="visor-legenda" hidden>
+      <div class="faixa" aria-hidden="true"></div>
+      <button class="visor-fechar" type="button"><span class="oculto-visual">{{t.volunteer.work.close}}</span></button>
+      <div class="visor-corpo">
+        <button class="slide-seta slide-anterior visor-anterior" type="button" aria-label="{{t.volunteer.work.prev}}"></button>
+        <figure class="visor-figura">
+          <img class="visor-foto" alt="" hidden>
+          <video class="visor-filme" controls playsinline hidden></video>
+          <figcaption class="visor-legenda" id="visor-legenda" aria-live="polite"></figcaption>
+        </figure>
+        <button class="slide-seta slide-proximo visor-proximo" type="button" aria-label="{{t.volunteer.work.next}}"></button>
+      </div>
+      <div class="visor-faixa" aria-label="{{t.volunteer.work.thumbs}}"></div>
     </div>
