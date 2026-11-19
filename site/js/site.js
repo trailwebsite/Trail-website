@@ -1,6 +1,50 @@
 // site.js — comportamento acessível: menu, submenus, idioma, caixas, galeria, voluntariado, doação e cópia das contas
-(() => {
+;(async () => {
   'use strict'
+
+  // página original — o cookie continua, mas esta aba não volta para o editor
+  const verOriginal = new URLSearchParams(location.search).get('painel') === 'ver'
+  if (verOriginal) {
+    document.addEventListener('click', (evento) => {
+      const link = evento.target.closest?.('a[href]')
+      if (!link || evento.button !== 0 || evento.metaKey || evento.ctrlKey || evento.shiftKey || evento.altKey) return
+      let url
+      try { url = new URL(link.getAttribute('href'), location.href) } catch { return }
+      if (url.origin !== location.origin) return
+      if (url.pathname.startsWith('/panel') || url.pathname.startsWith('/interno')) return
+      url.searchParams.set('painel', 'ver')
+      evento.preventDefault()
+      if (link.target === '_blank') window.open(url.href, '_blank', 'noopener')
+      else location.href = url.href
+    }, true)
+  }
+
+  // editor — só carrega se o login deixou o cookie; o visitante segue sem o painel
+  const csrfPainel = (document.cookie.match(/(?:^|; )painel_csrf=([^;]*)/) || [])[1]
+  if (!verOriginal && csrfPainel) {
+    try {
+      const resposta = await fetch('/panel/api/replica?caminho=' + encodeURIComponent(location.pathname), { credentials: 'same-origin' })
+      if (resposta.ok) {
+        const doc = new DOMParser().parseFromString(await resposta.text(), 'text/html')
+        if (doc.body) document.body.innerHTML = doc.body.innerHTML
+        if (doc.title) document.title = doc.title
+      }
+    } catch { /* sem a cópia, o editor abre em cima do que já está publicado */ }
+  }
+  if (!verOriginal && csrfPainel && !document.querySelector('meta[name="painel-csrf"]')) {
+    const meta = document.createElement('meta')
+    meta.name = 'painel-csrf'
+    meta.content = decodeURIComponent(csrfPainel)
+    document.head.appendChild(meta)
+    const estilo = document.createElement('link')
+    estilo.rel = 'stylesheet'
+    estilo.href = '/panel/editor.css'
+    document.head.appendChild(estilo)
+    const codigo = document.createElement('script')
+    codigo.src = '/panel/editor.js'
+    codigo.defer = true
+    document.body.appendChild(codigo)
+  }
 
   // disclosure — botão com aria-expanded que abre/fecha um painel; Escape fecha e devolve o foco
   function disclosure(botao, painel, { abrir, fechar }) {

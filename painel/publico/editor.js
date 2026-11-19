@@ -1,6 +1,7 @@
 // editor.js — camada de edição: moldura no hover, diálogo no clique, galeria no visor
 (() => {
   const csrf = document.querySelector('meta[name="painel-csrf"]')?.content || ''
+  const idiomaDaPagina = location.pathname.match(/^\/(es)(\/|$)/) ? 'es' : 'en'
   document.body.classList.add('com-painel')
 
   const barra = document.createElement('div')
@@ -8,13 +9,9 @@
   barra.innerHTML = `
     <button type="button" id="painel-sair">Sign out</button>
     <button type="button" id="painel-desfazer">Undo</button>
-    <button type="button" id="painel-historico">History</button>
     <button type="button" id="painel-publicar">Publish</button>
-    <button type="button" id="painel-ver">Open original site</button>
-    <label for="painel-idioma">Language
-      <select id="painel-idioma"></select>
-    </label>
-    <p id="painel-estado" role="status"></p>`
+    <p id="painel-estado" role="status"></p>
+    <button type="button" id="painel-ver" hidden>Open original site</button>`
   document.body.prepend(barra)
 
   const moldura = document.createElement('div')
@@ -35,25 +32,6 @@
   const miolo = document.getElementById('painel-miolo')
   const titulo = document.getElementById('painel-titulo')
   let devolverFoco = null
-
-  const idiomas = [
-    ['en', 'English', ''],
-    ['es', 'Español', '/es'],
-  ]
-  const select = document.getElementById('painel-idioma')
-  const atual = location.pathname.match(/^\/(es)(\/|$)/)?.[1] || 'en'
-  for (const [codigo, nome] of idiomas) {
-    const op = document.createElement('option')
-    op.value = codigo
-    op.textContent = nome
-    if (codigo === atual) op.selected = true
-    select.append(op)
-  }
-  select.addEventListener('change', () => {
-    const prefixo = idiomas.find((i) => i[0] === select.value)?.[2] || ''
-    const resto = location.pathname.replace(/^\/(es)(?=\/|$)/, '') || '/'
-    location.href = (prefixo + (resto.startsWith('/') ? resto : `/${resto}`)) || '/'
-  })
 
   function dizer(texto) { estado.textContent = texto || '' }
 
@@ -105,8 +83,10 @@
     return el
   }
 
-  document.getElementById('painel-ver').addEventListener('click', () => {
+  const verBtn = document.getElementById('painel-ver')
+  verBtn.addEventListener('click', () => {
     const url = new URL(location.href)
+    url.searchParams.delete('publicar')
     url.searchParams.set('painel', 'ver')
     window.open(url.href, '_blank', 'noopener')
   })
@@ -118,44 +98,13 @@
     try { await api('/panel/api/desfazer', { method: 'POST' }); location.reload() }
     catch (erro) { dizer(erro.message) }
   })
-  document.getElementById('painel-historico').addEventListener('click', async () => {
-    devolverFoco = document.activeElement
-    miolo.replaceChildren()
-    titulo.textContent = 'History'
-    try {
-      const { lista } = await api('/panel/api/historico')
-      if (!lista.length) {
-        const p = document.createElement('p')
-        p.textContent = 'There are no changes yet.'
-        miolo.append(p)
-      }
-      for (const item of lista) {
-        const linha = document.createElement('p')
-        const acao = document.createElement('span')
-        acao.textContent = `${item.quando} — ${item.acao} `
-        const restaurar = botao('Restore')
-        restaurar.addEventListener('click', async () => {
-          await api('/panel/api/restaurar', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: item.id }) })
-          location.reload()
-        })
-        linha.append(acao, restaurar)
-        miolo.append(linha)
-      }
-    } catch (erro) {
-      const p = document.createElement('p')
-      p.textContent = erro.message
-      miolo.append(p)
-    }
-    const cancelar = botao('Close', 'secundario')
-    cancelar.addEventListener('click', fechar)
-    miolo.append(cancelar)
-    abrir('History', cancelar)
-  })
-
   // Publish — republica o site inteiro a partir do que está salvo, em chamadas curtas
   const publicarBtn = document.getElementById('painel-publicar')
   publicarBtn.addEventListener('click', async () => {
     publicarBtn.disabled = true
+    publicarBtn.classList.add('apertado')
+    setTimeout(() => publicarBtn.classList.remove('apertado'), 1000)
+    verBtn.hidden = true
     try {
       const ramo = new URLSearchParams(location.search).get('publicar') === 'teste' ? 'publish-test' : 'main'
       const inicio = await api('/panel/api/publicar/iniciar', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ branch: ramo }) })
@@ -172,6 +121,7 @@
       dizer('Publishing… almost done')
       await api('/panel/api/publicar/concluir', { method: 'POST' })
       dizer('Published. The new version of the site is live.')
+      verBtn.hidden = false
     } catch (erro) {
       dizer(erro.message || 'We could not publish. Try again in a few minutes.')
     }
@@ -423,7 +373,7 @@
         const r = await api('/panel/api/texto', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ chave, valor: area.innerHTML, idiomaPagina: atual }),
+          body: JSON.stringify({ chave, valor: area.innerHTML, idiomaPagina: idiomaDaPagina }),
         })
         dizer(r.mensagem)
         location.reload()
@@ -721,7 +671,7 @@
             'x-csrf': csrf,
             'x-nome': encodeURIComponent(nome.value.trim()),
             'x-bio': encodeURIComponent(bio.innerHTML),
-            'x-idioma': atual,
+            'x-idioma': idiomaDaPagina,
           },
           body: arquivo,
         })

@@ -75,8 +75,9 @@ function cookiesDe(request) {
   return saida
 }
 
-function cookie(nome, valor, maxAge) {
-  const partes = [`${nome}=${encodeURIComponent(valor)}`, 'Path=/', 'HttpOnly', 'SameSite=Strict', 'Secure']
+function cookie(nome, valor, maxAge, httpOnly = true) {
+  const partes = [`${nome}=${encodeURIComponent(valor)}`, 'Path=/', 'SameSite=Strict', 'Secure']
+  if (httpOnly) partes.push('HttpOnly')
   if (maxAge != null) partes.push(`Max-Age=${maxAge}`)
   return partes.join('; ')
 }
@@ -197,8 +198,11 @@ async function criarDono(db, email, senhaHash) {
 
 async function semear(env) {
   const dbx = banco(env)
+  const marca = `${Object.keys(semente.textos || {}).length}:${(semente.imagens || []).length}:${(semente.galerias || []).length}`
   const ja = await dbx.get(`SELECT valor FROM meta WHERE chave = 'semeada'`)
-  // imagens e textos novos da semente entram mesmo depois do primeiro seed
+  const gravada = await dbx.get(`SELECT valor FROM meta WHERE chave = 'semente_marca'`)
+  // a semente inteira só entra de novo quando o build muda a quantidade; senão cada clique esperava centenas de INSERT
+  if (ja && gravada?.valor === marca) return
   const itens = []
   for (const im of semente.imagens || []) {
     itens.push(['INSERT OR IGNORE INTO imagem (chave, src, webp, alt_chave, largura, altura) VALUES (?, ?, ?, ?, ?, ?)', [im.chave, im.src, im.webp || '', im.altChave || '', im.largura || 0, im.altura || 0]])
@@ -210,6 +214,7 @@ async function semear(env) {
   }
   if (ja) {
     if (itens.length) await dbx.batch(itens)
+    await dbx.run(`INSERT INTO meta (chave, valor) VALUES ('semente_marca', ?) ON CONFLICT(chave) DO UPDATE SET valor = excluded.valor`, marca)
     return
   }
   const idiomas = semente.idiomas.join(',')
@@ -221,6 +226,7 @@ async function semear(env) {
     })
   }
   itens.push([`INSERT INTO meta (chave, valor) VALUES ('semeada', '1') ON CONFLICT(chave) DO NOTHING`, []])
+  itens.push([`INSERT INTO meta (chave, valor) VALUES ('semente_marca', ?) ON CONFLICT(chave) DO UPDATE SET valor = excluded.valor`, [marca]])
   await dbx.batch(itens)
 }
 
@@ -505,7 +511,7 @@ async function login(request, dbx, env, ip, cookies) {
     try { await repetirPendentes(dbx, env) } catch { /* a fila fica para a próxima entrada */ }
     return ir('/', [
       cookie('painel_sessao', sessao.token, SESSAO_MS / 1000),
-      cookie('painel_csrf', sessao.csrf, SESSAO_MS / 1000),
+      cookie('painel_csrf', sessao.csrf, SESSAO_MS / 1000, false),
     ])
   }
   if (email) await falha(dbx, `email:${email}`)
@@ -543,12 +549,31 @@ async function registro(request, dbx, env, ip, caminho) {
   return ir('/panel/login', [cookie('painel_csrf', '', 0)])
 }
 
+// replica — uma página com o que está salvo, só para quem edita; o visitante não passa aqui
+async function replica(request, dbx, env) {
+  const caminho = new URL(request.url).searchParams.get('caminho') || '/'
+  if (!caminho.startsWith('/') || caminho.includes('..') || caminho.startsWith('//')) return texto(404, 'Not found')
+  if (caminho.startsWith('/panel') || caminho.startsWith('/interno') || caminho.startsWith('/midia')) return texto(404, 'Not found')
+  const idioma = caminho === '/es' || caminho.startsWith('/es/') ? 'es' : 'en'
+  const assetUrl = new URL(caminho, request.url)
+  assetUrl.search = ''
+  const asset = await env.ASSETS.fetch(new Request(assetUrl.toString(), { method: 'GET' }))
+  const tipo = asset.headers.get('content-type') || ''
+  if (!asset.ok || !tipo.includes('html')) return texto(404, 'Not found')
+  const html = aplicarConteudo(await asset.text(), await estado(dbx, idioma))
+  return new Response(html, {
+    status: 200,
+    headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
+  })
+}
+
 async function api(request, dbx, env, url, ip) {
   const porta = await exigir(dbx, request, env)
   if (porta.erro) return porta.erro
   const rota = url.pathname
   // o Publish tem orquestração própria em chamadas curtas; não retraduz pendentes aqui
   if (rota.startsWith('/panel/api/publicar/')) return publicar(request, dbx, env, rota, ip, { lerEstado: estado, auditar })
+  if (rota === '/panel/api/replica' && request.method === 'GET') return replica(request, dbx, env)
   if (request.method === 'POST') {
     try { await repetirPendentes(dbx, env) } catch { /* o salvamento segue mesmo se a fila falhar */ }
   }

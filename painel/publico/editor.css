@@ -23,8 +23,11 @@
   text-decoration: none;
   cursor: pointer;
 }
-#painel-barra select { min-height: 44px; font: inherit; }
 #painel-estado { flex: 1 1 12rem; min-height: 1.2rem; overflow-wrap: anywhere; }
+#painel-publicar:disabled { opacity: 1; }
+#painel-publicar.apertado,
+#painel-publicar.apertado:disabled { background: #061208; }
+#painel-ver { margin-left: auto; }
 body.com-painel { padding-top: calc(var(--barra) + 3rem); }
 body.com-painel .cabecalho { top: 3rem; }
 body.com-painel .visor { top: 3rem; }

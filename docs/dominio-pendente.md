@@ -24,6 +24,8 @@ Não clicar de novo em **Begin setup** na Cloudflare. O projeto já existe. Outr
    - Host `www`
    - Host `@`
 3. Esperar os dois domínios ficarem ativos no Pages.
-4. Só então, em `src/site.json`, trocar `baseUrl` para `https://incabrailletrail.org` e `dominioPretendido` para `incabrailletrail.org`. Gerar o site de novo e publicar pelo Git.
+4. Só então, em `src/site.json`, trocar `baseUrl` para `https://incabrailletrail.org` e `dominioPretendido` para `incabrailletrail.org`. Gerar o site de novo e publicar pelo Git. Até esse passo, o canonical, o sitemap e o `robots.txt` continuam citando `https://incabrailletrail-436.pages.dev`. O domínio pode abrir o site antes disso. O que fica atrasado são esses links, não o painel.
+
+Ligar o domínio não muda o editor nem o deploy. O painel segue no mesmo projeto: login, Submit, cópia e Publish. O Publish em `main` aparece no domínio, porque o domínio aponta para a produção. O `.pages.dev` continua abrindo o mesmo site. Login num endereço não vale no outro. Código novo continua pelo repositório e pelo deploy de sempre. O domínio não trava alteração.
 
 `robotsNoindex` continua `true`. Formulário, textos finais e Google ficam para o dia de abrir ao público.
