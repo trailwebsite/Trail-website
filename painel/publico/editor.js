@@ -9,6 +9,7 @@
     <button type="button" id="painel-sair">Sign out</button>
     <button type="button" id="painel-desfazer">Undo</button>
     <button type="button" id="painel-historico">History</button>
+    <button type="button" id="painel-publicar">Publish</button>
     <button type="button" id="painel-ver">Open original site</button>
     <label for="painel-idioma">Language
       <select id="painel-idioma"></select>
@@ -38,13 +39,9 @@
   const idiomas = [
     ['en', 'English', ''],
     ['es', 'Español', '/es'],
-    ['pt', 'Português', '/pt'],
-    ['ko', '한국어', '/ko'],
-    ['ja', '日本語', '/ja'],
-    ['zh', '中文', '/zh'],
   ]
   const select = document.getElementById('painel-idioma')
-  const atual = location.pathname.match(/^\/(es|pt|ko|ja|zh)(\/|$)/)?.[1] || 'en'
+  const atual = location.pathname.match(/^\/(es)(\/|$)/)?.[1] || 'en'
   for (const [codigo, nome] of idiomas) {
     const op = document.createElement('option')
     op.value = codigo
@@ -54,7 +51,7 @@
   }
   select.addEventListener('change', () => {
     const prefixo = idiomas.find((i) => i[0] === select.value)?.[2] || ''
-    const resto = location.pathname.replace(/^\/(es|pt|ko|ja|zh)(?=\/|$)/, '') || '/'
+    const resto = location.pathname.replace(/^\/(es)(?=\/|$)/, '') || '/'
     location.href = (prefixo + (resto.startsWith('/') ? resto : `/${resto}`)) || '/'
   })
 
@@ -153,6 +150,32 @@
     cancelar.addEventListener('click', fechar)
     miolo.append(cancelar)
     abrir('History', cancelar)
+  })
+
+  // Publish — republica o site inteiro a partir do que está salvo, em chamadas curtas
+  const publicarBtn = document.getElementById('painel-publicar')
+  publicarBtn.addEventListener('click', async () => {
+    publicarBtn.disabled = true
+    try {
+      const ramo = new URLSearchParams(location.search).get('publicar') === 'teste' ? 'publish-test' : 'main'
+      const inicio = await api('/panel/api/publicar/iniciar', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ branch: ramo }) })
+      let r = { etapa: inicio.etapa, feitos: 0 }
+      while (r.etapa === 'paginas') {
+        dizer(`Publishing… page ${r.feitos + 1} of ${inicio.total}`)
+        r = await api('/panel/api/publicar/pagina', { method: 'POST' })
+      }
+      dizer('Publishing… uploading files')
+      while (r.etapa !== 'concluir') {
+        r = await api('/panel/api/publicar/enviar', { method: 'POST' })
+        if (r.faltam) dizer(`Publishing… ${r.faltam} files left`)
+      }
+      dizer('Publishing… almost done')
+      await api('/panel/api/publicar/concluir', { method: 'POST' })
+      dizer('Published. The new version of the site is live.')
+    } catch (erro) {
+      dizer(erro.message || 'We could not publish. Try again in a few minutes.')
+    }
+    publicarBtn.disabled = false
   })
 
   dialogo.addEventListener('click', (evento) => { if (evento.target === dialogo) fechar() })

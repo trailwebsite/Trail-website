@@ -133,7 +133,7 @@ export function trocarEmailDono(db, email) {
 
 export function idiomas(db) {
   const row = db.prepare(`SELECT valor FROM meta WHERE chave = 'idiomas'`).get()
-  return row ? row.valor.split(',').filter(Boolean) : ['en', 'es', 'pt', 'ko', 'ja', 'zh']
+  return row ? row.valor.split(',').filter(Boolean) : ['en', 'es']
 }
 
 export function semear(db, semente) {

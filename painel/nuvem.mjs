@@ -8,6 +8,7 @@ import { processarImagemNuvem, validarVideoNuvem, nomeAleatorio } from './arquiv
 import { aplicarConteudo, injetarEditor, injetarVer } from './conteudo.mjs'
 import { detectarIdioma, traduzirTodos, manterFormato } from './traducao.mjs'
 import * as paginas from './paginas.mjs'
+import { publicar } from './publicar.mjs'
 import semente from '../site/painel-semente.json'
 
 const SITE_NAME = 'Inca Braille Trail'
@@ -274,7 +275,7 @@ async function estado(dbx, idioma) {
 }
 
 function idiomaDaUrl(pathname) {
-  const m = pathname.match(/^\/(es|pt|ko|ja|zh)(\/|$)/)
+  const m = pathname.match(/^\/(es)(\/|$)/)
   return m ? m[1] : 'en'
 }
 
@@ -362,7 +363,7 @@ async function gravarTextos(dbx, chave, pares) {
 
 async function idiomas(dbx) {
   const row = await dbx.get(`SELECT valor FROM meta WHERE chave = 'idiomas'`)
-  return row ? row.valor.split(',').filter(Boolean) : ['en', 'es', 'pt', 'ko', 'ja', 'zh']
+  return row ? row.valor.split(',').filter(Boolean) : ['en', 'es']
 }
 
 // repetirPendentes — nova tentativa só no login, ao abrir o editor ou ao salvar; lote curto para não estourar CPU
@@ -545,10 +546,12 @@ async function registro(request, dbx, env, ip, caminho) {
 async function api(request, dbx, env, url, ip) {
   const porta = await exigir(dbx, request, env)
   if (porta.erro) return porta.erro
+  const rota = url.pathname
+  // o Publish tem orquestração própria em chamadas curtas; não retraduz pendentes aqui
+  if (rota.startsWith('/panel/api/publicar/')) return publicar(request, dbx, env, rota, ip, { lerEstado: estado, auditar })
   if (request.method === 'POST') {
     try { await repetirPendentes(dbx, env) } catch { /* o salvamento segue mesmo se a fila falhar */ }
   }
-  const rota = url.pathname
   if (rota === '/panel/api/texto' && request.method === 'GET') {
     const chave = url.searchParams.get('chave') || ''
     if (!chaveValida(chave) || !await chaveExiste(dbx, chave)) return json(404, { erro: 'guardar', mensagem: MSG.guardar })

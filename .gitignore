@@ -10,6 +10,8 @@ painel/midia/
 painel/copias/
 painel/tmp/
 site/interno/
+site/_worker.js
+.bundle-painel/
 *.pem
 *.key
 

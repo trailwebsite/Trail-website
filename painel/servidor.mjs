@@ -116,7 +116,7 @@ function lerLimitado(req, max) {
 }
 
 function idiomaDaUrl(pathname) {
-  const m = pathname.match(/^\/(es|pt|ko|ja|zh)(\/|$)/)
+  const m = pathname.match(/^\/(es)(\/|$)/)
   return m ? m[1] : 'en'
 }
 
