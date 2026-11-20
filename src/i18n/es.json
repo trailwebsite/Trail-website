@@ -11,6 +11,7 @@
     "label": "Navegación principal",
     "menu": "Menú",
     "home": "Inicio",
+    "sitemap": "Mapa del sitio",
     "volunteer": "Voluntariado",
     "donations": "Donaciones",
     "audiovideo": "Medios",
@@ -158,6 +159,7 @@
     "media": {
       "title": "Conozcan a los voluntarios",
       "intro": "Las manos que construyen este proyecto.",
+      "click": "Clic para abrir",
       "matias": {
         "name": "Matias Lopez",
         "alt": "Matias Lopez está en cuclillas junto a un ñandú que come de un recipiente de metal. Tiene el pelo oscuro, barba y lentes, y lleva una camiseta oscura y guantes de trabajo. Detrás hay un toldo azul, una mesa y árboles.",
@@ -393,5 +395,10 @@
     "p3": "Las imágenes de la aplicación irán en los espacios de abajo.",
     "slotsLabel": "Espacios para imágenes de la aplicación",
     "slot": "Espacio para una imagen"
+  },
+  "sitemap": {
+    "title": "Mapa del sitio — {siteName}",
+    "description": "Mapa del sitio del Inca Braille Trail.",
+    "h1": "Mapa del sitio"
   }
 }

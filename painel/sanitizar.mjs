@@ -121,7 +121,16 @@ export function chaveTituloDaNav(chaveNav) {
 }
 
 // aplicarPadraoTexto — tira tamanho/alinhamento (e quebras na nav) sem mexer em b/i
+// parágrafo de voluntário — o espaço entre um e outro vem do CSS, não de quebra no fim
+export function limparParagrafoVoluntario(valor) {
+  return String(valor ?? '')
+    .replace(/(?:<br\s*\/?>|\s)+$/gi, '')
+    .replace(/^(?:<br\s*\/?>|\s)+/gi, '')
+}
+
 export function aplicarPadraoTexto(chave, html) {
+  const k = String(chave || '')
+  if (/^t\.volunteer\.media\.[^.]+\.(who|work|why|p\d+)$/.test(k)) return limparParagrafoVoluntario(html)
   const perfil = perfilPadrao(chave)
   if (perfil === 'livre') return String(html ?? '')
   let saida = String(html ?? '')

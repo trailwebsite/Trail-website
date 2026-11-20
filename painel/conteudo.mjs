@@ -1,5 +1,5 @@
 // conteudo — aplica o que está no banco em cima do HTML estático, sem mudar o desenho
-import { escapar, htmlDeTexto, aplicarPadraoTexto, textoVisivel, alinharTitulosDaNav } from './sanitizar.mjs'
+import { escapar, htmlDeTexto, aplicarPadraoTexto, textoVisivel, alinharTitulosDaNav, limparParagrafoVoluntario } from './sanitizar.mjs'
 
 function textoDaChave(chave, valor) {
   return aplicarPadraoTexto(chave, htmlDeTexto(valor))
@@ -122,29 +122,31 @@ function itemVoluntario(id, textos, imagens) {
   const webp = im.webp && im.webp !== src ? `<source type="image/webp" srcset="${escapar(im.webp)}">` : ''
   const w = im.largura || 768
   const h = im.altura || 1024
-  const paragrafos = ['who', 'work', 'why']
-    .map((campo) => {
-      const chave = `${base}.${campo}`
+  const baseEsc = base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const extras = Object.keys(textos)
+    .filter((chave) => new RegExp(`^${baseEsc}\\.p\\d+$`).test(chave) && textos[chave])
+    .sort((a, b) => Number(a.match(/p(\d+)$/)[1]) - Number(b.match(/p(\d+)$/)[1]))
+  const paragrafos = ['who', 'work', 'why'].map((campo) => `${base}.${campo}`).concat(extras)
+    .map((chave) => {
+      const campo = chave.slice(base.length + 1)
       if (!Object.prototype.hasOwnProperty.call(textos, chave) && campo !== 'who') return ''
-      const valor = textos[chave] || ''
+      const valor = limparParagrafoVoluntario(textos[chave] || '')
       if (!valor && campo !== 'who') return ''
       return `<p><span data-edit-key="${escapar(chave)}" data-edit-type="text">${htmlDeTexto(valor)}</span></p>`
     })
     .filter(Boolean)
     .join('\n                ')
+  const dica = textos['t.volunteer.media.click'] || 'Click to open'
   return `<li class="voluntario" data-voluntario-id="${escapar(id)}">
-            <div class="faixa" aria-hidden="true"></div>
-            <h3 class="perfil-nome"><span data-edit-key="${escapar(`${base}.name`)}" data-edit-type="text">${htmlDeTexto(nome)}</span></h3>
-            <button class="perfil-botao" type="button" id="caixa-${escapar(id)}-botao" aria-expanded="false" aria-controls="caixa-${escapar(id)}"><span data-edit-key="${escapar(`${base}.name`)}" data-edit-type="text">${htmlDeTexto(nome)}</span></button>
-            <div class="voluntario-miolo perfil-miolo" id="caixa-${escapar(id)}">
-              <figure class="perfil">
-                <picture data-edit-key="img.volunteer.${escapar(id)}" data-edit-type="image" data-alt-key="${escapar(`${base}.alt`)}">
-                  ${webp}<img src="${escapar(src)}" width="${Number(w)}" height="${Number(h)}" alt="${escapar(alt)}">
-                </picture>
-              </figure>
-              <div class="perfil-info">
-                ${paragrafos}
-              </div>
+            <button class="voluntario-mini" type="button" aria-haspopup="dialog" aria-controls="visor-voluntarios" aria-label="${escapar(nome)}">
+              <picture data-edit-key="img.volunteer.${escapar(id)}" data-edit-type="image" data-alt-key="${escapar(`${base}.alt`)}">
+                ${webp}<img src="${escapar(src)}" width="${Number(w)}" height="${Number(h)}" alt="${escapar(alt)}">
+              </picture>
+              <span class="voluntario-dica">${htmlDeTexto(dica)}</span>
+            </button>
+            <h3 class="voluntario-nome"><span data-edit-key="${escapar(`${base}.name`)}" data-edit-type="text">${htmlDeTexto(nome)}</span></h3>
+            <div class="voluntario-bio">
+              ${paragrafos}
             </div>
           </li>`
 }

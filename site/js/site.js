@@ -527,7 +527,7 @@
     }
 
     function fundo(ligado) {
-      for (const el of document.querySelectorAll('body > header, body > footer, #contenido > .pagina-topo, #contenido > .conteudo')) {
+      for (const el of document.querySelectorAll('body > header, body > footer, #contenido > .pagina-topo, #contenido > .conteudo, #contenido > .galeria-linha')) {
         el.inert = ligado
       }
     }
@@ -570,6 +570,31 @@
     })
   }
 
+  // faixa — as setas rolam a linha quando as miniaturas não cabem
+  function faixas() {
+    for (const faixa of document.querySelectorAll('.galeria-linha')) {
+      const lista = faixa.querySelector('.galeria')
+      const anterior = faixa.querySelector('.galeria-linha-anterior')
+      const proximo = faixa.querySelector('.galeria-linha-proximo')
+      if (!lista || !anterior || !proximo) continue
+      const passo = () => {
+        const item = lista.querySelector('.galeria-item')
+        if (!item) return 160
+        const estilo = getComputedStyle(lista)
+        return item.getBoundingClientRect().width + parseFloat(estilo.columnGap || estilo.gap || '0')
+      }
+      const atualizar = () => {
+        const sobra = lista.scrollWidth - lista.clientWidth > 2
+        anterior.hidden = !sobra
+        proximo.hidden = !sobra
+      }
+      anterior.addEventListener('click', () => lista.scrollBy({ left: -passo(), behavior: 'smooth' }))
+      proximo.addEventListener('click', () => lista.scrollBy({ left: passo(), behavior: 'smooth' }))
+      atualizar()
+      window.addEventListener('resize', atualizar)
+    }
+  }
+
   function galerias() {
     for (const raiz of document.querySelectorAll('[data-galeria]')) {
       const visor = document.getElementById(raiz.dataset.galeria)
@@ -593,13 +618,33 @@
       indice = (n + botoes.length) % botoes.length
       const item = botoes[indice].closest('.voluntario')
       const previa = botoes[indice].querySelector('img')
+      visor.dataset.voluntarioId = item?.dataset.voluntarioId || ''
       foto.src = previa.currentSrc || previa.src
       foto.alt = previa.alt || ''
-      nome.textContent = item.querySelector('.voluntario-nome')?.textContent?.trim() || ''
+      nome.replaceChildren()
+      const nomeOrigem = item.querySelector('.voluntario-nome [data-edit-key]')
+      if (nomeOrigem) {
+        const span = document.createElement('span')
+        span.dataset.editKey = nomeOrigem.dataset.editKey
+        span.dataset.editType = 'text'
+        span.innerHTML = nomeOrigem.innerHTML
+        nome.append(span)
+      } else {
+        nome.textContent = item.querySelector('.voluntario-nome')?.textContent?.trim() || ''
+      }
       texto.replaceChildren()
       for (const paragrafo of item.querySelectorAll('.voluntario-bio p')) {
         const copia = document.createElement('p')
-        copia.textContent = paragrafo.textContent
+        const origem = paragrafo.querySelector('[data-edit-key]')
+        if (origem) {
+          const span = document.createElement('span')
+          span.dataset.editKey = origem.dataset.editKey
+          span.dataset.editType = 'text'
+          span.innerHTML = origem.innerHTML
+          copia.append(span)
+        } else {
+          copia.textContent = paragrafo.textContent
+        }
         texto.append(copia)
       }
       visor.classList.remove('visor-bio-viva')
@@ -613,7 +658,7 @@
     }
 
     function fundo(ligado) {
-      for (const el of document.querySelectorAll('body > header, body > footer, #contenido > .pagina-topo, #contenido > .conteudo')) {
+      for (const el of document.querySelectorAll('body > header, body > footer, #contenido > .pagina-topo, #contenido > .conteudo, #contenido > .galeria-linha')) {
         el.inert = ligado
       }
     }
@@ -665,6 +710,82 @@
     alvo.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' })
   }
 
+  // inscrição na foto — no desktop fica onde nasceu até encostar na barra, aí prende com 2 mm
+  function prenderInscricao() {
+    const link = document.querySelector('.cabeca-inscricao')
+    if (!link) return
+    const tela = window.matchMedia('(min-width: 48rem)')
+    const origem = { pai: link.parentNode, irmao: link.nextSibling }
+    let lugar = null
+
+    function devolver() {
+      if (origem.pai && link.parentNode !== origem.pai) origem.pai.insertBefore(link, origem.irmao)
+    }
+
+    function soltar() {
+      link.classList.remove('cabeca-inscricao-presa')
+      link.style.top = ''
+      link.style.bottom = ''
+      link.style.left = ''
+      link.style.right = ''
+      link.style.width = ''
+      link.style.height = ''
+      link.style.maxWidth = ''
+      link.style.maxHeight = ''
+      devolver()
+    }
+
+    function medir() {
+      soltar()
+      lugar = null
+      if (!tela.matches) return
+      const caixa = link.getBoundingClientRect()
+      lugar = {
+        topo: caixa.top + window.scrollY,
+        esquerda: caixa.left,
+        direita: window.innerWidth - caixa.right,
+        largura: caixa.width,
+        altura: caixa.height,
+        lado: caixa.left + caixa.width / 2 < window.innerWidth / 2 ? 'esquerda' : 'direita',
+      }
+      aplicar()
+    }
+
+    function aplicar() {
+      if (!tela.matches || !lugar) {
+        soltar()
+        return
+      }
+      const barra = document.querySelector('.cabecalho')?.getBoundingClientRect().height || 0
+      const folga = (2 / 25.4) * 96
+      const limite = barra + folga
+      if (lugar.topo - window.scrollY > limite) {
+        soltar()
+        return
+      }
+      if (link.parentNode !== document.body) document.body.appendChild(link)
+      link.classList.add('cabeca-inscricao-presa')
+      link.style.top = `${limite}px`
+      link.style.bottom = 'auto'
+      link.style.width = `${lugar.largura}px`
+      link.style.height = `${lugar.altura}px`
+      link.style.maxWidth = `${lugar.largura}px`
+      link.style.maxHeight = `${lugar.altura}px`
+      if (lugar.lado === 'esquerda') {
+        link.style.left = `${lugar.esquerda}px`
+        link.style.right = 'auto'
+      } else {
+        link.style.right = `${lugar.direita}px`
+        link.style.left = 'auto'
+      }
+    }
+
+    medir()
+    window.addEventListener('scroll', aplicar, { passive: true })
+    window.addEventListener('resize', medir)
+    tela.addEventListener('change', medir)
+  }
+
   function inscricaoCabeca() {
     for (const link of document.querySelectorAll('.cabeca-inscricao, .nav-inscricao')) {
       link.addEventListener('click', (evento) => {
@@ -707,7 +828,9 @@
 
   cabeca()
   inscricaoCabeca()
+  prenderInscricao()
   submenus()
+  faixas()
   galerias()
   retratos()
   voluntariado()

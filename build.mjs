@@ -1,6 +1,7 @@
-// build.mjs — gera o site estático em /site: 7 páginas × 6 idiomas, redirects, sitemap, robots, headers, ativos e o manifesto do Publish
+// build.mjs — gera o site estático em /site: páginas × idiomas ativos, redirects, sitemap, robots, headers, ativos e o manifesto do Publish
 import { readFile, writeFile, mkdir, rm, cp, readdir } from 'node:fs/promises'
 import { readFileSync } from 'node:fs'
+import { spawnSync } from 'node:child_process'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { deflateSync } from 'node:zlib'
@@ -220,6 +221,19 @@ const TIPOS = {
 }
 const FORA_DO_MANIFESTO = new Set(['_worker.js', '_headers', '_redirects', '_routes.json'])
 
+// bundle do Publish — vai no próprio site; o botão copia isto para o R2 se a versão não bater
+async function compilarBundleDoPublish() {
+  const dir = join(RAIZ, '.bundle-painel')
+  await rm(dir, { recursive: true, force: true })
+  const r = spawnSync('npx', ['--yes', 'wrangler', 'pages', 'functions', 'build', 'functions', '--outdir', dir, '--compatibility-date', '2025-11-17', '--compatibility-flag', 'nodejs_compat'], {
+    cwd: RAIZ,
+    stdio: 'inherit',
+  })
+  if (r.status !== 0) throw new Error('Não compilou o bundle do Publish')
+  await cp(join(dir, 'index.js'), join(SAIDA, 'interno', 'worker-bundle.js'))
+  await rm(dir, { recursive: true, force: true })
+}
+
 async function montarManifestoEstatico() {
   const arquivos = {}
   async function andar(pasta, prefixo) {
@@ -283,6 +297,7 @@ async function main() {
   await writeFile(join(SAIDA, 'sitemap.xml'), sitemapXml(site, traducoes))
   await writeFile(join(SAIDA, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /panel\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`)
   await writeFile(join(SAIDA, 'painel-semente.json'), JSON.stringify(montarSemente(site, traducoes)))
+  await compilarBundleDoPublish()
   await montarManifestoEstatico()
 
   console.log(`Build concluído: ${gerados} páginas HTML em ${SAIDA}`)

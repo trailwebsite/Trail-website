@@ -139,6 +139,7 @@
       if (no.closest('.galeria-botao, .galeria-item')) return null
       return el
     }
+    if (el.dataset.editType === 'image' && no.closest('.voluntario-mini')) return null
     if (el.dataset.editType === 'volunteers') return null
     return el
   }
@@ -455,7 +456,7 @@
   }
 
   document.addEventListener('click', (evento) => {
-    if (evento.target.closest?.('#painel-barra, #painel-dialogo, .painel-galeria-acoes')) return
+    if (evento.target.closest?.('#painel-barra, #painel-dialogo, .painel-galeria-acoes, .painel-voluntario-acoes')) return
     const link = evento.target.closest?.('a')
     const rotulo = link?.querySelector('[data-edit-nav]')
     if (link && rotulo && link.contains(evento.target)) {
@@ -537,6 +538,48 @@
       else enviarFoto(arquivo, info, cheio, barraProg)
     })
     caixa.append(apagar, novo, file, barraProg)
+    visor.querySelector('.visor-corpo')?.append(caixa)
+  }
+
+  // visor do voluntário — trocar a foto e acrescentar um parágrafo, sem apagar nem inserir outra foto
+  function montarAcoesVoluntario(visor) {
+    if (visor.querySelector('.painel-voluntario-acoes')) return
+    const caixa = document.createElement('div')
+    caixa.className = 'painel-voluntario-acoes'
+    const trocar = botao('Change photo')
+    const paragrafo = botao('Add paragraph')
+    trocar.addEventListener('click', () => {
+      const id = visor.dataset.voluntarioId
+      if (!id) return
+      const picture = document.querySelector(`[data-voluntario-id="${CSS.escape(id)}"] picture[data-edit-type="image"]`)
+      if (picture) abrirImagem(picture)
+    })
+    paragrafo.addEventListener('click', async () => {
+      const id = visor.dataset.voluntarioId
+      if (!id) return
+      paragrafo.disabled = true
+      try {
+        const r = await api('/panel/api/voluntario/paragrafo', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ id }),
+        })
+        const texto = visor.querySelector('.visor-bio-texto')
+        const p = document.createElement('p')
+        const span = document.createElement('span')
+        span.dataset.editKey = r.chave
+        span.dataset.editType = 'text'
+        p.append(span)
+        p.style.animation = 'none'
+        p.style.opacity = '1'
+        texto?.append(p)
+        abrirTexto(r.chave, '')
+      } catch (erro) {
+        paragrafo.disabled = false
+        dizer(erro.message)
+      }
+    })
+    caixa.append(trocar, paragrafo)
     visor.querySelector('.visor-corpo')?.append(caixa)
   }
 
@@ -808,7 +851,8 @@
       if (visor.hidden) continue
       if (!visto.has(visor)) {
         visto.add(visor)
-        montarAcoes(visor)
+        if (visor.id === 'visor-voluntarios') montarAcoesVoluntario(visor)
+        else montarAcoes(visor)
       }
       visorAberto(visor)
     }

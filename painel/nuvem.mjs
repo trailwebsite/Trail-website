@@ -434,6 +434,7 @@ export async function atender(context) {
     if (caminho.startsWith('/midia/')) return await servirMidia(env, caminho)
 
     // painel e arquivos internos — aí sim usa D1 e CPU
+    if (caminho === '/interno/worker-bundle.js') return texto(404, 'Not found')
     if (caminho.startsWith('/interno/') || caminho.startsWith('/panel')) {
       if (!env.DB || !env.SESSION_SECRET || !env.SETUP_TOKEN) return texto(500, 'The panel is not configured')
       const dbx = banco(env)
@@ -685,6 +686,25 @@ async function api(request, dbx, env, url, ip) {
     await gravarTextos(dbx, `${base}.why`, vazio)
     await auditar(dbx, 'voluntario', ip, id)
     return json(200, { ok: true, id, mensagem: 'Volunteer added.' })
+  }
+  if (rota === '/panel/api/voluntario/paragrafo' && request.method === 'POST') {
+    const corpo = await request.json().catch(() => null)
+    const id = String(corpo?.id || '')
+    if (!/^[a-zA-Z0-9]+$/.test(id)) return json(400, { erro: 'guardar', mensagem: MSG.guardar })
+    const lista = await listaVoluntarios(dbx)
+    if (!lista.includes(id)) return json(404, { erro: 'guardar', mensagem: MSG.guardar })
+    const base = `t.volunteer.media.${id}.p`
+    const rows = await dbx.all('SELECT chave FROM texto WHERE chave LIKE ?', `${base}%`)
+    let n = 4
+    for (const row of rows) {
+      const achado = String(row.chave).match(/\.p(\d+)$/)
+      if (achado) n = Math.max(n, Number(achado[1]) + 1)
+    }
+    const chave = `${base}${n}`
+    const vazio = (await idiomas(dbx)).map((idioma) => ({ idioma, valor: '', pendente: 0 }))
+    await gravarTextos(dbx, chave, vazio)
+    await auditar(dbx, 'voluntario-paragrafo', ip, chave)
+    return json(200, { ok: true, chave, mensagem: 'Paragraph added.' })
   }
   if (rota === '/panel/api/galeria/excluir' && request.method === 'POST') {
     const corpo = await request.json()

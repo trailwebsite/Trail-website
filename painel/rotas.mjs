@@ -320,6 +320,7 @@ async function api(ctx) {
   if (rota === '/panel/api/correcao' && ctx.metodo === 'POST') return apiCorrecao(ctx)
   if (rota === '/panel/api/imagem' && ctx.metodo === 'POST') return apiImagem(ctx)
   if (rota === '/panel/api/voluntario' && ctx.metodo === 'POST') return apiVoluntario(ctx)
+  if (rota === '/panel/api/voluntario/paragrafo' && ctx.metodo === 'POST') return apiParagrafo(ctx)
   if (rota === '/panel/api/afiliado' && ctx.metodo === 'POST') return apiAfiliado(ctx)
   if (rota === '/panel/api/galeria/excluir' && ctx.metodo === 'POST') return apiExcluir(ctx)
   if (rota === '/panel/api/galeria/arquivo' && ctx.metodo === 'POST') return apiArquivo(ctx)
@@ -453,6 +454,27 @@ async function apiVoluntario(ctx) {
   gravarTextos(ctx.db, `${base}.why`, vazio)
   auditar(ctx.db, 'voluntario', ctx.ip, id)
   json(ctx.res, 200, { ok: true, id, mensagem: 'Volunteer added.' })
+  return true
+}
+
+async function apiParagrafo(ctx) {
+  const corpo = await ctx.lerJson()
+  const id = String(corpo.id || '')
+  if (!/^[a-zA-Z0-9]+$/.test(id)) return json(ctx.res, 400, { erro: 'guardar', mensagem: MSG.guardar })
+  const lista = listaVoluntarios(ctx.db)
+  if (!lista.includes(id)) return json(ctx.res, 404, { erro: 'guardar', mensagem: MSG.guardar })
+  const base = `t.volunteer.media.${id}.p`
+  const rows = ctx.db.prepare('SELECT chave FROM texto WHERE chave LIKE ?').all(`${base}%`)
+  let n = 4
+  for (const row of rows) {
+    const achado = String(row.chave).match(/\.p(\d+)$/)
+    if (achado) n = Math.max(n, Number(achado[1]) + 1)
+  }
+  const chave = `${base}${n}`
+  const vazio = idiomas(ctx.db).map((idioma) => ({ idioma, valor: '', pendente: 0 }))
+  gravarTextos(ctx.db, chave, vazio)
+  auditar(ctx.db, 'voluntario-paragrafo', ctx.ip, chave)
+  json(ctx.res, 200, { ok: true, chave, mensagem: 'Paragraph added.' })
   return true
 }
 

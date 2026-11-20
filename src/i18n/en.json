@@ -11,6 +11,7 @@
     "label": "Main navigation",
     "menu": "Menu",
     "home": "Home",
+    "sitemap": "Site Map",
     "volunteer": "Volunteer",
     "donations": "Donations",
     "audiovideo": "Media",
@@ -158,6 +159,7 @@
     "media": {
       "title": "Meet the volunteers",
       "intro": "The hands that build this project.",
+      "click": "Click to open",
       "matias": {
         "name": "Matias Lopez",
         "alt": "Matias Lopez crouches beside a rhea eating from a metal bowl. He has dark hair, a beard and glasses, and wears a dark shirt and work gloves. A blue canopy, a table and trees are behind him.",
@@ -393,5 +395,10 @@
     "p3": "Pictures of the app will be placed in the spaces below.",
     "slotsLabel": "Spaces for pictures of the app",
     "slot": "Space for a picture"
+  },
+  "sitemap": {
+    "title": "Site Map — {siteName}",
+    "description": "Site map of the Inca Braille Trail.",
+    "h1": "Site Map"
   }
 }

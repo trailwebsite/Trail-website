@@ -128,10 +128,13 @@ body.com-painel .visor { top: 3rem; }
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 10rem;
+  aspect-ratio: 1;
+  min-height: 0;
+  align-self: start;
   background: transparent;
   border: 2px dashed #1b5e20;
   border-radius: var(--raio, 12px);
+  box-sizing: border-box;
 }
 .painel-mais-voluntario {
   width: 4.5rem;
@@ -164,12 +167,14 @@ body.com-painel .visor { top: 3rem; }
 #painel-dialogo img, #painel-dialogo video { max-width: 100%; height: auto; }
 #painel-progresso { height: .6rem; background: #d9e0d4; border-radius: 99px; overflow: hidden; }
 #painel-progresso span { display: block; height: 100%; width: 0; background: #1b5e20; }
+.painel-voluntario-acoes,
 .painel-galeria-acoes {
   display: flex;
   flex-direction: column;
   gap: .4rem;
   margin-left: .4rem;
 }
+.painel-voluntario-acoes button,
 .painel-galeria-acoes button {
   min-height: 44px;
   padding: .4rem .7rem;
@@ -180,7 +185,7 @@ body.com-painel .visor { top: 3rem; }
   font: inherit;
   cursor: pointer;
 }
-#painel-dialogo :focus-visible, #painel-barra :focus-visible, .painel-galeria-acoes button:focus-visible {
+#painel-dialogo :focus-visible, #painel-barra :focus-visible, .painel-voluntario-acoes button:focus-visible, .painel-galeria-acoes button:focus-visible {
   outline: 3px solid #1565c0;
   outline-offset: 3px;
 }

@@ -17,79 +17,83 @@
         <p class="voluntarios-intro">{{t.volunteer.media.intro}}</p>
         <ul class="voluntarios" data-edit-key="lista.voluntarios" data-edit-type="volunteers">
           <li class="voluntario">
-            <div class="faixa" aria-hidden="true"></div>
-            <h3 class="perfil-nome">{{t.volunteer.media.matias.name}}</h3>
-            <button class="perfil-botao" type="button" id="caixa-matias-botao" aria-expanded="false" aria-controls="caixa-matias">{{t.volunteer.media.matias.name}}</button>
-            <div class="voluntario-miolo perfil-miolo" id="caixa-matias">
-              <figure class="perfil">
-                <picture data-edit-key="img.volunteer.matias" data-edit-type="image" data-alt-key="t.volunteer.media.matias.alt">
-                  <source type="image/webp" srcset="/img/voluntario-matias-lopez.webp">
-                  <img src="/img/voluntario-matias-lopez.jpg" width="768" height="1024" alt="{{t.volunteer.media.matias.alt}}">
-                </picture>
-              </figure>
-              <div class="perfil-info">
-                <p>{{t.volunteer.media.matias.who}}</p>
-                <p>{{t.volunteer.media.matias.work}}</p>
-                <p>{{t.volunteer.media.matias.why}}</p>
-              </div>
+            <button class="voluntario-mini" type="button" aria-haspopup="dialog" aria-controls="visor-voluntarios" aria-label="{{t.volunteer.media.matias.name}}">
+              <picture data-edit-key="img.volunteer.matias" data-edit-type="image" data-alt-key="t.volunteer.media.matias.alt">
+                <source type="image/webp" srcset="/img/voluntario-matias-lopez.webp">
+                <img src="/img/voluntario-matias-lopez.jpg" width="768" height="1024" alt="{{t.volunteer.media.matias.alt}}">
+              </picture>
+              <span class="voluntario-dica">{{t.volunteer.media.click}}</span>
+            </button>
+            <h3 class="voluntario-nome">{{t.volunteer.media.matias.name}}</h3>
+            <div class="voluntario-bio">
+              <p>{{t.volunteer.media.matias.who}}</p>
+              <p>{{t.volunteer.media.matias.work}}</p>
+              <p>{{t.volunteer.media.matias.why}}</p>
             </div>
           </li>
           <li class="voluntario">
-            <div class="faixa" aria-hidden="true"></div>
-            <h3 class="perfil-nome">{{t.volunteer.media.patrick.name}}</h3>
-            <button class="perfil-botao" type="button" id="caixa-patrick-botao" aria-expanded="false" aria-controls="caixa-patrick">{{t.volunteer.media.patrick.name}}</button>
-            <div class="voluntario-miolo perfil-miolo" id="caixa-patrick">
-              <figure class="perfil">
-                <picture data-edit-key="img.volunteer.patrick" data-edit-type="image" data-alt-key="t.volunteer.media.patrick.alt">
-                  <source type="image/webp" srcset="/img/voluntario-patrick-de-vries.webp">
-                  <img src="/img/voluntario-patrick-de-vries.jpg" width="768" height="1024" alt="{{t.volunteer.media.patrick.alt}}">
-                </picture>
-              </figure>
-              <div class="perfil-info">
-                <p>{{t.volunteer.media.patrick.who}}</p>
-                <p>{{t.volunteer.media.patrick.work}}</p>
-                <p>{{t.volunteer.media.patrick.why}}</p>
-              </div>
+            <button class="voluntario-mini" type="button" aria-haspopup="dialog" aria-controls="visor-voluntarios" aria-label="{{t.volunteer.media.patrick.name}}">
+              <picture data-edit-key="img.volunteer.patrick" data-edit-type="image" data-alt-key="t.volunteer.media.patrick.alt">
+                <source type="image/webp" srcset="/img/voluntario-patrick-de-vries.webp">
+                <img src="/img/voluntario-patrick-de-vries.jpg" width="768" height="1024" alt="{{t.volunteer.media.patrick.alt}}">
+              </picture>
+              <span class="voluntario-dica">{{t.volunteer.media.click}}</span>
+            </button>
+            <h3 class="voluntario-nome">{{t.volunteer.media.patrick.name}}</h3>
+            <div class="voluntario-bio">
+              <p>{{t.volunteer.media.patrick.who}}</p>
+              <p>{{t.volunteer.media.patrick.work}}</p>
+              <p>{{t.volunteer.media.patrick.why}}</p>
             </div>
           </li>
           <li class="voluntario">
-            <div class="faixa" aria-hidden="true"></div>
-            <h3 class="perfil-nome">{{t.volunteer.media.pamella.name}}</h3>
-            <button class="perfil-botao" type="button" id="caixa-pamella-botao" aria-expanded="false" aria-controls="caixa-pamella">{{t.volunteer.media.pamella.name}}</button>
-            <div class="voluntario-miolo perfil-miolo" id="caixa-pamella">
-              <figure class="perfil">
-                <picture data-edit-key="img.volunteer.pamella" data-edit-type="image" data-alt-key="t.volunteer.media.pamella.alt">
-                  <source type="image/webp" srcset="/img/voluntario-pamella-garcia.webp">
-                  <img src="/img/voluntario-pamella-garcia.jpg" width="954" height="1024" alt="{{t.volunteer.media.pamella.alt}}">
-                </picture>
-              </figure>
-              <div class="perfil-info">
-                <p>{{t.volunteer.media.pamella.who}}</p>
-                <p>{{t.volunteer.media.pamella.work}}</p>
-                <p>{{t.volunteer.media.pamella.why}}</p>
-              </div>
+            <button class="voluntario-mini" type="button" aria-haspopup="dialog" aria-controls="visor-voluntarios" aria-label="{{t.volunteer.media.pamella.name}}">
+              <picture data-edit-key="img.volunteer.pamella" data-edit-type="image" data-alt-key="t.volunteer.media.pamella.alt">
+                <source type="image/webp" srcset="/img/voluntario-pamella-garcia.webp">
+                <img src="/img/voluntario-pamella-garcia.jpg" width="954" height="1024" alt="{{t.volunteer.media.pamella.alt}}">
+              </picture>
+              <span class="voluntario-dica">{{t.volunteer.media.click}}</span>
+            </button>
+            <h3 class="voluntario-nome">{{t.volunteer.media.pamella.name}}</h3>
+            <div class="voluntario-bio">
+              <p>{{t.volunteer.media.pamella.who}}</p>
+              <p>{{t.volunteer.media.pamella.work}}</p>
+              <p>{{t.volunteer.media.pamella.why}}</p>
             </div>
           </li>
           <li class="voluntario">
-            <div class="faixa" aria-hidden="true"></div>
-            <h3 class="perfil-nome">{{t.volunteer.media.vegprtsmkl6.name}}</h3>
-            <button class="perfil-botao" type="button" id="caixa-vegprtsmkl6-botao" aria-expanded="false" aria-controls="caixa-vegprtsmkl6">{{t.volunteer.media.vegprtsmkl6.name}}</button>
-            <div class="voluntario-miolo perfil-miolo" id="caixa-vegprtsmkl6">
-              <figure class="perfil">
-                <picture data-edit-key="img.volunteer.vegprtsmkl6" data-edit-type="image" data-alt-key="t.volunteer.media.vegprtsmkl6.alt">
-                  <source type="image/webp" srcset="/img/voluntario-nello-fraboni.webp">
-                  <img src="/img/voluntario-nello-fraboni.jpg" width="706" height="941" alt="{{t.volunteer.media.vegprtsmkl6.alt}}">
-                </picture>
-              </figure>
-              <div class="perfil-info">
-                <p>{{t.volunteer.media.vegprtsmkl6.who}}</p>
-                <p>{{t.volunteer.media.vegprtsmkl6.work}}</p>
-                <p>{{t.volunteer.media.vegprtsmkl6.why}}</p>
-              </div>
+            <button class="voluntario-mini" type="button" aria-haspopup="dialog" aria-controls="visor-voluntarios" aria-label="{{t.volunteer.media.vegprtsmkl6.name}}">
+              <picture data-edit-key="img.volunteer.vegprtsmkl6" data-edit-type="image" data-alt-key="t.volunteer.media.vegprtsmkl6.alt">
+                <source type="image/webp" srcset="/img/voluntario-nello-fraboni.webp">
+                <img src="/img/voluntario-nello-fraboni.jpg" width="706" height="941" alt="{{t.volunteer.media.vegprtsmkl6.alt}}">
+              </picture>
+              <span class="voluntario-dica">{{t.volunteer.media.click}}</span>
+            </button>
+            <h3 class="voluntario-nome">{{t.volunteer.media.vegprtsmkl6.name}}</h3>
+            <div class="voluntario-bio">
+              <p>{{t.volunteer.media.vegprtsmkl6.who}}</p>
+              <p>{{t.volunteer.media.vegprtsmkl6.work}}</p>
+              <p>{{t.volunteer.media.vegprtsmkl6.why}}</p>
             </div>
           </li>
         </ul>
       </section>
+    </div>
+
+    <div class="visor visor-retrato" id="visor-voluntarios" role="dialog" aria-modal="true" aria-labelledby="visor-voluntario-nome" hidden>
+      <div class="faixa" aria-hidden="true"></div>
+      <button class="visor-fechar" type="button"><span class="oculto-visual">{{t.volunteer.work.close}}</span></button>
+      <div class="visor-corpo">
+        <button class="slide-seta slide-anterior visor-anterior" type="button" aria-label="{{t.volunteer.work.prev}}"></button>
+        <figure class="visor-figura">
+          <img class="visor-foto" alt="">
+        </figure>
+        <div class="visor-bio">
+          <h2 class="visor-bio-nome" id="visor-voluntario-nome"></h2>
+          <div class="visor-bio-texto"></div>
+        </div>
+        <button class="slide-seta slide-proximo visor-proximo" type="button" aria-label="{{t.volunteer.work.next}}"></button>
+      </div>
     </div>
 
     <div class="conteudo galeria-larga entra atraso-2">
@@ -183,7 +187,7 @@
         <p class="tema-intro">{{t.volunteer.form.lead}}</p>
         <!-- formulário Google — respostas vão para a conta Forms do projeto -->
         <iframe
-          class="form-google"
+          class="form-google form-voluntario"
           title="{{t.volunteer.form.heading}}"
           src="{{googleFormVoluntario}}"
         ></iframe>

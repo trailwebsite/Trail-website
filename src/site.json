@@ -10,7 +10,7 @@
     "doacao": "https://docs.google.com/forms/d/e/1FAIpQLSdr4ActDDrpEZxBswC57XBbFLvbZU6kFk3RzshjK1zCXpwhjw/viewform?embedded=true",
     "afiliado": "https://docs.google.com/forms/d/e/1FAIpQLSflcADPJQVieoH134JqeMAYYJFyi2lCI5FFDSByU8yL4fCuqg/viewform?embedded=true"
   },
-  "robotsNoindex": true,
+  "robotsNoindex": false,
   "contato": {
     "telefone": "+51 914 015 544",
     "whatsapp": "https://wa.me/51914015544",

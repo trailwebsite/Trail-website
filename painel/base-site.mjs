@@ -5,6 +5,7 @@ export const IDIOMAS = [
 ]
 export const PAGINAS = [
   { id: 'home', rota: '' },
+  { id: 'sitemap', rota: 'site-map' },
   { id: 'educational', rota: 'educational-trail' },
   { id: 'sensory', rota: 'sensory-trail' },
   { id: 'volunteer', rota: 'volunteer' },
@@ -19,6 +20,7 @@ const MENU = [
     id: 'home',
     filhos: [
       { id: 'home' },
+      { id: 'sitemap' },
       { id: 'educational' },
       { id: 'sensory' },
       { id: 'volunteer', soMovel: true },
@@ -228,6 +230,7 @@ function caixasTexto(pagina, boxes) {
 // por enquanto o cliente só quer info@; os outros endereços ficam fora da página
 const EMAILS_DA_PAGINA = {
   home: ['info'],
+  sitemap: ['info'],
   educational: ['info'],
   sensory: ['info'],
   volunteer: ['info'],

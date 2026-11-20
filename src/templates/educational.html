@@ -10,21 +10,9 @@
       </div>
       <a class="cabeca-inscricao cabeca-inscricao-topo" href="{{url.volunteer}}#inscricao">{{t.volunteer.signNow}}</a>
     </header>
-    <div class="pagina-topo">
-      <div class="conteudo texto-trilha">
-        <h2 class="texto-trilha-titulo">{{t.educational.moreTitle}}</h2>
-        <p class="entra">{{t.educational.lead}}</p>
-        <p>{{t.educational.p1}}</p>
-        <p>{{t.educational.p2}}</p>
-        <p>{{t.educational.p3}}</p>
-      </div>
-    </div>
-
-    <div class="conteudo galeria-larga">
-      <section class="caixa tema" id="trilha-educativa" data-galeria="visor-educativa">
-        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trilha-educativa-botao" aria-expanded="true" aria-controls="caixa-trilha-educativa">{{t.educational.gallery.title}}</button></h2>
-        <div class="caixa-painel" id="caixa-trilha-educativa" role="region" aria-labelledby="caixa-trilha-educativa-botao">
-          <ul class="galeria">
+    <div class="galeria-linha" data-galeria="visor-educativa">
+      <button class="slide-seta slide-anterior galeria-linha-anterior" type="button" aria-label="{{t.educational.gallery.prev}}"></button>
+      <ul class="galeria">
             <li class="galeria-item">
               <button class="galeria-botao" type="button" data-tipo="imagem" data-src="/img/educativa-01.jpg" data-legenda="{{t.educational.gallery.photo1}}" aria-label="{{t.educational.gallery.open}} 1">
                 <picture>
@@ -281,8 +269,17 @@
               </figure>
             </li>
           </ul>
-        </div>
-      </section>
+      <button class="slide-seta slide-proximo galeria-linha-proximo" type="button" aria-label="{{t.educational.gallery.next}}"></button>
+    </div>
+
+    <div class="pagina-topo">
+      <div class="conteudo texto-trilha">
+        <h2 class="texto-trilha-titulo">{{t.educational.moreTitle}}</h2>
+        <p class="entra">{{t.educational.lead}}</p>
+        <p>{{t.educational.p1}}</p>
+        <p>{{t.educational.p2}}</p>
+        <p>{{t.educational.p3}}</p>
+      </div>
     </div>
 
     <div class="visor" id="visor-educativa" role="dialog" aria-modal="true" aria-labelledby="visor-educativa-legenda" hidden>

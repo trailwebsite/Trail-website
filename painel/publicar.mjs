@@ -83,6 +83,20 @@ async function apiAssets(rota, jwt, corpo) {
   return d.result
 }
 
+// a cópia do R2 segue o site que está no ar; se ficou para trás, o próprio Publish a repõe
+async function alinharBundle(request, env) {
+  const versaoObj = await env.MIDIA.get('painel/worker-bundle.versao')
+  const versaoR2 = versaoObj ? (await versaoObj.text()).trim() : ''
+  if (versaoR2 === manifesto.versao) return true
+  const asset = await env.ASSETS.fetch(new Request(new URL('/interno/worker-bundle.js', request.url)))
+  if (!asset.ok) return false
+  const codigo = await asset.text()
+  if (!codigo.includes('function')) return false
+  await env.MIDIA.put('painel/worker-bundle', codigo)
+  await env.MIDIA.put('painel/worker-bundle.versao', manifesto.versao)
+  return true
+}
+
 function todosOsHashes(est) {
   return [...Object.values(manifesto.arquivos).map((a) => a.h), ...Object.values(est.hashes)]
 }
@@ -92,9 +106,8 @@ async function iniciar(request, dbx, env) {
   if (!env.PUBLISH_TOKEN) return json(500, { erro: 'config', mensagem: MSG.par })
   const corpo = await request.json().catch(() => ({}))
   const branch = corpo.branch === 'publish-test' ? 'publish-test' : 'main'
-  const versaoObj = await env.MIDIA.get('painel/worker-bundle.versao')
-  const versaoR2 = versaoObj ? (await versaoObj.text()).trim() : ''
-  if (versaoR2 !== manifesto.versao) return json(409, { erro: 'par', mensagem: MSG.par })
+  const alinhou = await alinharBundle(request, env)
+  if (!alinhou) return json(409, { erro: 'par', mensagem: MSG.par })
   const agora = Date.now()
   const atual = await lerPublicacao(dbx)
   if (atual && atual.expira > agora) return json(409, { erro: 'curso', mensagem: MSG.curso })

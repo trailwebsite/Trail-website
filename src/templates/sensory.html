@@ -10,21 +10,9 @@
       </div>
       <a class="cabeca-inscricao cabeca-inscricao-topo" href="{{url.volunteer}}#inscricao">{{t.volunteer.signNow}}</a>
     </header>
-    <div class="pagina-topo">
-      <div class="conteudo texto-trilha">
-        <h2 class="texto-trilha-titulo">{{t.sensory.moreTitle}}</h2>
-        <p class="entra">{{t.sensory.lead}}</p>
-        <p>{{t.sensory.p1}}</p>
-        <p>{{t.sensory.p2}}</p>
-        <p>{{t.sensory.p3}}</p>
-      </div>
-    </div>
-
-    <div class="conteudo galeria-larga">
-      <section class="caixa tema" id="trilha-sensorial" data-galeria="visor-sensorial">
-        <h2 class="caixa-titulo"><button class="caixa-botao" type="button" id="caixa-trilha-sensorial-botao" aria-expanded="true" aria-controls="caixa-trilha-sensorial">{{t.sensory.gallery.title}}</button></h2>
-        <div class="caixa-painel" id="caixa-trilha-sensorial" role="region" aria-labelledby="caixa-trilha-sensorial-botao">
-          <ul class="galeria">
+    <div class="galeria-linha" data-galeria="visor-sensorial">
+      <button class="slide-seta slide-anterior galeria-linha-anterior" type="button" aria-label="{{t.sensory.gallery.prev}}"></button>
+      <ul class="galeria">
             <li class="galeria-item">
               <button class="galeria-botao" type="button" data-tipo="imagem" data-src="/img/sensorial-01.jpg" data-legenda="{{t.sensory.gallery.photo1}}" aria-label="{{t.sensory.gallery.open}} 1">
                 <picture>
@@ -236,8 +224,17 @@
               </figure>
             </li>
           </ul>
-        </div>
-      </section>
+      <button class="slide-seta slide-proximo galeria-linha-proximo" type="button" aria-label="{{t.sensory.gallery.next}}"></button>
+    </div>
+
+    <div class="pagina-topo">
+      <div class="conteudo texto-trilha">
+        <h2 class="texto-trilha-titulo">{{t.sensory.moreTitle}}</h2>
+        <p class="entra">{{t.sensory.lead}}</p>
+        <p>{{t.sensory.p1}}</p>
+        <p>{{t.sensory.p2}}</p>
+        <p>{{t.sensory.p3}}</p>
+      </div>
     </div>
 
     <div class="visor" id="visor-sensorial" role="dialog" aria-modal="true" aria-labelledby="visor-sensorial-legenda" hidden>
