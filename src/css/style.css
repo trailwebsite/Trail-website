@@ -1214,9 +1214,11 @@ html.js .visor-bio-viva .visor-bio-nome { animation-delay: .15s; }
   .cabeca-titulo { font-size: calc(1.35rem - 3pt); }
   .cabeca-frase { margin-top: .3rem; font-size: calc(.75rem - 5pt); line-height: 1.3; }
   .pagina-educational .cabeca-titulo,
-  .pagina-sensory .cabeca-titulo { font-size: calc(1.35rem - 4pt); }
+  .pagina-sensory .cabeca-titulo { font-size: calc(1.35rem - 7pt); line-height: 1; }
   .pagina-educational .cabeca-frase,
-  .pagina-sensory .cabeca-frase { font-weight: 700; }
+  .pagina-sensory .cabeca-frase { font-weight: 700; margin-top: .15rem; line-height: 1.15; }
+  .pagina-educational .cabeca-texto,
+  .pagina-sensory .cabeca-texto { padding-top: .2rem; }
   .pagina-educational .cabeca-texto { width: 58%; }
   .pagina-sensory .cabeca-texto { width: 60%; }
   .pagina-volunteer .cabeca-texto { width: min(78%, 20rem); }
@@ -1237,13 +1239,18 @@ html.js .visor-bio-viva .visor-bio-nome { animation-delay: .15s; }
   }
   .pagina-educational .cabeca-inscricao,
   .pagina-sensory .cabeca-inscricao {
-    top: 54%;
-    bottom: auto;
-    min-height: calc(2.35rem - 8mm);
-    padding: calc(.35rem - 2.5mm) calc(.45rem - 2mm);
-    font-size: calc(.72rem - 3.8mm);
-    width: min(40%, calc(11rem - 8mm));
-    transform: translateY(-50%);
+    top: auto;
+    bottom: .35rem;
+    width: auto;
+    max-width: none;
+    min-height: 0;
+    padding: .2rem .45rem;
+    font-size: .58rem;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: keep-all;
+    transform: none;
   }
   .pagina-educational .cabeca-inscricao {
     right: .35rem;
@@ -1275,17 +1282,25 @@ html.js .visor-bio-viva .visor-bio-nome { animation-delay: .15s; }
     flex-direction: column;
     align-items: stretch;
     gap: .55rem;
-    padding: 2.4rem .7rem .8rem;
+    padding: 0 .7rem .8rem;
+    overflow: visible;
+    justify-content: flex-start;
   }
-  .visor-retrato .visor-figura { flex: 0 0 auto; }
+  .visor-retrato .visor-figura {
+    flex: 0 0 auto;
+    margin-top: calc(5mm - 4px);
+    overflow: visible;
+    max-height: none;
+  }
   .visor-retrato .slide-seta { position: absolute; top: 22%; }
   .visor-retrato .visor-anterior { left: .35rem; }
   .visor-retrato .visor-proximo { right: .35rem; }
   .visor-retrato .visor-foto {
-    width: auto;
-    max-width: calc(100% - 4.2rem);
+    display: block;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 48vh;
+    max-height: none;
     object-fit: contain;
     object-position: center top;
   }
