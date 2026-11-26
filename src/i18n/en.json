@@ -16,8 +16,8 @@
     "donations": "Donations",
     "audiovideo": "Media",
     "open": "Show pages",
-    "educational": "<b>Trail 1: </b><i>Educational Path</i>",
-    "sensory": "<b>Trail 2: </b><i><span class=\"tx-18\"><span class=\"tx-20\">Aromatic and Medicinal Path</span></span></i><br><i><span class=\"tx-18\"><span class=\"tx-20\"><br></span></span></i><br>",
+    "educational": "Trail 1: Educational Path",
+    "sensory": "Trail 2: Aromatic and Medicinal Path",
     "sponsors": "Affiliates Partners",
     "app": "App Trail"
   },
@@ -70,7 +70,7 @@
     "title": "{siteName} — A sensory trail for blind and visually impaired people, Sacred Valley of the Incas",
     "description": "An educational and sensory trail being developed for blind and visually impaired people, with their families, friends and companions, in the Sacred Valley of the Incas, Cusco, Peru.",
     "heroAlt": "Poster of the project. A person in a knit hat and orange poncho walks with a white cane on a stone path beside a wooden fence, passing a two-story stone house where a woman and a child stand. Two people plant in a green field among chickens, and two rheas stand by a stone wall, with snow-capped mountains behind. The poster reads: INCA BRAILLE TRAIL — GUIDING YOUR STEPS THROUGH THE CYCLE OF LIFE. A sign says the project is under construction and that volunteers are urgently needed.",
-    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.\n",
+    "tagline": "First of its kind educational and sensory journey through the cycle of life and Andean agriculture\n\nDesigned for blind and visually impaired people.\n\nSighted visitors can choose to wear a blindfold for the trail. By briefly setting sight aside, they can tune in to the sounds, textures, and scents of the farm, discovering details they might usually miss and feeling more connected to the natural world.",
     "banner": "This website is a project under construction.",
     "boxes": [
       {
@@ -119,7 +119,7 @@
     "title": "Volunteers — {siteName}",
     "description": "Volunteers urgently needed: clearing and shaping trails, moving stones, gardening and grounds maintenance. Meals provided; accommodation for full-day volunteers.",
     "h1": "Volunteers",
-    "heroLine": "<b>Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.</b>",
+    "heroLine": "Many hands put their heart into this project and make it possible. Meet them, and find the story of each hand that passed through.",
     "heroAlt": "Hands hold a bunch of tall green plants. More plants and a rocky slope surround them.",
     "signNow": "Sign as a volunteer",
     "lead": "Volunteers urgently needed to open the trail to blind and visually impaired visitors.",
@@ -127,8 +127,8 @@
       {
         "title": "Help build the trail",
         "content": [
-          "<b><span class=\"tx-centro\"><span class=\"tx-40\">WE NEED YOUR HELP!!!</span><br>Families are welcome!<br>Help bring the Inca Braille Trail to life<br>WHY ?</span></b><br>This Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.<br>Our hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.<br>Funds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.<br>Often the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
-          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics\n",
+          "WE NEED YOUR HELP!!!\nFamilies are welcome!\nHelp bring the Inca Braille Trail to life\nWHY ?\nThis Inca Braille Trail is the first of its kind with NFC/QR code technology to make education and sensory activities to the blind, general visually impaired and also to allow the general public with sight to enhance their other senses more intensely through sight deprivation.\nOur hope is that once you experience this you will feel more compassion for those less fortunate and recognise your own sensitivity to your own inner magic.\nFunds raised will go directly toward providing a free day at the Inca Braille Trail for people who are blind or have low vision, along with their families and carers. The day includes return transport from Cusco, lunch, and a gift to take home.\nOften the careers and family are forgotten so lets celebrate this together by helping make this a fun and   ongoing event of a lifetime for all.",
+          "Help needed:\n-Small stone paths\n-Basic fencing\n-Cooking\n-Social Media\n-General cleaning\n-Raking\n-planting aromatics",
           {
             "list": [
               "Day volunteers: Lunch provided.",
@@ -168,7 +168,7 @@
         "why": ""
       },
       "patrick": {
-        "name": "Patrick De Vries Customs Agent, Electrician<br><br>",
+        "name": "Patrick De Vries Customs Agent, Electrician",
         "alt": "Patrick De Vries smiles next to a large white dog on a stone path. He is bald, wears a grey shirt and holds a white mug with his name on it. Mountains and trees fill the background.",
         "who": "Patrick De Vries is 55 and comes from the Netherlands. He is in Peru to explore the culture.",
         "work": "He works in customs and logistics, and he is a handyman: electrician, carpentry and plumbing.",
@@ -194,21 +194,21 @@
       "vliklxe9amd": {
         "name": "Matias Lopez: Chef, Forestry Technician",
         "alt": "Matias Lopez: Chef, Forestry Technician smiles in a volunteer photo.",
-        "who": "Matias Lopez is 38 and comes from Argentina. He is in Peru to travel and to know new places. He is a Forestry Technician and a chef with a specialty in breads.<br>He volunteers because the project is beautiful and the intention behind it is heartfelt.<br><br><br>"
+        "who": "Matias Lopez is 38 and comes from Argentina. He is in Peru to travel and to know new places. He is a Forestry Technician and a chef with a specialty in breads.\nHe volunteers because the project is beautiful and the intention behind it is heartfelt."
       },
       "vfx8wpyxmec": {
         "name": "Leticia (Hampi Mama)",
         "alt": "Leticia (Hampi Mama) smiles in a volunteer photo.",
-        "who": "From Cancha Cancha. A powerful plant medicine Practitioner.<br>Based in Huaran....Hampi Mama work shopI wanted to volunteer and support this project because I wanted to share my ancestry knowledge with the world."
+        "who": "From Cancha Cancha. A powerful plant medicine Practitioner.\nBased in Huaran....Hampi Mama work shopI wanted to volunteer and support this project because I wanted to share my ancestry knowledge with the world."
       },
       "vmkd7xnvg30": {
         "name": "Omar",
         "alt": "Omar smiles in a volunteer photo.",
-        "who": "34 Omar is from Urubamba.A  professional local Backhoe operator and Dump truck contractor.<br>An expert in his field of work and very honest guy.<br>As a volunteer to help with the project for future children to enjoy<br>"
+        "who": "34 Omar is from Urubamba.A  professional local Backhoe operator and Dump truck contractor.\nAn expert in his field of work and very honest guy.\nAs a volunteer to help with the project for future children to enjoy"
       }
     },
     "form": {
-      "heading": "<span class=\"tx-centro\"><b>Join Here!</b></span>",
+      "heading": "Join Here!",
       "lead": "To sign up as a volunteer, fill in the form below.",
       "inactive": "This form is not active yet. It will work after the project owner confirms the Formspree email, in an inbox the site builder has no access to. Intended destination: info@incabrailletrail.com.",
       "requiredNote": "All fields are required.",
@@ -319,13 +319,13 @@
   "educational": {
     "title": "Educational trail — {siteName}",
     "description": "A walk that teaches how food grows, returns to the soil as compost, and becomes food again.",
-    "h1": "<b><span class=\"tx-32\">Trail 1: </span></b><i>Educational Path</i>",
+    "h1": "Trail 1: Educational Path",
     "heroLine": "Here you learn the whole path through the cycle of life.",
     "heroAlt": "Two hands hold small green fruits among leaves. One fruit rests in an open palm.",
     "moreTitle": "Know more about:",
-    "lead": "<i></i><i></i><i></i><i></i><span class=\"tx-esq\"><i></i></span><i></i><i></i><i></i><i></i><i></i><i></i><span class=\"tx-esq\"><i></i></span><i></i><span class=\"tx-esq\"><i></i><span class=\"tx-centro\"><i><span class=\"tx-24\">Download the app: Then the experience begins....</span></i></span><span class=\"tx-centro\"><i><span class=\"tx-24\">Two options:</span></i><br><b>1: Visually Impaired: Audio version<br>2: Sighted: QR/NFC scan at stations..</b></span></span><br><br>All Junction points have Braille information cards.<br><b><span class=\"tx-centro\">1. Visually Impaired: Audio version</span></b><span class=\"tx-esq\">You will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next. A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path. A bell at the end of each rail will signify an easy to find seating area to answer your Q&amp;A.<br></span> <br><br><br>",
-    "p1": "<span class=\"tx-centro\"><b></b></span><span class=\"tx-40\"><span class=\"tx-centro\"><b>Ecology:</b></span><span class=\"tx-esq\"><span class=\"tx-centro\"><i>Working together...</i></span></span><span class=\"tx-centro\"><b>Important fun Facts on route</b></span><b></b></span><i><b>Culture and History: </b></i>Identifying cultural and historical foods and practices from Inca to us. <br><b><i>Seed preparation:</i> </b>cultivation, storage and why we must protect them for future generations. <br><i><b>Soil: </b></i>Soil preparation, Composting, Microbes and care.<br><i><b>Insects: </b></i>Pollination, Beneficial species and natural pest management.<br><b>Animal Input: </b>Sources from other beneficial animals.<br><i><b>Plant Care: </b>Plant relationships, </i>Identifying disease and management.<br><i><b>Replanting:  </b></i>Cycles of harvesting, helping the ecosystems, environmental help.<br><b><i>Harvesting: </i></b>When, why and how.<br><i><b>Global Impact:</b></i> Looking at new and old data to prepare for changes.<br><i><b>Water Management: </b></i>Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect. <br>Replanting: Cycles of harvesting, environmental help.<br><i><b>Animal Care: </b></i>Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.<br><i><b>Community: </b></i>Working with others, relationships, Supporting and  sharing.<br><br><br>",
-    "p2": "<br>",
+    "lead": "Download the app: Then the experience begins....\nTwo options:\n1: Visually Impaired: Audio version\n2: Sighted: QR/NFC scan at stations..\n\nAll Junction points have Braille information cards.\n1. Visually Impaired: Audio versionYou will have a trained volunteer who will accompany you if you do not have a sighted guide. The guided audio will take you on a journey through 20 stations of information. There will be 4 rest points along the way. At each rest point you will have to answer 5 questions before moving to the next. A hand rail will help guide you along the path. A ball at the end of each hand rail will signify a change of hand rail from right to left or left to right. White cane detectable stone edges shall guide your direction on the path. A bell at the end of each rail will signify an easy to find seating area to answer your Q&A.",
+    "p1": "Ecology:\nWorking together...\nImportant fun Facts on route\n\nCulture and History: Identifying cultural and historical foods and practices from Inca to us.\nSeed preparation: cultivation, storage and why we must protect them for future generations.\nSoil: Soil preparation, Composting, Microbes and care.\nInsects: Pollination, Beneficial species and natural pest management.\nAnimal Input: Sources from other beneficial animals.\nPlant Care: Plant relationships, Identifying disease and management.\nReplanting:  Cycles of harvesting, helping the ecosystems, environmental help.\nHarvesting: When, why and how.\nGlobal Impact: Looking at new and old data to prepare for changes.\nWater Management: Water testing, Identifying problems, New solutions, Cleaning and maintenance, Preserve and protect.\nReplanting: Cycles of harvesting, environmental help.\nAnimal Care: Understanding how animals play a big role in supporting the cycle of life, from plowing the fields to animal waste. Learning to listen and sense their behaviors.\nCommunity: Working with others, relationships, Supporting and  sharing.",
+    "p2": "",
     "p3": "Healthy soil grows healthy plants. Healthy plants feed healthy people. The educational trail is that idea, told as a path you can walk.",
     "gallery": {
       "title": "Would you like to know a little of what is on the trail?",
@@ -356,14 +356,14 @@
   "sensory": {
     "title": "Sensory trail — {siteName}",
     "description": "A walk of touch, scent, sound and the ground underfoot, for blind and visually impaired visitors and the people beside them.",
-    "h1": "<span class=\"tx-20\"><span class=\"tx-centro\"><span class=\"tx-32\">Trail 2: </span></span></span><span class=\"tx-centro\"><i><span class=\"tx-48\">Aromatic and Medicinal Path</span></i></span><br>",
+    "h1": "Trail 2: Aromatic and Medicinal Path",
     "heroLine": "On this path you learn to identify and use the plants. All downloaded as you go to use in the future.",
     "heroAlt": "A bearded man leans close to leafy green plants, seen from the side. Only the lower edge of his glasses shows at the top.",
     "moreTitle": "Know more about:",
-    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end<br>Two options:<br>1: Visually Impaired: Audio version<br>2: SIghted: QR/NFC scan at stations..<br>All Junction points have Braille information cards.<br>Visually Impaired: Audio version<br><br>On this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.<br>The main reason is that I personally have visited many information trails and wasn&#39;t able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.<br>Enjoy :)<br><br><br><br><br><br>",
+    "lead": "Download the app: Then the experience begins.Feel or see the Braille Map layout from beginning to end\nTwo options:\n1: Visually Impaired: Audio version\n2: SIghted: QR/NFC scan at stations..\nAll Junction points have Braille information cards.\nVisually Impaired: Audio version\n\nOn this sensory path you will experience the many wonders and aromas the Apus (Mountain Spirits) and Pachamama (Mother Earth) nourish us with. There will also be QR/NFC markers provided with detailed information about individual plants, traditional, medicinal, culinary and personal care uses and how to prepare them.All this information you will be able to take away with you so you can refer to it at any time.\nThe main reason is that I personally have visited many information trails and wasn't able to retain the information or i wrote things down and  lost the information over time, but now you can refer to it when ever needed.\nEnjoy :)",
     "p1": "On the sensory trail, people are invited to walk slowly and meet this place with the body. A rope handrail leads the way. Stone, wood, leaves and flowers are there to be touched. Herbs and damp earth offer scent. Water, birds and wind offer sound.",
     "p2": "The ground changes under the feet, from stone to soil, so each step says where you are. Nothing on this walk depends on sight.",
-    "p3": "<br>",
+    "p3": "",
     "gallery": {
       "title": "Would you like to know a little of what is on the trail?",
       "prev": "Previous",

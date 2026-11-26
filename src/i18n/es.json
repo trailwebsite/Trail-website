@@ -194,17 +194,17 @@
       "vliklxe9amd": {
         "name": "Matias Lopez: chef, técnico forestal",
         "alt": "Matias Lopez, chef y técnico forestal, sonríe en una foto de voluntario.",
-        "who": "Matias Lopez tiene 38 años y es de Argentina. Está en el Perú para viajar y conocer lugares nuevos. Es técnico forestal y chef, con especialidad en panes. Es voluntario porque el proyecto es hermoso y la intención que hay detrás es sincera."
+        "who": "Matias Lopez tiene 38 años y es de Argentina. Está en el Perú para viajar y conocer lugares nuevos. Es técnico forestal y chef, con especialidad en panes.\nEs voluntario porque el proyecto es hermoso y la intención que hay detrás es sincera."
       },
       "vfx8wpyxmec": {
         "name": "Leticia (Hampi Mama)",
         "alt": "Leticia (Hampi Mama) sonríe en una foto de voluntario.",
-        "who": "De Cancha Cancha. Practicante de medicina de plantas. Vive en Huaran. Taller de Hampi Mama. Quise ser voluntaria y apoyar este proyecto para compartir con el mundo el conocimiento de mi ancestralidad."
+        "who": "Es de Cancha Cancha. Poderosa practicante de medicina de plantas.\nRadicada en Huarán. Taller de Hampi Mama. Quise ser voluntaria y apoyar este proyecto porque quería compartir con el mundo el conocimiento de mis ancestros."
       },
       "vmkd7xnvg30": {
         "name": "Omar",
         "alt": "Omar sonríe en una foto de voluntario.",
-        "who": "34. Omar es de Urubamba. Operador profesional de retroexcavadora y contratista de volquete. Experto en su oficio y una persona muy honesta. Voluntario para ayudar con el proyecto, para que los niños del futuro lo disfruten."
+        "who": "34 años. Omar es de Urubamba. Operador profesional local de retroexcavadora y contratista de volquetes.\nExperto en su oficio y una persona muy honesta.\nVoluntario para ayudar con el proyecto, para que los niños del futuro lo disfruten."
       }
     },
     "form": {
@@ -323,8 +323,8 @@
     "heroLine": "Aquí aprendes todo el camino por el ciclo de la vida.",
     "heroAlt": "Dos manos sostienen frutos verdes pequeños entre hojas. Un fruto descansa en una palma abierta.",
     "moreTitle": "Conoce más sobre:",
-    "lead": "Descarga la app: entonces comienza la experiencia. Dos opciones:\n1: Baja visión / ceguera: versión de audio\n2: Con vista: escaneo QR/NFC en las estaciones.\n\nTodos los puntos de unión tienen tarjetas de información en braille.\n1. Baja visión / ceguera: versión de audio\nTendrás un voluntario capacitado que te acompañará si no traes guía vidente. El audio guiado te lleva por 20 estaciones de información. Habrá 4 puntos de descanso en el camino. En cada descanso deberás responder 5 preguntas antes de seguir. Una baranda te ayuda a orientarte. Una bola al final de cada baranda indica el cambio de mano (derecha a izquierda o al revés). Bordes de piedra detectables con bastón blanco guían la dirección. Una campana al final de cada baranda marca un asiento fácil de encontrar para el Q&A.",
-    "p1": "Ecología: Trabajar juntos... Datos curiosos importantes en la ruta\nCultura e historia: identificar alimentos y prácticas culturales e históricas desde los incas hasta nosotros.\nPreparación de semillas: cultivo, almacenamiento y por qué debemos protegerlas para las generaciones futuras.\nSuelo: preparación del suelo, compostaje, microbios y cuidado.\nInsectos: polinización, especies beneficiosas y manejo natural de plagas.\nAporte animal: fuentes de otros animales beneficiosos.\nCuidado de plantas: relaciones entre plantas, identificar enfermedades y manejo.\nReplantación: ciclos de cosecha, ayudar a los ecosistemas, apoyo ambiental.\nCosecha: cuándo, por qué y cómo.\nImpacto global: mirar datos nuevos y antiguos para prepararnos a los cambios.\nGestión del agua: pruebas, identificar problemas, nuevas soluciones, limpieza y mantenimiento, preservar y proteger.\nReplantación: ciclos de cosecha, ayuda ambiental.\nCuidado animal: entender el gran papel de los animales en el ciclo de la vida, desde arar hasta el abono. Aprender a escuchar y sentir sus comportamientos.\nComunidad: trabajar con otros, relaciones, apoyar y compartir.",
+    "lead": "Descarga la app: entonces comienza la experiencia....\nDos opciones:\n1: Baja visión / ceguera: versión de audio\n2: Con vista: escaneo QR/NFC en las estaciones..\n\nTodos los puntos de unión tienen tarjetas de información en braille.\n1. Baja visión / ceguera: versión de audioTendrás un voluntario capacitado que te acompañará si no traes guía vidente. El audio guiado te lleva por 20 estaciones de información. Habrá 4 puntos de descanso en el camino. En cada descanso deberás responder 5 preguntas antes de seguir. Una baranda te ayuda a orientarte. Una bola al final de cada baranda indica el cambio de mano (derecha a izquierda o al revés). Bordes de piedra detectables con bastón blanco guían la dirección. Una campana al final de cada baranda marca un asiento fácil de encontrar para el Q&A.",
+    "p1": "Ecología:\nTrabajar juntos...\nDatos curiosos importantes en la ruta\nCultura e historia: identificar alimentos y prácticas culturales e históricas desde los incas hasta nosotros.\nPreparación de semillas: cultivo, almacenamiento y por qué debemos protegerlas para las generaciones futuras.\nSuelo: preparación del suelo, compostaje, microbios y cuidado.\nInsectos: polinización, especies beneficiosas y manejo natural de plagas.\nAporte animal: fuentes de otros animales beneficiosos.\nCuidado de plantas: relaciones entre plantas, identificar enfermedades y manejo.\nReplantación: ciclos de cosecha, ayudar a los ecosistemas, apoyo ambiental.\nCosecha: cuándo, por qué y cómo.\nImpacto global: mirar datos nuevos y antiguos para prepararnos a los cambios.\nGestión del agua: pruebas del agua, identificar problemas, nuevas soluciones, limpieza y mantenimiento, preservar y proteger.\nReplantación: ciclos de cosecha, ayuda ambiental.\nCuidado animal: entender el gran papel de los animales en el ciclo de la vida, desde arar los campos hasta el abono. Aprender a escuchar y sentir sus comportamientos.\nComunidad: trabajar con otros, relaciones, apoyar y compartir.",
     "p2": "",
     "p3": "Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas. El sendero educativo es esa idea, contada como un camino que se puede caminar.",
     "gallery": {
