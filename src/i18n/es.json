@@ -37,7 +37,7 @@
       "Las transferencias usan las cuentas visibles en la página. El dueño del proyecto confirmará si las dos cuentas se quedan.",
       "Audio y video del sendero por recibir.",
       "Fotos y videos de los voluntarios por recibir.",
-      "Dominio {dominio} por registrar."
+      "Dominio www.incabrailletrail.com por registrar."
     ]
   },
   "contact": {
@@ -161,32 +161,50 @@
       "intro": "Las manos que construyen este proyecto.",
       "click": "Clic para abrir",
       "matias": {
-        "name": "Matias Lopez",
+        "name": "Garth Warner, fundador, mantenimiento general",
         "alt": "Matias Lopez está en cuclillas junto a un ñandú que come de un recipiente de metal. Tiene el pelo oscuro, barba y lentes, y lleva una camiseta oscura y guantes de trabajo. Detrás hay un toldo azul, una mesa y árboles.",
-        "who": "Matias Lopez tiene 38 años y es de Argentina. Está en el Perú para viajar y conocer lugares nuevos.",
-        "work": "Es técnico forestal y chef, con especialidad en panes.",
-        "why": "Es voluntario porque el proyecto es hermoso y por la intención que hay detrás. Le parece muy interesante."
+        "who": "55 años. De Nueva Zelanda. Se enamoró del Perú hace 9 años y encontró un hogar donde puede servir a los demás.",
+        "work": "",
+        "why": ""
       },
       "patrick": {
-        "name": "Patrick De Vries",
+        "name": "Patrick De Vries, agente de aduanas, electricista",
         "alt": "Patrick De Vries sonríe junto a un perro blanco grande en un camino de piedra. Es calvo, lleva una camiseta gris y sostiene una taza blanca con su nombre. Al fondo hay montañas y árboles.",
         "who": "Patrick De Vries tiene 55 años y es de los Países Bajos. Está en el Perú para explorar la cultura.",
         "work": "Trabaja en aduanas y logística, y también es manitas: electricidad, carpintería y plomería.",
         "why": "Ayudar a las personas está en su naturaleza. Le encanta la idea de trabajar en algo nuevo y de beneficio, ayudando a otros."
       },
       "pamella": {
-        "name": "Pamella Garcia",
+        "name": "Pamella Garcia, ciberseguridad, diseño web",
         "alt": "Pamella Garcia sonríe en la entrada de una carpa blanca de lona. Tiene el pelo corto y oscuro, una camiseta negra con una calavera de colores y un collar. La enmarcan cortinas blancas y una viga de madera.",
         "who": "Pamella Garcia tiene 31 años y es de Brasil. Vive en el Perú desde hace 6 años porque siente que es su nueva casa.",
         "work": "Está a cargo del diseño web y de la ingeniería de software de las aplicaciones del proyecto.",
         "why": "Lo que más le gusta de trabajar en el proyecto es que se trata de una iniciativa que nace del corazón y de la voluntad de conectar a las personas con la naturaleza de una manera muy bonita."
       },
       "vegprtsmkl6": {
-        "name": "Nello Fraboni:",
+        "name": "Nello Fraboni, músico, cuidado de plantas",
         "alt": "Nello Fraboni sonríe en una foto de voluntario.",
-        "who": "Tiene 46 años. Es horticultor franco-estadounidense, apasionado por las plantas, la naturaleza y la agricultura sostenible. Tiene amplia experiencia en cultivo, propagación y manejo de invernaderos. Actualmente en Perú, explora la permacultura y los sistemas de cultivo tropical.\nExperimentarás la dualidad de cómo el cuidado correcto de semillas, plantas y vida animal se relaciona profundamente con nosotros mismos.",
+        "who": "Tiene 46 años. Horticultor franco-estadounidense, apasionado por las plantas, la naturaleza y la agricultura sostenible.",
         "work": "",
-        "why": ""
+        "why": "",
+        "p4": "Tiene amplia experiencia en cultivo de plantas, propagación y manejo de invernaderos.",
+        "p5": "Actualmente en el Perú, explora la permacultura y los sistemas de cultivo tropical.",
+        "p6": "Experimentarás la dualidad de cómo el cuidado correcto de semillas, plantas y vida animal se relaciona profundamente con nosotros mismos."
+      },
+      "vliklxe9amd": {
+        "name": "Matias Lopez: chef, técnico forestal",
+        "alt": "Matias Lopez, chef y técnico forestal, sonríe en una foto de voluntario.",
+        "who": "Matias Lopez tiene 38 años y es de Argentina. Está en el Perú para viajar y conocer lugares nuevos. Es técnico forestal y chef, con especialidad en panes. Es voluntario porque el proyecto es hermoso y la intención que hay detrás es sincera."
+      },
+      "vfx8wpyxmec": {
+        "name": "Leticia (Hampi Mama)",
+        "alt": "Leticia (Hampi Mama) sonríe en una foto de voluntario.",
+        "who": "De Cancha Cancha. Practicante de medicina de plantas. Vive en Huaran. Taller de Hampi Mama. Quise ser voluntaria y apoyar este proyecto para compartir con el mundo el conocimiento de mi ancestralidad."
+      },
+      "vmkd7xnvg30": {
+        "name": "Omar",
+        "alt": "Omar sonríe en una foto de voluntario.",
+        "who": "34. Omar es de Urubamba. Operador profesional de retroexcavadora y contratista de volquete. Experto en su oficio y una persona muy honesta. Voluntario para ayudar con el proyecto, para que los niños del futuro lo disfruten."
       }
     },
     "form": {
@@ -306,7 +324,7 @@
     "heroAlt": "Dos manos sostienen frutos verdes pequeños entre hojas. Un fruto descansa en una palma abierta.",
     "moreTitle": "Conoce más sobre:",
     "lead": "Descarga la app: entonces comienza la experiencia. Dos opciones:\n1: Baja visión / ceguera: versión de audio\n2: Con vista: escaneo QR/NFC en las estaciones.\n\nTodos los puntos de unión tienen tarjetas de información en braille.\n1. Baja visión / ceguera: versión de audio\nTendrás un voluntario capacitado que te acompañará si no traes guía vidente. El audio guiado te lleva por 20 estaciones de información. Habrá 4 puntos de descanso en el camino. En cada descanso deberás responder 5 preguntas antes de seguir. Una baranda te ayuda a orientarte. Una bola al final de cada baranda indica el cambio de mano (derecha a izquierda o al revés). Bordes de piedra detectables con bastón blanco guían la dirección. Una campana al final de cada baranda marca un asiento fácil de encontrar para el Q&A.",
-    "p1": "Ecología:\nTrabajar juntos... Datos curiosos importantes en la ruta\n\nCultura e historia: identificar alimentos y prácticas culturales e históricas desde los incas hasta nosotros.\nPreparación de semillas: cultivo, almacenamiento y por qué debemos protegerlas para las generaciones futuras.\nSuelo: preparación del suelo, compostaje, microbios y cuidado\nInsectos: polinización, especies beneficiosas y manejo natural de plagas\nAporte animal: fuentes de otros animales beneficiosos\nCuidado de plantas: relaciones entre plantas, identificar enfermedades y manejo\nReplantación: ciclos de cosecha, ayudar a los ecosistemas, apoyo ambiental\nCosecha: cuándo y cómo\nImpacto global: mirar datos nuevos y antiguos para prepararnos a los cambios\nGestión del agua: pruebas, identificar problemas, nuevas soluciones, limpieza y mantenimiento, preservar y proteger\nReplantación: ciclos de cosecha, ayuda ambiental\nCuidado animal: entender el gran papel de los animales en el ciclo de la vida, desde arar hasta el abono. Aprender a escuchar y sentir sus comportamientos.\n(expandir)\nComunidad: trabajar con otros, relaciones, apoyar y compartir.",
+    "p1": "Ecología: Trabajar juntos... Datos curiosos importantes en la ruta\nCultura e historia: identificar alimentos y prácticas culturales e históricas desde los incas hasta nosotros.\nPreparación de semillas: cultivo, almacenamiento y por qué debemos protegerlas para las generaciones futuras.\nSuelo: preparación del suelo, compostaje, microbios y cuidado.\nInsectos: polinización, especies beneficiosas y manejo natural de plagas.\nAporte animal: fuentes de otros animales beneficiosos.\nCuidado de plantas: relaciones entre plantas, identificar enfermedades y manejo.\nReplantación: ciclos de cosecha, ayudar a los ecosistemas, apoyo ambiental.\nCosecha: cuándo, por qué y cómo.\nImpacto global: mirar datos nuevos y antiguos para prepararnos a los cambios.\nGestión del agua: pruebas, identificar problemas, nuevas soluciones, limpieza y mantenimiento, preservar y proteger.\nReplantación: ciclos de cosecha, ayuda ambiental.\nCuidado animal: entender el gran papel de los animales en el ciclo de la vida, desde arar hasta el abono. Aprender a escuchar y sentir sus comportamientos.\nComunidad: trabajar con otros, relaciones, apoyar y compartir.",
     "p2": "",
     "p3": "Un suelo sano cría plantas sanas. Las plantas sanas alimentan a personas sanas. El sendero educativo es esa idea, contada como un camino que se puede caminar.",
     "gallery": {
